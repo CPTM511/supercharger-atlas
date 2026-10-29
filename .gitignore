@@ -1,0 +1,20 @@
+node_modules/
+.DS_Store
+.env
+.env.*
+!.env.example
+private/
+raw/
+*.docx
+*.pdf
+*.zip
+*.log
+playwright-report/
+test-results/
+
+# Only the generated public research brief is publishable.
+!downloads/charge-atlas-brief.pdf
+*.xlsx
+*.xls
+*.pem
+*.key

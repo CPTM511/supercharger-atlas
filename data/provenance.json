@@ -1,0 +1,42 @@
+{
+  "retrievedAt": "2026-10-29T16:08:49Z",
+  "analysisDate": "2026-10-30",
+  "timezone": "Asia/Shanghai",
+  "afdc": {
+    "url": "https://developer.nlr.gov/api/alt-fuel-stations/v1.json",
+    "filters": {
+      "fuel_type": "ELEC",
+      "status": "E",
+      "access": "public",
+      "ev_charging_level": "dc_fast",
+      "country": "US",
+      "limit": "all"
+    },
+    "returned": 15882,
+    "totalResults": 15882,
+    "rawSha256": "dce754f9f6a61e4b09b8aa8a48d7024b2c9047255ae5e8b21327fc0133d22782",
+    "scope": "US public available DC fast stations; individual records may be stale; availability is database status, not a live test"
+  },
+  "superchargeInfo": {
+    "url": "https://supercharge.info/service/supercharge/allSites",
+    "worldRecords": 11393,
+    "usRecords": 4375,
+    "rawSha256": "ef91b4f2f7daf0201e401804e211cf4b9ef8e2ed4469e1bfba02382a2ddfb6bd",
+    "scope": "Community-maintained, not Tesla-validated. PLAN/VOTING not construction commitments. Full third-party snapshot not redistributed."
+  },
+  "afdcNonoperating": {
+    "url": "https://developer.nlr.gov/api/alt-fuel-stations/v1.json",
+    "filters": {
+      "status": "P,T",
+      "fuel_type": "ELEC",
+      "ev_charging_level": "dc_fast",
+      "country": "US",
+      "access": "public",
+      "limit": "all"
+    },
+    "returned": 643,
+    "totalResults": 643,
+    "rawSha256": "0e6dedf605cfb95b9efe7ef1dfd190248daf3b31a6f88f9d778a60a5edf90b40",
+    "scope": "Planned and temporarily unavailable assets; not available capacity"
+  }
+}

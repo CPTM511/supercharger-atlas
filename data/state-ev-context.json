@@ -1,0 +1,365 @@
+{
+  "year": 2025,
+  "source": "https://afdc.energy.gov/vehicle-registration",
+  "retrievedDate": "2026-10-30",
+  "note": "Rounded to nearest 100 by source; state-level context only, not site demand. BEV share uses every fuel category including Unknown.",
+  "states": [
+    {
+      "state": "Alabama",
+      "bev": 24400,
+      "phev": 8300,
+      "allLightDuty": 4949800,
+      "bevSharePercent": 0.493
+    },
+    {
+      "state": "Alaska",
+      "bev": 4100,
+      "phev": 1300,
+      "allLightDuty": 572100,
+      "bevSharePercent": 0.717
+    },
+    {
+      "state": "Arizona",
+      "bev": 141800,
+      "phev": 33900,
+      "allLightDuty": 6672100,
+      "bevSharePercent": 2.125
+    },
+    {
+      "state": "Arkansas",
+      "bev": 12300,
+      "phev": 4900,
+      "allLightDuty": 2778300,
+      "bevSharePercent": 0.443
+    },
+    {
+      "state": "California",
+      "bev": 1843100,
+      "phev": 490900,
+      "allLightDuty": 38255000,
+      "bevSharePercent": 4.818
+    },
+    {
+      "state": "Colorado",
+      "bev": 162800,
+      "phev": 57100,
+      "allLightDuty": 5583200,
+      "bevSharePercent": 2.916
+    },
+    {
+      "state": "Connecticut",
+      "bev": 48800,
+      "phev": 26400,
+      "allLightDuty": 2958800,
+      "bevSharePercent": 1.649
+    },
+    {
+      "state": "Delaware",
+      "bev": 16000,
+      "phev": 6100,
+      "allLightDuty": 937800,
+      "bevSharePercent": 1.706
+    },
+    {
+      "state": "District of Columbia",
+      "bev": 12900,
+      "phev": 4900,
+      "allLightDuty": 304800,
+      "bevSharePercent": 4.232
+    },
+    {
+      "state": "Florida",
+      "bev": 450400,
+      "phev": 88400,
+      "allLightDuty": 19184500,
+      "bevSharePercent": 2.348
+    },
+    {
+      "state": "Georgia",
+      "bev": 161200,
+      "phev": 32900,
+      "allLightDuty": 9860200,
+      "bevSharePercent": 1.635
+    },
+    {
+      "state": "Hawaii",
+      "bev": 35100,
+      "phev": 9400,
+      "allLightDuty": 1093200,
+      "bevSharePercent": 3.211
+    },
+    {
+      "state": "Idaho",
+      "bev": 14100,
+      "phev": 6700,
+      "allLightDuty": 2063500,
+      "bevSharePercent": 0.683
+    },
+    {
+      "state": "Illinois",
+      "bev": 164900,
+      "phev": 51600,
+      "allLightDuty": 10304900,
+      "bevSharePercent": 1.6
+    },
+    {
+      "state": "Indiana",
+      "bev": 47200,
+      "phev": 19400,
+      "allLightDuty": 6367100,
+      "bevSharePercent": 0.741
+    },
+    {
+      "state": "Iowa",
+      "bev": 15100,
+      "phev": 8800,
+      "allLightDuty": 3209100,
+      "bevSharePercent": 0.471
+    },
+    {
+      "state": "Kansas",
+      "bev": 18700,
+      "phev": 7800,
+      "allLightDuty": 2675100,
+      "bevSharePercent": 0.699
+    },
+    {
+      "state": "Kentucky",
+      "bev": 20700,
+      "phev": 8600,
+      "allLightDuty": 4068100,
+      "bevSharePercent": 0.509
+    },
+    {
+      "state": "Louisiana",
+      "bev": 22600,
+      "phev": 5700,
+      "allLightDuty": 3822500,
+      "bevSharePercent": 0.591
+    },
+    {
+      "state": "Maine",
+      "bev": 11900,
+      "phev": 10300,
+      "allLightDuty": 1270800,
+      "bevSharePercent": 0.936
+    },
+    {
+      "state": "Maryland",
+      "bev": 120500,
+      "phev": 41500,
+      "allLightDuty": 5052300,
+      "bevSharePercent": 2.385
+    },
+    {
+      "state": "Massachusetts",
+      "bev": 113900,
+      "phev": 60000,
+      "allLightDuty": 5593900,
+      "bevSharePercent": 2.036
+    },
+    {
+      "state": "Michigan",
+      "bev": 112600,
+      "phev": 42100,
+      "allLightDuty": 8671400,
+      "bevSharePercent": 1.299
+    },
+    {
+      "state": "Minnesota",
+      "bev": 59800,
+      "phev": 24800,
+      "allLightDuty": 5247300,
+      "bevSharePercent": 1.14
+    },
+    {
+      "state": "Mississippi",
+      "bev": 7200,
+      "phev": 3000,
+      "allLightDuty": 2750300,
+      "bevSharePercent": 0.262
+    },
+    {
+      "state": "Missouri",
+      "bev": 43700,
+      "phev": 19600,
+      "allLightDuty": 5774300,
+      "bevSharePercent": 0.757
+    },
+    {
+      "state": "Montana",
+      "bev": 6900,
+      "phev": 4200,
+      "allLightDuty": 1066100,
+      "bevSharePercent": 0.647
+    },
+    {
+      "state": "Nebraska",
+      "bev": 11800,
+      "phev": 5500,
+      "allLightDuty": 2011600,
+      "bevSharePercent": 0.587
+    },
+    {
+      "state": "Nevada",
+      "bev": 85600,
+      "phev": 16100,
+      "allLightDuty": 2631500,
+      "bevSharePercent": 3.253
+    },
+    {
+      "state": "New Hampshire",
+      "bev": 16100,
+      "phev": 9500,
+      "allLightDuty": 1413600,
+      "bevSharePercent": 1.139
+    },
+    {
+      "state": "New Jersey",
+      "bev": 210000,
+      "phev": 61900,
+      "allLightDuty": 7538300,
+      "bevSharePercent": 2.786
+    },
+    {
+      "state": "New Mexico",
+      "bev": 16600,
+      "phev": 7100,
+      "allLightDuty": 1986300,
+      "bevSharePercent": 0.836
+    },
+    {
+      "state": "New York",
+      "bev": 209300,
+      "phev": 125100,
+      "allLightDuty": 11354900,
+      "bevSharePercent": 1.843
+    },
+    {
+      "state": "North Carolina",
+      "bev": 121000,
+      "phev": 35500,
+      "allLightDuty": 9306800,
+      "bevSharePercent": 1.3
+    },
+    {
+      "state": "North Dakota",
+      "bev": 1900,
+      "phev": 1100,
+      "allLightDuty": 816600,
+      "bevSharePercent": 0.233
+    },
+    {
+      "state": "Ohio",
+      "bev": 94200,
+      "phev": 37200,
+      "allLightDuty": 10515200,
+      "bevSharePercent": 0.896
+    },
+    {
+      "state": "Oklahoma",
+      "bev": 26800,
+      "phev": 29100,
+      "allLightDuty": 4327400,
+      "bevSharePercent": 0.619
+    },
+    {
+      "state": "Oregon",
+      "bev": 98000,
+      "phev": 38900,
+      "allLightDuty": 3849000,
+      "bevSharePercent": 2.546
+    },
+    {
+      "state": "Pennsylvania",
+      "bev": 113400,
+      "phev": 55900,
+      "allLightDuty": 10350900,
+      "bevSharePercent": 1.096
+    },
+    {
+      "state": "Rhode Island",
+      "bev": 9800,
+      "phev": 6300,
+      "allLightDuty": 806900,
+      "bevSharePercent": 1.215
+    },
+    {
+      "state": "South Carolina",
+      "bev": 35700,
+      "phev": 13700,
+      "allLightDuty": 5218000,
+      "bevSharePercent": 0.684
+    },
+    {
+      "state": "South Dakota",
+      "bev": 3000,
+      "phev": 2400,
+      "allLightDuty": 927400,
+      "bevSharePercent": 0.323
+    },
+    {
+      "state": "Tennessee",
+      "bev": 55400,
+      "phev": 16100,
+      "allLightDuty": 6604500,
+      "bevSharePercent": 0.839
+    },
+    {
+      "state": "Texas",
+      "bev": 387400,
+      "phev": 79900,
+      "allLightDuty": 26703300,
+      "bevSharePercent": 1.451
+    },
+    {
+      "state": "Utah",
+      "bev": 68400,
+      "phev": 19200,
+      "allLightDuty": 3217400,
+      "bevSharePercent": 2.126
+    },
+    {
+      "state": "Vermont",
+      "bev": 11900,
+      "phev": 7700,
+      "allLightDuty": 574300,
+      "bevSharePercent": 2.072
+    },
+    {
+      "state": "Virginia",
+      "bev": 134900,
+      "phev": 39300,
+      "allLightDuty": 7913600,
+      "bevSharePercent": 1.705
+    },
+    {
+      "state": "Washington",
+      "bev": 236400,
+      "phev": 57100,
+      "allLightDuty": 6876900,
+      "bevSharePercent": 3.438
+    },
+    {
+      "state": "West Virginia",
+      "bev": 5000,
+      "phev": 2700,
+      "allLightDuty": 1484000,
+      "bevSharePercent": 0.337
+    },
+    {
+      "state": "Wisconsin",
+      "bev": 41900,
+      "phev": 18600,
+      "allLightDuty": 5644100,
+      "bevSharePercent": 0.742
+    },
+    {
+      "state": "Wyoming",
+      "bev": 1900,
+      "phev": 1200,
+      "allLightDuty": 682300,
+      "bevSharePercent": 0.278
+    }
+  ]
+}
