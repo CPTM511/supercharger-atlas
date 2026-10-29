@@ -1,10 +1,14 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
 import {haversineMiles} from '../model.js';
 
 const data = JSON.parse(fs.readFileSync(new URL('../data/candidates.json', import.meta.url)));
 const supply = JSON.parse(fs.readFileSync(new URL('../data/supply-snapshot.json', import.meta.url)));
 const fail = (condition, message) => assert.ok(condition, message);
+const brief = fs.readFileSync(new URL('../downloads/charge-atlas-brief.pdf', import.meta.url));
+const dataHash = createHash('sha256').update(fs.readFileSync(new URL('../data/candidates.json', import.meta.url))).digest('hex');
+fail(brief.subarray(0,5).toString() === '%PDF-' && brief.includes(Buffer.from(`data-sha256=${dataHash}`)), 'PDF brief is stale: rebuild it from the current candidate data');
 const sourceIds = new Set(data.sources.map(s => s.id));
 fail(sourceIds.size === data.sources.length, 'Source IDs must be unique');
 for (const s of data.sources) {

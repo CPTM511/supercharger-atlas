@@ -36,3 +36,5 @@ These are research and project-development gates. They are not claimed completed
 ## Rebuild the PDF
 
 The optional publishing dependency is Python `reportlab` (the interactive app requires none). Run `python3 scripts/build-brief.py --font /path/to/licensed-chinese-font.ttf`. The script uses a local Unicode font if available, otherwise a standard Chinese CID font. Confirm exactly two pages and inspect rendered glyphs and table/footer boundaries before publishing `downloads/charge-atlas-brief.pdf`. Raw documents and other PDFs remain excluded from Git.
+
+The PDF embeds the SHA-256 of its candidate input. CI rejects a stale PDF after candidate data changes; rebuild it as part of the same reviewed update.

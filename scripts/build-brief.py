@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Build a two-page public shortlist; no personal application material is read."""
-import argparse, json
+import argparse, json, hashlib
 from pathlib import Path
 from xml.sax.saxutils import escape
 from reportlab.pdfgen import canvas
@@ -38,7 +38,7 @@ args.output.parent.mkdir(parents=True,exist_ok=True)
 c=canvas.Canvas(str(args.output),pagesize=(W,H),pageCompression=1)
 c.setTitle('Charge Atlas | Two perspectives, twenty conditional sites')
 c.setAuthor('Charge Atlas Research')
-c.setSubject('Public evidence and due-diligence priorities; independent, not Tesla endorsed')
+c.setSubject('Public evidence; independent, not Tesla endorsed. data-sha256=' + hashlib.sha256((ROOT/'data/candidates.json').read_bytes()).hexdigest())
 for page,mode in enumerate(['network','investor'],1):
     c.setFillColor(ink); c.setFont(FONT,19)
     c.drawString(margin,H-38,'CHARGE ATLAS  /  '+('网络选址' if mode=='network' else '投资尽调'))
