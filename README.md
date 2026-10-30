@@ -4,15 +4,19 @@
 
 [Open the product](https://cptm511.github.io/supercharger-atlas/) · [English research brief](downloads/charge-atlas-brief.pdf) · [Chinese research brief](downloads/charge-atlas-brief-zh.pdf)
 
-## Current conclusion — v0.5.0
+## Current conclusion — v0.6.0
 
 **Zero investment-ready projects in this selected pool does not mean the United States has no suitable charging sites.** All 37 remain pending; none is formally rejected. Financial and evidence gates are unchanged.
 
-Round four pursued the ten previous evidence priorities. It recovered Edmonds' original charging-design record, Colebrook funding/reporting requirements, a recent single-driver Austin observation, and current Georgia/Oregon conditional funding routes. None establishes a complete current paid-demand series, design-matched quote or firm incremental utility capacity/date. The other 27 retain earlier records. [Read the evidence recovery and decision audit](docs/EVIDENCE-RECOVERY.md).
+The latest review found material support routes previously missing from the analysis: Machias is named in an open Maine round with up to $600,000 eligible capital reimbursement plus capped, temporary electricity support; Washington and Oregon have conditional clean-fuel credit mechanisms; other routes include utility rebates, tax measures and commercial cofunding. None is a verified award for a candidate. Funding exhaustion, equipment approval, contracts, tax capacity, deadlines and benefit expiry are explicit. [Read the incentives and ownership review](docs/INCENTIVES-AND-OWNERSHIP.md).
 
-The review explains the universal stress failure: 37 addresses share only 14 distinct state-based main scenario sets. Common conservative revenue is $51,392/year, already below $60,000/year fixed costs before other expenses. This is a stress-case result, not evidence that all real sites lose money. New-build demand needs matched paid analogues and local capture/diversion validation; a station cannot supply its own pre-opening sales.
+Tesla's public configurator also offers a four-post option. Its Edmonds illustration showed $470,000 upfront versus $940,000 for eight posts, with an indicative five-year payback. The supplier assumes 7% yearly utilization growth, no parking rent and other conditions unlike this project's flat-demand stress cases. Neither figure is a complete site quote or a guaranteed return. Tesla-owned networks, third-party charging owners and property hosts have different cash flows.
 
-Three completed California sites form a contractor-reported operational comparison, outside the candidate rankings. Their reliability and cost limitations remain explicit. No owner outreach, record request, utility application or paid study was performed.
+Each of the 37 records now includes researched support routes and separate capital-support/volume sensitivities. A capital reimbursement is a dated receipt; it does not reduce the gross asset replacement reserve or remove recurring losses. The Machias example separately caps its five-year electricity support and exposes cash after expiry. Positive sensitivities remain assumptions and do not qualify a site.
+
+The original 37-property scenario inputs and results remain unchanged: only 14 distinct state-based main sets underlie them. Common conservative revenue is $51,392/year, below $60,000/year fixed costs before other expenses. That is a stress-case result, not evidence that every real charging business loses money. A validated project needs matched design, demand, tariff and contractual evidence.
+
+No owner outreach, record request, utility application or paid study was performed. All private background and raw research material remains outside this repository.
 
 Both the network-value and investor lenses now require:
 
@@ -25,6 +29,7 @@ These are explicit underwriting choices, **not an industry standard, Tesla inves
 ## What the product does
 
 - Switch between network and investor lenses, and between qualified, pending and excluded pools.
+- Explore researched incentive restrictions and dated reimbursement/volume sensitivities without treating possible support as awarded money.
 - Inspect exact property addresses, existing supply, new evidence, its geographic scope and limitations, missing evidence and source links.
 - Review conservative/base/optimistic calculations for every property, including capital, operating costs, construction holding costs, ramp, replacement allowance, NPV and payback.
 - Inspect prior/current feasibility, available evidence and acquisition routes for all 37 properties; filter to the 10 focused reviews.
@@ -47,6 +52,6 @@ npm run check
 
 The app uses frozen public-source data and vendored Leaflet. Map tiles come from OpenStreetMap with attribution. It has no login, analytics, uploads or AI API calls, and uses no persistent application storage. The optional PDF generator uses ReportLab and a licensed local Unicode font.
 
-[Methodology](docs/METHODOLOGY.md) · [Economics](docs/ECONOMICS.md) · [Current evidence recovery](docs/EVIDENCE-RECOVERY.md) · [Prior feasibility review](docs/FEASIBILITY-ROUND-3.md) · [Earlier 37 reassessments](docs/SITE-REASSESSMENT.md) · [Earlier review](docs/REVIEW-ROUND-1.md) · [Data sources](docs/DATA-SOURCES.md) · [AI workflow](docs/AI-WORKFLOW.md) · [Update procedure](docs/UPDATING.md) · [Validation scope](docs/VALIDATION.md)
+[Methodology](docs/METHODOLOGY.md) · [Economics](docs/ECONOMICS.md) · [Current support review](docs/INCENTIVES-AND-OWNERSHIP.md) · [Prior evidence recovery](docs/EVIDENCE-RECOVERY.md) · [Prior feasibility review](docs/FEASIBILITY-ROUND-3.md) · [Earlier 37 reassessments](docs/SITE-REASSESSMENT.md) · [Earlier review](docs/REVIEW-ROUND-1.md) · [Data sources](docs/DATA-SOURCES.md) · [AI workflow](docs/AI-WORKFLOW.md) · [Update procedure](docs/UPDATING.md) · [Validation scope](docs/VALIDATION.md)
 
 Original code and analysis are MIT licensed; third-party materials retain their own rights. This is independent research with no Tesla affiliation or endorsement.

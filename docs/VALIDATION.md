@@ -1,3 +1,31 @@
+# Validation — v0.6.0
+
+## Scope and decision
+
+Round five reviewed incentive and ownership routes for all 37 candidates. It adds 22 classified mechanisms and 13 analytical findings, with explicit eligibility, ownership, funding, timing and expiry restrictions. No award has been verified for these proposed investments, and no incentive is admitted into the original qualification calculations. All 37 remain pending, zero qualify and zero are formally rejected. Original economic inputs, outputs, rankings and evidence admission are unchanged from v0.5.0.
+
+Material new leads include the Machias-specific Maine Phase 12 opportunity, conditional Washington/Oregon fuel credits, utility programs and a four-post Tesla supplier option. Historical awards, exhausted funding, expired tax provisions and unknown contractual rights are not treated as available cash. These findings improve development options; they do not establish investment readiness.
+
+## Independent analytical review
+
+Separate reviewers investigated federal/state routes, western utility/credit programs and the business-model comparison. Consequential source checks included the original Maine RFP, Washington law and agency guidance, official credit spreadsheets, Tesla's live configurator and disclosures, and operator financial filings. The public source-access notes retain unresolved access or scope limitations. This is targeted verification, not a claim that every historical URL was reopened twice.
+
+An independent Decimal implementation reconciled all 1,557 new scenario/volume/temporary-support cases; maximum absolute difference was below $0.000000001. A separate set of 14 timing fixtures tested dated receipts, operating losses and temporary support. Review exposed a payback edge case: a temporary crossing followed by a negative cumulative balance must not count as lasting recovery. The implementation and regression checks now enforce recovery through the modeled horizon. No original candidate result changed.
+
+The final reviewer readback found no outstanding material arithmetic, original-record preservation or reviewed-source-scope defect. Important caveats remain: none of the hypothetical reimbursements is an award; Machias uses existing cost/demand proxies, not a compliant equipment quote; actual demand, complete costs, firm grid service and project rights are still unresolved.
+
+## Reproducible and product checks
+
+- All 24 targeted model tests pass. Independent Python checks reconcile 111 original scenarios, 20 tariff subtotals, 370 inverse conditions and 1,557 support cases. Canonical/support references, all 37 mappings, zero admitted benefits, gross-cost preservation, PDF data hashes and versioned assets are checked structurally.
+- Browser verification exercised the zero-support default, Edmonds' 80% hypothetical reimbursement and both receipt timings, the demand/support table, and Machias' capped five-year bill support with post-expiry cash. Observed values match the independently checked data.
+- English default/reset, Chinese content and the 390px layout were checked. Wide tables scroll inside their containers; the page has no horizontal overflow. No console errors appeared in the exercised flows.
+- Both two-page PDFs were rendered and visually inspected after the final data build; tables and Chinese text are readable without clipping. This release does not claim a new downloaded-CSV byte inspection.
+- Publication review excludes private background, CVs, raw source downloads, credentials and local user paths. The GitHub homepage remains English. No outreach, application, contract, paid study or fee was initiated.
+
+Deployment identity and live-file hashes are verified separately after publication. The following sections preserve earlier validation history.
+
+---
+
 # Validation — v0.5.0
 
 ## Scope and result

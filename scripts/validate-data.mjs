@@ -175,6 +175,31 @@ for(const id of comp.sourceIds)fail(sourceIds.has(id),'Comparator source missing
 fail((Date.parse(comp.periodEnd)-Date.parse(comp.periodStart))/86400000+1===comp.days,'Comparator reporting period mismatch');
 console.log(`Round four: 10 follow-ups, 27 carried forward; evidence/forecast distinctions and project comparison checked.`);
 
+const support=JSON.parse(fs.readFileSync(new URL('../data/support-review.json',import.meta.url)));
+assert.deepEqual(data.supportReview,support,'Support root copy mismatch');
+const programIds=new Set(support.programs.map(p=>p.id));
+fail(programIds.size===support.programs.length,'Duplicate support program');
+for(const p of support.programs){
+ fail(p.admittedCash===false && p.candidateIds.every(id=>data.candidates.some(c=>c.id===id)),'Unsupported program applicability/admission');
+ for(const key of ['title','claim','limitation','required'])fail(p[key]?.en&&p[key]?.zh,'Missing program translation');
+ for(const id of p.sourceIds)fail(sourceIds.has(id),'Unresolved support source');
+}
+for(const row of support.coverage.stateStatus)for(const id of row.sourceIds)fail(sourceIds.has(id),'Unresolved coverage source');
+for(const note of support.sourceAccess)fail(sourceIds.has(note.sourceId),'Unresolved access-note source');
+for(const f of [...support.findings,...support.ownershipModels])for(const id of f.sourceIds)fail(sourceIds.has(id),'Unresolved ownership source');
+for(const c of data.candidates){
+ const r=c.supportReview;
+ fail(r.cases.length===6&&r.admittedCapitalSupport===0&&r.admittedRecurringSupport===0,'Award substituted into site return');
+ fail(r.decisionBefore===r.decisionAfter&&r.decisionAfter===c.review.decision,'Unsupported support qualification change');
+ fail(r.programIds.length>0&&r.programIds.every(id=>programIds.has(id)),'Unmapped support record');
+ for(const x of r.cases)for(const k of ['conservative','base','optimistic']){
+  fail(x.scenarios[k].stabilizedFreeCash===c.economics.scenarios[k].outputs.stabilizedFreeCash,'Capital grant changed recurring cash');
+  fail(x.scenarios[k].annualSustainingCapex===c.economics.scenarios[k].outputs.annualSustainingCapex,'Grant shrank gross-asset reserve');
+ }
+}
+fail(!JSON.stringify(support).includes('ZXPROTECT'),'Unresolved prose placeholder');
+console.log(`Round five: ${support.programs.length} conditional routes mapped to37 sites; no support or qualification admitted.`);
+
 const assetHash=name=>createHash('sha256').update(fs.readFileSync(new URL('../'+name,import.meta.url))).digest('hex').slice(0,12);
 const html=fs.readFileSync(new URL('../index.html',import.meta.url),'utf8'),app=fs.readFileSync(new URL('../app.js',import.meta.url),'utf8');
 for(const name of ['styles.css','app.js'])fail(html.includes('./'+name+'?v='+assetHash(name)),'Stale asset URL: '+name);

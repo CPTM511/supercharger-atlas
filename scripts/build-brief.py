@@ -39,7 +39,7 @@ def scenario(c, key):
     o = c['economics']['scenarios'][key]['outputs']
     pay = f"{o['projectPaybackYears']:.2f}"+text(' yr', ' 年') if o['projectPaybackYears'] is not None else text('No recovery*', '期内未回本*')
     return p(pay+'<br/>'+cash(o['stabilizedFreeCash']))
-notes = {x['id']: (x['headline']['en'], x['headline']['zh']) for x in data['acquisitionReview']['sites']}
+notes = {'sprouts-suwanee': ('Make Ready and demand-adjustment routes remain conditional; no award.', '接电建设与需量调整仍为条件路径，未获授奖。'), 'net-colebrook': ('Historical funding is not new cash; ownership and current support terms need proof.', '历史资助不是新增资金，须核产权及当前支持条款。'), 'net-greenville': ('New Maine Phase 12 excludes Greenville; earlier support is not a new award.', '缅因州新第12期不含Greenville，旧支持不是新授奖。'), 'winco-edmonds': ('Four-post supplier option and WA credits merit review; no complete quote or credit rights.', '四枪厂家选项及华盛顿积分值得核实，仍无完整报价或积分权益。'), 'net-machias': ('Phase 12 town match: up to $600k capital and $300k temporary electricity support; eligibility unverified.', '匹配第12期城镇：资本最高60万美元，临时电费最高30万美元，完整资格未核。'), 'net-republic': ('WA fuel/tax credit routes identified; project eligibility and environmental scope remain open.', '发现华盛顿燃料/税额抵免路径，项目资格及环境范围待核。'), 'winco-longview': ('WA fuel/tax routes do not establish an award or firm utility service.', '华盛顿燃料/税惠路径不代表获批资金或确定接电。'), 'winco-medford': ('Pacific Power rebate needs approved hardware; OR fuel-credit rights unresolved.', 'Pacific Power返利须认可设备，俄勒冈燃料积分权益待核。'), 'winco-brushprairie': ('Clark bill credit and WA credits require account and contractual confirmation.', 'Clark电费及华盛顿积分须核实电表与合同。'), 'net-austin': ('Federal 30C cutoff applies to new build; volume/support sensitivities are not awards.', '联邦30C新建资格已截止，销量/资助敏感性不是授奖。')}
 
 round3=json.loads((ROOT/'data/feasibility-round-3.json').read_text())
 selected=[next(c for c in data['candidates'] if c['id']==cid) for cid in round3['selection']['selectedIds']]
@@ -52,7 +52,7 @@ for page in [1,2]:
     c.setFillColor(ink);c.setFont(FONT,18)
     c.drawString(margin,H-35,'CHARGE ATLAS / '+text('EVIDENCE' if page==1 else 'CONDITIONS','证据核查' if page==1 else '回本条件'))
     c.setFont(FONT,8);c.drawRightString(W-margin,H-33,f"{data['meta']['asOf']} | v{data['meta']['version']} | {page}/2")
-    lead=text('37-site pool; 10 evidence follow-ups, 27 carried forward. 0 investment-ready does not mean no viable U.S. sites.','37处候选；本轮追查10处、沿用27处。0处达到投资条件，不代表美国无可行场地；门槛不变。')
+    lead=text('37-site support review; 0 awards verified. Conditional benefits and ownership can change returns; gates remain unchanged.','37处支持路径核查，0处获奖已核实。条件收益与经营模式能改变回报；门槛不变。')
     b=p('<b>'+lead+'</b>');_,bh=b.wrap(width,40);b.drawOn(c,margin,H-56-bh)
     policy=text('Base payback ≤6 years; conservative ≤8 years from first spend; base NPV ≥0 at 10% real over 10 operating years; positive conservative steady cash and all six evidence gates. Chosen policy, not Tesla or industry criteria.','基准回本≤6年，保守≤8年（从首次支出起）；10个运营年、10%实际折现率下基准NPV≥0；保守稳定现金为正，且六类证据齐全。这是选定政策，并非Tesla或行业标准。')
     b=p(policy,small);_,bh=b.wrap(width,40);b.drawOn(c,margin,H-77-bh)

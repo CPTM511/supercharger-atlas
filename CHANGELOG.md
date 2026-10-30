@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.6.0 — 2026-10-30
+
+- Added 22 researched support mechanisms/restrictions mapped to all 37 candidates, including Machias Phase 12, WA/OR clean-fuel credits, utility rebates and current tax/deadline limits.
+- Distinguished Tesla-owned, third-party owned and property-host cash flows; recovered the public four-post option and explicit estimator/service-scope assumptions.
+- Added dated capital reimbursement and demand sensitivities, plus a capped temporary Machias electricity-support example. Gross asset costs remain intact; no award or forecast is admitted.
+- Independent review fixed a support-specific payback edge case: apparent recovery invalidated by later cumulative losses cannot remain labeled recovered.
+- Preserved all original scenario inputs, qualification rules and pending decisions; refreshed English documentation and bilingual product/briefs.
+
+
 ## v0.5.0 — Evidence recovery and decision interpretation
 
 - Followed up ten evidence priorities; retained 27 without implying fresh investigation.
