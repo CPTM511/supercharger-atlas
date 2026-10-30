@@ -106,6 +106,8 @@ export function calculateProject(input) {
     const cash = result.operatingCash - annualSustainingCapex;
     const priorBalance = balance;
     balance += cash;
+    // Even with no initial spend, ramp losses create cash that must be recovered.
+    if (projectPaybackYears === 0 && balance < 0) projectPaybackYears = null;
     const time = p.constructionYears + year;
     npv += cash / (1 + p.discountRate) ** time;
     // Linear interpolation assumes cash accrues evenly within each operating year.

@@ -48,3 +48,12 @@ The PDF embeds the SHA-256 of its candidate input. CI rejects a stale PDF after 
 Maintain `data/evidence-round-2.json` with one record per property and exact source URLs, retrieval/source dates, evidence class, claim scope, limitations and unsuccessful attempts. A failed fetch is not evidence that a record or permit does not exist. Do not translate tax ownership into a signed charger lease or a city service-area map into spare electrical capacity. Synchronize each candidate's `diligence` record and run `node scripts/build-reassessment.mjs` to regenerate the reassessment report. Retain round-one records and prior results as historical evidence.
 
 After editing CSS or JavaScript, run `node scripts/version-assets.mjs` before validation and publication. It versions first-party stylesheet, app and nested module URLs by content hash, avoiding stale mixed releases in returning browsers.
+
+
+## Availability and focused feasibility review
+
+Preserve `data/previous-results-v0.3.2.json` as the immutable comparison baseline. Investigate every existing candidate's demand/cost/grid availability before selecting a bounded focused subset. Selection is an information-acquisition choice, not an investment rank. Keep raw downloads and any owner/operator confidential records outside this public repository.
+
+With reviewed bilingual availability/deep-investigation records in a private directory, run `node scripts/build-feasibility.mjs /path/to/reviewed-records`, then `node scripts/build-feasibility-report.mjs`. This explicit import requires all 37 scans and exactly the selected 10 deep records. Rebuild the main and tariff calculations before importing the new round; importing adds inverse conditions without overwriting evidence with assumptions. Never run an old economic rebuild alone after import: it resets the derived inverse fields.
+
+Run `python3 scripts/verify-inverse.py` for independent deadline-balance and discounted-cash equations. It checks null boundaries as well as numeric results. Source fitness and actual acquisition remain manual research tasks; numeric agreement does not prove data truth. Review unqualified-to-qualified changes explicitly, and preserve both policy and private-data boundaries.

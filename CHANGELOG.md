@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.4.0 — data availability and focused feasibility
+
+- Scanned all 37 properties before selecting ten focused demand/cost/connection investigations. Added 72 classified findings with bilingual evidence limits and acquisition routes. Qualification remains 0/37 under unchanged rules.
+- Documented execution/cleanup risks and corrected inappropriate cost paths; retained partial historic observations without treating them as current demand or new-project costs.
+- Added one-variable inverse conditions for every site and two Medford conditional tariff subtotals, including known riders and explicit mapping assumptions. Existing main inputs/results remain unchanged.
+- Added focused-review filter and English/Chinese disclosures; rebuilt the two-page briefs around the current 10.
+- Independent review fixed zero-upfront-capital ramp-loss payback; 19 tests and independent arithmetic/source checks completed.
+
+
 ## 0.3.2 — 2026-10-30
 
 - Added content-based asset URLs so returning browsers receive updated CSS and model modules. Research data and investment conclusions are unchanged.

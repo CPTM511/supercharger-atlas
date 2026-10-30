@@ -1,3 +1,34 @@
+# Validation — v0.4.0
+
+## Current scope
+
+All 37 candidates received a bounded data-availability scan before ten were selected for focused demand, cost and connection research. The new round records 72 classified findings (62 direct, 7 secondary, 3 unresolved), with geographic scope, dates, limitations and acquisition routes. “Direct” describes the source of a claim, not a completed investment gate. There are 326 source IDs /324 distinct URLs. Historical round-two 98 findings and the earlier supply snapshot are retained, not presented as a new live inventory sweep.
+
+**Zero qualified, 37 pending, zero formal rejections; no status changed.** Material risk/context changes include Medford's cancelled corridor agreement, Republic's cleanup-record risk, Longview's inapplicable residential estimator, Machias's award-address change, Austin's historic records and Sprouts/Colebrook supply configurations. Exact limits are in the current feasibility report.
+
+## Independent checks and repairs
+
+- The separate reviewer recomputed 74 base/conservative cases ×5 inverse variables with 50-digit Decimal arithmetic, including 267 nulls; maximum relative difference was 3.18e-14. This covers the actual positive-capital all-in-rate inputs, not every theoretical tariff or horizon.
+- Python independently reconciles 111 main cases and 20 tariff subtotals from inputs. The new Medford two-case profile has a second independent Decimal check. Main inputs and outputs are also matched to the immutable v0.3.2 baseline.
+- All 19 targeted tests pass. Independent review exposed and repaired a zero-initial-spend edge case: first-year ramp losses must be recovered before payback. The regression recovers at year 7, not year 0; current 37-site outputs are unchanged.
+- Consequential source checks reopened ODOT cancellation/original proposed-site records, the Cowlitz estimator restriction, Ecology cleanup catalog, NHEC and Maine project records, and Pacific Power tariff originals. Parent review separately checked the Sprouts original subpoena, reproduced appellate text and official certiorari-denial record. These are targeted original-source checks, not a claim that every URL was read twice.
+- Austin's NEH original URL failed this round. A retained original 29-page state PDF was reread locally. Its historic session count has no usable observation period or paid/free split, and the 30/16 Main Street continuity is unresolved. No annualization or current-demand substitution was made.
+- Scope guards remain explicit: nameplate is not spare capacity; award amount is not complete project cost; advertised price is not net realized price; a subpoena requesting data is not the data; cancellation or cleanup is not automatically a no-build determination.
+
+## Product and artifact checks
+
+All ten focused records rendered in the English application with the new inverse table and no unresolved translation keys. The 10-site filter, Chinese switch and bilingual acquisition disclosure were exercised. The 390px mobile page had no horizontal page overflow; wide numeric tables scroll internally. CSV export feedback confirmed the filtered 10-record scope. Both rebuilt two-page PDFs were rendered and visually inspected in English and Chinese. PDF input hashes and content-versioned assets are checked automatically.
+
+The GitHub homepage and public documentation are English; the product defaults to English on every load. No resume, private application material, credentials, raw research downloads or local user paths are included in the public change. No external outreach, application, fee or recurring task was initiated.
+
+## Interpretation limits
+
+The pre-existing conservative assumptions mechanically fail: $51,392 gross annual revenue is below $60,000 fixed cost before other expenses. This is a stress result, not proof of actual site losses. New inverse conditions are unconstrained algebra; they do not verify demand or physical throughput. Medford's known riders are included, while the public-purpose charge mapping remains an explicit inference and the 1200kW case remains unpriced because Schedule 30 does not cover that repeated load. Holding current charges beyond any stated term is a sensitivity, not an approved future tariff.
+
+The release is suitable for transparent research and further diligence, not an investment-ready site recommendation. Full demand, complete scoped project costs, firm connection commitments and the other admission documents remain missing.
+
+---
+
 # Release verification — v0.3.0, 2026-10-30
 
 ## Analytical result

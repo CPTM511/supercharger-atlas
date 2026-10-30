@@ -51,7 +51,13 @@ for c in data['candidates']:
         assert c['id'] in p['candidateIds']
         for name,s in test['scenarios'].items():
             x=s['inputs'];assert x['tariffMode']=='energy_only'
-            for k in ['energyPerKwh','demandPerKwMonth','demandFreeKw','utilityFixedMonthly','utilityFixedDaily','minimumBillDaily']:close(x[k],p.get(k,0),'tariff field '+k)
+            for k in ['energyPerKwh','demandPerKwMonth','demandFreeKw','utilityFixedMonthly','utilityFixedDaily','minimumBillDaily']:close(x[k],p.get('scenarioOverrides',{}).get(name,{}).get(k,p.get(k,0)),'tariff field '+k)
+            if p['id']=='pacific-power-30-201':
+                load=x['loadSizeKw']
+                assert load==profiles['assumedBilledPeaksKw'][name] and load<1000
+                close(x['utilityFixedMonthly'],((198+2.45*load) if load<=300 else (525+1.20*load))*1.015,'Schedule30 basic/load-size plus conditional public-purpose mapping')
+                close(x['energyPerKwh'],.06537*1.015+(.047+.830+.138+.278)/100,'Schedule30 energy and four known riders')
+                close(x['demandPerKwMonth'],13.07*1.015,'Schedule30 demand and conditional public-purpose mapping')
             close(x['billedPeakKw'],profiles['assumedBilledPeaksKw'][name],'peak assumption')
             verify(s,c['id']+'/'+p['id']+'/'+name);conditional+=1
 print(f'Independent Python recomputation reconciled {checked} main scenarios and {conditional} tariff subtotal sensitivities, including demand exemptions, fixed/daily charges, minimum bills, ramp, construction, NPV and payback.')

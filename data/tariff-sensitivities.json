@@ -72,6 +72,55 @@
         "en": "August 1, 2026 published IND delivery and supply sum. Assumes >=150kW eligibility, the single-structure provision is satisfied and NHEC supplies the proposed meter. Peaks 1200/500/300kW are assumptions; taxes, future resets and project-specific charges unresolved. Not a confirmed tariff assignment or complete bill.",
         "zh": "2026年8月1日公布IND输配与供电合计。假设符合>=150kW、单建筑条款且拟用电表由NHEC供电。1200/500/300kW峰值是假设；税、未来调整及项目特定费用待核，并非已确认适用费率或完整账单。"
       }
+    },
+    {
+      "id": "pacific-power-30-201",
+      "candidateIds": [
+        "winco-medford"
+      ],
+      "title": {
+        "en": "Pacific Power Oregon Schedule 30/201 — conditional subtotal with known riders",
+        "zh": "Pacific Power俄勒冈30/201号——含已知附加项的条件小计"
+      },
+      "sourceIds": [
+        "V4-78707da6c",
+        "V4-5d3aaf1f5",
+        "V4-f16ab6d0d",
+        "V4-d17712886",
+        "V4-eaf89b313",
+        "V4-f181d2453",
+        "V4-1f6c5e2a1",
+        "V4-2e6e451e9",
+        "V4-5c2b1fa4e"
+      ],
+      "energyPerKwh": 0.07928055,
+      "demandPerKwMonth": 13.26605,
+      "maxPeakKwExclusive": 1000,
+      "scenarioOverrides": {
+        "base": {
+          "utilityFixedMonthly": 1141.875,
+          "loadSizeKw": 500
+        },
+        "optimistic": {
+          "utilityFixedMonthly": 946.995,
+          "loadSizeKw": 300
+        }
+      },
+      "calculationBasis": {
+        "coreEnergyPerKwh": 0.06537,
+        "fourRidersPerKwh": 0.01293,
+        "coreDemandPerKwMonth": 13.07,
+        "publicPurposeFraction": 0.015,
+        "publicPurposeMapping": "Inference: apply to core charges, not to four newer statutory riders. Confirm against actual utility bill.",
+        "fixedBeforePublicPurpose": {
+          "base": 1125,
+          "optimistic": 933
+        }
+      },
+      "limitation": {
+        "en": "Unconfirmed Schedule 30 secondary/201 eligibility; assumes separate ordinary charging account, no applicable aggregated caps or self-direction, equal delivery/meter voltage, uniform monthly use and load size equal to 500/300 kW peak. Includes known 291/292/91/92 charges below assumed caps. The 1.5% public-purpose charge mapping to core energy/demand/basic/load-size charges is an explicit inference; it is not compounded on the four riders. Excludes reactive/special-contract or other unconfirmed charges and connection costs. Repeated 1200 kW is ineligible, so conservative is omitted. All current charges are held constant as a stress test, including public-purpose charges beyond their stated January 2036 term; no future tariff or complete bill is claimed.",
+        "zh": "未确认30号二次侧/201号适用；假设独立普通充电账户、无适用的合并上限或自主管理、供电与计量电压相同、月用量均匀，且负荷规模等于500/300kW峰值。纳入假设上限以下的291/292/91/92号费用。对核心电量/需量/基本/负荷费计1.5%公共用途费是明确推断，不对四项附加费复乘。未计无功、特别合同及其他未确认费用、接网成本。重复1200kW不适用，保守情景留空。全部当前费用按压力测试固定，包括公共用途费超过2036年1月所列期限的部分；不是未来费率或完整账单。"
+      }
     }
   ]
 }

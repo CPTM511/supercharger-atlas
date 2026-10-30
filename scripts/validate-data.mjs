@@ -107,8 +107,41 @@ for(const c of data.candidates){
  const q=c.economics.throughputComparison;
  if(q.ratio!==null)fail(Math.abs(q.ratio-q.requiredKwhPerStallDay/q.observedNetworkKwhPerStallDay)<1e-10,'Throughput ratio mismatch');
 }
-fail(data.meta.reviewedThisRound===37 && data.meta.carriedForward===0 && data.meta.newFindings===claims,'New review statistics mismatch');
+fail(data.meta.roundTwoEvidence.reviewed===37 && data.meta.roundTwoEvidence.carriedForward===0 && data.meta.roundTwoEvidence.newFindings===claims,'Historical round-two statistics mismatch');
 console.log(`Round two: all ${diligence.sites.length} sites investigated, ${claims} classified findings; admission rules unchanged.`);
+
+const current=JSON.parse(fs.readFileSync(new URL('../data/feasibility-round-3.json',import.meta.url)));
+const prior=JSON.parse(fs.readFileSync(new URL('../data/previous-results-v0.3.2.json',import.meta.url)));
+fail(current.sites.length===37 && new Set(current.sites.map(x=>x.id)).size===37,'Availability coverage');
+fail(current.selection.scanCompletedBeforeSelection && current.selection.selectedIds.length===10,'Selection order/size');
+let focused=0,currentClaims=0;
+for(const c of data.candidates){
+ const f=current.sites.find(x=>x.id===c.id);
+ assert.deepEqual(c.feasibility,f,'Round-three candidate copy mismatch');
+ fail(f.attempts.length>0,'No availability attempts');
+ if(f.selected){focused++;fail(f.deepReview?.attempts.length>0 && f.deepReview.findings.length>0,'Missing focused investigation');}
+ for(const key of ['demand','cost','grid']){
+  const a=f.availability[key];fail(['partial','observed','unavailable','blocked'].includes(a.status),'Invalid availability status');
+  for(const field of ['summary','neededDocument','provider','route'])fail(a[field]?.en && a[field]?.zh,`Missing bilingual route: ${c.id}/${key}/${field}`);
+ }
+ for(const q of [...f.newFindings,...(f.deepReview?.findings||[])]){
+  currentClaims++;
+  fail(['direct','secondary','inference','estimate','unresolved'].includes(q.evidenceClass),'Invalid current evidence class');
+  fail(['parcel','corridor','utility','regional'].includes(q.locality),'Missing current geographic scope');
+  fail(q.claim?.en && q.claim?.zh && q.limitation?.en && q.limitation?.zh,'Missing bilingual current claim');
+  if(['direct','secondary'].includes(q.evidenceClass))fail(q.sourceIds?.length>0,'Current sourced claim without source');
+ }
+ for(const id of f.sourceIds)fail(sourceIds.has(id),'Unresolved current source');
+ const old=prior.sites.find(s=>s.id===c.id);
+ for(const [k,s]of Object.entries(c.economics.scenarios)){
+  const hash=createHash('sha256').update(JSON.stringify(s.inputs)).digest('hex');
+  fail(hash===old.scenarios[k].inputHash,'Unsupported input change from v0.3.2');
+  for(const key of ['stabilizedFreeCash','npv','projectPaybackYears'])fail(s.outputs[key]===old.scenarios[k][key],`Unexpected economic delta: ${c.id}/${k}/${key}`);
+ }
+ fail(f.classificationChanged===(old.decision!==c.review.decision),'Incorrect before/after decision');
+}
+fail(focused===10 && currentClaims===data.meta.availabilityReview.newFindings,'Current coverage/count mismatch');
+console.log(`Round three: 37 availability records, ${focused} focused reviews, ${currentClaims} classified findings; unchanged inputs and decisions reconciled against v0.3.2.`);
 
 const assetHash=name=>createHash('sha256').update(fs.readFileSync(new URL('../'+name,import.meta.url))).digest('hex').slice(0,12);
 const html=fs.readFileSync(new URL('../index.html',import.meta.url),'utf8'),app=fs.readFileSync(new URL('../app.js',import.meta.url),'utf8');

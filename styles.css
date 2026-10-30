@@ -2067,3 +2067,15 @@ html[lang=en] .intro-description { max-width:590px; }
 .diligence-v3 .review-table th:first-child,.diligence-v3 .review-table td:first-child { width:18%; }
 .diligence-v3 .review-table th:nth-child(2),.diligence-v3 .review-table td:nth-child(2) { width:62%; }
 .diligence-v3 .review-table th:last-child,.diligence-v3 .review-table td:last-child { width:20%; }
+
+/* Round-three evidence and single-input inverse conditions. */
+.feasibility-v4 { border-top: 3px solid var(--accent, #126065); margin-top: 24px; padding-top: 16px; }
+.availability-card { border: 1px solid #d7e0e4; border-radius: 6px; padding: 14px; margin: 10px 0; font-size: 14px; overflow-wrap: anywhere; }
+.availability-card h5 { margin: 0 0 8px; font-size: 15px; }
+.availability-card p { margin: 8px 0; line-height: 1.6; }
+.availability-card details { margin-top: 10px; }
+.inverse-table { width: 100%; min-width: 490px; table-layout: fixed; font-size: 13px; }
+.inverse-table th:first-child { width: 46%; }
+.inverse-table th, .inverse-table td { padding: 9px; text-align: left; border-bottom: 1px solid #d7e0e4; overflow-wrap: anywhere; }
+.focus-filter { display: flex; gap: 8px; align-items: center; padding: 0 16px 12px; font-size: 13px; }
+.v4-coverage { padding: 0 16px; }

@@ -17,7 +17,7 @@ for(const c of data.candidates){
   for(const [key,s] of Object.entries(e.scenarios)){
    const peak=profiles.assumedBilledPeaksKw[key];
    if(p.maxPeakKwExclusive && peak>=p.maxPeakKwExclusive)continue;
-   const inputs={...s.inputs,tariffMode:'energy_only',energyPerKwh:p.energyPerKwh,demandPerKwMonth:p.demandPerKwMonth,billedPeakKw:peak,utilityFixedMonthly:p.utilityFixedMonthly||0,utilityFixedDaily:p.utilityFixedDaily||0,demandFreeKw:p.demandFreeKw||0,minimumBillDaily:p.minimumBillDaily||0};
+   const inputs={...s.inputs,tariffMode:'energy_only',energyPerKwh:p.energyPerKwh,demandPerKwMonth:p.demandPerKwMonth,billedPeakKw:peak,utilityFixedMonthly:p.utilityFixedMonthly||0,utilityFixedDaily:p.utilityFixedDaily||0,demandFreeKw:p.demandFreeKw||0,minimumBillDaily:p.minimumBillDaily||0,...(p.scenarioOverrides?.[key]||{})};
    scenarios[key]={inputs,outputs:calculateProject(inputs)};
   }
   e.tariffSensitivities.push({profileId:p.id,title:p.title,sourceIds:p.sourceIds,limitation:p.limitation,scenarios,hurdle:scenarios.conservative?assessScenarioHurdle(scenarios):null});

@@ -1,0 +1,894 @@
+{
+  "version": "0.3.2",
+  "commit": "2e758b67ea70a1c16bcc4ad9abe6d908ce5c97cb",
+  "sites": [
+    {
+      "id": "net-hanksville",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "61d5ef17fa1374c64d4a3de257e13695c9f3786b10a7ab5def2740f20376eeae",
+          "stabilizedFreeCash": -77145.6,
+          "npv": -1766913.9223085248,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "9a9a1287ce813f8813ac4184cce314d1839ca96017ba33afe9b828cec5ec9094",
+          "stabilizedFreeCash": 37531.47826086957,
+          "npv": -964402.8149831421,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "ebfae4f0cc0e7e269e64c02b2b1d6387c13090a2a0d63c89b17fa17cdb0e9eee",
+          "stabilizedFreeCash": 243324.5052631579,
+          "npv": 344952.8053507166,
+          "projectPaybackYears": 5.054950703042089
+        }
+      }
+    },
+    {
+      "id": "net-john-day",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "120a3511c9fa81cdcc280aee2074744e22a5a63cc7b6f8e9c6c67a21e2fa234d",
+          "stabilizedFreeCash": -77758.8,
+          "npv": -1769938.2374053202,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "d456f3fbf003bac05efa3c367dc9f39860e902a2e770037a5d9b4748d2598a46",
+          "stabilizedFreeCash": 35931.82608695653,
+          "npv": -973007.9175432713,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "b414ee3ee69030cb81ece5232b2e70b557dac5c90c490f1bad944aa2e1375bf6",
+          "stabilizedFreeCash": 241258.98947368423,
+          "npv": 333136.6743569521,
+          "projectPaybackYears": 5.091807127208655
+        }
+      }
+    },
+    {
+      "id": "net-challis",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "79678d6156b5690b431cd805c6ed67fde676e7b0747241ac233612381713b539",
+          "stabilizedFreeCash": -75306,
+          "npv": -1757840.9770181389,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "d28dfd037331a83f96845c5e22d60b760a13e5775fd6246c30a9c55e520baf93",
+          "stabilizedFreeCash": 42330.4347826087,
+          "npv": -938587.5073027546,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "ea57c3ea1e508e266f23f6a4306b631292c97b1febc7b06ef91faaf2b96afe4f",
+          "stabilizedFreeCash": 249521.05263157893,
+          "npv": 380401.1983320102,
+          "projectPaybackYears": 4.948042565757557
+        }
+      }
+    },
+    {
+      "id": "net-eureka",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "6d8c5677414e0d990fb8bdf825802bb2bc1d3ec43a6e10147eeb054406f75687",
+          "stabilizedFreeCash": -74167.2,
+          "npv": -1752224.3918383762,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "15286a1a507c582b1485c41778d8ea8b0dcc954a62ee895d92733ca202cf01a8",
+          "stabilizedFreeCash": 45301.21739130435,
+          "npv": -922606.602548229,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "b7811c7f7aa6aec65ea22c3819e7fc7e8022d786dcf77692c065468c307bb6f5",
+          "stabilizedFreeCash": 253357.01052631577,
+          "npv": 402345.44160614436,
+          "projectPaybackYears": 4.884482001599076
+        }
+      }
+    },
+    {
+      "id": "net-chama",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "11f9e51235b8964654adf884331e8479fc8a5c3b7a34530e7dceb88a8ca0ce29",
+          "stabilizedFreeCash": -78839.2,
+          "npv": -1775266.792575864,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "6faf8f0f4165afc8f519a9eac64b2c36a4020ced7fce4655ada18c08d1fed1ba",
+          "stabilizedFreeCash": 33113.39130434784,
+          "npv": -988169.2887206416,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "49ec8c0ccc2e3604ce765632b17399000a5eb5f8b31262345fe51cccf9e854ae",
+          "stabilizedFreeCash": 237619.74736842106,
+          "npv": 312317.7768917478,
+          "projectPaybackYears": 5.1583036515306455
+        }
+      }
+    },
+    {
+      "id": "net-machias",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "4189a10ba962702220d6137ada0a46736be679f216fa5e005dc1c2ae4917c3ca",
+          "stabilizedFreeCash": -113499.6,
+          "npv": -1946212.603047104,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "ba0251591d3ecf39fa73d1a5f5f4f5a77c15236f9787be3283436ad131587205",
+          "stabilizedFreeCash": -57305.04347826089,
+          "npv": -1474562.4667622296,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "e49da97cee5a8a13cd2857062366ce4b713ba07f0eb86308bc4ab6cebd3cc3ca",
+          "stabilizedFreeCash": 120868.92631578946,
+          "npv": -355574.9607081813,
+          "projectPaybackYears": 9.416412716062673
+        }
+      }
+    },
+    {
+      "id": "net-elkins",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "52040936e3ff4f2cf2ef99be4cf561455e025654e3346cca43abcf34ad5712a7",
+          "stabilizedFreeCash": -80824.8,
+          "npv": -1785059.8128892966,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "885c23c8772c0aab6907c9c630712c1ecbe183da2ad819181a7259e531df3f89",
+          "stabilizedFreeCash": 27933.565217391297,
+          "npv": -1016033.4303439175,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "3b469eb81646533cc4fe4da1434a2b02e6f730570457afe7e9cce2326463b3f6",
+          "stabilizedFreeCash": 230931.4105263158,
+          "npv": 274056.0193881293,
+          "projectPaybackYears": 5.2859788762067605
+        }
+      }
+    },
+    {
+      "id": "net-mountain-view",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "cb29d67a1fc42c42044d8918b4a05772da4b650086cfa19c9cde92f5129a3940",
+          "stabilizedFreeCash": -80562,
+          "npv": -1783763.6778478127,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "593a9d7a3163bb6bca2e6be99ca5abc6e2cb31d18bd099f8810ea393d74a89fd",
+          "stabilizedFreeCash": 28619.130434782608,
+          "npv": -1012345.5292467192,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "ab88556c7e14440ba996e89555b991eed61b4149abbef75969852eac6487e46c",
+          "stabilizedFreeCash": 231816.63157894736,
+          "npv": 279120.0755283141,
+          "projectPaybackYears": 5.268657668629198
+        }
+      }
+    },
+    {
+      "id": "net-austin",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "6d8c5677414e0d990fb8bdf825802bb2bc1d3ec43a6e10147eeb054406f75687",
+          "stabilizedFreeCash": -74167.2,
+          "npv": -1752224.3918383762,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "15286a1a507c582b1485c41778d8ea8b0dcc954a62ee895d92733ca202cf01a8",
+          "stabilizedFreeCash": 45301.21739130435,
+          "npv": -922606.602548229,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "b7811c7f7aa6aec65ea22c3819e7fc7e8022d786dcf77692c065468c307bb6f5",
+          "stabilizedFreeCash": 253357.01052631577,
+          "npv": 402345.44160614436,
+          "projectPaybackYears": 4.884482001599076
+        }
+      }
+    },
+    {
+      "id": "net-chinle",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "ef1f2689f18995b838eae8cf334ff55d4cdda4e31f622f775c04fd665baf36c7",
+          "stabilizedFreeCash": -82693.6,
+          "npv": -1794276.7731842918,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "eea900f9111577b78b1f30b4d5ded30635ca7967c03407fff79bbc716b319ad7",
+          "stabilizedFreeCash": 23058.434782608703,
+          "npv": -1042258.5048128824,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "2134727636756f615e5be3fc40e920225c8e29bd05d30991af494da12b13f507",
+          "stabilizedFreeCash": 224636.5052631579,
+          "npv": 238044.95350237068,
+          "projectPaybackYears": 5.413088925697413
+        }
+      }
+    },
+    {
+      "id": "net-alamo",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "6d8c5677414e0d990fb8bdf825802bb2bc1d3ec43a6e10147eeb054406f75687",
+          "stabilizedFreeCash": -74167.2,
+          "npv": -1752224.3918383762,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "15286a1a507c582b1485c41778d8ea8b0dcc954a62ee895d92733ca202cf01a8",
+          "stabilizedFreeCash": 45301.21739130435,
+          "npv": -922606.602548229,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "b7811c7f7aa6aec65ea22c3819e7fc7e8022d786dcf77692c065468c307bb6f5",
+          "stabilizedFreeCash": 253357.01052631577,
+          "npv": 402345.44160614436,
+          "projectPaybackYears": 4.884482001599076
+        }
+      }
+    },
+    {
+      "id": "net-colebrook",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "7624300694c7acd2a568da11bc540e48b13e30d5ea2666dad0b2c4ddb1b21ea3",
+          "stabilizedFreeCash": -109324,
+          "npv": -1925618.457387974,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "0cf5a45c9500bfe447b686f2a69af97ab9e13c92d950e78ab2cc98743c82a6cd",
+          "stabilizedFreeCash": -46412.17391304349,
+          "npv": -1415965.8159956355,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "5cbbf7760083fdd3e6623eee5bb685e056abfea293a8f6ff220dd8fb8824b5ca",
+          "stabilizedFreeCash": 134934.1052631579,
+          "npv": -275112.7353696894,
+          "projectPaybackYears": 8.513048474343034
+        }
+      }
+    },
+    {
+      "id": "net-greenville",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "4189a10ba962702220d6137ada0a46736be679f216fa5e005dc1c2ae4917c3ca",
+          "stabilizedFreeCash": -113499.6,
+          "npv": -1946212.603047104,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "ba0251591d3ecf39fa73d1a5f5f4f5a77c15236f9787be3283436ad131587205",
+          "stabilizedFreeCash": -57305.04347826089,
+          "npv": -1474562.4667622296,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "e49da97cee5a8a13cd2857062366ce4b713ba07f0eb86308bc4ab6cebd3cc3ca",
+          "stabilizedFreeCash": 120868.92631578946,
+          "npv": -355574.9607081813,
+          "projectPaybackYears": 9.416412716062673
+        }
+      }
+    },
+    {
+      "id": "net-republic",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "7919fe5d557c0fa13140af6f03d7f03ef46d85ebc5b5f8e4b77eb1d027f330c6",
+          "stabilizedFreeCash": -81467.2,
+          "npv": -1788228.1429907016,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "94c83925d5df9dee2848a2d78e26d78c7d76395a901a557ed87b28f962004a9c",
+          "stabilizedFreeCash": 26257.739130434784,
+          "npv": -1025048.2996926241,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "07f43a2f493116ed7b8a7c230440976364ca71ee68e668371a632a8a62bfed16",
+          "stabilizedFreeCash": 228767.53684210527,
+          "npv": 261677.21548989997,
+          "projectPaybackYears": 5.328883938078075
+        }
+      }
+    },
+    {
+      "id": "heb-ronaldreagan",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "57e4ad021b6cde6667f598ca00bde5aeafcf0688d4113328c3f8239b6e29db52",
+          "stabilizedFreeCash": -71948,
+          "npv": -1741279.2514880693,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "e2c4b61e221a31dc7d6e335f5f39e14c6e02ea4812a6b70c421869b71ea5ead2",
+          "stabilizedFreeCash": 51090.4347826087,
+          "npv": -891464.3266163327,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "daa2a3f852df23e872ea278281e69bf03592e482a555e42e3412cf6a4fd221b1",
+          "stabilizedFreeCash": 260832.2105263158,
+          "npv": 445108.58234548266,
+          "projectPaybackYears": 4.76599172849979
+        }
+      }
+    },
+    {
+      "id": "winco-brushprairie",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "7919fe5d557c0fa13140af6f03d7f03ef46d85ebc5b5f8e4b77eb1d027f330c6",
+          "stabilizedFreeCash": -81467.2,
+          "npv": -1788228.1429907016,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "94c83925d5df9dee2848a2d78e26d78c7d76395a901a557ed87b28f962004a9c",
+          "stabilizedFreeCash": 26257.739130434784,
+          "npv": -1025048.2996926241,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "07f43a2f493116ed7b8a7c230440976364ca71ee68e668371a632a8a62bfed16",
+          "stabilizedFreeCash": 228767.53684210527,
+          "npv": 261677.21548989997,
+          "projectPaybackYears": 5.328883938078075
+        }
+      }
+    },
+    {
+      "id": "winco-bremerton",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "7919fe5d557c0fa13140af6f03d7f03ef46d85ebc5b5f8e4b77eb1d027f330c6",
+          "stabilizedFreeCash": -81467.2,
+          "npv": -1788228.1429907016,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "94c83925d5df9dee2848a2d78e26d78c7d76395a901a557ed87b28f962004a9c",
+          "stabilizedFreeCash": 26257.739130434784,
+          "npv": -1025048.2996926241,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "07f43a2f493116ed7b8a7c230440976364ca71ee68e668371a632a8a62bfed16",
+          "stabilizedFreeCash": 228767.53684210527,
+          "npv": 261677.21548989997,
+          "projectPaybackYears": 5.328883938078075
+        }
+      }
+    },
+    {
+      "id": "winco-vancouver",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "7919fe5d557c0fa13140af6f03d7f03ef46d85ebc5b5f8e4b77eb1d027f330c6",
+          "stabilizedFreeCash": -81467.2,
+          "npv": -1788228.1429907016,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "94c83925d5df9dee2848a2d78e26d78c7d76395a901a557ed87b28f962004a9c",
+          "stabilizedFreeCash": 26257.739130434784,
+          "npv": -1025048.2996926241,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "07f43a2f493116ed7b8a7c230440976364ca71ee68e668371a632a8a62bfed16",
+          "stabilizedFreeCash": 228767.53684210527,
+          "npv": 261677.21548989997,
+          "projectPaybackYears": 5.328883938078075
+        }
+      }
+    },
+    {
+      "id": "heb-mansfield",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "57e4ad021b6cde6667f598ca00bde5aeafcf0688d4113328c3f8239b6e29db52",
+          "stabilizedFreeCash": -71948,
+          "npv": -1741279.2514880693,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "e2c4b61e221a31dc7d6e335f5f39e14c6e02ea4812a6b70c421869b71ea5ead2",
+          "stabilizedFreeCash": 51090.4347826087,
+          "npv": -891464.3266163327,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "daa2a3f852df23e872ea278281e69bf03592e482a555e42e3412cf6a4fd221b1",
+          "stabilizedFreeCash": 260832.2105263158,
+          "npv": 445108.58234548266,
+          "projectPaybackYears": 4.76599172849979
+        }
+      }
+    },
+    {
+      "id": "heb-leander",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "57e4ad021b6cde6667f598ca00bde5aeafcf0688d4113328c3f8239b6e29db52",
+          "stabilizedFreeCash": -71948,
+          "npv": -1741279.2514880693,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "e2c4b61e221a31dc7d6e335f5f39e14c6e02ea4812a6b70c421869b71ea5ead2",
+          "stabilizedFreeCash": 51090.4347826087,
+          "npv": -891464.3266163327,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "daa2a3f852df23e872ea278281e69bf03592e482a555e42e3412cf6a4fd221b1",
+          "stabilizedFreeCash": 260832.2105263158,
+          "npv": 445108.58234548266,
+          "projectPaybackYears": 4.76599172849979
+        }
+      }
+    },
+    {
+      "id": "winco-edmonds",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "7919fe5d557c0fa13140af6f03d7f03ef46d85ebc5b5f8e4b77eb1d027f330c6",
+          "stabilizedFreeCash": -81467.2,
+          "npv": -1788228.1429907016,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "94c83925d5df9dee2848a2d78e26d78c7d76395a901a557ed87b28f962004a9c",
+          "stabilizedFreeCash": 26257.739130434784,
+          "npv": -1025048.2996926241,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "07f43a2f493116ed7b8a7c230440976364ca71ee68e668371a632a8a62bfed16",
+          "stabilizedFreeCash": 228767.53684210527,
+          "npv": 261677.21548989997,
+          "projectPaybackYears": 5.328883938078075
+        }
+      }
+    },
+    {
+      "id": "winco-everett",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "7919fe5d557c0fa13140af6f03d7f03ef46d85ebc5b5f8e4b77eb1d027f330c6",
+          "stabilizedFreeCash": -81467.2,
+          "npv": -1788228.1429907016,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "94c83925d5df9dee2848a2d78e26d78c7d76395a901a557ed87b28f962004a9c",
+          "stabilizedFreeCash": 26257.739130434784,
+          "npv": -1025048.2996926241,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "07f43a2f493116ed7b8a7c230440976364ca71ee68e668371a632a8a62bfed16",
+          "stabilizedFreeCash": 228767.53684210527,
+          "npv": 261677.21548989997,
+          "projectPaybackYears": 5.328883938078075
+        }
+      }
+    },
+    {
+      "id": "winco-tigard",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "120a3511c9fa81cdcc280aee2074744e22a5a63cc7b6f8e9c6c67a21e2fa234d",
+          "stabilizedFreeCash": -77758.8,
+          "npv": -1769938.2374053202,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "d456f3fbf003bac05efa3c367dc9f39860e902a2e770037a5d9b4748d2598a46",
+          "stabilizedFreeCash": 35931.82608695653,
+          "npv": -973007.9175432713,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "b414ee3ee69030cb81ece5232b2e70b557dac5c90c490f1bad944aa2e1375bf6",
+          "stabilizedFreeCash": 241258.98947368423,
+          "npv": 333136.6743569521,
+          "projectPaybackYears": 5.091807127208655
+        }
+      }
+    },
+    {
+      "id": "sprouts-suwanee",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "22acafccd717e47c20ee22115c5518599fb1c6a31d12aee794261db71f75cd98",
+          "stabilizedFreeCash": -81905.2,
+          "npv": -1790388.3680598408,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "c92dd1fcf6cb423f863a106a3d6b5b96e3cf51722efe05b2b7df28c080d9a644",
+          "stabilizedFreeCash": 25115.130434782608,
+          "npv": -1031194.8015212874,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "c8c8c517d1cbc9beb5489ab2527b1b6cf659a2622d1b811881e46c46d0030ce3",
+          "stabilizedFreeCash": 227292.16842105263,
+          "npv": 253237.12192292526,
+          "projectPaybackYears": 5.358605775010842
+        }
+      }
+    },
+    {
+      "id": "winco-medford",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "120a3511c9fa81cdcc280aee2074744e22a5a63cc7b6f8e9c6c67a21e2fa234d",
+          "stabilizedFreeCash": -77758.8,
+          "npv": -1769938.2374053202,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "d456f3fbf003bac05efa3c367dc9f39860e902a2e770037a5d9b4748d2598a46",
+          "stabilizedFreeCash": 35931.82608695653,
+          "npv": -973007.9175432713,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "b414ee3ee69030cb81ece5232b2e70b557dac5c90c490f1bad944aa2e1375bf6",
+          "stabilizedFreeCash": 241258.98947368423,
+          "npv": 333136.6743569521,
+          "projectPaybackYears": 5.091807127208655
+        }
+      }
+    },
+    {
+      "id": "winco-powell",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "120a3511c9fa81cdcc280aee2074744e22a5a63cc7b6f8e9c6c67a21e2fa234d",
+          "stabilizedFreeCash": -77758.8,
+          "npv": -1769938.2374053202,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "d456f3fbf003bac05efa3c367dc9f39860e902a2e770037a5d9b4748d2598a46",
+          "stabilizedFreeCash": 35931.82608695653,
+          "npv": -973007.9175432713,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "b414ee3ee69030cb81ece5232b2e70b557dac5c90c490f1bad944aa2e1375bf6",
+          "stabilizedFreeCash": 241258.98947368423,
+          "npv": 333136.6743569521,
+          "projectPaybackYears": 5.091807127208655
+        }
+      }
+    },
+    {
+      "id": "wegmans-wakeforest",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "c1e98a133754160a58d0c4a3dee41ecc6bcf506130c296971aa599ae0b7511ea",
+          "stabilizedFreeCash": -77817.2,
+          "npv": -1770226.2674145382,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "900e21d780b607ab963729e6d160d0adc345661281189069623c2b598982c9e3",
+          "stabilizedFreeCash": 35779.47826086955,
+          "npv": -973827.4511204268,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "e89dcac7b1784f84734102a7bec7f8b6994049f275d0c469c54a524421d39083",
+          "stabilizedFreeCash": 241062.2736842105,
+          "npv": 332011.3285480221,
+          "projectPaybackYears": 5.095350203459112
+        }
+      }
+    },
+    {
+      "id": "winco-spokanevalley",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "7919fe5d557c0fa13140af6f03d7f03ef46d85ebc5b5f8e4b77eb1d027f330c6",
+          "stabilizedFreeCash": -81467.2,
+          "npv": -1788228.1429907016,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "94c83925d5df9dee2848a2d78e26d78c7d76395a901a557ed87b28f962004a9c",
+          "stabilizedFreeCash": 26257.739130434784,
+          "npv": -1025048.2996926241,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "07f43a2f493116ed7b8a7c230440976364ca71ee68e668371a632a8a62bfed16",
+          "stabilizedFreeCash": 228767.53684210527,
+          "npv": 261677.21548989997,
+          "projectPaybackYears": 5.328883938078075
+        }
+      }
+    },
+    {
+      "id": "heb-crosscreek",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "57e4ad021b6cde6667f598ca00bde5aeafcf0688d4113328c3f8239b6e29db52",
+          "stabilizedFreeCash": -71948,
+          "npv": -1741279.2514880693,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "e2c4b61e221a31dc7d6e335f5f39e14c6e02ea4812a6b70c421869b71ea5ead2",
+          "stabilizedFreeCash": 51090.4347826087,
+          "npv": -891464.3266163327,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "daa2a3f852df23e872ea278281e69bf03592e482a555e42e3412cf6a4fd221b1",
+          "stabilizedFreeCash": 260832.2105263158,
+          "npv": 445108.58234548266,
+          "projectPaybackYears": 4.76599172849979
+        }
+      }
+    },
+    {
+      "id": "heb-elgin",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "57e4ad021b6cde6667f598ca00bde5aeafcf0688d4113328c3f8239b6e29db52",
+          "stabilizedFreeCash": -71948,
+          "npv": -1741279.2514880693,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "e2c4b61e221a31dc7d6e335f5f39e14c6e02ea4812a6b70c421869b71ea5ead2",
+          "stabilizedFreeCash": 51090.4347826087,
+          "npv": -891464.3266163327,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "daa2a3f852df23e872ea278281e69bf03592e482a555e42e3412cf6a4fd221b1",
+          "stabilizedFreeCash": 260832.2105263158,
+          "npv": 445108.58234548266,
+          "projectPaybackYears": 4.76599172849979
+        }
+      }
+    },
+    {
+      "id": "winco-gresham",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "120a3511c9fa81cdcc280aee2074744e22a5a63cc7b6f8e9c6c67a21e2fa234d",
+          "stabilizedFreeCash": -77758.8,
+          "npv": -1769938.2374053202,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "d456f3fbf003bac05efa3c367dc9f39860e902a2e770037a5d9b4748d2598a46",
+          "stabilizedFreeCash": 35931.82608695653,
+          "npv": -973007.9175432713,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "b414ee3ee69030cb81ece5232b2e70b557dac5c90c490f1bad944aa2e1375bf6",
+          "stabilizedFreeCash": 241258.98947368423,
+          "npv": 333136.6743569521,
+          "projectPaybackYears": 5.091807127208655
+        }
+      }
+    },
+    {
+      "id": "winco-puyallup",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "7919fe5d557c0fa13140af6f03d7f03ef46d85ebc5b5f8e4b77eb1d027f330c6",
+          "stabilizedFreeCash": -81467.2,
+          "npv": -1788228.1429907016,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "94c83925d5df9dee2848a2d78e26d78c7d76395a901a557ed87b28f962004a9c",
+          "stabilizedFreeCash": 26257.739130434784,
+          "npv": -1025048.2996926241,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "07f43a2f493116ed7b8a7c230440976364ca71ee68e668371a632a8a62bfed16",
+          "stabilizedFreeCash": 228767.53684210527,
+          "npv": 261677.21548989997,
+          "projectPaybackYears": 5.328883938078075
+        }
+      }
+    },
+    {
+      "id": "winco-keizer",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "120a3511c9fa81cdcc280aee2074744e22a5a63cc7b6f8e9c6c67a21e2fa234d",
+          "stabilizedFreeCash": -77758.8,
+          "npv": -1769938.2374053202,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "d456f3fbf003bac05efa3c367dc9f39860e902a2e770037a5d9b4748d2598a46",
+          "stabilizedFreeCash": 35931.82608695653,
+          "npv": -973007.9175432713,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "b414ee3ee69030cb81ece5232b2e70b557dac5c90c490f1bad944aa2e1375bf6",
+          "stabilizedFreeCash": 241258.98947368423,
+          "npv": 333136.6743569521,
+          "projectPaybackYears": 5.091807127208655
+        }
+      }
+    },
+    {
+      "id": "winco-hillsboro",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "120a3511c9fa81cdcc280aee2074744e22a5a63cc7b6f8e9c6c67a21e2fa234d",
+          "stabilizedFreeCash": -77758.8,
+          "npv": -1769938.2374053202,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "d456f3fbf003bac05efa3c367dc9f39860e902a2e770037a5d9b4748d2598a46",
+          "stabilizedFreeCash": 35931.82608695653,
+          "npv": -973007.9175432713,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "b414ee3ee69030cb81ece5232b2e70b557dac5c90c490f1bad944aa2e1375bf6",
+          "stabilizedFreeCash": 241258.98947368423,
+          "npv": 333136.6743569521,
+          "projectPaybackYears": 5.091807127208655
+        }
+      }
+    },
+    {
+      "id": "winco-oregoncity",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "120a3511c9fa81cdcc280aee2074744e22a5a63cc7b6f8e9c6c67a21e2fa234d",
+          "stabilizedFreeCash": -77758.8,
+          "npv": -1769938.2374053202,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "d456f3fbf003bac05efa3c367dc9f39860e902a2e770037a5d9b4748d2598a46",
+          "stabilizedFreeCash": 35931.82608695653,
+          "npv": -973007.9175432713,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "b414ee3ee69030cb81ece5232b2e70b557dac5c90c490f1bad944aa2e1375bf6",
+          "stabilizedFreeCash": 241258.98947368423,
+          "npv": 333136.6743569521,
+          "projectPaybackYears": 5.091807127208655
+        }
+      }
+    },
+    {
+      "id": "winco-longview",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "7919fe5d557c0fa13140af6f03d7f03ef46d85ebc5b5f8e4b77eb1d027f330c6",
+          "stabilizedFreeCash": -81467.2,
+          "npv": -1788228.1429907016,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "94c83925d5df9dee2848a2d78e26d78c7d76395a901a557ed87b28f962004a9c",
+          "stabilizedFreeCash": 26257.739130434784,
+          "npv": -1025048.2996926241,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "07f43a2f493116ed7b8a7c230440976364ca71ee68e668371a632a8a62bfed16",
+          "stabilizedFreeCash": 228767.53684210527,
+          "npv": 261677.21548989997,
+          "projectPaybackYears": 5.328883938078075
+        }
+      }
+    },
+    {
+      "id": "winco-marysville",
+      "decision": "pending",
+      "scenarios": {
+        "conservative": {
+          "inputHash": "7919fe5d557c0fa13140af6f03d7f03ef46d85ebc5b5f8e4b77eb1d027f330c6",
+          "stabilizedFreeCash": -81467.2,
+          "npv": -1788228.1429907016,
+          "projectPaybackYears": null
+        },
+        "base": {
+          "inputHash": "94c83925d5df9dee2848a2d78e26d78c7d76395a901a557ed87b28f962004a9c",
+          "stabilizedFreeCash": 26257.739130434784,
+          "npv": -1025048.2996926241,
+          "projectPaybackYears": null
+        },
+        "optimistic": {
+          "inputHash": "07f43a2f493116ed7b8a7c230440976364ca71ee68e668371a632a8a62bfed16",
+          "stabilizedFreeCash": 228767.53684210527,
+          "npv": 261677.21548989997,
+          "projectPaybackYears": 5.328883938078075
+        }
+      }
+    }
+  ]
+}

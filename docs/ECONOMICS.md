@@ -86,3 +86,12 @@ These tests assume 1,200/500/300 kW billed peaks, uniform monthly energy and cur
 Unresolved riders, taxes, power-factor penalties, resale permission, meter eligibility and connection scope are disclosed beside each result. Subtotals do not replace the main EIA screening scenarios or clear an evidence gate. Neither scenario family is a full utility bill or investment forecast. Complex PGE/PEC/Cowlitz tariff boundaries and expired/proposed rates remain evidence findings where an honest bill cannot be reconstructed from available load data.
 
 `model.js` computes these charges without adding demand to the all-in EIA proxy. `scripts/verify-economics.py` independently recomputes all 111 main scenarios and 18 tariff sensitivities.
+
+
+## Round-three inverse conditions
+
+The public app now computes one-variable boundaries for both the base and conservative numeric gates. It separately varies paid sessions, initial project capex, all-in purchased-energy price, the combined non-utility monthly fixed/holding allowance, and construction duration. Each calculation holds every other input fixed. The base boundary includes NPV; the conservative boundary includes positive steady free cash. Individual boundaries cannot be combined into a jointly feasible design.
+
+These are unconstrained algebraic conditions, not local forecasts. Extremely high required volume may exceed physical charger capacity. Implied average station grid input is required daily delivered energy divided by 24 and by (1−loss); it does not establish peak-service capacity or a utility commitment. Missing local measurements remain missing. `null` means no nonnegative solution in the declared domain; it is not a zero cost, zero demand or proof of parcel infeasibility.
+
+The $60,000 assumed annual fixed cost in the conservative scenario already exceeds its $51,392 assumed gross revenue before electricity/service/replacement. The universal conservative failure is therefore structural in that shared stress case. Do not describe it as empirical evidence that every real site is unprofitable. A site forecast requires evidence-supported local demand, price, scoped construction costs and utility conditions before the unchanged qualification gates can be applied to it.
