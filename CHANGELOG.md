@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.2 — 2026-10-30
+
+- Added content-based asset URLs so returning browsers receive updated CSS and model modules. Research data and investment conclusions are unchanged.
+
+
 ## 0.3.1 — 2026-10-30
 
 - Corrected the new three-column evidence table widths after live visual verification. Claims and calculations are unchanged.

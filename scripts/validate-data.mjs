@@ -109,3 +109,8 @@ for(const c of data.candidates){
 }
 fail(data.meta.reviewedThisRound===37 && data.meta.carriedForward===0 && data.meta.newFindings===claims,'New review statistics mismatch');
 console.log(`Round two: all ${diligence.sites.length} sites investigated, ${claims} classified findings; admission rules unchanged.`);
+
+const assetHash=name=>createHash('sha256').update(fs.readFileSync(new URL('../'+name,import.meta.url))).digest('hex').slice(0,12);
+const html=fs.readFileSync(new URL('../index.html',import.meta.url),'utf8'),app=fs.readFileSync(new URL('../app.js',import.meta.url),'utf8');
+for(const name of ['styles.css','app.js'])fail(html.includes('./'+name+'?v='+assetHash(name)),'Stale asset URL: '+name);
+for(const name of ['i18n.js','model.js'])fail(app.includes('./'+name+'?v='+assetHash(name)),'Stale module URL: '+name);

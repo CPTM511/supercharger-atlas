@@ -1,4 +1,4 @@
-import { t, localized, localField, getLanguage, setLanguage, applyTranslations } from './i18n.js';
+import { t, localized, localField, getLanguage, setLanguage, applyTranslations } from './i18n.js?v=7d56f52dd127';
 
 const $ = (id) => document.getElementById(id);
 const escapeHTML = (value) => String(value ?? '').replace(/[&<>"']/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[character]));
@@ -237,7 +237,7 @@ async function exportCSV() {
       for (const scenario of scenarios) { const values = candidate.economics?.scenarios?.[scenario]; record.push(...inputKeys.map((key) => { const value = values?.inputs?.[key]; return key === 'tariffMode' && value ? t(value === 'fully_burdened' ? 'fullyBurdened' : 'energyOnly') : Array.isArray(value) ? value.join(' | ') : value ?? t('unknown'); }), ...availableOutputs.filter((definition) => !definition.baseOnly || scenario === 'base').map((definition) => values?.outputs?.[definition.key] ?? (definition.baseOnly ? candidate.economics?.requiredSessionsForBaseGate ?? t('noFiniteBaseVolume') : definition.key === 'projectPaybackYears' ? t('projectNoPayback') : t('unknown')))); }
       return record;
     });
-    const { csvCell } = await import('./model.js');
+    const { csvCell } = await import('./model.js?v=df3a9093413c');
     const csv = '\ufeff' + [columns, ...records].map((record) => record.map(csvCell).join(',')).join('\r\n');
     const url = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8;' }));
     const anchor = document.createElement('a'); anchor.href = url; anchor.download = `charge-atlas-${state.mode}-${$('status-filter').value}-${getLanguage()}-${String(state.data.meta?.asOf || 'snapshot').slice(0, 10)}.csv`; document.body.append(anchor); anchor.click(); anchor.remove(); setTimeout(() => URL.revokeObjectURL(url), 1000); toast(t('exportSuccess', { count: records.length }));
@@ -312,7 +312,7 @@ function updateEconomics() {
 }
 async function initializeEconomics() {
   try {
-    const module = await import('./model.js'); if (typeof module.calculateEconomics !== 'function' || !module.DEFAULT_SCENARIO) throw new Error();
+    const module = await import('./model.js?v=df3a9093413c'); if (typeof module.calculateEconomics !== 'function' || !module.DEFAULT_SCENARIO) throw new Error();
     state.economics = module.calculateEconomics; state.defaultScenario = module.DEFAULT_SCENARIO; $('tariff-mode').value = state.defaultScenario.tariffMode || 'energy_only'; renderScenarioInputs(); syncTariffMode(); updateEconomics();
   } catch { $('scenario-error').textContent = t('calculatorUnavailable'); $('scenario-error').hidden = false; $('reset-scenario').disabled = true; }
 }

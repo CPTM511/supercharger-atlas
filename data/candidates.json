@@ -1,7 +1,7 @@
 {
   "meta": {
     "asOf": "2026-10-30",
-    "version": "0.3.1",
+    "version": "0.3.2",
     "poolCount": 37,
     "description": "Round two investigated all 37 properties. Claim-level records distinguish direct and secondary sources, inferences, estimates and unresolved attempts. Both qualified lists retain all evidence and investment gates.",
     "limitations": [

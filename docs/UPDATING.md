@@ -46,3 +46,5 @@ The PDF embeds the SHA-256 of its candidate input. CI rejects a stale PDF after 
 ## Claim-level diligence
 
 Maintain `data/evidence-round-2.json` with one record per property and exact source URLs, retrieval/source dates, evidence class, claim scope, limitations and unsuccessful attempts. A failed fetch is not evidence that a record or permit does not exist. Do not translate tax ownership into a signed charger lease or a city service-area map into spare electrical capacity. Synchronize each candidate's `diligence` record and run `node scripts/build-reassessment.mjs` to regenerate the reassessment report. Retain round-one records and prior results as historical evidence.
+
+After editing CSS or JavaScript, run `node scripts/version-assets.mjs` before validation and publication. It versions first-party stylesheet, app and nested module URLs by content hash, avoiding stale mixed releases in returning browsers.
