@@ -40,20 +40,34 @@ def scenario(c, key):
     pay = f"{o['projectPaybackYears']:.2f}"+text(' yr', ' 年') if o['projectPaybackYears'] is not None else text('No recovery*', '期内未回本*')
     return p(pay+'<br/>'+cash(o['stabilizedFreeCash']))
 notes = {
- 'net-eureka':('Specific grocery verified; land, utility scope and paid demand unresolved.','实体商店已核；土地、电力范围与付费需求待核。'),
- 'net-challis':('Operating grocery; no verified site rights or DCFC connection quote.','营业商店；尚无场地授权与快充接网报价。'),
- 'net-john-day':('Store verified; nearby charging and incremental demand need validation.','商店已核；附近供给与增量需求仍待验证。'),
- 'net-hanksville':('Owner confirms RV outlets only, restricted hours; dedicated DCFC is unproven.','业主称仅有营地插座、限时开放；专用快充未证实。'),
- 'net-machias':('Official prior-project cancellation; cause and site implications remain unknown.','官方确认此前项目取消；原因及对本址影响未知。'),
- 'net-chama':('Store identity checked; mountain-route demand and grid capacity unresolved.','商店身份已核；山地路线需求和电力容量待核。'),
- 'net-austin':('Existing charging host: assess upgrade/co-location, not empty greenfield.','已有充电设施：按改造或共址核查，不当作空白新建。'),
- 'net-mountain-view':('Store identity checked; parking rights and measured demand unresolved.','商店身份已核；停车位权利与实测需求待核。'),
- 'net-elkins':('Store identity checked; incremental service and grid capacity unresolved.','商店身份已核；增量服务价值和电力容量待核。'),
- 'net-chinle':('Retail node checked; land authority, consent and demand unresolved.','零售节点已核；土地权限、同意与需求待核。'),
- 'heb-mansfield':('City EVCS permit at 1715 E Broad, distinct from this 1670 address; supply unresolved.','市府1715 E Broad充电许可与本址1670号不同；新增供给待核。'),
- 'heb-leander':('Specific store verified; demand may overlap Ronald Reagan candidate.','具体商店已核；需求可能与Ronald Reagan候选重叠。'),
- 'heb-ronaldreagan':('Specific store verified; alternative to Leander, not additive demand.','具体商店已核；与Leander可能互为替代，需求不可叠加。'),
+ 'net-eureka':('Utility EV rate found; full tariff eligibility and site capacity unconfirmed.','找到电力EV费率；完整适用性及本站容量未确认。'),
+ 'net-challis':('Local utility inquiry route found; no signed rights or capacity offer.','找到当地供电查询对象；没有已签权利或容量承诺。'),
+ 'net-john-day':('OTEC G3 tariff and utility relationship found; capacity eligibility still blocks.','找到OTEC G3费率及本地供电关联；容量适用仍待核。'),
+ 'net-hanksville':('Garkane EV tariff found; effective date, load shape and access need confirmation.','找到Garkane EV费率；生效日、负荷形态及开放待确认。'),
+ 'net-machias':('Tax parcel/owner record found; prior canceled project still requires explanation.','找到税籍地块和业主记录；前项目取消原因仍须解释。'),
+ 'net-chama':('NORA proposed increase found; approval/current applicable tariff unconfirmed.','找到NORA拟涨价通知；批准及当前适用费率未确认。'),
+ 'net-austin':('Existing highway charging host; upgrade rights and utility scope unresolved.','已有公路充电设施；改造权利及电力范围待核。'),
+ 'net-mountain-view':('Utility/program leads found; no complete grid or EPC quote.','找到供电/项目线索；仍无完整接网或工程报价。'),
+ 'net-elkins':('Published utility terms add detail; incremental demand remains unmeasured.','公开电力条款补齐细节；增量需求仍未实测。'),
+ 'net-chinle':('Tribal authority and utility context matter; charger land consent unverified.','须核部落土地授权及供电关系；充电用地同意未证实。'),
+ 'heb-mansfield':('Owner filing found; reported gas generation is NOT spare charger capacity.','找到业主备案；披露的燃气发电不等于充电可用容量。'),
+ 'heb-leander':('Fulfillment expansion adds parking/layout constraints; rights and load unverified.','履约扩建增加停车及布局约束；权利和负荷待核。'),
+ 'heb-ronaldreagan':('AEW transaction and ground leases found; waterway/easement constraints.','找到AEW交易及地租结构；有水道和地役权约束。'),
+ 'winco-brushprairie':('Clark tariff subtotal tested; resale approval and capacity remain unverified.','已算Clark费率小计；转售许可及容量仍未确认。'),
+ 'winco-vancouver':('Clark tariff subtotal tested; meter eligibility and connection quote missing.','已算Clark费率小计；缺电表适用和接网报价。'),
+ 'winco-bremerton':('Permit links store to parcel; parking rights and grid capacity unresolved.','许可关联商店与地块；停车权利和电力容量待核。'),
+ 'winco-edmonds':('Existing EVgo supply confirmed; Sno standard tariff sensitivity added.','证实既有EVgo供给；新增Sno常规费率敏感性。'),
+ 'winco-everett':('Sno tariff tested; original parcel source inaccessible, ownership not asserted.','已测Sno费率；地块原始来源不可访问，不断言产权。'),
+ 'winco-tigard':('Same address links two tax accounts; exact charging parcel must be fixed.','同址关联两个税籍账户；须明确充电拟用地块。'),
+ 'sprouts-suwanee':('SEC parking/tenant lease found; 2029 expiry needs new enforceable site term.','找到SEC停车及租约；2029到期须另核可执行用地期。'),
 }
+
+notes.update({
+ 'winco-puyallup':('Parcel source inaccessible; load-dependent rate assignment unresolved.','地块来源无法访问；随负荷变化的适用费率待核。'),
+ 'winco-hillsboro':('Store-alteration filing found; declared cost is not a charger quote.','找到商店改造备案；申报金额不是充电工程报价。'),
+ 'winco-oregoncity':('Tenant plan found; undated traffic claims are not paid charging demand.','找到租户物业图；无日期车流宣传不是付费充电需求。'),
+ 'heb-elgin':('Owner filing found; East/West highway address discrepancy unresolved.','找到业主备案；公路地址东西方向冲突未解决。'),
+})
 def finding(c):
     default = ('Store/property identity checked. Written land, utility, total-cost and demand evidence is still absent.', '商店或物业身份已核；仍缺书面场地、电力、完整成本与需求证据。')
     a, b = notes.get(c['id'], default)
@@ -67,11 +81,11 @@ for page, mode in enumerate(['network','investor'],1):
     c.setFillColor(ink); c.setFont(FONT,18)
     c.drawString(margin,H-35,'CHARGE ATLAS / '+text('NETWORK LENS' if mode=='network' else 'INVESTOR LENS', '网络视角' if mode=='network' else '投资视角'))
     c.setFont(FONT,8); c.drawRightString(W-margin,H-33,f"{data['meta']['asOf']} | v{data['meta']['version']} | {page}/2")
-    lead = text('0 QUALIFIED. All 20 previous shortlist sites remain pending; 3 replacement prospects also remain pending. No quota is filled.', '合格数：0。原两份名单20个场地均待核，3个替补也未合格；不为凑数放宽门槛。')
+    lead = text('0 QUALIFIED. All 37 properties investigated in round two; all remain pending. No quota is filled.', '合格数：0。第二轮调查全部37处，均继续待核；不为凑数放宽门槛。')
     b=p('<b>'+lead+'</b>'); _,bh=b.wrap(width,50); b.drawOn(c,margin,H-55-bh)
     policy=text('Shared gate: base payback ≤6 yr; conservative ≤8 yr; base NPV ≥0 at 10% real; positive conservative free cash; all six evidence gates verified. These are chosen underwriting rules, not Tesla criteria or an industry standard.', '统一硬门槛：基准回本≤6年、保守≤8年；基准净现值按10%实际贴现率≥0；保守现金流为正；六类关键证据全部核实。这是明确的投资筛选政策，并非特斯拉标准或行业事实。')
     b=p(policy,small); _,bh=b.wrap(width,45); b.drawOn(c,margin,H-76-bh)
-    headers=text(['Prior order†','Property / complete address','Conservative\nPayback / cash‡','Base\nPayback / cash‡','Optimistic\nPayback / cash‡','Round-one finding / pending evidence'],['历史顺序†','场地 / 完整地址','保守\n回本 / 年现金‡','基准\n回本 / 年现金‡','乐观\n回本 / 年现金‡','本轮核查 / 尚缺证据'])
+    headers=text(['Prior order†','Property / complete address','Conservative\nPayback / cash‡','Base\nPayback / cash‡','Optimistic\nPayback / cash‡','Round-two finding / remaining gap'],['历史顺序†','场地 / 完整地址','保守\n回本 / 年现金‡','基准\n回本 / 年现金‡','乐观\n回本 / 年现金‡','本轮核查 / 尚缺证据'])
     rows=[[p(escape(h).replace('\n','<br/>'),head) for h in headers]]
     prior=sorted([x for x in data['candidates'] if x['previousRanks'].get(mode)],key=lambda x:x['previousRanks'][mode])
     for x in prior:
@@ -82,7 +96,7 @@ for page, mode in enumerate(['network','investor'],1):
     if th > 365: raise ValueError(f'Table too tall: {th}')
     bottom=H-110-th; table.drawOn(c,margin,bottom)
     foot=text('† Historical research order only; all rows are pending, not qualified recommendations. ‡ Stabilized annual cash after replacement allowance, in USD thousands. * No recovery within construction plus 10 operating years. Payback starts at first spend and includes construction holding costs, ramp and replacement. No site has verified rights, grid capacity, an installed-cost quote or paid demand.', '† 仅保留历史研究顺序；全部待核，并非合格推荐。‡ 稳定期扣除更新预留后的年现金，美元千元。* 在施工期加10个运营年内未回本。回本从首次投资起算，含施工持有费用、爬坡与更新预留。所有场地均缺已核实的权利、电力容量、完整安装报价或付费需求。')
-    assumptions=text('Stress inputs: 8 stalls; 40 kWh/session; 2/4/8 sessions per stall/day; prices $0.40/0.45/0.50; capex $1.269m/1.128m/1.034m. Electricity uses the EIA state commercial mean ×2/1.5/1, not a parcel tariff. Same-state sites share assumptions. All scenario sets fail the combined hurdle; optimistic recovery alone does not qualify a site.', '压力输入：8枪、40kWh/次、每天每枪2/4/8次；售价$0.40/0.45/0.50；投资$126.9万/112.8万/103.4万。电费采用EIA州商业均价×2/1.5/1，并非本站费率。同州共用假设。全部情景组均未过组合门槛，乐观回本不能单独使场地合格。')
+    assumptions=text('Stress inputs: 8 stalls; 22/40/40 kWh/session; 2/4/8 sessions per stall/day; prices $0.40/0.45/0.50; capex $1.269m/1.128m/1.034m. Electricity uses the EIA state commercial mean ×2/1.5/1, not a parcel tariff. Same-state sites share assumptions. All scenario sets fail the combined hurdle; optimistic recovery alone does not qualify a site.', '压力输入：8枪、22/40/40kWh/次、每天每枪2/4/8次；售价$0.40/0.45/0.50；投资$126.9万/112.8万/103.4万。电费采用EIA州商业均价×2/1.5/1，并非本站费率。同州共用假设。全部情景组均未过组合门槛，乐观回本不能单独使场地合格。')
     b=p(foot+'<br/>'+assumptions,small); _,bh=b.wrap(width,100)
     if bottom-bh-8<38: raise ValueError('Footer collision; revise layout')
     b.drawOn(c,margin,bottom-8-bh)

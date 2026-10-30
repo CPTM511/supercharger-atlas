@@ -50,3 +50,17 @@ test('CSV escapes formulas but preserves numeric coordinates', () => {
   assert.equal(csvCell('=SUM(A1)'), '"\'=SUM(A1)"');
   assert.equal(csvCell('A, "B"'), '"A, ""B"""');
 });
+
+test('utility daily charge, demand exemption and minimum are separate and reconcile', () => {
+  const r=calculateEconomics({sessionsPerStallDay:0,demandPerKwMonth:7.21,billedPeakKw:300,demandFreeKw:100,utilityFixedDaily:4.85,minimumBillDaily:100});
+  assert.equal(r.demandCost,200*7.21*12);
+  assert.equal(r.utilityFixedCost,4.85*365);
+  assert.equal(r.electricityCost,36500);
+  assert.equal(r.operatingCash,-36500-30000);
+  assert.throws(()=>calculateEconomics({tariffMode:'fully_burdened',demandPerKwMonth:0,utilityFixedDaily:4.85}), /includes demand/);
+});
+test('break-even remains correct with a binding minimum and free demand band', () => {
+  const x={demandFreeKw:100,utilityFixedDaily:4.85,minimumBillDaily:1000};
+  const v=calculateEconomics(x).breakEvenSessionsPerStallDay;
+  assert.ok(Math.abs(calculateEconomics({...x,sessionsPerStallDay:v}).operatingCash)<1e-6);
+});

@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.0 — 2026-10-30
+
+- Investigated all 37 properties with claim-level source classes, limitations and remaining decision blockers.
+- Added property, lease, permit and utility evidence, including contradictory records and inaccessible sources without treating absence as a finding.
+- Recalculated all three cases with an analogue-informed 22 kWh conservative session assumption; retained base/optimistic assumptions where no local measurements exist.
+- Added six-property published-tariff subtotal sensitivities, before/after comparisons and an observed-network throughput cross-check.
+- Preserved both investment gates and the pending/qualified distinction; no sites admitted to fill a quota.
+
+
 ## 0.2.0 — 2026-10-30
 
 - Apply the same hard payback, NPV and evidence gates to both lenses. Both qualified lists now correctly contain zero properties; previous ranks are historical research priorities only.

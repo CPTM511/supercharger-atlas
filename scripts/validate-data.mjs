@@ -82,4 +82,30 @@ for (const c of data.candidates) {
   for (const text of [...Object.values(c.thesis),...Object.values(c.rankRationale),...c.unknowns,...c.killCriteria,...c.facts.map(f=>f.claim)]) fail(!hasChinese.test(text), `Non-English canonical analysis: ${c.id}`);
 }
 fail(!hasChinese.test(fs.readFileSync(new URL('../README.md',import.meta.url),'utf8')), 'GitHub homepage must be English');
-console.log(`Review coverage: ${round.reviewedIds.length} newly reviewed, ${data.candidates.length-round.reviewedIds.length} carried forward; qualified ${data.candidates.filter(c=>c.review.decision==='qualified').length}.`);
+console.log(`Historical round-one coverage retained: ${round.reviewedIds.length}.`);
+
+const diligence=JSON.parse(fs.readFileSync(new URL('../data/evidence-round-2.json',import.meta.url)));
+fail(diligence.sites.length===data.candidates.length && new Set(diligence.sites.map(c=>c.id)).size===data.candidates.length,'Round-two coverage mismatch');
+let claims=0;
+for(const c of data.candidates){
+ const record=diligence.sites.find(s=>s.id===c.id);
+ assert.deepEqual(c.diligence,record,`Diligence copy stale: ${c.id}`);
+ fail(record.findings.length>=2 && record.remainingCritical.length && record.attempts.length,`Insufficient documented investigation: ${c.id}`);
+ fail(record.publicResearchConclusion.en && record.publicResearchConclusion.zh,`Missing conclusion: ${c.id}`);
+ for(const f of record.findings){
+  claims++;
+  fail(['direct','secondary','inference','estimate','unresolved'].includes(f.evidenceClass),`Invalid evidence class: ${c.id}`);
+  fail(['parcel','corridor','utility','regional'].includes(f.locality),`Invalid claim scope: ${c.id}`);
+  fail(f.claim.en && f.claim.zh && f.limitation.en && f.limitation.zh,`Missing claim/limitation translation: ${c.id}`);
+  if(['direct','secondary'].includes(f.evidenceClass))fail(f.sourceIds.length>0,`Unsupported sourced claim: ${c.id}`);
+  for(const id of f.sourceIds)fail(sourceIds.has(id),`Missing claim source ${id}`);
+ }
+ for(const p of c.economics.tariffSensitivities){
+  fail(p.limitation.en && p.limitation.zh,'Tariff subtotal limitation missing');
+  for(const id of p.sourceIds)fail(sourceIds.has(id),`Missing tariff source ${id}`);
+ }
+ const q=c.economics.throughputComparison;
+ if(q.ratio!==null)fail(Math.abs(q.ratio-q.requiredKwhPerStallDay/q.observedNetworkKwhPerStallDay)<1e-10,'Throughput ratio mismatch');
+}
+fail(data.meta.reviewedThisRound===37 && data.meta.carriedForward===0 && data.meta.newFindings===claims,'New review statistics mismatch');
+console.log(`Round two: all ${diligence.sites.length} sites investigated, ${claims} classified findings; admission rules unchanged.`);

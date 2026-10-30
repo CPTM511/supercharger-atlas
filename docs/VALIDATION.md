@@ -1,26 +1,23 @@
-# Release verification — v0.2.0, 2026-10-30
+# Release verification — v0.3.0, 2026-10-30
 
-These checks cover the research product and arithmetic. They do not establish commercial feasibility.
+## Analytical result
 
-## Evidence and calculation coverage
+Zero qualified, 37 pending, zero formally rejected. Round two investigated every property and added 98 classified findings: 72 direct, 12 secondary, 10 inferences and 4 unresolved attempts. These are claim counts, not completed investment gates. There are 257 source identifiers covering 255 distinct URLs; aliases do not inflate the displayed source count.
 
-- Round one reviewed all 20 previous shortlist properties and 3 replacement prospects. The other 14 reserves retain earlier evidence; no new site review is claimed for them. Public identity and supply checks do not establish land rights, available grid capacity, complete project costs or paying demand.
-- Reused the same-date frozen AFDC inventory with recorded query scope and response hashes: 15,882 public E/DCFC records and 643 P/T records. This is not a live charging test. Recomputed every available coordinate's nearest Tesla E-record distance and 10-mile DCFC-record count against the normalized government snapshot.
-- Validated 37 unique properties, 169 resolvable source references, evidence labels, review coverage, English canonical analysis, translated review fields, and both hard-gated lists. Both qualified counts are zero. A source reference count is not a count of independently verified commercial facts.
-- Fourteen model tests cover energy/cost reconciliation, break-even math, nonpositive unit contribution, zero-volume costs, duplicate demand charges, invalid inputs, distance units, CSV formula escaping, construction/ramp/replacement cash flows, holding costs, model horizon and evidence-first qualification. A favorable optimistic case cannot rescue the required downside tests; thresholds use unrounded values.
-- A separate standard-library Python implementation independently recomputed all 111 scenarios from their published inputs, including regional rate binding, construction holding cost, cash flow, NPV and project payback. No JavaScript model code is imported into this audit.
+## Independent review
 
-## Product checks
+A separate reviewer inspected all 98 claims and independently recomputed the nine distinct profile/scenario combinations underlying the 18 tariff sensitivities. Ninety component/output comparisons agreed to less than $0.000001. The reviewer transcribed tariff inputs into a separate Decimal calculation without importing the production JS or the Python checker. Another reviewer reopened consequential South property/lease/planning originals.
 
-- Actual browser checks covered English default, both lenses, qualified/rejected empty states, pending-list search and no matches, site selection, nearby-supply overlay, three-property comparison and refusal of a fourth, translated site detail, scenario tables and policy, and locale-specific PDF links.
-- Compared Mansfield's visible calculations with the model: base annual free cash about $51,090, no recovery within the modeled horizon, and optimistic project payback about 4.77 years. These are assumed-condition results, not verified returns.
-- Checked the general sandbox's separate-demand and all-in modes, reset and invalid zero-stall input. All-in mode removes separate demand charges. It remains clearly separate from the selected site's scenario.
-- Actual English CSV export reported 37 sites. Static export checks covered both locales, 38 rows including the header and 118 fields per row. This release does not claim a separately inspected browser-saved CSV file.
-- Mobile inspection at 390 pixels exposed page overflow from the new tables. The grid minimum and detail sizing were corrected. Both English and Chinese then measured a 390-pixel page width; wide tables scroll inside their own containers. Desktop and mobile layouts were visually inspected. No console warning/error appeared in the final local smoke check.
-- Both generated PDF briefs contain exactly two pages. Text extraction and all four rendered pages were inspected for glyphs, missing text, clipping, tables and footers. Each PDF embeds its candidate-data SHA-256, and CI rejects a stale English or Chinese brief. The validated download path is the generated PDF; native browser print is optional.
+Corrections incorporated: the throughput ratio now uses actual base session energy instead of a hardcoded value; SEC collateral disclosure dates distinguish the July 23, 2024 filing from its April rent roll; the Wake Forest 30-space statement is attributed to the town attorney's interpretation of a proposed amendment. English evidence wording was normalized while preserving parcel identifiers.
 
-## Publication boundary
+The independent checks reopened Clark, Snohomish and NHEC schedules, DOE/EVgo benchmarks and selected property records. Greenville's two original tax books matched. The Machias PDF could not be reopened by the second reviewer: its original-author verification and limitation remain, without claiming two successful reads. Not every source was independently reopened twice. None of these reviews substitutes for title work, a field survey, a capacity study, signed rights or observed site revenue.
 
-The public file set is limited to product code, public-source records, analysis, tests and generated public briefs. Private application material and raw working notes remain outside this repository. No personal CV is used by the product or PDF generator. Commits use a GitHub noreply identity.
+## Reproducible checks
 
-Source status can change after the snapshot. No site visit, owner consent, utility application, binding quote, measured demand or commercial return has been represented as completed. Further evidence can change qualification; tests cannot fill those gaps.
+- Sixteen model tests cover cash reconciliation, all-in-rate double counting, utility fixed/daily charges and minimum bills, construction/ramp/replacement, hard threshold boundaries, missing-evidence exclusion, and CSV safety.
+- A separate Python implementation recomputes all 111 main scenarios and 18 tariff sensitivities, including year-by-year cash, NPV and interpolated payback.
+- Data validation checks all 37 evidence records, bilingual claims/limitations, source references, both ranking gates, supply distances/radius counts and the generated PDF input hash.
+- Both two-page PDFs were rendered and visually inspected. The source generator fails on table/footer collisions.
+- Local browser verification covered English default, Chinese evidence and economics, empty qualified pool, full English CSV export (37 records, 122 columns), and 390px responsive layout without page overflow. No console errors appeared in the exercised flows.
+
+The same recorded AFDC and community snapshots remain historical supply evidence; no live charger test or new exhaustive national scan is claimed. No private CV, local personal document, raw research download, credential or outreach is part of this public release. Deployment identity and static-file hashes are checked after publication; this document records the pre-release checks, not a promise of future service state.

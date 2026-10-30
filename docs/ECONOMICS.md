@@ -22,7 +22,7 @@ Other inputs are explicit assumptions:
 |---|---:|---:|---:|
 | Stalls | 8 | 8 | 8 |
 | Stabilized sessions/stall/calendar day | 2 | 4 | 8 |
-| Delivered kWh/session | 40 | 40 | 40 |
+| Delivered kWh/session | 22 | 40 | 40 |
 | Realized price/delivered kWh | $0.40 | $0.45 | $0.50 |
 | Service fee/delivered kWh | $0.10 | $0.10 | $0.10 |
 | Grid-to-delivered loss | 12% | 8% | 5% |
@@ -70,3 +70,19 @@ The network lens uses the same third-party charging-revenue model as requested. 
 The [IRS current 30C page](https://www.irs.gov/credits-deductions/alternative-fuel-vehicle-refueling-property-credit) ends the stated in-service eligibility period on June 30, 2026. A new October 2026 project cannot simply assume the old credit. No incentive is counted here.
 
 [Clark Public Utilities](https://www.clarkpublicutilities.com/about-cpu/public-documents/current-electric-water-rates/) and [Snohomish PUD's 2026 tariff](https://www.snopud.com/wp-content/uploads/2025/10/ElectricRates_2026.pdf) show why parcel eligibility, fixed charges, demand, minimum bills, resale permission and expiration matter. They were inspected as tariff examples, not assigned as verified service contracts to the candidates.
+
+## Round-two refinement
+
+The conservative 22 kWh/session is an **analogue-informed assumption**, based on the [DOE EVWATTS paid-session summary](https://www.energy.gov/cmei/vehicles/articles/fotw-1319-december-4-2023-ev-charging-paid-dc-fast-charging-stations-average). Its self-selected June 2020–June 2023 sample excludes Tesla Superchargers. It does not establish local demand or a statistical downside percentile. Base/optimistic 40 kWh remain assumptions. Keeping the old 40 kWh conservative case is possible from `data/previous-results-v0.2.json`; the app displays the change.
+
+[EVgo's filed Q2 2026 results](https://www.sec.gov/Archives/edgar/data/1821159/000182115926000017/exhibit991evgoearningsrele.htm) report 276 kWh/stall/day for its owned public network. The product compares the mathematically required base sales volume with that observation. It is neither a maximum nor evidence that a candidate can capture that volume. It is not calculated by dividing network energy by the combined ending stall count, which includes different ownership models.
+
+The [Joint Office 2022–2023 report, Appendix G.3](https://driveelectric.gov/files/nevi-annual-report-2022-2023.pdf) modeled $149,667 per port, including five-year maintenance and fixed station costs allocated over six ports. This historical model is a cost-scope cross-check, not an observed invoice, current V4 quote or a new capex input. Grants are not treated as total installed cost. No complete candidate EPC or connection quote was obtained.
+
+`data/tariff-sensitivities.json` adds six-property, three-case **published-charge subtotal** tests. Clark Schedule 134 uses energy, monthly fixed and demand charges. Snohomish uses current standard Schedule 20 with the first 100 kW demand exemption, a daily fixed charge and connected-load minimum, rather than extending the temporary 20EV discount beyond 2030. NHEC uses the IND delivery-plus-supply schedule and its first 60 kW demand exemption.
+
+These tests assume 1,200/500/300 kW billed peaks, uniform monthly energy and current rates held constant in real terms. Peaks are not measured loads or utility capacity offers. Snohomish's assumed connected load remains 1,200 kW in all cases. A lower billed peak does not shrink the connected-load minimum. The annual minimum formula assumes a uniform monthly load profile; it is not a replay of interval meter data.
+
+Unresolved riders, taxes, power-factor penalties, resale permission, meter eligibility and connection scope are disclosed beside each result. Subtotals do not replace the main EIA screening scenarios or clear an evidence gate. Neither scenario family is a full utility bill or investment forecast. Complex PGE/PEC/Cowlitz tariff boundaries and expired/proposed rates remain evidence findings where an honest bill cannot be reconstructed from available load data.
+
+`model.js` computes these charges without adding demand to the all-in EIA proxy. `scripts/verify-economics.py` independently recomputes all 111 main scenarios and 18 tariff sensitivities.

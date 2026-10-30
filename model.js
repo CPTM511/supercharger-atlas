@@ -3,14 +3,15 @@ export const DEFAULT_SCENARIO = Object.freeze({
   stalls: 8, sessionsPerStallDay: 4, kwhPerSession: 40,
   retailPerKwh: 0.45, energyPerKwh: 0.14, lossFraction: 0.08,
   servicePerKwh: 0.10, demandPerKwMonth: 12, billedPeakKw: 500,
-  fixedMonthly: 2500, capex: 1000000, tariffMode: 'energy_only'
+  fixedMonthly: 2500, capex: 1000000, tariffMode: 'energy_only',
+  utilityFixedMonthly: 0, utilityFixedDaily: 0, demandFreeKw: 0, minimumBillDaily: 0
 });
 
 /**
  * Station-level, unlevered annual operating cash before tax, depreciation,
  * financing, replacement capex and incentives. Sessions average over ALL
  * calendar days: do not multiply this volume by a second uptime assumption.
- * Delivered energy is battery-side; grid losses increase purchased energy.
+ * Delivered energy is billed charger output; grid losses increase purchased energy.
  * The service fee is assumed to apply to delivered kWh; confirm contract basis.
  */
 export function calculateEconomics(input = {}) {
@@ -24,7 +25,7 @@ export function calculateEconomics(input = {}) {
   if (x.kwhPerSession <= 0) throw new RangeError('kwhPerSession must be positive');
   if (x.lossFraction >= 1) throw new RangeError('lossFraction must be less than 1');
   if (!['energy_only', 'fully_burdened'].includes(x.tariffMode)) throw new RangeError('Unknown tariffMode');
-  if (x.tariffMode === 'fully_burdened' && x.demandPerKwMonth !== 0) {
+  if (x.tariffMode === 'fully_burdened' && [x.demandPerKwMonth,x.utilityFixedMonthly,x.utilityFixedDaily,x.minimumBillDaily].some(v=>v!==0)) {
     throw new RangeError('All-in electricity rate includes demand charges: set demandPerKwMonth to zero');
   }
   const annualKwh = x.stalls * x.sessionsPerStallDay * 365 * x.kwhPerSession;
@@ -32,15 +33,19 @@ export function calculateEconomics(input = {}) {
   const revenue = annualKwh * x.retailPerKwh;
   const energyCost = gridKwh * x.energyPerKwh;
   const serviceCost = annualKwh * x.servicePerKwh;
-  const demandCost = x.billedPeakKw * x.demandPerKwMonth * 12;
+  const demandCost = Math.max(0, x.billedPeakKw-x.demandFreeKw) * x.demandPerKwMonth * 12;
+  const utilityFixedCost = x.utilityFixedMonthly*12 + x.utilityFixedDaily*365;
+  const minimumBillAdjustment = Math.max(0, x.minimumBillDaily*365-energyCost-demandCost-utilityFixedCost);
+  const electricityCost = energyCost+demandCost+utilityFixedCost+minimumBillAdjustment;
   const fixedCost = x.fixedMonthly * 12;
-  const operatingCash = revenue - energyCost - serviceCost - demandCost - fixedCost;
+  const operatingCash = revenue - serviceCost - electricityCost - fixedCost;
   const marginPerKwh = x.retailPerKwh - x.energyPerKwh / (1 - x.lossFraction) - x.servicePerKwh;
   const breakEvenSessionsPerStallDay = marginPerKwh > 0
-    ? (demandCost + fixedCost) / (365 * x.stalls * x.kwhPerSession * marginPerKwh)
+    ? Math.max((demandCost + utilityFixedCost + fixedCost) / marginPerKwh,
+      (x.minimumBillDaily*365+fixedCost)/Math.max(Number.EPSILON,x.retailPerKwh-x.servicePerKwh)) / (365*x.stalls*x.kwhPerSession)
     : null;
   return {
-    annualKwh, gridKwh, revenue, energyCost, serviceCost, demandCost, fixedCost,
+    annualKwh, gridKwh, revenue, energyCost, serviceCost, demandCost, utilityFixedCost, minimumBillAdjustment, electricityCost, fixedCost,
     operatingCash, marginPerKwh, breakEvenSessionsPerStallDay,
     simplePaybackYears: operatingCash > 0 ? x.capex / operatingCash : null
   };

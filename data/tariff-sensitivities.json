@@ -1,0 +1,77 @@
+{
+  "asOf": "2026-10-30",
+  "assumedBilledPeaksKw": {
+    "conservative": 1200,
+    "base": 500,
+    "optimistic": 300
+  },
+  "purpose": "Conditional published-charge subtotal tests only; all exclude unresolved charges and cannot qualify a site. No rate is claimed as a parcel bill.",
+  "profiles": [
+    {
+      "id": "clark-134",
+      "candidateIds": [
+        "winco-brushprairie",
+        "winco-vancouver"
+      ],
+      "title": {
+        "en": "Clark Public Utilities Schedule 134",
+        "zh": "Clark Public Utilities 134费率"
+      },
+      "sourceIds": [
+        "V3-CLARK"
+      ],
+      "energyPerKwh": 0.05,
+      "demandPerKwMonth": 9.29,
+      "utilityFixedMonthly": 58,
+      "limitation": {
+        "en": "Posted secondary-service charges; assumes this separately metered EV load qualifies (>=100kW for at least 3 months/year). Assumed monthly peaks: 1200/500/300kW. Excludes power-factor surcharge, possible taxes and connection contributions; resale approval and parcel eligibility unconfirmed. Rates held constant in real terms, not a forecast.",
+        "zh": "已公布低压服务费用；假设该独立计量EV负荷适用（至少每年3个月>=100kW）。假设计费峰值1200/500/300kW；未计功率因数附加、可能税费及接网分摊，转售许可及本站适用性未确认。费率按实际购买力固定，非预测。"
+      }
+    },
+    {
+      "id": "snopud-20",
+      "candidateIds": [
+        "winco-edmonds",
+        "winco-everett",
+        "winco-marysville"
+      ],
+      "title": {
+        "en": "Snohomish PUD standard Schedule 20",
+        "zh": "Snohomish PUD常规20费率"
+      },
+      "sourceIds": [
+        "V3-SNOPUD"
+      ],
+      "energyPerKwh": 0.08365,
+      "demandPerKwMonth": 7.21,
+      "demandFreeKw": 100,
+      "utilityFixedDaily": 4.85,
+      "minimumBillDaily": 22.583299999999998,
+      "limitation": {
+        "en": "April 1, 2026 standard Schedule 20, not promotional 20EV (expires 2030). Assumes uniform monthly energy, peaks 1200/500/300kW and connected load 1200kW in all scenarios; minimum daily bill reflects connected load. Excludes Schedule 82/tax adjustments, power-factor/contract provisions and connection costs. Parcel eligibility unconfirmed; holding this present standard rate constant for ten operating years is a sensitivity, not future approved prices.",
+        "zh": "2026年4月1日常规20费率，非2030年到期的20EV优惠。假设每月电量均匀，峰值1200/500/300kW，全部情景接入负荷1200kW，最低日费按接入负荷计算。未计82号调整/税、功率因数/合同条款及接网成本。本站适用未确认；将当前标准固定十个运营年仅为敏感性，非未来已批价格。"
+      }
+    },
+    {
+      "id": "nhec-ind",
+      "candidateIds": [
+        "net-colebrook"
+      ],
+      "title": {
+        "en": "NHEC Industrial delivery + supply",
+        "zh": "NHEC工业输配与供电费率"
+      },
+      "sourceIds": [
+        "V3-NHEC"
+      ],
+      "energyPerKwh": 0.20132,
+      "demandPerKwMonth": 11.57,
+      "demandFreeKw": 60,
+      "utilityFixedMonthly": 636.87,
+      "limitation": {
+        "en": "August 1, 2026 published IND delivery and supply sum. Assumes >=150kW eligibility, the single-structure provision is satisfied and NHEC supplies the proposed meter. Peaks 1200/500/300kW are assumptions; taxes, future resets and project-specific charges unresolved. Not a confirmed tariff assignment or complete bill.",
+        "zh": "2026年8月1日公布IND输配与供电合计。假设符合>=150kW、单建筑条款且拟用电表由NHEC供电。1200/500/300kW峰值是假设；税、未来调整及项目特定费用待核，并非已确认适用费率或完整账单。"
+      }
+    }
+  ]
+}

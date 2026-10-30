@@ -28,3 +28,7 @@ The full community dataset and source-page copies are not redistributed. Relevan
 ## Display and licensing
 
 Leaflet 1.9.4 is vendored under its BSD-2-Clause license (`vendor/leaflet/LICENSE`); release checks verify its published integrity hash. OpenStreetMap tiles and attribution remain under the upstream terms. The project MIT license covers original code and analysis, not upstream datasets or trademarks. Preserve attribution, check upstream terms for additional uses and do not imply government, retailer or Tesla endorsement.
+
+## Round two
+
+`data/evidence-round-2.json` records all 37 investigations, claim-level source dates, direct/secondary/inference/unresolved labels, geographic scope, explicit limitations and access attempts. Tax books, retail permits, transaction releases and utility schedules establish only their respective claims. Temporary tariff expiration, proposed rate approval and historical document dates are retained. `data/previous-results-v0.2.json` preserves the earlier arithmetic. See [all site reassessments](SITE-REASSESSMENT.md) and [review scope](VALIDATION.md).
