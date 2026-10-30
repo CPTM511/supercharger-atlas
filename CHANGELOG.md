@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.1 — 2026-10-30
+
+- Corrected the new three-column evidence table widths after live visual verification. Claims and calculations are unchanged.
+
+
 ## 0.3.0 — 2026-10-30
 
 - Investigated all 37 properties with claim-level source classes, limitations and remaining decision blockers.

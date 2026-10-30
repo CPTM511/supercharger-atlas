@@ -2062,3 +2062,8 @@ html[lang=en] .intro-description { max-width:590px; }
 .economic-change table{width:100%;min-width:620px;border-collapse:collapse;font-size:.8rem}
 .economic-change td,.economic-change th{padding:.65rem;text-align:left;border-bottom:1px solid #dce3ea;vertical-align:top}
 .tariff-sensitivity{margin-top:1rem}.diligence-v3 summary,.tariff-sensitivity summary{cursor:pointer;font-weight:650}
+/* Round-two evidence has three columns; the legacy four-column check widths do not apply. */
+.diligence-v3 .review-table { table-layout:fixed; }
+.diligence-v3 .review-table th:first-child,.diligence-v3 .review-table td:first-child { width:18%; }
+.diligence-v3 .review-table th:nth-child(2),.diligence-v3 .review-table td:nth-child(2) { width:62%; }
+.diligence-v3 .review-table th:last-child,.diligence-v3 .review-table td:last-child { width:20%; }

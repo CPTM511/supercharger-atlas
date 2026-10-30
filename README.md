@@ -4,7 +4,7 @@
 
 [Open the product](https://cptm511.github.io/supercharger-atlas/) · [English research brief](downloads/charge-atlas-brief.pdf) · [Chinese research brief](downloads/charge-atlas-brief-zh.pdf)
 
-## Current conclusion — v0.3.0
+## Current conclusion — v0.3.1
 
 **Zero properties qualify under either investment-gated lens.** The former two Top 10 lists are now historical research priorities in the pending pool, not approved investment recommendations. The threshold was not relaxed to fill a list.
 
