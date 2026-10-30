@@ -1,3 +1,33 @@
+# Validation — v0.8.0
+
+## Assessment
+
+Ready within the reviewed public-research scope, with material feasibility caveats. Five local evidence reviews add exact parcel leads, mapped utility providers, dated corridor traffic, current tariff components and retail/cost comparators. Four financial profiles cover only two addresses; no unsupported tariff is assigned to Elgin, and no full-new-build return is presented as the incremental return of Edmonds or Medford.
+
+The live v0.7 README and rendered application already contained the previous release. The reported dash placeholders were reproducible in the initial HTML/loading view, but not after the data loaded. The new build includes a generated English snapshot, actual published counts, five current judgments, incentive context and report links before JavaScript runs. It does not claim a previously proven persistent application outage.
+
+## Independent numerical and source review
+
+A separate reviewer used 55-digit Python Decimal arithmetic without importing production code. The review reconciled 44 project cases and their 440 annual cash-flow rows: 12 tariff scenarios, 24 demand-transfer alternatives, four construction sensitivities and four conditional-reimbursement cases. Four joint demand boundaries were independently solved from affine deadline balances and NPV equations, rather than reproducing the production bisection. Reviewed values agreed within $0.000001. All 37 original economics and formal review decisions, and the investment policy, exactly match the v0.7 commit. The public `scripts/verify-local.py` reproduces numerical checks; baseline preservation is a separate release audit.
+
+Consequential rate components were checked against original PSE October 2026 summary/tariff documents and PEC's current price page and October tariff. The second review checked the annual-rate arithmetic, PEC's introductory-to-4CP transition and PSE's two separately billed time-period peaks. Parcel/provider/traffic statements retain exact query or original-record sources and dated geographic limitations. Retail analytics were traced to the original report/data provider; they share one dataset and are not independent paid-demand measurements. The later Paren methodology does not establish the exact older retail-cohort algorithm. The review does not claim every historic source was reopened or every GIS query repeated by two reviewers.
+
+Corrections from review clarify that null payback means no recovery within construction plus ten operating years, not never; the delay case has two years of total construction, not two extra years. The application explains why deferring negative operating cash can make NPV less negative. Reimbursement is received at the end of the first operating year; gross cost and replacement remain unchanged and booked awards remain zero.
+
+## Product and artifact checks
+
+- Thirty targeted tests and existing original, tariff, inverse, support, hypothesis and new local-model independent calculations pass. Structural checks reconcile canonical copies, all four profiles, source IDs, translations, transfer denominators, PDF data hashes, content-versioned assets and the generated static snapshot.
+- All five latest-overview links were exercised; the two Tier A addresses each show two new tariff profiles and the other three explicitly show no new tariff projection. Investment/network views, Chinese rendering, external-session tables and tariff-component disclosures were checked. No console errors appeared in exercised flows.
+- At 390px the document has no horizontal page overflow; numeric tables scroll internally. The desktop viewport was restored. A temporary script-free copy displayed version 0.8.0, zero qualified, all five judgments and incentive/report links with zero script elements; the temporary file is not published.
+- Both two-page English/Chinese briefs were rebuilt from current data, checked against the data hash and visually inspected. No clipped page content, overlapping tables or missing Chinese glyphs were found. CSV includes the new analyses and their caveats; no new downloaded-CSV byte inspection is claimed.
+- Public-file review excludes CVs, private source captures, request packets, credentials and local user paths. The homepage/docs remain English and the application defaults to English. No contact, application, paid study or contract was initiated.
+
+These are utility-subtotal sensitivities: uncertain taxes, reactive power, special charges, interval demand, control costs and lost sessions remain excluded. Session-transfer cases assume all sessions are billable and a selected energy per session. Joint thresholds are consequently optimistic incomplete-cost boundaries, not forecasts, engineering approvals or complete investment passes. Local paid demand, design-matched complete costs, site rights and firm service capacity/date still require commercial evidence. No success probability is assigned and no admission gate is relaxed.
+
+Deployment identity and live-file hashes are verified separately after publishing. Earlier release history follows.
+
+---
+
 # Validation — v0.7.0
 
 ## Assessment and repairs

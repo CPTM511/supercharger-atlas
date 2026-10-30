@@ -83,7 +83,7 @@ The [Joint Office 2022–2023 report, Appendix G.3](https://driveelectric.gov/fi
 
 These tests assume 1,200/500/300 kW billed peaks, uniform monthly energy and current rates held constant in real terms. Peaks are not measured loads or utility capacity offers. Snohomish's assumed connected load remains 1,200 kW in all cases. A lower billed peak does not shrink the connected-load minimum. The annual minimum formula assumes a uniform monthly load profile; it is not a replay of interval meter data.
 
-Unresolved riders, taxes, power-factor penalties, resale permission, meter eligibility and connection scope are disclosed beside each result. Subtotals do not replace the main EIA screening scenarios or clear an evidence gate. Neither scenario family is a full utility bill or investment forecast. Complex PGE/PEC/Cowlitz tariff boundaries and expired/proposed rates remain evidence findings where an honest bill cannot be reconstructed from available load data.
+Unresolved riders, taxes, power-factor penalties, resale permission, meter eligibility and connection scope are disclosed beside each result. Subtotals do not replace the main EIA screening scenarios or clear an evidence gate. Neither scenario family is a full utility bill or investment forecast. Complex tariff boundaries and expired/proposed rates remain evidence findings where a bill cannot be reconstructed from available load data. The later v0.8 review adds conditional PEC components for Ronald Reagan; it does not resolve meter identity, available capacity or a complete bill.
 
 `model.js` computes these charges without adding demand to the all-in EIA proxy. `scripts/verify-economics.py` independently recomputes all 111 main scenarios and 18 tariff sensitivities.
 
@@ -113,3 +113,30 @@ The original common stress bundle is retained as a reference, not used to exclud
 Daily billable kWh is the demand variable; the vendor's approximately 35 kWh/session only converts units. Live address-conditioned vendor estimates are not matched paid operating samples. Identical regional outputs, unknown metering boundaries and geographic mismatches remain explicit. The all-in utility field already includes demand charges; no additional dilution discount is added. The 15% assumed grid-to-billed loss borrows from a different grid-to-battery disclosure and must be replaced by measured boundaries.
 
 Four-post cost illustrations and 10/20/35% allowances do not establish full scope. Base/downside inverse conditions each vary one input with the others fixed. Field investigation must replace these stress assumptions with defensible local paid-analogue transfer, complete quotes, access/rights and service commitments before qualification.
+
+## v0.8 local evidence and tariff tests
+
+[LOCAL-VALIDATION.md](LOCAL-VALIDATION.md) and `data/local-validation.json` contain the current five-property review. Financial changes are limited to **four tariff/load profiles at two addresses**: Ronald Reagan and Puyallup. Elgin's provider overlap prevents a defensible local bill; Edmonds and Medford still require incremental redesign/recovery scope. Their earlier hypothetical calculations are not newly validated local forecasts.
+
+The four-post conservative/base/optimistic cases retain v0.7 gross capital of $634,500 / $564,000 / $517,000, demand at 70% / 100% / 120% of the vendor reference, and the earlier prices, ramp, losses, holding costs and replacement assumptions. They replace the vendor's all-in electricity proxy with dated published components and explicit assumed peaks. Only the conservative case stresses those utility components by a further 25%. No grant is booked. Taxes, reactive-power charges, bespoke service obligations and control costs remain unpriced, so calculated cash flow and NPV can overstate returns.
+
+### Published components and assumed operations
+
+- **Ronald Reagan / PEC:** Conditional Large Power service uses $150/month plus $6.74/kW of monthly 15-minute peak. Both profiles assume a 600 kW monthly peak, with established summer 4CP of either 150 or 600 kW. Current TCOS is $0.020688/grid-kWh before 4CP is established, then $6.11/kW-month on the previous summer's 4CP. Actual transition occurs in January after the first 4CP summer. A full initial operating year on energy-based TCOS is an illustrative startup-calendar assumption, not a universal tariff rule. Subsequent rates and 4CP are held constant only for sensitivity analysis.
+- **PEC energy shape:** Uniform energy across local clock hours gives a weighted TOU component of $0.0586831137/grid-kWh over a non-leap year: 122 summer, 153 shoulder and 90 winter days. This is an assumed energy distribution, not interval data. A low 4CP may require controls that cost money or suppress sales; neither effect is established by assigning a lower model parameter.
+- **Puyallup / PSE Schedule 26:** The conditional secondary-service case assumes a 600 kW monthly peak, with published energy of $0.121947/grid-kWh, $436.32/month and winter/summer demand of $17.47/$10.26 per kW-month. The model uses six months of each demand season.
+- **Puyallup / PSE Schedule 558 trial:** The alternative assumes accepted enrollment and separately charged monthly maxima of 200 kW during peak hours and 600 kW off-peak. Published components are $0.04874/grid-kWh, $287.69/month and $16.85/$5.07 per kW-month for the two maxima. Enrollment capacity, actual metering and a feasible control/queue design remain unverified. Any normalized combined demand rate is model arithmetic, not a published tariff rate.
+
+These are utility **subtotals**, not complete utility bills or capacity commitments. The sources, effective dates, eligibility limits and full load assumptions are linked beside every profile in the local review. No lower electricity-cost assumption is admitted merely because it improves payback.
+
+### Analogue transfers and joint boundaries
+
+The external study reports median sessions of 42 per station per day near grocery stores and 9 overall across a Q4 2025 non-Tesla high-power cohort. These are reported analytics, not audited paid orders; cohort-specific counting methodology, grocery subgroup size, port mix, paid fraction and kWh are unpublished. The selected Cambridge Square example reports 59 sessions over five ports. Publishers referring to the same dataset are not independent replications.
+
+Transfer tests use 9 / 42 / 59 station sessions with assumed 22 or 35 billable kWh/session and four posts. Every reference session is assumed paid. In particular, moving a five-port comparator's whole-site count to four posts changes the implied throughput per post. These are alternative conditional cases at fixed base costs, not local quantiles or the conservative/base/optimistic investment cases.
+
+The new joint energy boundary varies base energy and fixes downside energy at 70% of it, requiring both cases to satisfy their existing numeric rules. Other base/downside inputs remain fixed. Because utility costs are incomplete, the result is an optimistic boundary on required demand, not a complete investment pass. The peak-power energy ceiling is only a necessary engineering limit; it cannot establish queue, dispatch or customer-capture feasibility.
+
+A separate two-year construction test changes only base delay. Puyallup's unawarded $160,000 capital sensitivity assumes reimbursement at the end of the first operating year, preserves gross costs and replacement, and requires sufficient qualifying costs plus an actual program offer. It is not stacked with a separate grid allowance or used to infer conservative-case success. Booked support remains zero.
+
+Public-source checks and arithmetic agreement do not establish field feasibility. No paid-demand series, complete design-matched quote, enforceable site rights or firm connection capacity/date was obtained. The two lenses retain their shared gates, and no formal admission changes follow from these tests.

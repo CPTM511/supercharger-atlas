@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.8.0 — Local evidence and conditional investment tests
+
+- Revisit five field hypotheses with parcel/address, utility-territory, dated road-traffic, access and incentive evidence; preserve all 37 formal pending decisions and the investment policy.
+- Keep Ronald Reagan as first conditional investigation after resolving the parcel and reducing postal-alias uncertainty. Downgrade Puyallup pending an affordable tariff/peak design; retain Elgin's utility/access blockers and Edmonds/Medford's redesign or recovery scope.
+- Add four dated utility-subtotal profiles for two addresses, including PEC's new-account-to-4CP transition and conditional PSE trial enrollment. Assumed loads are not reserved grid capacity; incomplete charges remain explicit.
+- Add external retail-session transfer, two-year construction and unawarded Puyallup reimbursement sensitivities. Reported station-session medians are not local paid orders; no grants or generic reuse savings enter the investment cases.
+- Link the current local review ahead of prior vendor-only hypotheses. Preserve historical calculations, source limitations and private-data boundaries; no outreach, applications or paid studies were performed.
+
 ## 0.7.0 — Field hypotheses and model-fit audit
 
 - Separate five field-verification hypotheses from unchanged qualified lists; prioritize Puyallup and Ronald Reagan without inventing local paid demand.

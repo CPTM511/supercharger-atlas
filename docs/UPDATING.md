@@ -70,4 +70,25 @@ Maintain `data/support-review.json` as the round-five source, mechanism and appl
 
 ## Field hypotheses
 
-Maintain bilingual source-linked records in `data/hypotheses.json`; preserve original financial/evidence decisions. Run `node scripts/build-hypotheses.mjs` after earlier builders, then rebuild both briefs and run `node scripts/version-assets.mjs` and `npm run check`. Earlier builders stamp their historical version, so the hypothesis builder must run last for this release. Do not upgrade vendor projections, same-region duplicates or author-selected haircuts to measured local forecasts.
+Maintain bilingual source-linked records in `data/hypotheses.json`; preserve original financial/evidence decisions. Run `node scripts/build-hypotheses.mjs` after earlier builders. For v0.8, follow it with the local-validation builder below before rebuilding briefs or assets; earlier builders stamp historical versions. Do not upgrade vendor projections, same-region duplicates or author-selected haircuts to measured local forecasts.
+
+## Local evidence and conditional tariff tests
+
+Maintain `data/local-validation.json` with bilingual findings, exact source dates and locations, provider/account limits, transfer assumptions and acquisition requirements. Keep source facts separate from inferred territory, hypothetical peak loads and incomplete utility bills. A reported session is not automatically a paid order; a service polygon is not a capacity commitment. Preserve the original scenarios and all formal admission decisions unless new, separately reviewed evidence justifies a change.
+
+The current financial scope is two addresses and four profiles, not five newly measured site forecasts. Reconcile every tariff component with its actual schedule and meter class. For PEC, preserve the transition from new-account energy TCOS to previous-summer 4CP billing. For the PSE trial, verify enrollment and model both demand maxima. Price control equipment, lost sales, taxes and other omitted charges before presenting a complete bill or project forecast. Do not extend temporary or unawarded benefits indefinitely.
+
+Run the derived builders in this order after reviewing source and model changes:
+
+```sh
+node scripts/build-hypotheses.mjs
+node scripts/build-local-validation.mjs
+node scripts/build-static-snapshot.mjs
+# Rebuild and visually inspect both PDFs using the commands above.
+node scripts/version-assets.mjs
+npm run check
+```
+
+The local-validation builder regenerates candidate review records, local tariff calculations and `docs/LOCAL-VALIDATION.md`, and stamps v0.8. The static-snapshot builder must keep the product page's non-JavaScript summary synchronized with the current version, counts and investigation decisions. Verify that static text is readable before JavaScript loads and that the interactive English/Chinese views agree after loading. Do not let a loading placeholder imply that the qualified count or current conclusion is unknown.
+
+Independently recompute the changed cash flows, tariff transition, demand-transfer units and joint base/downside boundaries. Review positive cases against omitted charges, control feasibility, complete design costs and remaining evidence gates. Run only applicable additional checks; do not claim source verification, field work or successful deployment from software tests. Review the final staged diff for private documents, raw research, local paths and unsupported statements before the authorized publication.

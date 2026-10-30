@@ -223,3 +223,21 @@ for(const record of hypotheses.records){
 }
 for(const c of data.candidates)fail(Boolean(c.hypothesis)===hypotheses.records.some(h=>h.candidateId===c.id),'Hypothesis scope mismatch');
 console.log('Five hypothesis records and 37 dispositions validated; discovery does not grant investment admission.');
+
+const local=JSON.parse(fs.readFileSync(new URL('../data/local-validation.json',import.meta.url)));
+assert.deepEqual(data.localValidationReview,local,'Current local review differs from canonical input');
+fail(local.records.length===5&&new Set(local.records.map(r=>r.candidateId)).size===5,'Local review selection');
+let localProfiles=0;
+for(const r of local.records){const c=data.candidates.find(c=>c.id===r.candidateId);const copy={...c.localValidation,tariffPlans:c.localValidation.tariffPlans.map(({analysis,...p})=>p)};assert.deepEqual(copy,r,'Local record copy mismatch');
+ for(const value of [r.change,r.next])fail(value.en&&value.zh,'Local bilingual conclusion');
+ for(const f of r.findings){for(const value of[f.claim,f.limitation])fail(value.en&&value.zh,'Local bilingual evidence');for(const id of f.sourceIds)fail(sourceIds.has(id),'Unresolved local evidence source '+id);}
+ for(const p of c.localValidation.tariffPlans){localProfiles++;fail(p.label.en&&p.label.zh&&p.limitation.en&&p.limitation.zh,'Local tariff bilingual scope');for(const id of p.sourceIds)fail(sourceIds.has(id),'Unresolved local tariff source '+id);fail(p.analysis.evidenceAdmitted===false,'Local sensitivity cannot grant admission');fail(p.analysis.transfers.length===6,'Local transfer case count');for(const x of p.analysis.transfers)fail(x.assumedBillableFraction===1&&x.inputs.stalls===4&&Math.abs(x.kwhPerPostDay*4-x.stationSessions*x.kwhPerSession)<1e-8,'Local transfer denominator');for(const x of Object.values(p.analysis.scenarios))fail(x.inputs.operatingYears===10&&x.inputs.discountRate===.1,'Local policy unchanged');if(p.analysis.conditionalCapital)fail(p.analysis.conditionalCapital.bookedAward===0&&p.analysis.conditionalCapital.amount===160000,'Unawarded support boundary');}
+}
+fail(localProfiles===4,'Two-address four-profile scope');
+for(const f of local.comparators){fail(f.claim.en&&f.claim.zh&&f.limitation.en&&f.limitation.zh,'Comparator translation');for(const id of f.sourceIds)fail(sourceIds.has(id),'Unresolved comparator source');}
+const {renderStaticSnapshot}=await import('./build-static-snapshot.mjs');
+const staticHtml=fs.readFileSync(new URL('../index.html',import.meta.url),'utf8');
+assert.equal(staticHtml,renderStaticSnapshot(data,staticHtml),'Static published snapshot is stale');
+fail(!/<span id="(?:network|investor|pool)-count"[^>]*>—/.test(staticHtml),'Static count placeholder must not hide published decision');
+fail(staticHtml.includes('docs/LOCAL-VALIDATION.md')&&staticHtml.includes('docs/INCENTIVES-AND-OWNERSHIP.md'),'Static report links missing');
+console.log('Five local evidence records, four tariff profiles, bilingual bounds and non-JavaScript snapshot reconciled.');

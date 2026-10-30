@@ -1,0 +1,9 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {calculateProject} from '../model.js';import {buildHypothesis} from '../hypothesis-model.js';import {calculateLocalProject,analyzeLocalTariff} from '../local-model.js';
+const h={analysis:buildHypothesis({kwhPerPostDay:302,retailPerKwh:.51,allInGridPerKwh:.11,fourPostCapital:470000})};
+const tariff={energyPerKwh:.11,demandPerKwMonth:0,billedPeakKw:600,utilityFixedMonthly:0};const plan={first:tariff,later:tariff,firstYears:1};
+test('constant tariff projection reconciles existing project model',()=>{const x=h.analysis.scenarios.base.inputs,a=calculateProject(x),b=calculateLocalProject(x,plan);for(const k of ['npv','projectPaybackYears','stabilizedFreeCash'])assert.ok(Math.abs(a[k]-b[k])<1e-7);});
+test('introductory tariff expires and all annual charges remain explicit',()=>{const x=h.analysis.scenarios.base.inputs,expensive={...tariff,utilityFixedMonthly:1000};const r=calculateLocalProject(x,{first:tariff,later:expensive,firstYears:1});assert.equal(r.cashflows[0].utilityFixedCost,0);assert.equal(r.cashflows[1].utilityFixedCost,12000);assert.equal(r.cashflows.at(-1).utilityFixedCost,12000);assert.ok(r.npv<calculateLocalProject(x,plan).npv);});
+test('joint threshold satisfies base and downside without granting admission',()=>{const r=analyzeLocalTariff(h,plan);assert.equal(r.evidenceAdmitted,false);assert.ok(r.requiredPairedKwhPerPostDay>302);assert.equal(r.transfers.find(x=>x.stationSessions===42&&x.kwhPerSession===35).kwhPerPostDay,367.5);});
+
+test('conditional grant is received at year-end and does not lower gross replacement',()=>{const x={...h.analysis.scenarios.base.inputs,capex:50000,fixedMonthly:3000};const a=calculateLocalProject(x,plan,1,40000);assert.equal(a.cashflows[0].capitalReceipt,40000);assert.equal(a.cashflows[1].capitalReceipt,0);assert.equal(a.cashflows[0].replacementAllowance,750);assert.equal(a.projectPaybackYears,2);});
