@@ -105,3 +105,11 @@ The original scenarios remain an unlevered, pre-income-tax stress model, not a r
 The 0/30/80% sensitivities apply to gross capex as generous mathematical ceilings, not verified eligible costs. The demand table also changes only the stated volume. The Machias test assumes maximum capital and electricity support without other aid, retaining old cost/demand proxies to expose the rules' effect; compliant equipment, bond fees, bid amount, lease horizon, tariffs and funding remain unverified. It is not a quoted alternative design. Tax credits, depreciation and transferable-credit realization need a separate, internally consistent taxpayer model; they are not added selectively to pre-income-tax NPV.
 
 `python3 scripts/verify-support.py` independently recomputes every published support/volume case and temporary-benefit schedule. A favorable sensitivity cannot bypass either the conservative case or the six evidence gates.
+
+## Round-six field hypotheses
+
+The original common stress bundle is retained as a reference, not used to exclude plausible field investigations. [FIELD-HYPOTHESES.md](FIELD-HYPOTHESES.md) introduces five source-linked working hypotheses. `hypothesis-model.js` freezes the transfer and cost factors before results, reuses the unchanged project accounting and gates, and cannot grant qualification.
+
+Daily billable kWh is the demand variable; the vendor's approximately 35 kWh/session only converts units. Live address-conditioned vendor estimates are not matched paid operating samples. Identical regional outputs, unknown metering boundaries and geographic mismatches remain explicit. The all-in utility field already includes demand charges; no additional dilution discount is added. The 15% assumed grid-to-billed loss borrows from a different grid-to-battery disclosure and must be replaced by measured boundaries.
+
+Four-post cost illustrations and 10/20/35% allowances do not establish full scope. Base/downside inverse conditions each vary one input with the others fixed. Field investigation must replace these stress assumptions with defensible local paid-analogue transfer, complete quotes, access/rights and service commitments before qualification.

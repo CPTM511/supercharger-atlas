@@ -1,6 +1,6 @@
 {
   "name": "supercharger-atlas",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "private": true,
   "type": "module",
   "description": "Evidence-led US Supercharger location screening, with separate network and investor perspectives",
@@ -8,6 +8,6 @@
     "start": "python3 -m http.server 4173 --bind 127.0.0.1",
     "test": "node --test tests/*.test.js",
     "validate": "node scripts/validate-data.mjs",
-    "check": "npm test && npm run validate && python3 scripts/verify-economics.py && python3 scripts/verify-inverse.py && python3 scripts/verify-support.py"
+    "check": "npm test && npm run validate && python3 scripts/verify-economics.py && python3 scripts/verify-inverse.py && python3 scripts/verify-support.py && python3 scripts/verify-hypotheses.py"
   }
 }

@@ -204,3 +204,22 @@ const assetHash=name=>createHash('sha256').update(fs.readFileSync(new URL('../'+
 const html=fs.readFileSync(new URL('../index.html',import.meta.url),'utf8'),app=fs.readFileSync(new URL('../app.js',import.meta.url),'utf8');
 for(const name of ['styles.css','app.js'])fail(html.includes('./'+name+'?v='+assetHash(name)),'Stale asset URL: '+name);
 for(const name of ['i18n.js','model.js'])fail(app.includes('./'+name+'?v='+assetHash(name)),'Stale module URL: '+name);
+
+const hypotheses=JSON.parse(fs.readFileSync(new URL('../data/hypotheses.json',import.meta.url)));
+assert.deepEqual(data.hypothesisReview.records,hypotheses.records,'Hypothesis canonical records diverged');
+fail(hypotheses.records.length===5&&hypotheses.coverage.length===37,'Hypothesis coverage mismatch');
+fail(new Set(hypotheses.coverage.map(x=>x.candidateId)).size===37,'Duplicate hypothesis coverage');
+for(const record of hypotheses.records){
+ const c=data.candidates.find(c=>c.id===record.candidateId),h=c.hypothesis;
+ fail(h.qualification==='pending'&&h.forecastVerified===false&&h.analysis.evidenceAdmitted===false,'Hypothesis promoted to verified forecast');
+ for(const field of ['rationale','anchors','counter','test','design'])fail(h[field].en&&h[field].zh,`Missing bilingual hypothesis ${field}`);
+ for(const id of h.sourceIds)fail(sourceIds.has(id),`Hypothesis source unresolved ${id}`);
+ for(const [kind,s]of Object.entries(h.analysis.scenarios)){
+  fail(s.inputs.stalls===4&&s.inputs.tariffMode==='fully_burdened'&&s.inputs.demandPerKwMonth===0,'Scope or double-count error');
+  fail(s.inputs.operatingYears===10&&s.inputs.discountRate===.1,'Hypothesis policy relaxed');
+  const f=data.hypothesisReview.factors[kind];
+  fail(Math.abs(s.outputs.annualKwh-h.estimate.kwhPerPostDay*f.energy*4*365)<1e-6,'Hypothesis energy basis error');
+ }
+}
+for(const c of data.candidates)fail(Boolean(c.hypothesis)===hypotheses.records.some(h=>h.candidateId===c.id),'Hypothesis scope mismatch');
+console.log('Five hypothesis records and 37 dispositions validated; discovery does not grant investment admission.');

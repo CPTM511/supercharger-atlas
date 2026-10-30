@@ -1,7 +1,7 @@
 {
   "meta": {
     "asOf": "2026-10-30",
-    "version": "0.6.0",
+    "version": "0.7.0",
     "poolCount": 37,
     "description": "Round four follows up the ten previously selected evidence priorities; the other 27 retain round-three records. Operational comparisons stay outside the candidate count. No outreach, paid studies or utility applications were performed.",
     "limitations": [
@@ -48,6 +48,10 @@
       "mapped": 37,
       "programs": 22,
       "admittedAwards": 0
+    },
+    "hypothesisReview": {
+      "selected": 5,
+      "qualified": 0
     }
   },
   "sources": [
@@ -4503,6 +4507,96 @@
       "retrievedDate": "2026-10-30",
       "publishedDate": "2021-01-25",
       "type": "public_record"
+    },
+    {
+      "id": "V7-ELECTREK-CITIES",
+      "url": "https://electrek.co/2026/04/08/tesla-supercharger-for-business-configurator-pricing/",
+      "title": "Tesla configurator four-city experiment",
+      "publisher": "Electrek",
+      "publishedDate": "2026-04-08",
+      "retrievedDate": "2026-10-30",
+      "kind": "secondary report of vendor modeled outcomes",
+      "notes": "Article table inspected; not realized returns from operating sites"
+    },
+    {
+      "id": "V7-Q3-SECONDARY",
+      "url": "https://evwire.com/p/tesla-supercharger-network-q3-2026-scorecard-results",
+      "title": "Tesla Q3 2026 charging scorecard coverage",
+      "publisher": "EVwire",
+      "publishedDate": "2026-10-05",
+      "retrievedDate": "2026-10-30",
+      "kind": "secondary report of company global aggregates",
+      "notes": "Article inspected; linked original X post returned 403"
+    },
+    {
+      "id": "V7-Q3-ORIGINAL-UNREAD",
+      "url": "https://x.com/TeslaCharging/status/2105713767741092210",
+      "title": "Tesla Charging Q3 2026 scorecard",
+      "publisher": "Tesla Charging",
+      "publishedDate": "2026-10-01",
+      "retrievedDate": "2026-10-30",
+      "kind": "unresolved original access",
+      "notes": "403 Forbidden; not directly verified"
+    },
+    {
+      "id": "V7-SITE-LEANDER-BARW",
+      "url": "https://www.leandertx.gov/Blog.aspx?IID=4",
+      "title": "City of Leander: Bar W Marketplace",
+      "publisher": "City of Leander",
+      "publishedDate": "2025-04-17",
+      "retrievedDate": "2026-10-30",
+      "kind": "primary",
+      "notes": "Original HTML opened and relevant body read"
+    },
+    {
+      "id": "V7-SITE-PIERCE-COUNTS",
+      "url": "https://www.piercecountywa.gov/2732/Traffic-Counts",
+      "title": "Pierce County traffic counts and AADT methodology",
+      "publisher": "Pierce County",
+      "publishedDate": "2025-01-14",
+      "retrievedDate": "2026-10-30",
+      "kind": "primary",
+      "notes": "Original HTML opened and linked PDF followed"
+    },
+    {
+      "id": "V7-SITE-PIERCE-AADT",
+      "url": "https://www.piercecountywa.gov/DocumentCenter/View/143483/2024-AADT",
+      "title": "Pierce County 2024 AADT compilation",
+      "publisher": "Pierce County",
+      "publishedDate": null,
+      "retrievedDate": "2026-10-30",
+      "kind": "primary_partial",
+      "notes": "Original PDF text opened; page25–26 row text read. Screenshot cache miss and direct download403; individual sparse-year alignment not visually verified."
+    },
+    {
+      "id": "V7-SITE-PIERCE-TCMS",
+      "url": "https://www.piercecountywa.gov/DocumentCenter/View/7153/TCMSReport25?bidId=",
+      "title": "Pierce County 2025 Transportation Concurrency Management System Annual Report",
+      "publisher": "Pierce County",
+      "publishedDate": "2026-05",
+      "retrievedDate": "2026-10-30",
+      "kind": "primary",
+      "notes": "Original20page PDF text opened; methodologypp1–3 read"
+    },
+    {
+      "id": "V7-SITE-ELGIN-ROW",
+      "url": "https://www.txdot.gov/projects/hearings-meetings/austin/2026/us290-from-sh130-to-east-of-sh95-south-092926.html",
+      "title": "TxDOT US290 fromSH130 toEast ofSH95South open-house notice",
+      "publisher": "TxDOT / Central Texas Regional Mobility Authority",
+      "publishedDate": "2026-09-14",
+      "retrievedDate": "2026-10-30",
+      "kind": "primary",
+      "notes": "Original HTML opened and projectdescription read"
+    },
+    {
+      "id": "V7-SITE-BARW-ADDRESS",
+      "url": "https://members.libertyhillchamber.org/list/member/h-e-b-ronald-reagan-345",
+      "title": "H-E-B at Ronald Reagan member listing",
+      "publisher": "Liberty Hill Chamber member listing",
+      "publishedDate": null,
+      "retrievedDate": "2026-10-30",
+      "kind": "secondary_directory",
+      "notes": "Search indexed listing, primary retailer separately reopened"
     }
   ],
   "candidates": [
@@ -6595,7 +6689,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "net-john-day",
@@ -8594,7 +8689,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "net-challis",
@@ -10621,7 +10717,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "net-eureka",
@@ -12631,7 +12728,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "net-chama",
@@ -14662,7 +14760,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "net-machias",
@@ -17354,7 +17453,8 @@
             }
           }
         }
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "net-elkins",
@@ -19359,7 +19459,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "net-mountain-view",
@@ -21344,7 +21445,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "net-austin",
@@ -23843,7 +23945,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "net-chinle",
@@ -25876,7 +25979,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "net-alamo",
@@ -27719,7 +27823,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "net-colebrook",
@@ -30494,7 +30599,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "net-greenville",
@@ -32833,7 +32939,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "net-republic",
@@ -35056,7 +35163,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "heb-ronaldreagan",
@@ -37147,6 +37255,531 @@
             ]
           }
         ]
+      },
+      "hypothesis": {
+        "candidateId": "heb-ronaldreagan",
+        "tier": "A",
+        "title": {
+          "en": "New-build / neighborhood and commuter retail hypothesis",
+          "zh": "新增 / 社区与通勤零售假设"
+        },
+        "rationale": {
+          "en": "First investigate the Bar W retail and commuter catchment. Official amenities and the retained supply gap justify local validation; an overlapping Leander catchment must not be counted twice.",
+          "zh": "优先调查Bar W零售与通勤商圈。官方配套及供给间距支持本地验证；与Leander重叠的商圈不可重复计入。"
+        },
+        "anchors": {
+          "en": "H-E-B confirms store 774 at 19348 Ronald W. Reagan Blvd, Georgetown 78628, open 06:00–23:00. The city identifies Bar W amenities. Retained inventory places the nearest DCFC about 3.0 miles away, with 16 records within 10 miles.",
+          "zh": "H-E-B确认774号门店位于19348 Ronald W. Reagan Blvd、Georgetown 78628，营业06:00–23:00。市政府列明Bar W配套；供给快照最近快充约3.0英里，10英里内16条记录。"
+        },
+        "counter": {
+          "en": "Tesla normalizes the address to Leander 78641; parcel matching remains unresolved. Store hours do not grant 24/7 charging access. Georgetown city EV totals are not this property’s catchment.",
+          "zh": "Tesla把地址标准化为Leander 78641，地块匹配尚未解决。门店营业时间不等于全天充电通行权；Georgetown城市EV总量不是该物业商圈。"
+        },
+        "test": {
+          "en": "Resolve the vendor map point against the official parcel; validate home-charging availability and competing Leander capacity. Obtain host access terms, meter/utility identity, a complete quote and a local demand-transfer case.",
+          "zh": "把厂家地图点与官方地块对齐，核实家庭充电条件及Leander竞品容量。取得场地主通行条款、电表与供电方身份、完整报价和本地需求迁移依据。"
+        },
+        "sourceIds": [
+          "S0a6d1be",
+          "Sf63f4e0",
+          "S08c7bce",
+          "V7-SITE-LEANDER-BARW",
+          "V7-SITE-BARW-ADDRESS",
+          "S53158f4"
+        ],
+        "estimate": {
+          "kwhPerPostDay": 302,
+          "retailPerKwh": 0.51,
+          "allInGridPerKwh": 0.11,
+          "fourPostCapital": 470000,
+          "vendorPaybackYears": 5,
+          "observedDate": "2026-10-30",
+          "normalizedAddress": "19348 Ronald Reagan Blvd, Leander, TX 78641, USA",
+          "kind": "vendor projection; not measured paid demand",
+          "sourceId": "S53158f4"
+        },
+        "design": {
+          "en": "Four-post new-build comparison; upgrade savings are not assumed.",
+          "zh": "四枪全新建设比较；未假定改造可节省成本。"
+        },
+        "qualification": "pending",
+        "forecastVerified": false,
+        "analysis": {
+          "scenarios": {
+            "conservative": {
+              "inputs": {
+                "stalls": 4,
+                "sessionsPerStallDay": 6.039999999999999,
+                "kwhPerSession": 35,
+                "retailPerKwh": 0.51,
+                "energyPerKwh": 0.1375,
+                "lossFraction": 0.15,
+                "servicePerKwh": 0.1,
+                "tariffMode": "fully_burdened",
+                "demandPerKwMonth": 0,
+                "billedPeakKw": 0,
+                "utilityFixedMonthly": 0,
+                "utilityFixedDaily": 0,
+                "demandFreeKw": 0,
+                "minimumBillDaily": 0,
+                "capex": 634500,
+                "fixedMonthly": 2000,
+                "preOpeningMonthly": 2000,
+                "constructionYears": 1.5,
+                "firstYearRamp": 0.5,
+                "sustainingCapexFraction": 0.02,
+                "discountRate": 0.1,
+                "operatingYears": 10
+              },
+              "outputs": {
+                "annualKwh": 308644,
+                "gridKwh": 363110.58823529416,
+                "revenue": 157408.44,
+                "energyCost": 49927.70588235295,
+                "serviceCost": 30864.4,
+                "demandCost": 0,
+                "utilityFixedCost": 0,
+                "minimumBillAdjustment": 0,
+                "electricityCost": 49927.70588235295,
+                "fixedCost": 24000,
+                "operatingCash": 52616.33411764706,
+                "marginPerKwh": 0.24823529411764708,
+                "breakEvenSessionsPerStallDay": 1.8920247447157788,
+                "simplePaybackYears": 12.058992908576545,
+                "preOpeningHoldingCost": 36000,
+                "annualSustainingCapex": 12690,
+                "stabilizedFreeCash": 39926.33411764706,
+                "projectPaybackYears": null,
+                "npv": -485554.5374643758,
+                "cashflows": [
+                  {
+                    "year": 1,
+                    "time": 2.5,
+                    "ramp": 0.5,
+                    "operatingCash": 14308.167058823528,
+                    "replacementAllowance": 12690,
+                    "cash": 1618.1670588235284,
+                    "cumulative": -668881.8329411765
+                  },
+                  {
+                    "year": 2,
+                    "time": 3.5,
+                    "ramp": 1,
+                    "operatingCash": 52616.33411764706,
+                    "replacementAllowance": 12690,
+                    "cash": 39926.33411764706,
+                    "cumulative": -628955.4988235295
+                  },
+                  {
+                    "year": 3,
+                    "time": 4.5,
+                    "ramp": 1,
+                    "operatingCash": 52616.33411764706,
+                    "replacementAllowance": 12690,
+                    "cash": 39926.33411764706,
+                    "cumulative": -589029.1647058824
+                  },
+                  {
+                    "year": 4,
+                    "time": 5.5,
+                    "ramp": 1,
+                    "operatingCash": 52616.33411764706,
+                    "replacementAllowance": 12690,
+                    "cash": 39926.33411764706,
+                    "cumulative": -549102.8305882354
+                  },
+                  {
+                    "year": 5,
+                    "time": 6.5,
+                    "ramp": 1,
+                    "operatingCash": 52616.33411764706,
+                    "replacementAllowance": 12690,
+                    "cash": 39926.33411764706,
+                    "cumulative": -509176.4964705884
+                  },
+                  {
+                    "year": 6,
+                    "time": 7.5,
+                    "ramp": 1,
+                    "operatingCash": 52616.33411764706,
+                    "replacementAllowance": 12690,
+                    "cash": 39926.33411764706,
+                    "cumulative": -469250.16235294135
+                  },
+                  {
+                    "year": 7,
+                    "time": 8.5,
+                    "ramp": 1,
+                    "operatingCash": 52616.33411764706,
+                    "replacementAllowance": 12690,
+                    "cash": 39926.33411764706,
+                    "cumulative": -429323.8282352943
+                  },
+                  {
+                    "year": 8,
+                    "time": 9.5,
+                    "ramp": 1,
+                    "operatingCash": 52616.33411764706,
+                    "replacementAllowance": 12690,
+                    "cash": 39926.33411764706,
+                    "cumulative": -389397.4941176473
+                  },
+                  {
+                    "year": 9,
+                    "time": 10.5,
+                    "ramp": 1,
+                    "operatingCash": 52616.33411764706,
+                    "replacementAllowance": 12690,
+                    "cash": 39926.33411764706,
+                    "cumulative": -349471.16000000027
+                  },
+                  {
+                    "year": 10,
+                    "time": 11.5,
+                    "ramp": 1,
+                    "operatingCash": 52616.33411764706,
+                    "replacementAllowance": 12690,
+                    "cash": 39926.33411764706,
+                    "cumulative": -309544.82588235324
+                  }
+                ],
+                "horizonYears": 11.5,
+                "discountRate": 0.1
+              }
+            },
+            "base": {
+              "inputs": {
+                "stalls": 4,
+                "sessionsPerStallDay": 8.628571428571428,
+                "kwhPerSession": 35,
+                "retailPerKwh": 0.51,
+                "energyPerKwh": 0.11,
+                "lossFraction": 0.15,
+                "servicePerKwh": 0.1,
+                "tariffMode": "fully_burdened",
+                "demandPerKwMonth": 0,
+                "billedPeakKw": 0,
+                "utilityFixedMonthly": 0,
+                "utilityFixedDaily": 0,
+                "demandFreeKw": 0,
+                "minimumBillDaily": 0,
+                "capex": 564000,
+                "fixedMonthly": 1000,
+                "preOpeningMonthly": 1000,
+                "constructionYears": 1,
+                "firstYearRamp": 0.75,
+                "sustainingCapexFraction": 0.015,
+                "discountRate": 0.1,
+                "operatingYears": 10
+              },
+              "outputs": {
+                "annualKwh": 440919.99999999994,
+                "gridKwh": 518729.41176470584,
+                "revenue": 224869.19999999998,
+                "energyCost": 57060.23529411764,
+                "serviceCost": 44092,
+                "demandCost": 0,
+                "utilityFixedCost": 0,
+                "minimumBillAdjustment": 0,
+                "electricityCost": 57060.23529411764,
+                "fixedCost": 12000,
+                "operatingCash": 111716.96470588233,
+                "marginPerKwh": 0.2805882352941177,
+                "breakEvenSessionsPerStallDay": 0.8369333776415708,
+                "simplePaybackYears": 5.0484722842662695,
+                "preOpeningHoldingCost": 12000,
+                "annualSustainingCapex": 8460,
+                "stabilizedFreeCash": 103256.96470588233,
+                "projectPaybackYears": 6.87785281995506,
+                "npv": -24212.5903545252,
+                "cashflows": [
+                  {
+                    "year": 1,
+                    "time": 2,
+                    "ramp": 0.75,
+                    "operatingCash": 80787.72352941177,
+                    "replacementAllowance": 8460,
+                    "cash": 72327.72352941177,
+                    "cumulative": -503672.27647058823
+                  },
+                  {
+                    "year": 2,
+                    "time": 3,
+                    "ramp": 1,
+                    "operatingCash": 111716.96470588233,
+                    "replacementAllowance": 8460,
+                    "cash": 103256.96470588233,
+                    "cumulative": -400415.3117647059
+                  },
+                  {
+                    "year": 3,
+                    "time": 4,
+                    "ramp": 1,
+                    "operatingCash": 111716.96470588233,
+                    "replacementAllowance": 8460,
+                    "cash": 103256.96470588233,
+                    "cumulative": -297158.34705882357
+                  },
+                  {
+                    "year": 4,
+                    "time": 5,
+                    "ramp": 1,
+                    "operatingCash": 111716.96470588233,
+                    "replacementAllowance": 8460,
+                    "cash": 103256.96470588233,
+                    "cumulative": -193901.38235294123
+                  },
+                  {
+                    "year": 5,
+                    "time": 6,
+                    "ramp": 1,
+                    "operatingCash": 111716.96470588233,
+                    "replacementAllowance": 8460,
+                    "cash": 103256.96470588233,
+                    "cumulative": -90644.4176470589
+                  },
+                  {
+                    "year": 6,
+                    "time": 7,
+                    "ramp": 1,
+                    "operatingCash": 111716.96470588233,
+                    "replacementAllowance": 8460,
+                    "cash": 103256.96470588233,
+                    "cumulative": 12612.547058823431
+                  },
+                  {
+                    "year": 7,
+                    "time": 8,
+                    "ramp": 1,
+                    "operatingCash": 111716.96470588233,
+                    "replacementAllowance": 8460,
+                    "cash": 103256.96470588233,
+                    "cumulative": 115869.51176470576
+                  },
+                  {
+                    "year": 8,
+                    "time": 9,
+                    "ramp": 1,
+                    "operatingCash": 111716.96470588233,
+                    "replacementAllowance": 8460,
+                    "cash": 103256.96470588233,
+                    "cumulative": 219126.4764705881
+                  },
+                  {
+                    "year": 9,
+                    "time": 10,
+                    "ramp": 1,
+                    "operatingCash": 111716.96470588233,
+                    "replacementAllowance": 8460,
+                    "cash": 103256.96470588233,
+                    "cumulative": 322383.4411764704
+                  },
+                  {
+                    "year": 10,
+                    "time": 11,
+                    "ramp": 1,
+                    "operatingCash": 111716.96470588233,
+                    "replacementAllowance": 8460,
+                    "cash": 103256.96470588233,
+                    "cumulative": 425640.40588235273
+                  }
+                ],
+                "horizonYears": 11,
+                "discountRate": 0.1
+              }
+            },
+            "optimistic": {
+              "inputs": {
+                "stalls": 4,
+                "sessionsPerStallDay": 10.354285714285714,
+                "kwhPerSession": 35,
+                "retailPerKwh": 0.51,
+                "energyPerKwh": 0.11,
+                "lossFraction": 0.15,
+                "servicePerKwh": 0.1,
+                "tariffMode": "fully_burdened",
+                "demandPerKwMonth": 0,
+                "billedPeakKw": 0,
+                "utilityFixedMonthly": 0,
+                "utilityFixedDaily": 0,
+                "demandFreeKw": 0,
+                "minimumBillDaily": 0,
+                "capex": 517000.00000000006,
+                "fixedMonthly": 500,
+                "preOpeningMonthly": 500,
+                "constructionYears": 0.75,
+                "firstYearRamp": 1,
+                "sustainingCapexFraction": 0.01,
+                "discountRate": 0.1,
+                "operatingYears": 10
+              },
+              "outputs": {
+                "annualKwh": 529104,
+                "gridKwh": 622475.2941176471,
+                "revenue": 269843.04,
+                "energyCost": 68472.28235294118,
+                "serviceCost": 52910.4,
+                "demandCost": 0,
+                "utilityFixedCost": 0,
+                "minimumBillAdjustment": 0,
+                "electricityCost": 68472.28235294118,
+                "fixedCost": 6000,
+                "operatingCash": 142460.3576470588,
+                "marginPerKwh": 0.2805882352941177,
+                "breakEvenSessionsPerStallDay": 0.4184666888207854,
+                "simplePaybackYears": 3.62907975621437,
+                "preOpeningHoldingCost": 4500,
+                "annualSustainingCapex": 5170.000000000001,
+                "stabilizedFreeCash": 137290.3576470588,
+                "projectPaybackYears": 4.548518766632205,
+                "npv": 264050.6120373678,
+                "cashflows": [
+                  {
+                    "year": 1,
+                    "time": 1.75,
+                    "ramp": 1,
+                    "operatingCash": 142460.3576470588,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 137290.3576470588,
+                    "cumulative": -384209.6423529413
+                  },
+                  {
+                    "year": 2,
+                    "time": 2.75,
+                    "ramp": 1,
+                    "operatingCash": 142460.3576470588,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 137290.3576470588,
+                    "cumulative": -246919.28470588248
+                  },
+                  {
+                    "year": 3,
+                    "time": 3.75,
+                    "ramp": 1,
+                    "operatingCash": 142460.3576470588,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 137290.3576470588,
+                    "cumulative": -109628.9270588237
+                  },
+                  {
+                    "year": 4,
+                    "time": 4.75,
+                    "ramp": 1,
+                    "operatingCash": 142460.3576470588,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 137290.3576470588,
+                    "cumulative": 27661.43058823509
+                  },
+                  {
+                    "year": 5,
+                    "time": 5.75,
+                    "ramp": 1,
+                    "operatingCash": 142460.3576470588,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 137290.3576470588,
+                    "cumulative": 164951.78823529388
+                  },
+                  {
+                    "year": 6,
+                    "time": 6.75,
+                    "ramp": 1,
+                    "operatingCash": 142460.3576470588,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 137290.3576470588,
+                    "cumulative": 302242.14588235266
+                  },
+                  {
+                    "year": 7,
+                    "time": 7.75,
+                    "ramp": 1,
+                    "operatingCash": 142460.3576470588,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 137290.3576470588,
+                    "cumulative": 439532.50352941145
+                  },
+                  {
+                    "year": 8,
+                    "time": 8.75,
+                    "ramp": 1,
+                    "operatingCash": 142460.3576470588,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 137290.3576470588,
+                    "cumulative": 576822.8611764703
+                  },
+                  {
+                    "year": 9,
+                    "time": 9.75,
+                    "ramp": 1,
+                    "operatingCash": 142460.3576470588,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 137290.3576470588,
+                    "cumulative": 714113.2188235291
+                  },
+                  {
+                    "year": 10,
+                    "time": 10.75,
+                    "ramp": 1,
+                    "operatingCash": 142460.3576470588,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 137290.3576470588,
+                    "cumulative": 851403.5764705879
+                  }
+                ],
+                "horizonYears": 10.75,
+                "discountRate": 0.1
+              }
+            }
+          },
+          "numericHurdle": {
+            "passed": false,
+            "tests": {
+              "basePayback": false,
+              "conservativePayback": false,
+              "baseNpv": false,
+              "conservativeCash": true
+            }
+          },
+          "inverse": {
+            "base": {
+              "requiredSessionsPerStallDay": 9.959507193934693,
+              "requiredSessionsPerSiteDay": 39.83802877573877,
+              "requiredKwhPerStallDay": 348.58275178771424,
+              "minimumAverageGridKw": 68.34955917406162,
+              "maxCapex": 479679.611491108,
+              "maxAllInGridPrice": 0.07321196588950377,
+              "maxFixedAndHoldingMonthly": null,
+              "maxConstructionYears": 0.21354498725201454,
+              "paybackLimitYears": 6,
+              "searchDomain": {
+                "sessionsPerStallDayMax": 1000000,
+                "capexMax": 1000000000,
+                "gridPriceMax": 10,
+                "monthlyCostMax": 10000000,
+                "constructionYearsMax": 6
+              }
+            },
+            "conservative": {
+              "requiredSessionsPerStallDay": 11.943209115107445,
+              "requiredSessionsPerSiteDay": 47.77283646042978,
+              "requiredKwhPerStallDay": 418.01231902876054,
+              "minimumAverageGridKw": 81.96319980956089,
+              "maxCapex": 236900.88912024995,
+              "maxAllInGridPrice": null,
+              "maxFixedAndHoldingMonthly": null,
+              "maxConstructionYears": null,
+              "paybackLimitYears": 8,
+              "searchDomain": {
+                "sessionsPerStallDayMax": 1000000,
+                "capexMax": 1000000000,
+                "gridPriceMax": 10,
+                "monthlyCostMax": 10000000,
+                "constructionYearsMax": 8
+              }
+            }
+          },
+          "qualification": "pending",
+          "evidenceAdmitted": false
+        }
       }
     },
     {
@@ -40006,7 +40639,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "winco-bremerton",
@@ -42029,7 +42663,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "winco-vancouver",
@@ -44517,7 +45152,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "heb-mansfield",
@@ -46658,7 +47294,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "heb-leander",
@@ -48723,7 +49360,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "winco-edmonds",
@@ -51549,6 +52187,529 @@
             ]
           }
         ]
+      },
+      "hypothesis": {
+        "candidateId": "winco-edmonds",
+        "tier": "B",
+        "title": {
+          "en": "Existing-site expansion / redesign hypothesis",
+          "zh": "既有场地扩容或重设计假设"
+        },
+        "rationale": {
+          "en": "Investigate expansion or redesign of an existing charging property. Recovered plans make a scope-matched cost check actionable; this is not a blank-market greenfield recommendation.",
+          "zh": "调查既有充电物业的扩容或重设计。已取得历史图纸，便于核对相同设计范围的成本；不是空白市场新增站推荐。"
+        },
+        "anchors": {
+          "en": "The official store address and historical BLD2022-0061 charging plans are documented. Existing supply is recorded at the property, with 55 DCFC records within 10 miles.",
+          "zh": "已有官方门店地址及历史BLD2022-0061充电设计。物业已有充电供给记录，10英里内共有55条快充记录。"
+        },
+        "counter": {
+          "en": "Historical design load is not spare capacity. Existing operator rights and nearby competition may defeat third-party entry. Reuse savings and incremental demand remain unproved.",
+          "zh": "历史设计负荷不是剩余容量。既有运营商权利及竞品可能阻止第三方进入；复用节省和增量需求未证实。"
+        },
+        "test": {
+          "en": "Identify current equipment, operator and host rights; obtain paid throughput and as-built condition. Compare a genuine upgrade quote with a new four-post build, including only assets demonstrably reusable.",
+          "zh": "查明现有设备、运营商及场地权利，取得付费电量和竣工状态。把真实升级报价与新建四枪比较，只计入确认可复用的资产。"
+        },
+        "sourceIds": [
+          "S9b325e2",
+          "S12c398d",
+          "V5-c95d9227d3",
+          "S53158f4"
+        ],
+        "estimate": {
+          "kwhPerPostDay": 298,
+          "retailPerKwh": 0.49,
+          "allInGridPerKwh": 0.1,
+          "fourPostCapital": 470000,
+          "vendorPaybackYears": 5,
+          "observedDate": "2026-10-30",
+          "normalizedAddress": "21900 Hwy 99, Edmonds, WA 98026, USA",
+          "kind": "vendor projection; not measured paid demand",
+          "sourceId": "S53158f4"
+        },
+        "design": {
+          "en": "Four-post new-build comparison; upgrade savings are not assumed.",
+          "zh": "四枪全新建设比较；未假定改造可节省成本。"
+        },
+        "qualification": "pending",
+        "forecastVerified": false,
+        "analysis": {
+          "scenarios": {
+            "conservative": {
+              "inputs": {
+                "stalls": 4,
+                "sessionsPerStallDay": 5.96,
+                "kwhPerSession": 35,
+                "retailPerKwh": 0.49,
+                "energyPerKwh": 0.125,
+                "lossFraction": 0.15,
+                "servicePerKwh": 0.1,
+                "tariffMode": "fully_burdened",
+                "demandPerKwMonth": 0,
+                "billedPeakKw": 0,
+                "utilityFixedMonthly": 0,
+                "utilityFixedDaily": 0,
+                "demandFreeKw": 0,
+                "minimumBillDaily": 0,
+                "capex": 634500,
+                "fixedMonthly": 2000,
+                "preOpeningMonthly": 2000,
+                "constructionYears": 1.5,
+                "firstYearRamp": 0.5,
+                "sustainingCapexFraction": 0.02,
+                "discountRate": 0.1,
+                "operatingYears": 10
+              },
+              "outputs": {
+                "annualKwh": 304556,
+                "gridKwh": 358301.17647058825,
+                "revenue": 149232.44,
+                "energyCost": 44787.64705882353,
+                "serviceCost": 30455.600000000002,
+                "demandCost": 0,
+                "utilityFixedCost": 0,
+                "minimumBillAdjustment": 0,
+                "electricityCost": 44787.64705882353,
+                "fixedCost": 24000,
+                "operatingCash": 49989.19294117647,
+                "marginPerKwh": 0.2429411764705882,
+                "breakEvenSessionsPerStallDay": 1.9332553081599486,
+                "simplePaybackYears": 12.69274342449641,
+                "preOpeningHoldingCost": 36000,
+                "annualSustainingCapex": 12690,
+                "stabilizedFreeCash": 37299.19294117647,
+                "projectPaybackYears": null,
+                "npv": -498511.652143783,
+                "cashflows": [
+                  {
+                    "year": 1,
+                    "time": 2.5,
+                    "ramp": 0.5,
+                    "operatingCash": 12994.596470588236,
+                    "replacementAllowance": 12690,
+                    "cash": 304.5964705882361,
+                    "cumulative": -670195.4035294118
+                  },
+                  {
+                    "year": 2,
+                    "time": 3.5,
+                    "ramp": 1,
+                    "operatingCash": 49989.19294117647,
+                    "replacementAllowance": 12690,
+                    "cash": 37299.19294117647,
+                    "cumulative": -632896.2105882353
+                  },
+                  {
+                    "year": 3,
+                    "time": 4.5,
+                    "ramp": 1,
+                    "operatingCash": 49989.19294117647,
+                    "replacementAllowance": 12690,
+                    "cash": 37299.19294117647,
+                    "cumulative": -595597.0176470588
+                  },
+                  {
+                    "year": 4,
+                    "time": 5.5,
+                    "ramp": 1,
+                    "operatingCash": 49989.19294117647,
+                    "replacementAllowance": 12690,
+                    "cash": 37299.19294117647,
+                    "cumulative": -558297.8247058823
+                  },
+                  {
+                    "year": 5,
+                    "time": 6.5,
+                    "ramp": 1,
+                    "operatingCash": 49989.19294117647,
+                    "replacementAllowance": 12690,
+                    "cash": 37299.19294117647,
+                    "cumulative": -520998.6317647059
+                  },
+                  {
+                    "year": 6,
+                    "time": 7.5,
+                    "ramp": 1,
+                    "operatingCash": 49989.19294117647,
+                    "replacementAllowance": 12690,
+                    "cash": 37299.19294117647,
+                    "cumulative": -483699.4388235294
+                  },
+                  {
+                    "year": 7,
+                    "time": 8.5,
+                    "ramp": 1,
+                    "operatingCash": 49989.19294117647,
+                    "replacementAllowance": 12690,
+                    "cash": 37299.19294117647,
+                    "cumulative": -446400.24588235293
+                  },
+                  {
+                    "year": 8,
+                    "time": 9.5,
+                    "ramp": 1,
+                    "operatingCash": 49989.19294117647,
+                    "replacementAllowance": 12690,
+                    "cash": 37299.19294117647,
+                    "cumulative": -409101.05294117646
+                  },
+                  {
+                    "year": 9,
+                    "time": 10.5,
+                    "ramp": 1,
+                    "operatingCash": 49989.19294117647,
+                    "replacementAllowance": 12690,
+                    "cash": 37299.19294117647,
+                    "cumulative": -371801.86
+                  },
+                  {
+                    "year": 10,
+                    "time": 11.5,
+                    "ramp": 1,
+                    "operatingCash": 49989.19294117647,
+                    "replacementAllowance": 12690,
+                    "cash": 37299.19294117647,
+                    "cumulative": -334502.6670588235
+                  }
+                ],
+                "horizonYears": 11.5,
+                "discountRate": 0.1
+              }
+            },
+            "base": {
+              "inputs": {
+                "stalls": 4,
+                "sessionsPerStallDay": 8.514285714285714,
+                "kwhPerSession": 35,
+                "retailPerKwh": 0.49,
+                "energyPerKwh": 0.1,
+                "lossFraction": 0.15,
+                "servicePerKwh": 0.1,
+                "tariffMode": "fully_burdened",
+                "demandPerKwMonth": 0,
+                "billedPeakKw": 0,
+                "utilityFixedMonthly": 0,
+                "utilityFixedDaily": 0,
+                "demandFreeKw": 0,
+                "minimumBillDaily": 0,
+                "capex": 564000,
+                "fixedMonthly": 1000,
+                "preOpeningMonthly": 1000,
+                "constructionYears": 1,
+                "firstYearRamp": 0.75,
+                "sustainingCapexFraction": 0.015,
+                "discountRate": 0.1,
+                "operatingYears": 10
+              },
+              "outputs": {
+                "annualKwh": 435080,
+                "gridKwh": 511858.8235294118,
+                "revenue": 213189.19999999998,
+                "energyCost": 51185.88235294118,
+                "serviceCost": 43508,
+                "demandCost": 0,
+                "utilityFixedCost": 0,
+                "minimumBillAdjustment": 0,
+                "electricityCost": 51185.88235294118,
+                "fixedCost": 12000,
+                "operatingCash": 106495.31764705881,
+                "marginPerKwh": 0.2723529411764706,
+                "breakEvenSessionsPerStallDay": 0.8622402184341887,
+                "simplePaybackYears": 5.29600749085682,
+                "preOpeningHoldingCost": 12000,
+                "annualSustainingCapex": 8460,
+                "stabilizedFreeCash": 98035.31764705881,
+                "projectPaybackYears": 7.177608681721186,
+                "npv": -52301.701979372665,
+                "cashflows": [
+                  {
+                    "year": 1,
+                    "time": 2,
+                    "ramp": 0.75,
+                    "operatingCash": 76871.4882352941,
+                    "replacementAllowance": 8460,
+                    "cash": 68411.4882352941,
+                    "cumulative": -507588.5117647059
+                  },
+                  {
+                    "year": 2,
+                    "time": 3,
+                    "ramp": 1,
+                    "operatingCash": 106495.31764705881,
+                    "replacementAllowance": 8460,
+                    "cash": 98035.31764705881,
+                    "cumulative": -409553.1941176471
+                  },
+                  {
+                    "year": 3,
+                    "time": 4,
+                    "ramp": 1,
+                    "operatingCash": 106495.31764705881,
+                    "replacementAllowance": 8460,
+                    "cash": 98035.31764705881,
+                    "cumulative": -311517.87647058826
+                  },
+                  {
+                    "year": 4,
+                    "time": 5,
+                    "ramp": 1,
+                    "operatingCash": 106495.31764705881,
+                    "replacementAllowance": 8460,
+                    "cash": 98035.31764705881,
+                    "cumulative": -213482.55882352946
+                  },
+                  {
+                    "year": 5,
+                    "time": 6,
+                    "ramp": 1,
+                    "operatingCash": 106495.31764705881,
+                    "replacementAllowance": 8460,
+                    "cash": 98035.31764705881,
+                    "cumulative": -115447.24117647065
+                  },
+                  {
+                    "year": 6,
+                    "time": 7,
+                    "ramp": 1,
+                    "operatingCash": 106495.31764705881,
+                    "replacementAllowance": 8460,
+                    "cash": 98035.31764705881,
+                    "cumulative": -17411.92352941184
+                  },
+                  {
+                    "year": 7,
+                    "time": 8,
+                    "ramp": 1,
+                    "operatingCash": 106495.31764705881,
+                    "replacementAllowance": 8460,
+                    "cash": 98035.31764705881,
+                    "cumulative": 80623.39411764697
+                  },
+                  {
+                    "year": 8,
+                    "time": 9,
+                    "ramp": 1,
+                    "operatingCash": 106495.31764705881,
+                    "replacementAllowance": 8460,
+                    "cash": 98035.31764705881,
+                    "cumulative": 178658.71176470577
+                  },
+                  {
+                    "year": 9,
+                    "time": 10,
+                    "ramp": 1,
+                    "operatingCash": 106495.31764705881,
+                    "replacementAllowance": 8460,
+                    "cash": 98035.31764705881,
+                    "cumulative": 276694.0294117646
+                  },
+                  {
+                    "year": 10,
+                    "time": 11,
+                    "ramp": 1,
+                    "operatingCash": 106495.31764705881,
+                    "replacementAllowance": 8460,
+                    "cash": 98035.31764705881,
+                    "cumulative": 374729.3470588234
+                  }
+                ],
+                "horizonYears": 11,
+                "discountRate": 0.1
+              }
+            },
+            "optimistic": {
+              "inputs": {
+                "stalls": 4,
+                "sessionsPerStallDay": 10.217142857142855,
+                "kwhPerSession": 35,
+                "retailPerKwh": 0.49,
+                "energyPerKwh": 0.1,
+                "lossFraction": 0.15,
+                "servicePerKwh": 0.1,
+                "tariffMode": "fully_burdened",
+                "demandPerKwMonth": 0,
+                "billedPeakKw": 0,
+                "utilityFixedMonthly": 0,
+                "utilityFixedDaily": 0,
+                "demandFreeKw": 0,
+                "minimumBillDaily": 0,
+                "capex": 517000.00000000006,
+                "fixedMonthly": 500,
+                "preOpeningMonthly": 500,
+                "constructionYears": 0.75,
+                "firstYearRamp": 1,
+                "sustainingCapexFraction": 0.01,
+                "discountRate": 0.1,
+                "operatingYears": 10
+              },
+              "outputs": {
+                "annualKwh": 522095.99999999994,
+                "gridKwh": 614230.5882352941,
+                "revenue": 255827.03999999998,
+                "energyCost": 61423.05882352941,
+                "serviceCost": 52209.6,
+                "demandCost": 0,
+                "utilityFixedCost": 0,
+                "minimumBillAdjustment": 0,
+                "electricityCost": 61423.05882352941,
+                "fixedCost": 6000,
+                "operatingCash": 136194.38117647055,
+                "marginPerKwh": 0.2723529411764706,
+                "breakEvenSessionsPerStallDay": 0.43112010921709437,
+                "simplePaybackYears": 3.7960450022538734,
+                "preOpeningHoldingCost": 4500,
+                "annualSustainingCapex": 5170.000000000001,
+                "stabilizedFreeCash": 131024.38117647055,
+                "projectPaybackYears": 4.730175256829615,
+                "npv": 228205.0381823342,
+                "cashflows": [
+                  {
+                    "year": 1,
+                    "time": 1.75,
+                    "ramp": 1,
+                    "operatingCash": 136194.38117647055,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 131024.38117647055,
+                    "cumulative": -390475.6188235295
+                  },
+                  {
+                    "year": 2,
+                    "time": 2.75,
+                    "ramp": 1,
+                    "operatingCash": 136194.38117647055,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 131024.38117647055,
+                    "cumulative": -259451.23764705897
+                  },
+                  {
+                    "year": 3,
+                    "time": 3.75,
+                    "ramp": 1,
+                    "operatingCash": 136194.38117647055,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 131024.38117647055,
+                    "cumulative": -128426.85647058842
+                  },
+                  {
+                    "year": 4,
+                    "time": 4.75,
+                    "ramp": 1,
+                    "operatingCash": 136194.38117647055,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 131024.38117647055,
+                    "cumulative": 2597.524705882126
+                  },
+                  {
+                    "year": 5,
+                    "time": 5.75,
+                    "ramp": 1,
+                    "operatingCash": 136194.38117647055,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 131024.38117647055,
+                    "cumulative": 133621.90588235267
+                  },
+                  {
+                    "year": 6,
+                    "time": 6.75,
+                    "ramp": 1,
+                    "operatingCash": 136194.38117647055,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 131024.38117647055,
+                    "cumulative": 264646.2870588232
+                  },
+                  {
+                    "year": 7,
+                    "time": 7.75,
+                    "ramp": 1,
+                    "operatingCash": 136194.38117647055,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 131024.38117647055,
+                    "cumulative": 395670.66823529376
+                  },
+                  {
+                    "year": 8,
+                    "time": 8.75,
+                    "ramp": 1,
+                    "operatingCash": 136194.38117647055,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 131024.38117647055,
+                    "cumulative": 526695.0494117644
+                  },
+                  {
+                    "year": 9,
+                    "time": 9.75,
+                    "ramp": 1,
+                    "operatingCash": 136194.38117647055,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 131024.38117647055,
+                    "cumulative": 657719.4305882349
+                  },
+                  {
+                    "year": 10,
+                    "time": 10.75,
+                    "ramp": 1,
+                    "operatingCash": 136194.38117647055,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 131024.38117647055,
+                    "cumulative": 788743.8117647055
+                  }
+                ],
+                "horizonYears": 10.75,
+                "discountRate": 0.1
+              }
+            }
+          },
+          "numericHurdle": {
+            "passed": false,
+            "tests": {
+              "basePayback": false,
+              "conservativePayback": false,
+              "baseNpv": false,
+              "conservativeCash": true
+            }
+          },
+          "inverse": {
+            "base": {
+              "requiredSessionsPerStallDay": 10.260658599366847,
+              "requiredSessionsPerSiteDay": 41.04263439746739,
+              "requiredKwhPerStallDay": 359.1230509778396,
+              "minimumAverageGridKw": 70.41628450545876,
+              "maxCapex": 456607.2175102598,
+              "maxAllInGridPrice": 0.05251682449204743,
+              "maxFixedAndHoldingMonthly": null,
+              "maxConstructionYears": null,
+              "paybackLimitYears": 6,
+              "searchDomain": {
+                "sessionsPerStallDayMax": 1000000,
+                "capexMax": 1000000000,
+                "gridPriceMax": 10,
+                "monthlyCostMax": 10000000,
+                "constructionYearsMax": 6
+              }
+            },
+            "conservative": {
+              "requiredSessionsPerStallDay": 12.203472751998406,
+              "requiredSessionsPerSiteDay": 48.813891007993625,
+              "requiredKwhPerStallDay": 427.12154631994423,
+              "minimumAverageGridKw": 83.74932280783221,
+              "maxCapex": 222951.46694429984,
+              "maxAllInGridPrice": null,
+              "maxFixedAndHoldingMonthly": null,
+              "maxConstructionYears": null,
+              "paybackLimitYears": 8,
+              "searchDomain": {
+                "sessionsPerStallDayMax": 1000000,
+                "capexMax": 1000000000,
+                "gridPriceMax": 10,
+                "monthlyCostMax": 10000000,
+                "constructionYearsMax": 8
+              }
+            }
+          },
+          "qualification": "pending",
+          "evidenceAdmitted": false
+        }
       }
     },
     {
@@ -53883,7 +55044,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "winco-tigard",
@@ -55745,7 +56907,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "sprouts-suwanee",
@@ -58391,7 +59554,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "winco-medford",
@@ -61262,6 +62426,530 @@
             ]
           }
         ]
+      },
+      "hypothesis": {
+        "candidateId": "winco-medford",
+        "tier": "B",
+        "title": {
+          "en": "Prior-project recovery / redesign hypothesis",
+          "zh": "原项目恢复或重设计假设"
+        },
+        "rationale": {
+          "en": "Keep as a lower-priority redesign or recovery hypothesis. Existing project records create a useful diligence route, but the new vendor inputs make an unsubsidized full new build less attractive than the other four cases.",
+          "zh": "保留为较低优先级的重设计或恢复假设。历史项目资料提供核查路径，但新厂家参数显示，无补贴全新建设弱于其他四处。"
+        },
+        "anchors": {
+          "en": "The property is documented and Pacific Power offers eligible nonresidential charging-planning assistance. The earlier ODOT corridor agreement was cancelled; nearby DCFC is recorded at 0.2 miles.",
+          "zh": "物业有资料，Pacific Power向符合条件的非住宅客户提供充电规划支持。此前ODOT走廊协议已取消，最近快充记录仅0.2英里。"
+        },
+        "counter": {
+          "en": "The reason for cancellation, current rights and reusable work are unknown. Nearby competition weakens incremental demand; the vendor utility proxy is higher than in the WA and TX examples.",
+          "zh": "取消原因、现有权利及可复用工程待核；近邻竞争削弱增量需求，厂家电费代理值也高于华盛顿州和德州示例。"
+        },
+        "test": {
+          "en": "Resolve cancellation and asset rights before a new-build bid. Seek an owner-authorized utility assessment and an explicitly scoped restoration quote; separately verify any rebate and measured incremental demand.",
+          "zh": "新建投标前先查明取消原因和资产权利。取得业主授权的供电评估和明确范围的恢复报价，单独核实返利及实测增量需求。"
+        },
+        "sourceIds": [
+          "S5d60f40",
+          "Sa533d6e",
+          "V4-a784f1f71",
+          "V4-6b5cfb348",
+          "S53158f4"
+        ],
+        "estimate": {
+          "kwhPerPostDay": 230,
+          "retailPerKwh": 0.51,
+          "allInGridPerKwh": 0.16,
+          "fourPostCapital": 470000,
+          "vendorPaybackYears": 7,
+          "observedDate": "2026-10-30",
+          "normalizedAddress": "251 E Barnett Rd, Medford, OR 97501, USA",
+          "kind": "vendor projection; not measured paid demand",
+          "sourceId": "S53158f4"
+        },
+        "design": {
+          "en": "Four-post new-build comparison; upgrade savings are not assumed.",
+          "zh": "四枪全新建设比较；未假定改造可节省成本。"
+        },
+        "qualification": "pending",
+        "forecastVerified": false,
+        "analysis": {
+          "scenarios": {
+            "conservative": {
+              "inputs": {
+                "stalls": 4,
+                "sessionsPerStallDay": 4.6,
+                "kwhPerSession": 35,
+                "retailPerKwh": 0.51,
+                "energyPerKwh": 0.2,
+                "lossFraction": 0.15,
+                "servicePerKwh": 0.1,
+                "tariffMode": "fully_burdened",
+                "demandPerKwMonth": 0,
+                "billedPeakKw": 0,
+                "utilityFixedMonthly": 0,
+                "utilityFixedDaily": 0,
+                "demandFreeKw": 0,
+                "minimumBillDaily": 0,
+                "capex": 634500,
+                "fixedMonthly": 2000,
+                "preOpeningMonthly": 2000,
+                "constructionYears": 1.5,
+                "firstYearRamp": 0.5,
+                "sustainingCapexFraction": 0.02,
+                "discountRate": 0.1,
+                "operatingYears": 10
+              },
+              "outputs": {
+                "annualKwh": 235059.99999999997,
+                "gridKwh": 276541.1764705882,
+                "revenue": 119880.59999999999,
+                "energyCost": 55308.23529411764,
+                "serviceCost": 23506,
+                "demandCost": 0,
+                "utilityFixedCost": 0,
+                "minimumBillAdjustment": 0,
+                "electricityCost": 55308.23529411764,
+                "fixedCost": 24000,
+                "operatingCash": 17066.364705882348,
+                "marginPerKwh": 0.17470588235294113,
+                "breakEvenSessionsPerStallDay": 2.688331455454744,
+                "simplePaybackYears": 37.178392172839466,
+                "preOpeningHoldingCost": 36000,
+                "annualSustainingCapex": 12690,
+                "stabilizedFreeCash": 4376.364705882348,
+                "projectPaybackYears": null,
+                "npv": -660887.7226936835,
+                "cashflows": [
+                  {
+                    "year": 1,
+                    "time": 2.5,
+                    "ramp": 0.5,
+                    "operatingCash": -3466.817647058826,
+                    "replacementAllowance": 12690,
+                    "cash": -16156.817647058826,
+                    "cumulative": -686656.8176470589
+                  },
+                  {
+                    "year": 2,
+                    "time": 3.5,
+                    "ramp": 1,
+                    "operatingCash": 17066.364705882348,
+                    "replacementAllowance": 12690,
+                    "cash": 4376.364705882348,
+                    "cumulative": -682280.4529411765
+                  },
+                  {
+                    "year": 3,
+                    "time": 4.5,
+                    "ramp": 1,
+                    "operatingCash": 17066.364705882348,
+                    "replacementAllowance": 12690,
+                    "cash": 4376.364705882348,
+                    "cumulative": -677904.0882352941
+                  },
+                  {
+                    "year": 4,
+                    "time": 5.5,
+                    "ramp": 1,
+                    "operatingCash": 17066.364705882348,
+                    "replacementAllowance": 12690,
+                    "cash": 4376.364705882348,
+                    "cumulative": -673527.7235294117
+                  },
+                  {
+                    "year": 5,
+                    "time": 6.5,
+                    "ramp": 1,
+                    "operatingCash": 17066.364705882348,
+                    "replacementAllowance": 12690,
+                    "cash": 4376.364705882348,
+                    "cumulative": -669151.3588235293
+                  },
+                  {
+                    "year": 6,
+                    "time": 7.5,
+                    "ramp": 1,
+                    "operatingCash": 17066.364705882348,
+                    "replacementAllowance": 12690,
+                    "cash": 4376.364705882348,
+                    "cumulative": -664774.994117647
+                  },
+                  {
+                    "year": 7,
+                    "time": 8.5,
+                    "ramp": 1,
+                    "operatingCash": 17066.364705882348,
+                    "replacementAllowance": 12690,
+                    "cash": 4376.364705882348,
+                    "cumulative": -660398.6294117646
+                  },
+                  {
+                    "year": 8,
+                    "time": 9.5,
+                    "ramp": 1,
+                    "operatingCash": 17066.364705882348,
+                    "replacementAllowance": 12690,
+                    "cash": 4376.364705882348,
+                    "cumulative": -656022.2647058822
+                  },
+                  {
+                    "year": 9,
+                    "time": 10.5,
+                    "ramp": 1,
+                    "operatingCash": 17066.364705882348,
+                    "replacementAllowance": 12690,
+                    "cash": 4376.364705882348,
+                    "cumulative": -651645.8999999998
+                  },
+                  {
+                    "year": 10,
+                    "time": 11.5,
+                    "ramp": 1,
+                    "operatingCash": 17066.364705882348,
+                    "replacementAllowance": 12690,
+                    "cash": 4376.364705882348,
+                    "cumulative": -647269.5352941174
+                  }
+                ],
+                "horizonYears": 11.5,
+                "discountRate": 0.1
+              }
+            },
+            "base": {
+              "inputs": {
+                "stalls": 4,
+                "sessionsPerStallDay": 6.571428571428571,
+                "kwhPerSession": 35,
+                "retailPerKwh": 0.51,
+                "energyPerKwh": 0.16,
+                "lossFraction": 0.15,
+                "servicePerKwh": 0.1,
+                "tariffMode": "fully_burdened",
+                "demandPerKwMonth": 0,
+                "billedPeakKw": 0,
+                "utilityFixedMonthly": 0,
+                "utilityFixedDaily": 0,
+                "demandFreeKw": 0,
+                "minimumBillDaily": 0,
+                "capex": 564000,
+                "fixedMonthly": 1000,
+                "preOpeningMonthly": 1000,
+                "constructionYears": 1,
+                "firstYearRamp": 0.75,
+                "sustainingCapexFraction": 0.015,
+                "discountRate": 0.1,
+                "operatingYears": 10
+              },
+              "outputs": {
+                "annualKwh": 335800,
+                "gridKwh": 395058.82352941175,
+                "revenue": 171258,
+                "energyCost": 63209.41176470588,
+                "serviceCost": 33580,
+                "demandCost": 0,
+                "utilityFixedCost": 0,
+                "minimumBillAdjustment": 0,
+                "electricityCost": 63209.41176470588,
+                "fixedCost": 12000,
+                "operatingCash": 62468.588235294126,
+                "marginPerKwh": 0.22176470588235295,
+                "breakEvenSessionsPerStallDay": 1.0589316210478232,
+                "simplePaybackYears": 9.028537636798164,
+                "preOpeningHoldingCost": 12000,
+                "annualSustainingCapex": 8460,
+                "stabilizedFreeCash": 54008.588235294126,
+                "projectPaybackYears": null,
+                "npv": -289137.2642057179,
+                "cashflows": [
+                  {
+                    "year": 1,
+                    "time": 2,
+                    "ramp": 0.75,
+                    "operatingCash": 43851.441176470595,
+                    "replacementAllowance": 8460,
+                    "cash": 35391.441176470595,
+                    "cumulative": -540608.5588235294
+                  },
+                  {
+                    "year": 2,
+                    "time": 3,
+                    "ramp": 1,
+                    "operatingCash": 62468.588235294126,
+                    "replacementAllowance": 8460,
+                    "cash": 54008.588235294126,
+                    "cumulative": -486599.9705882353
+                  },
+                  {
+                    "year": 3,
+                    "time": 4,
+                    "ramp": 1,
+                    "operatingCash": 62468.588235294126,
+                    "replacementAllowance": 8460,
+                    "cash": 54008.588235294126,
+                    "cumulative": -432591.3823529412
+                  },
+                  {
+                    "year": 4,
+                    "time": 5,
+                    "ramp": 1,
+                    "operatingCash": 62468.588235294126,
+                    "replacementAllowance": 8460,
+                    "cash": 54008.588235294126,
+                    "cumulative": -378582.7941176471
+                  },
+                  {
+                    "year": 5,
+                    "time": 6,
+                    "ramp": 1,
+                    "operatingCash": 62468.588235294126,
+                    "replacementAllowance": 8460,
+                    "cash": 54008.588235294126,
+                    "cumulative": -324574.205882353
+                  },
+                  {
+                    "year": 6,
+                    "time": 7,
+                    "ramp": 1,
+                    "operatingCash": 62468.588235294126,
+                    "replacementAllowance": 8460,
+                    "cash": 54008.588235294126,
+                    "cumulative": -270565.6176470589
+                  },
+                  {
+                    "year": 7,
+                    "time": 8,
+                    "ramp": 1,
+                    "operatingCash": 62468.588235294126,
+                    "replacementAllowance": 8460,
+                    "cash": 54008.588235294126,
+                    "cumulative": -216557.0294117648
+                  },
+                  {
+                    "year": 8,
+                    "time": 9,
+                    "ramp": 1,
+                    "operatingCash": 62468.588235294126,
+                    "replacementAllowance": 8460,
+                    "cash": 54008.588235294126,
+                    "cumulative": -162548.44117647066
+                  },
+                  {
+                    "year": 9,
+                    "time": 10,
+                    "ramp": 1,
+                    "operatingCash": 62468.588235294126,
+                    "replacementAllowance": 8460,
+                    "cash": 54008.588235294126,
+                    "cumulative": -108539.85294117653
+                  },
+                  {
+                    "year": 10,
+                    "time": 11,
+                    "ramp": 1,
+                    "operatingCash": 62468.588235294126,
+                    "replacementAllowance": 8460,
+                    "cash": 54008.588235294126,
+                    "cumulative": -54531.26470588241
+                  }
+                ],
+                "horizonYears": 11,
+                "discountRate": 0.1
+              }
+            },
+            "optimistic": {
+              "inputs": {
+                "stalls": 4,
+                "sessionsPerStallDay": 7.885714285714286,
+                "kwhPerSession": 35,
+                "retailPerKwh": 0.51,
+                "energyPerKwh": 0.16,
+                "lossFraction": 0.15,
+                "servicePerKwh": 0.1,
+                "tariffMode": "fully_burdened",
+                "demandPerKwMonth": 0,
+                "billedPeakKw": 0,
+                "utilityFixedMonthly": 0,
+                "utilityFixedDaily": 0,
+                "demandFreeKw": 0,
+                "minimumBillDaily": 0,
+                "capex": 517000.00000000006,
+                "fixedMonthly": 500,
+                "preOpeningMonthly": 500,
+                "constructionYears": 0.75,
+                "firstYearRamp": 1,
+                "sustainingCapexFraction": 0.01,
+                "discountRate": 0.1,
+                "operatingYears": 10
+              },
+              "outputs": {
+                "annualKwh": 402960,
+                "gridKwh": 474070.58823529416,
+                "revenue": 205509.6,
+                "energyCost": 75851.29411764706,
+                "serviceCost": 40296,
+                "demandCost": 0,
+                "utilityFixedCost": 0,
+                "minimumBillAdjustment": 0,
+                "electricityCost": 75851.29411764706,
+                "fixedCost": 6000,
+                "operatingCash": 83362.30588235294,
+                "marginPerKwh": 0.22176470588235295,
+                "breakEvenSessionsPerStallDay": 0.5294658105239116,
+                "simplePaybackYears": 6.2018438013174535,
+                "preOpeningHoldingCost": 4500,
+                "annualSustainingCapex": 5170.000000000001,
+                "stabilizedFreeCash": 78192.30588235294,
+                "projectPaybackYears": 7.419454163234958,
+                "npv": -74029.74769010677,
+                "cashflows": [
+                  {
+                    "year": 1,
+                    "time": 1.75,
+                    "ramp": 1,
+                    "operatingCash": 83362.30588235294,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 78192.30588235294,
+                    "cumulative": -443307.69411764713
+                  },
+                  {
+                    "year": 2,
+                    "time": 2.75,
+                    "ramp": 1,
+                    "operatingCash": 83362.30588235294,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 78192.30588235294,
+                    "cumulative": -365115.3882352942
+                  },
+                  {
+                    "year": 3,
+                    "time": 3.75,
+                    "ramp": 1,
+                    "operatingCash": 83362.30588235294,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 78192.30588235294,
+                    "cumulative": -286923.0823529413
+                  },
+                  {
+                    "year": 4,
+                    "time": 4.75,
+                    "ramp": 1,
+                    "operatingCash": 83362.30588235294,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 78192.30588235294,
+                    "cumulative": -208730.77647058835
+                  },
+                  {
+                    "year": 5,
+                    "time": 5.75,
+                    "ramp": 1,
+                    "operatingCash": 83362.30588235294,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 78192.30588235294,
+                    "cumulative": -130538.4705882354
+                  },
+                  {
+                    "year": 6,
+                    "time": 6.75,
+                    "ramp": 1,
+                    "operatingCash": 83362.30588235294,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 78192.30588235294,
+                    "cumulative": -52346.16470588246
+                  },
+                  {
+                    "year": 7,
+                    "time": 7.75,
+                    "ramp": 1,
+                    "operatingCash": 83362.30588235294,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 78192.30588235294,
+                    "cumulative": 25846.141176470483
+                  },
+                  {
+                    "year": 8,
+                    "time": 8.75,
+                    "ramp": 1,
+                    "operatingCash": 83362.30588235294,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 78192.30588235294,
+                    "cumulative": 104038.44705882343
+                  },
+                  {
+                    "year": 9,
+                    "time": 9.75,
+                    "ramp": 1,
+                    "operatingCash": 83362.30588235294,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 78192.30588235294,
+                    "cumulative": 182230.75294117635
+                  },
+                  {
+                    "year": 10,
+                    "time": 10.75,
+                    "ramp": 1,
+                    "operatingCash": 83362.30588235294,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 78192.30588235294,
+                    "cumulative": 260423.05882352928
+                  }
+                ],
+                "horizonYears": 10.75,
+                "discountRate": 0.1
+              }
+            }
+          },
+          "numericHurdle": {
+            "passed": false,
+            "tests": {
+              "basePayback": false,
+              "conservativePayback": false,
+              "baseNpv": false,
+              "conservativeCash": true
+            }
+          },
+          "inverse": {
+            "base": {
+              "requiredSessionsPerStallDay": 12.601286290469094,
+              "requiredSessionsPerSiteDay": 50.405145161876376,
+              "requiredKwhPerStallDay": 441.0450201664183,
+              "minimumAverageGridKw": 86.47941571890556,
+              "maxCapex": 262070.50615595077,
+              "maxAllInGridPrice": null,
+              "maxFixedAndHoldingMonthly": null,
+              "maxConstructionYears": null,
+              "paybackLimitYears": 6,
+              "searchDomain": {
+                "sessionsPerStallDayMax": 1000000,
+                "capexMax": 1000000000,
+                "gridPriceMax": 10,
+                "monthlyCostMax": 10000000,
+                "constructionYearsMax": 6
+              }
+            },
+            "conservative": {
+              "requiredSessionsPerStallDay": 16.96981227803145,
+              "requiredSessionsPerSiteDay": 67.8792491121258,
+              "requiredKwhPerStallDay": 593.9434297311008,
+              "minimumAverageGridKw": 116.45949602570604,
+              "maxCapex": 48139.98958875586,
+              "maxAllInGridPrice": null,
+              "maxFixedAndHoldingMonthly": null,
+              "maxConstructionYears": null,
+              "paybackLimitYears": 8,
+              "searchDomain": {
+                "sessionsPerStallDayMax": 1000000,
+                "capexMax": 1000000000,
+                "gridPriceMax": 10,
+                "monthlyCostMax": 10000000,
+                "constructionYearsMax": 8
+              }
+            }
+          },
+          "qualification": "pending",
+          "evidenceAdmitted": false
+        }
       }
     },
     {
@@ -63335,7 +65023,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "wegmans-wakeforest",
@@ -65252,7 +66941,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "winco-spokanevalley",
@@ -67317,7 +69007,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "heb-crosscreek",
@@ -69418,7 +71109,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "heb-elgin",
@@ -71458,6 +73150,530 @@
             ]
           }
         ]
+      },
+      "hypothesis": {
+        "candidateId": "heb-elgin",
+        "tier": "B",
+        "title": {
+          "en": "Corridor hypothesis — access and demand evidence first",
+          "zh": "走廊假设——先核通行与需求"
+        },
+        "rationale": {
+          "en": "Investigate corridor stopping demand after the access screen. Sparse inventory makes the US 290 hypothesis worth testing, but the same Texas vendor default is weaker evidence here than a local traffic/capture study.",
+          "zh": "先核通行，再调查走廊停靠需求。供给稀疏使US 290假设值得验证，但相同的德州厂家默认值弱于当地车流与捕获研究。"
+        },
+        "anchors": {
+          "en": "Official H-E-B identity confirms 1080 West Hwy 290. Retained inventory has one DCFC record within 10 miles, nearest at 9.5 miles. A September 2026 TxDOT notice identifies a corridor study with potential right-of-way and displacement effects.",
+          "zh": "官方H-E-B确认1080 West Hwy 290。供给快照10英里内仅1条快充记录，最近9.5英里。2026年9月TxDOT公告列明走廊研究及潜在征地、搬迁影响。"
+        },
+        "counter": {
+          "en": "Through traffic may be commuters charging at home. Elgin’s city EV count is small. Planned road changes can undermine frontage access; no direct impact on this parcel has yet been established.",
+          "zh": "过境车流可能是在家充电的通勤者，本地EV规模较小。道路规划可能影响临街通行，但尚未证实该地块的具体影响。"
+        },
+        "test": {
+          "en": "Overlay current roadway concepts with the parcel and entrances before paying for design. Validate directional EV traffic, stopping need and attainable capture with matched paid analogues; do not multiply all traffic by city EV share.",
+          "zh": "投入设计前先叠加最新道路方案、地块和出入口。结合付费可比样本核实分方向EV车流、停靠需要和可获得的需求；不可把全部车流直接乘城市EV比例。"
+        },
+        "sourceIds": [
+          "S90289e4",
+          "Sf63f4e0",
+          "S2c4639c",
+          "V7-SITE-ELGIN-ROW",
+          "S53158f4"
+        ],
+        "estimate": {
+          "kwhPerPostDay": 302,
+          "retailPerKwh": 0.51,
+          "allInGridPerKwh": 0.11,
+          "fourPostCapital": 470000,
+          "vendorPaybackYears": 5,
+          "observedDate": "2026-10-30",
+          "normalizedAddress": "1080 US-290, Elgin, TX 78621, USA",
+          "kind": "vendor projection; not measured paid demand",
+          "sourceId": "S53158f4"
+        },
+        "design": {
+          "en": "Four-post new-build comparison; upgrade savings are not assumed.",
+          "zh": "四枪全新建设比较；未假定改造可节省成本。"
+        },
+        "qualification": "pending",
+        "forecastVerified": false,
+        "analysis": {
+          "scenarios": {
+            "conservative": {
+              "inputs": {
+                "stalls": 4,
+                "sessionsPerStallDay": 6.039999999999999,
+                "kwhPerSession": 35,
+                "retailPerKwh": 0.51,
+                "energyPerKwh": 0.1375,
+                "lossFraction": 0.15,
+                "servicePerKwh": 0.1,
+                "tariffMode": "fully_burdened",
+                "demandPerKwMonth": 0,
+                "billedPeakKw": 0,
+                "utilityFixedMonthly": 0,
+                "utilityFixedDaily": 0,
+                "demandFreeKw": 0,
+                "minimumBillDaily": 0,
+                "capex": 634500,
+                "fixedMonthly": 2000,
+                "preOpeningMonthly": 2000,
+                "constructionYears": 1.5,
+                "firstYearRamp": 0.5,
+                "sustainingCapexFraction": 0.02,
+                "discountRate": 0.1,
+                "operatingYears": 10
+              },
+              "outputs": {
+                "annualKwh": 308644,
+                "gridKwh": 363110.58823529416,
+                "revenue": 157408.44,
+                "energyCost": 49927.70588235295,
+                "serviceCost": 30864.4,
+                "demandCost": 0,
+                "utilityFixedCost": 0,
+                "minimumBillAdjustment": 0,
+                "electricityCost": 49927.70588235295,
+                "fixedCost": 24000,
+                "operatingCash": 52616.33411764706,
+                "marginPerKwh": 0.24823529411764708,
+                "breakEvenSessionsPerStallDay": 1.8920247447157788,
+                "simplePaybackYears": 12.058992908576545,
+                "preOpeningHoldingCost": 36000,
+                "annualSustainingCapex": 12690,
+                "stabilizedFreeCash": 39926.33411764706,
+                "projectPaybackYears": null,
+                "npv": -485554.5374643758,
+                "cashflows": [
+                  {
+                    "year": 1,
+                    "time": 2.5,
+                    "ramp": 0.5,
+                    "operatingCash": 14308.167058823528,
+                    "replacementAllowance": 12690,
+                    "cash": 1618.1670588235284,
+                    "cumulative": -668881.8329411765
+                  },
+                  {
+                    "year": 2,
+                    "time": 3.5,
+                    "ramp": 1,
+                    "operatingCash": 52616.33411764706,
+                    "replacementAllowance": 12690,
+                    "cash": 39926.33411764706,
+                    "cumulative": -628955.4988235295
+                  },
+                  {
+                    "year": 3,
+                    "time": 4.5,
+                    "ramp": 1,
+                    "operatingCash": 52616.33411764706,
+                    "replacementAllowance": 12690,
+                    "cash": 39926.33411764706,
+                    "cumulative": -589029.1647058824
+                  },
+                  {
+                    "year": 4,
+                    "time": 5.5,
+                    "ramp": 1,
+                    "operatingCash": 52616.33411764706,
+                    "replacementAllowance": 12690,
+                    "cash": 39926.33411764706,
+                    "cumulative": -549102.8305882354
+                  },
+                  {
+                    "year": 5,
+                    "time": 6.5,
+                    "ramp": 1,
+                    "operatingCash": 52616.33411764706,
+                    "replacementAllowance": 12690,
+                    "cash": 39926.33411764706,
+                    "cumulative": -509176.4964705884
+                  },
+                  {
+                    "year": 6,
+                    "time": 7.5,
+                    "ramp": 1,
+                    "operatingCash": 52616.33411764706,
+                    "replacementAllowance": 12690,
+                    "cash": 39926.33411764706,
+                    "cumulative": -469250.16235294135
+                  },
+                  {
+                    "year": 7,
+                    "time": 8.5,
+                    "ramp": 1,
+                    "operatingCash": 52616.33411764706,
+                    "replacementAllowance": 12690,
+                    "cash": 39926.33411764706,
+                    "cumulative": -429323.8282352943
+                  },
+                  {
+                    "year": 8,
+                    "time": 9.5,
+                    "ramp": 1,
+                    "operatingCash": 52616.33411764706,
+                    "replacementAllowance": 12690,
+                    "cash": 39926.33411764706,
+                    "cumulative": -389397.4941176473
+                  },
+                  {
+                    "year": 9,
+                    "time": 10.5,
+                    "ramp": 1,
+                    "operatingCash": 52616.33411764706,
+                    "replacementAllowance": 12690,
+                    "cash": 39926.33411764706,
+                    "cumulative": -349471.16000000027
+                  },
+                  {
+                    "year": 10,
+                    "time": 11.5,
+                    "ramp": 1,
+                    "operatingCash": 52616.33411764706,
+                    "replacementAllowance": 12690,
+                    "cash": 39926.33411764706,
+                    "cumulative": -309544.82588235324
+                  }
+                ],
+                "horizonYears": 11.5,
+                "discountRate": 0.1
+              }
+            },
+            "base": {
+              "inputs": {
+                "stalls": 4,
+                "sessionsPerStallDay": 8.628571428571428,
+                "kwhPerSession": 35,
+                "retailPerKwh": 0.51,
+                "energyPerKwh": 0.11,
+                "lossFraction": 0.15,
+                "servicePerKwh": 0.1,
+                "tariffMode": "fully_burdened",
+                "demandPerKwMonth": 0,
+                "billedPeakKw": 0,
+                "utilityFixedMonthly": 0,
+                "utilityFixedDaily": 0,
+                "demandFreeKw": 0,
+                "minimumBillDaily": 0,
+                "capex": 564000,
+                "fixedMonthly": 1000,
+                "preOpeningMonthly": 1000,
+                "constructionYears": 1,
+                "firstYearRamp": 0.75,
+                "sustainingCapexFraction": 0.015,
+                "discountRate": 0.1,
+                "operatingYears": 10
+              },
+              "outputs": {
+                "annualKwh": 440919.99999999994,
+                "gridKwh": 518729.41176470584,
+                "revenue": 224869.19999999998,
+                "energyCost": 57060.23529411764,
+                "serviceCost": 44092,
+                "demandCost": 0,
+                "utilityFixedCost": 0,
+                "minimumBillAdjustment": 0,
+                "electricityCost": 57060.23529411764,
+                "fixedCost": 12000,
+                "operatingCash": 111716.96470588233,
+                "marginPerKwh": 0.2805882352941177,
+                "breakEvenSessionsPerStallDay": 0.8369333776415708,
+                "simplePaybackYears": 5.0484722842662695,
+                "preOpeningHoldingCost": 12000,
+                "annualSustainingCapex": 8460,
+                "stabilizedFreeCash": 103256.96470588233,
+                "projectPaybackYears": 6.87785281995506,
+                "npv": -24212.5903545252,
+                "cashflows": [
+                  {
+                    "year": 1,
+                    "time": 2,
+                    "ramp": 0.75,
+                    "operatingCash": 80787.72352941177,
+                    "replacementAllowance": 8460,
+                    "cash": 72327.72352941177,
+                    "cumulative": -503672.27647058823
+                  },
+                  {
+                    "year": 2,
+                    "time": 3,
+                    "ramp": 1,
+                    "operatingCash": 111716.96470588233,
+                    "replacementAllowance": 8460,
+                    "cash": 103256.96470588233,
+                    "cumulative": -400415.3117647059
+                  },
+                  {
+                    "year": 3,
+                    "time": 4,
+                    "ramp": 1,
+                    "operatingCash": 111716.96470588233,
+                    "replacementAllowance": 8460,
+                    "cash": 103256.96470588233,
+                    "cumulative": -297158.34705882357
+                  },
+                  {
+                    "year": 4,
+                    "time": 5,
+                    "ramp": 1,
+                    "operatingCash": 111716.96470588233,
+                    "replacementAllowance": 8460,
+                    "cash": 103256.96470588233,
+                    "cumulative": -193901.38235294123
+                  },
+                  {
+                    "year": 5,
+                    "time": 6,
+                    "ramp": 1,
+                    "operatingCash": 111716.96470588233,
+                    "replacementAllowance": 8460,
+                    "cash": 103256.96470588233,
+                    "cumulative": -90644.4176470589
+                  },
+                  {
+                    "year": 6,
+                    "time": 7,
+                    "ramp": 1,
+                    "operatingCash": 111716.96470588233,
+                    "replacementAllowance": 8460,
+                    "cash": 103256.96470588233,
+                    "cumulative": 12612.547058823431
+                  },
+                  {
+                    "year": 7,
+                    "time": 8,
+                    "ramp": 1,
+                    "operatingCash": 111716.96470588233,
+                    "replacementAllowance": 8460,
+                    "cash": 103256.96470588233,
+                    "cumulative": 115869.51176470576
+                  },
+                  {
+                    "year": 8,
+                    "time": 9,
+                    "ramp": 1,
+                    "operatingCash": 111716.96470588233,
+                    "replacementAllowance": 8460,
+                    "cash": 103256.96470588233,
+                    "cumulative": 219126.4764705881
+                  },
+                  {
+                    "year": 9,
+                    "time": 10,
+                    "ramp": 1,
+                    "operatingCash": 111716.96470588233,
+                    "replacementAllowance": 8460,
+                    "cash": 103256.96470588233,
+                    "cumulative": 322383.4411764704
+                  },
+                  {
+                    "year": 10,
+                    "time": 11,
+                    "ramp": 1,
+                    "operatingCash": 111716.96470588233,
+                    "replacementAllowance": 8460,
+                    "cash": 103256.96470588233,
+                    "cumulative": 425640.40588235273
+                  }
+                ],
+                "horizonYears": 11,
+                "discountRate": 0.1
+              }
+            },
+            "optimistic": {
+              "inputs": {
+                "stalls": 4,
+                "sessionsPerStallDay": 10.354285714285714,
+                "kwhPerSession": 35,
+                "retailPerKwh": 0.51,
+                "energyPerKwh": 0.11,
+                "lossFraction": 0.15,
+                "servicePerKwh": 0.1,
+                "tariffMode": "fully_burdened",
+                "demandPerKwMonth": 0,
+                "billedPeakKw": 0,
+                "utilityFixedMonthly": 0,
+                "utilityFixedDaily": 0,
+                "demandFreeKw": 0,
+                "minimumBillDaily": 0,
+                "capex": 517000.00000000006,
+                "fixedMonthly": 500,
+                "preOpeningMonthly": 500,
+                "constructionYears": 0.75,
+                "firstYearRamp": 1,
+                "sustainingCapexFraction": 0.01,
+                "discountRate": 0.1,
+                "operatingYears": 10
+              },
+              "outputs": {
+                "annualKwh": 529104,
+                "gridKwh": 622475.2941176471,
+                "revenue": 269843.04,
+                "energyCost": 68472.28235294118,
+                "serviceCost": 52910.4,
+                "demandCost": 0,
+                "utilityFixedCost": 0,
+                "minimumBillAdjustment": 0,
+                "electricityCost": 68472.28235294118,
+                "fixedCost": 6000,
+                "operatingCash": 142460.3576470588,
+                "marginPerKwh": 0.2805882352941177,
+                "breakEvenSessionsPerStallDay": 0.4184666888207854,
+                "simplePaybackYears": 3.62907975621437,
+                "preOpeningHoldingCost": 4500,
+                "annualSustainingCapex": 5170.000000000001,
+                "stabilizedFreeCash": 137290.3576470588,
+                "projectPaybackYears": 4.548518766632205,
+                "npv": 264050.6120373678,
+                "cashflows": [
+                  {
+                    "year": 1,
+                    "time": 1.75,
+                    "ramp": 1,
+                    "operatingCash": 142460.3576470588,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 137290.3576470588,
+                    "cumulative": -384209.6423529413
+                  },
+                  {
+                    "year": 2,
+                    "time": 2.75,
+                    "ramp": 1,
+                    "operatingCash": 142460.3576470588,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 137290.3576470588,
+                    "cumulative": -246919.28470588248
+                  },
+                  {
+                    "year": 3,
+                    "time": 3.75,
+                    "ramp": 1,
+                    "operatingCash": 142460.3576470588,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 137290.3576470588,
+                    "cumulative": -109628.9270588237
+                  },
+                  {
+                    "year": 4,
+                    "time": 4.75,
+                    "ramp": 1,
+                    "operatingCash": 142460.3576470588,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 137290.3576470588,
+                    "cumulative": 27661.43058823509
+                  },
+                  {
+                    "year": 5,
+                    "time": 5.75,
+                    "ramp": 1,
+                    "operatingCash": 142460.3576470588,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 137290.3576470588,
+                    "cumulative": 164951.78823529388
+                  },
+                  {
+                    "year": 6,
+                    "time": 6.75,
+                    "ramp": 1,
+                    "operatingCash": 142460.3576470588,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 137290.3576470588,
+                    "cumulative": 302242.14588235266
+                  },
+                  {
+                    "year": 7,
+                    "time": 7.75,
+                    "ramp": 1,
+                    "operatingCash": 142460.3576470588,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 137290.3576470588,
+                    "cumulative": 439532.50352941145
+                  },
+                  {
+                    "year": 8,
+                    "time": 8.75,
+                    "ramp": 1,
+                    "operatingCash": 142460.3576470588,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 137290.3576470588,
+                    "cumulative": 576822.8611764703
+                  },
+                  {
+                    "year": 9,
+                    "time": 9.75,
+                    "ramp": 1,
+                    "operatingCash": 142460.3576470588,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 137290.3576470588,
+                    "cumulative": 714113.2188235291
+                  },
+                  {
+                    "year": 10,
+                    "time": 10.75,
+                    "ramp": 1,
+                    "operatingCash": 142460.3576470588,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 137290.3576470588,
+                    "cumulative": 851403.5764705879
+                  }
+                ],
+                "horizonYears": 10.75,
+                "discountRate": 0.1
+              }
+            }
+          },
+          "numericHurdle": {
+            "passed": false,
+            "tests": {
+              "basePayback": false,
+              "conservativePayback": false,
+              "baseNpv": false,
+              "conservativeCash": true
+            }
+          },
+          "inverse": {
+            "base": {
+              "requiredSessionsPerStallDay": 9.959507193934693,
+              "requiredSessionsPerSiteDay": 39.83802877573877,
+              "requiredKwhPerStallDay": 348.58275178771424,
+              "minimumAverageGridKw": 68.34955917406162,
+              "maxCapex": 479679.611491108,
+              "maxAllInGridPrice": 0.07321196588950377,
+              "maxFixedAndHoldingMonthly": null,
+              "maxConstructionYears": 0.21354498725201454,
+              "paybackLimitYears": 6,
+              "searchDomain": {
+                "sessionsPerStallDayMax": 1000000,
+                "capexMax": 1000000000,
+                "gridPriceMax": 10,
+                "monthlyCostMax": 10000000,
+                "constructionYearsMax": 6
+              }
+            },
+            "conservative": {
+              "requiredSessionsPerStallDay": 11.943209115107445,
+              "requiredSessionsPerSiteDay": 47.77283646042978,
+              "requiredKwhPerStallDay": 418.01231902876054,
+              "minimumAverageGridKw": 81.96319980956089,
+              "maxCapex": 236900.88912024995,
+              "maxAllInGridPrice": null,
+              "maxFixedAndHoldingMonthly": null,
+              "maxConstructionYears": null,
+              "paybackLimitYears": 8,
+              "searchDomain": {
+                "sessionsPerStallDayMax": 1000000,
+                "capexMax": 1000000000,
+                "gridPriceMax": 10,
+                "monthlyCostMax": 10000000,
+                "constructionYearsMax": 8
+              }
+            }
+          },
+          "qualification": "pending",
+          "evidenceAdmitted": false
+        }
       }
     },
     {
@@ -73368,7 +75584,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "winco-puyallup",
@@ -75376,6 +77593,533 @@
             ]
           }
         ]
+      },
+      "hypothesis": {
+        "candidateId": "winco-puyallup",
+        "tier": "A",
+        "title": {
+          "en": "New-build / four-post staged hypothesis",
+          "zh": "本地新增 / 四枪分期假设"
+        },
+        "rationale": {
+          "en": "First investigate a four-post retail site: 24-hour amenities and a larger nearby supply gap than the other urban WinCo options reviewed. This is an investigation priority, not a forecast of market share.",
+          "zh": "优先调查四枪零售站：全天配套，本轮城市WinCo候选中近邻供给间距相对较大。这是调查优先级，不是市场份额预测。"
+        },
+        "anchors": {
+          "en": "Official store identity/hours were reconfirmed. The retained October 29 supply snapshot has no DCFC record within 3 straight-line miles and a nearest record at 4.1 miles. County traffic records cover the 176th Street corridor, but no exact count/year/location join was verified.",
+          "zh": "重核官方门店身份及营业时间。10月29日供给快照中，直线3英里内没有快充记录，最近记录4.1英里。县交通资料覆盖176街，但未核定精确计数、年份与位置的对应。"
+        },
+        "counter": {
+          "en": "Home charging can dominate suburban demand. Road traffic, city EV registrations and a database gap do not establish paid charging demand. Utility territory, capacity and parking rights remain unverified.",
+          "zh": "郊区可能主要在家充电。道路车流、城市EV注册量及数据库空白均不证明付费需求；供电区域、容量和停车权利待核。"
+        },
+        "test": {
+          "en": "Match road counters to actual entrances; inspect turning access and nearby South Hill charging queues. Obtain comparable paid energy across seasons, then test incremental capture, complete four-post EPC cost and a written utility service offer.",
+          "zh": "把交通计数点匹配实际出入口，检查转向通行及South Hill竞品排队。取得跨季节可比付费电量，再核增量捕获、四枪完整EPC费用及书面接电方案。"
+        },
+        "sourceIds": [
+          "Sfbe3fc0",
+          "S12c398d",
+          "S01b0b80",
+          "S3b4e7ed",
+          "V7-SITE-PIERCE-COUNTS",
+          "V7-SITE-PIERCE-AADT",
+          "V7-SITE-PIERCE-TCMS",
+          "S53158f4"
+        ],
+        "estimate": {
+          "kwhPerPostDay": 298,
+          "retailPerKwh": 0.49,
+          "allInGridPerKwh": 0.1,
+          "fourPostCapital": 470000,
+          "vendorPaybackYears": 5,
+          "observedDate": "2026-10-30",
+          "normalizedAddress": "9518 176th St E, Puyallup, WA 98375, USA",
+          "kind": "vendor projection; not measured paid demand",
+          "sourceId": "S53158f4"
+        },
+        "design": {
+          "en": "Four-post new-build comparison; upgrade savings are not assumed.",
+          "zh": "四枪全新建设比较；未假定改造可节省成本。"
+        },
+        "qualification": "pending",
+        "forecastVerified": false,
+        "analysis": {
+          "scenarios": {
+            "conservative": {
+              "inputs": {
+                "stalls": 4,
+                "sessionsPerStallDay": 5.96,
+                "kwhPerSession": 35,
+                "retailPerKwh": 0.49,
+                "energyPerKwh": 0.125,
+                "lossFraction": 0.15,
+                "servicePerKwh": 0.1,
+                "tariffMode": "fully_burdened",
+                "demandPerKwMonth": 0,
+                "billedPeakKw": 0,
+                "utilityFixedMonthly": 0,
+                "utilityFixedDaily": 0,
+                "demandFreeKw": 0,
+                "minimumBillDaily": 0,
+                "capex": 634500,
+                "fixedMonthly": 2000,
+                "preOpeningMonthly": 2000,
+                "constructionYears": 1.5,
+                "firstYearRamp": 0.5,
+                "sustainingCapexFraction": 0.02,
+                "discountRate": 0.1,
+                "operatingYears": 10
+              },
+              "outputs": {
+                "annualKwh": 304556,
+                "gridKwh": 358301.17647058825,
+                "revenue": 149232.44,
+                "energyCost": 44787.64705882353,
+                "serviceCost": 30455.600000000002,
+                "demandCost": 0,
+                "utilityFixedCost": 0,
+                "minimumBillAdjustment": 0,
+                "electricityCost": 44787.64705882353,
+                "fixedCost": 24000,
+                "operatingCash": 49989.19294117647,
+                "marginPerKwh": 0.2429411764705882,
+                "breakEvenSessionsPerStallDay": 1.9332553081599486,
+                "simplePaybackYears": 12.69274342449641,
+                "preOpeningHoldingCost": 36000,
+                "annualSustainingCapex": 12690,
+                "stabilizedFreeCash": 37299.19294117647,
+                "projectPaybackYears": null,
+                "npv": -498511.652143783,
+                "cashflows": [
+                  {
+                    "year": 1,
+                    "time": 2.5,
+                    "ramp": 0.5,
+                    "operatingCash": 12994.596470588236,
+                    "replacementAllowance": 12690,
+                    "cash": 304.5964705882361,
+                    "cumulative": -670195.4035294118
+                  },
+                  {
+                    "year": 2,
+                    "time": 3.5,
+                    "ramp": 1,
+                    "operatingCash": 49989.19294117647,
+                    "replacementAllowance": 12690,
+                    "cash": 37299.19294117647,
+                    "cumulative": -632896.2105882353
+                  },
+                  {
+                    "year": 3,
+                    "time": 4.5,
+                    "ramp": 1,
+                    "operatingCash": 49989.19294117647,
+                    "replacementAllowance": 12690,
+                    "cash": 37299.19294117647,
+                    "cumulative": -595597.0176470588
+                  },
+                  {
+                    "year": 4,
+                    "time": 5.5,
+                    "ramp": 1,
+                    "operatingCash": 49989.19294117647,
+                    "replacementAllowance": 12690,
+                    "cash": 37299.19294117647,
+                    "cumulative": -558297.8247058823
+                  },
+                  {
+                    "year": 5,
+                    "time": 6.5,
+                    "ramp": 1,
+                    "operatingCash": 49989.19294117647,
+                    "replacementAllowance": 12690,
+                    "cash": 37299.19294117647,
+                    "cumulative": -520998.6317647059
+                  },
+                  {
+                    "year": 6,
+                    "time": 7.5,
+                    "ramp": 1,
+                    "operatingCash": 49989.19294117647,
+                    "replacementAllowance": 12690,
+                    "cash": 37299.19294117647,
+                    "cumulative": -483699.4388235294
+                  },
+                  {
+                    "year": 7,
+                    "time": 8.5,
+                    "ramp": 1,
+                    "operatingCash": 49989.19294117647,
+                    "replacementAllowance": 12690,
+                    "cash": 37299.19294117647,
+                    "cumulative": -446400.24588235293
+                  },
+                  {
+                    "year": 8,
+                    "time": 9.5,
+                    "ramp": 1,
+                    "operatingCash": 49989.19294117647,
+                    "replacementAllowance": 12690,
+                    "cash": 37299.19294117647,
+                    "cumulative": -409101.05294117646
+                  },
+                  {
+                    "year": 9,
+                    "time": 10.5,
+                    "ramp": 1,
+                    "operatingCash": 49989.19294117647,
+                    "replacementAllowance": 12690,
+                    "cash": 37299.19294117647,
+                    "cumulative": -371801.86
+                  },
+                  {
+                    "year": 10,
+                    "time": 11.5,
+                    "ramp": 1,
+                    "operatingCash": 49989.19294117647,
+                    "replacementAllowance": 12690,
+                    "cash": 37299.19294117647,
+                    "cumulative": -334502.6670588235
+                  }
+                ],
+                "horizonYears": 11.5,
+                "discountRate": 0.1
+              }
+            },
+            "base": {
+              "inputs": {
+                "stalls": 4,
+                "sessionsPerStallDay": 8.514285714285714,
+                "kwhPerSession": 35,
+                "retailPerKwh": 0.49,
+                "energyPerKwh": 0.1,
+                "lossFraction": 0.15,
+                "servicePerKwh": 0.1,
+                "tariffMode": "fully_burdened",
+                "demandPerKwMonth": 0,
+                "billedPeakKw": 0,
+                "utilityFixedMonthly": 0,
+                "utilityFixedDaily": 0,
+                "demandFreeKw": 0,
+                "minimumBillDaily": 0,
+                "capex": 564000,
+                "fixedMonthly": 1000,
+                "preOpeningMonthly": 1000,
+                "constructionYears": 1,
+                "firstYearRamp": 0.75,
+                "sustainingCapexFraction": 0.015,
+                "discountRate": 0.1,
+                "operatingYears": 10
+              },
+              "outputs": {
+                "annualKwh": 435080,
+                "gridKwh": 511858.8235294118,
+                "revenue": 213189.19999999998,
+                "energyCost": 51185.88235294118,
+                "serviceCost": 43508,
+                "demandCost": 0,
+                "utilityFixedCost": 0,
+                "minimumBillAdjustment": 0,
+                "electricityCost": 51185.88235294118,
+                "fixedCost": 12000,
+                "operatingCash": 106495.31764705881,
+                "marginPerKwh": 0.2723529411764706,
+                "breakEvenSessionsPerStallDay": 0.8622402184341887,
+                "simplePaybackYears": 5.29600749085682,
+                "preOpeningHoldingCost": 12000,
+                "annualSustainingCapex": 8460,
+                "stabilizedFreeCash": 98035.31764705881,
+                "projectPaybackYears": 7.177608681721186,
+                "npv": -52301.701979372665,
+                "cashflows": [
+                  {
+                    "year": 1,
+                    "time": 2,
+                    "ramp": 0.75,
+                    "operatingCash": 76871.4882352941,
+                    "replacementAllowance": 8460,
+                    "cash": 68411.4882352941,
+                    "cumulative": -507588.5117647059
+                  },
+                  {
+                    "year": 2,
+                    "time": 3,
+                    "ramp": 1,
+                    "operatingCash": 106495.31764705881,
+                    "replacementAllowance": 8460,
+                    "cash": 98035.31764705881,
+                    "cumulative": -409553.1941176471
+                  },
+                  {
+                    "year": 3,
+                    "time": 4,
+                    "ramp": 1,
+                    "operatingCash": 106495.31764705881,
+                    "replacementAllowance": 8460,
+                    "cash": 98035.31764705881,
+                    "cumulative": -311517.87647058826
+                  },
+                  {
+                    "year": 4,
+                    "time": 5,
+                    "ramp": 1,
+                    "operatingCash": 106495.31764705881,
+                    "replacementAllowance": 8460,
+                    "cash": 98035.31764705881,
+                    "cumulative": -213482.55882352946
+                  },
+                  {
+                    "year": 5,
+                    "time": 6,
+                    "ramp": 1,
+                    "operatingCash": 106495.31764705881,
+                    "replacementAllowance": 8460,
+                    "cash": 98035.31764705881,
+                    "cumulative": -115447.24117647065
+                  },
+                  {
+                    "year": 6,
+                    "time": 7,
+                    "ramp": 1,
+                    "operatingCash": 106495.31764705881,
+                    "replacementAllowance": 8460,
+                    "cash": 98035.31764705881,
+                    "cumulative": -17411.92352941184
+                  },
+                  {
+                    "year": 7,
+                    "time": 8,
+                    "ramp": 1,
+                    "operatingCash": 106495.31764705881,
+                    "replacementAllowance": 8460,
+                    "cash": 98035.31764705881,
+                    "cumulative": 80623.39411764697
+                  },
+                  {
+                    "year": 8,
+                    "time": 9,
+                    "ramp": 1,
+                    "operatingCash": 106495.31764705881,
+                    "replacementAllowance": 8460,
+                    "cash": 98035.31764705881,
+                    "cumulative": 178658.71176470577
+                  },
+                  {
+                    "year": 9,
+                    "time": 10,
+                    "ramp": 1,
+                    "operatingCash": 106495.31764705881,
+                    "replacementAllowance": 8460,
+                    "cash": 98035.31764705881,
+                    "cumulative": 276694.0294117646
+                  },
+                  {
+                    "year": 10,
+                    "time": 11,
+                    "ramp": 1,
+                    "operatingCash": 106495.31764705881,
+                    "replacementAllowance": 8460,
+                    "cash": 98035.31764705881,
+                    "cumulative": 374729.3470588234
+                  }
+                ],
+                "horizonYears": 11,
+                "discountRate": 0.1
+              }
+            },
+            "optimistic": {
+              "inputs": {
+                "stalls": 4,
+                "sessionsPerStallDay": 10.217142857142855,
+                "kwhPerSession": 35,
+                "retailPerKwh": 0.49,
+                "energyPerKwh": 0.1,
+                "lossFraction": 0.15,
+                "servicePerKwh": 0.1,
+                "tariffMode": "fully_burdened",
+                "demandPerKwMonth": 0,
+                "billedPeakKw": 0,
+                "utilityFixedMonthly": 0,
+                "utilityFixedDaily": 0,
+                "demandFreeKw": 0,
+                "minimumBillDaily": 0,
+                "capex": 517000.00000000006,
+                "fixedMonthly": 500,
+                "preOpeningMonthly": 500,
+                "constructionYears": 0.75,
+                "firstYearRamp": 1,
+                "sustainingCapexFraction": 0.01,
+                "discountRate": 0.1,
+                "operatingYears": 10
+              },
+              "outputs": {
+                "annualKwh": 522095.99999999994,
+                "gridKwh": 614230.5882352941,
+                "revenue": 255827.03999999998,
+                "energyCost": 61423.05882352941,
+                "serviceCost": 52209.6,
+                "demandCost": 0,
+                "utilityFixedCost": 0,
+                "minimumBillAdjustment": 0,
+                "electricityCost": 61423.05882352941,
+                "fixedCost": 6000,
+                "operatingCash": 136194.38117647055,
+                "marginPerKwh": 0.2723529411764706,
+                "breakEvenSessionsPerStallDay": 0.43112010921709437,
+                "simplePaybackYears": 3.7960450022538734,
+                "preOpeningHoldingCost": 4500,
+                "annualSustainingCapex": 5170.000000000001,
+                "stabilizedFreeCash": 131024.38117647055,
+                "projectPaybackYears": 4.730175256829615,
+                "npv": 228205.0381823342,
+                "cashflows": [
+                  {
+                    "year": 1,
+                    "time": 1.75,
+                    "ramp": 1,
+                    "operatingCash": 136194.38117647055,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 131024.38117647055,
+                    "cumulative": -390475.6188235295
+                  },
+                  {
+                    "year": 2,
+                    "time": 2.75,
+                    "ramp": 1,
+                    "operatingCash": 136194.38117647055,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 131024.38117647055,
+                    "cumulative": -259451.23764705897
+                  },
+                  {
+                    "year": 3,
+                    "time": 3.75,
+                    "ramp": 1,
+                    "operatingCash": 136194.38117647055,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 131024.38117647055,
+                    "cumulative": -128426.85647058842
+                  },
+                  {
+                    "year": 4,
+                    "time": 4.75,
+                    "ramp": 1,
+                    "operatingCash": 136194.38117647055,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 131024.38117647055,
+                    "cumulative": 2597.524705882126
+                  },
+                  {
+                    "year": 5,
+                    "time": 5.75,
+                    "ramp": 1,
+                    "operatingCash": 136194.38117647055,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 131024.38117647055,
+                    "cumulative": 133621.90588235267
+                  },
+                  {
+                    "year": 6,
+                    "time": 6.75,
+                    "ramp": 1,
+                    "operatingCash": 136194.38117647055,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 131024.38117647055,
+                    "cumulative": 264646.2870588232
+                  },
+                  {
+                    "year": 7,
+                    "time": 7.75,
+                    "ramp": 1,
+                    "operatingCash": 136194.38117647055,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 131024.38117647055,
+                    "cumulative": 395670.66823529376
+                  },
+                  {
+                    "year": 8,
+                    "time": 8.75,
+                    "ramp": 1,
+                    "operatingCash": 136194.38117647055,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 131024.38117647055,
+                    "cumulative": 526695.0494117644
+                  },
+                  {
+                    "year": 9,
+                    "time": 9.75,
+                    "ramp": 1,
+                    "operatingCash": 136194.38117647055,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 131024.38117647055,
+                    "cumulative": 657719.4305882349
+                  },
+                  {
+                    "year": 10,
+                    "time": 10.75,
+                    "ramp": 1,
+                    "operatingCash": 136194.38117647055,
+                    "replacementAllowance": 5170.000000000001,
+                    "cash": 131024.38117647055,
+                    "cumulative": 788743.8117647055
+                  }
+                ],
+                "horizonYears": 10.75,
+                "discountRate": 0.1
+              }
+            }
+          },
+          "numericHurdle": {
+            "passed": false,
+            "tests": {
+              "basePayback": false,
+              "conservativePayback": false,
+              "baseNpv": false,
+              "conservativeCash": true
+            }
+          },
+          "inverse": {
+            "base": {
+              "requiredSessionsPerStallDay": 10.260658599366847,
+              "requiredSessionsPerSiteDay": 41.04263439746739,
+              "requiredKwhPerStallDay": 359.1230509778396,
+              "minimumAverageGridKw": 70.41628450545876,
+              "maxCapex": 456607.2175102598,
+              "maxAllInGridPrice": 0.05251682449204743,
+              "maxFixedAndHoldingMonthly": null,
+              "maxConstructionYears": null,
+              "paybackLimitYears": 6,
+              "searchDomain": {
+                "sessionsPerStallDayMax": 1000000,
+                "capexMax": 1000000000,
+                "gridPriceMax": 10,
+                "monthlyCostMax": 10000000,
+                "constructionYearsMax": 6
+              }
+            },
+            "conservative": {
+              "requiredSessionsPerStallDay": 12.203472751998406,
+              "requiredSessionsPerSiteDay": 48.813891007993625,
+              "requiredKwhPerStallDay": 427.12154631994423,
+              "minimumAverageGridKw": 83.74932280783221,
+              "maxCapex": 222951.46694429984,
+              "maxAllInGridPrice": null,
+              "maxFixedAndHoldingMonthly": null,
+              "maxConstructionYears": null,
+              "paybackLimitYears": 8,
+              "searchDomain": {
+                "sessionsPerStallDayMax": 1000000,
+                "capexMax": 1000000000,
+                "gridPriceMax": 10,
+                "monthlyCostMax": 10000000,
+                "constructionYearsMax": 8
+              }
+            }
+          },
+          "qualification": "pending",
+          "evidenceAdmitted": false
+        }
       }
     },
     {
@@ -77249,7 +79993,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "winco-hillsboro",
@@ -79300,7 +82045,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "winco-oregoncity",
@@ -81408,7 +84154,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "winco-longview",
@@ -83600,7 +86347,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     },
     {
       "id": "winco-marysville",
@@ -85928,7 +88676,8 @@
             ]
           }
         ]
-      }
+      },
+      "hypothesis": null
     }
   ],
   "policy": {
@@ -89975,5 +92724,759 @@
         "limitation": "Not a basis for assigning current benefits to a candidate, especially outside confirmed NV Energy territory."
       }
     ]
+  },
+  "hypothesisReview": {
+    "asOf": "2026-10-30",
+    "version": "0.7.0",
+    "sources": [
+      {
+        "id": "V7-ELECTREK-CITIES",
+        "url": "https://electrek.co/2026/04/08/tesla-supercharger-for-business-configurator-pricing/",
+        "title": "Tesla configurator four-city experiment",
+        "publisher": "Electrek",
+        "publishedDate": "2026-04-08",
+        "retrievedDate": "2026-10-30",
+        "kind": "secondary report of vendor modeled outcomes",
+        "notes": "Article table inspected; not realized returns from operating sites"
+      },
+      {
+        "id": "V7-Q3-SECONDARY",
+        "url": "https://evwire.com/p/tesla-supercharger-network-q3-2026-scorecard-results",
+        "title": "Tesla Q3 2026 charging scorecard coverage",
+        "publisher": "EVwire",
+        "publishedDate": "2026-10-05",
+        "retrievedDate": "2026-10-30",
+        "kind": "secondary report of company global aggregates",
+        "notes": "Article inspected; linked original X post returned 403"
+      },
+      {
+        "id": "V7-Q3-ORIGINAL-UNREAD",
+        "url": "https://x.com/TeslaCharging/status/2105713767741092210",
+        "title": "Tesla Charging Q3 2026 scorecard",
+        "publisher": "Tesla Charging",
+        "publishedDate": "2026-10-01",
+        "retrievedDate": "2026-10-30",
+        "kind": "unresolved original access",
+        "notes": "403 Forbidden; not directly verified"
+      },
+      {
+        "id": "V7-SITE-LEANDER-BARW",
+        "url": "https://www.leandertx.gov/Blog.aspx?IID=4",
+        "title": "City of Leander: Bar W Marketplace",
+        "publisher": "City of Leander",
+        "publishedDate": "2025-04-17",
+        "retrievedDate": "2026-10-30",
+        "kind": "primary",
+        "notes": "Original HTML opened and relevant body read"
+      },
+      {
+        "id": "V7-SITE-PIERCE-COUNTS",
+        "url": "https://www.piercecountywa.gov/2732/Traffic-Counts",
+        "title": "Pierce County traffic counts and AADT methodology",
+        "publisher": "Pierce County",
+        "publishedDate": "2025-01-14",
+        "retrievedDate": "2026-10-30",
+        "kind": "primary",
+        "notes": "Original HTML opened and linked PDF followed"
+      },
+      {
+        "id": "V7-SITE-PIERCE-AADT",
+        "url": "https://www.piercecountywa.gov/DocumentCenter/View/143483/2024-AADT",
+        "title": "Pierce County 2024 AADT compilation",
+        "publisher": "Pierce County",
+        "publishedDate": null,
+        "retrievedDate": "2026-10-30",
+        "kind": "primary_partial",
+        "notes": "Original PDF text opened; page25–26 row text read. Screenshot cache miss and direct download403; individual sparse-year alignment not visually verified."
+      },
+      {
+        "id": "V7-SITE-PIERCE-TCMS",
+        "url": "https://www.piercecountywa.gov/DocumentCenter/View/7153/TCMSReport25?bidId=",
+        "title": "Pierce County 2025 Transportation Concurrency Management System Annual Report",
+        "publisher": "Pierce County",
+        "publishedDate": "2026-05",
+        "retrievedDate": "2026-10-30",
+        "kind": "primary",
+        "notes": "Original20page PDF text opened; methodologypp1–3 read"
+      },
+      {
+        "id": "V7-SITE-ELGIN-ROW",
+        "url": "https://www.txdot.gov/projects/hearings-meetings/austin/2026/us290-from-sh130-to-east-of-sh95-south-092926.html",
+        "title": "TxDOT US290 fromSH130 toEast ofSH95South open-house notice",
+        "publisher": "TxDOT / Central Texas Regional Mobility Authority",
+        "publishedDate": "2026-09-14",
+        "retrievedDate": "2026-10-30",
+        "kind": "primary",
+        "notes": "Original HTML opened and projectdescription read"
+      },
+      {
+        "id": "V7-SITE-BARW-ADDRESS",
+        "url": "https://members.libertyhillchamber.org/list/member/h-e-b-ronald-reagan-345",
+        "title": "H-E-B at Ronald Reagan member listing",
+        "publisher": "Liberty Hill Chamber member listing",
+        "publishedDate": null,
+        "retrievedDate": "2026-10-30",
+        "kind": "secondary_directory",
+        "notes": "Search indexed listing, primary retailer separately reopened"
+      }
+    ],
+    "method": {
+      "en": "These are vendor-anchored working hypotheses, not calibrated forecasts. Demand factors 0.7/1/1.2, capital factors 1.35/1.2/1.1, utility factors 1.25/1/1 and monthly non-utility costs $2,000/$1,000/$500 were fixed before outcomes. Construction is 1.5/1/0.75 years; first-year ramp 50/75/100%; replacement 2/1.5/1% of gross capex. All cases use four posts, flat real demand, no grant, 10 operating years and the unchanged 6/8-year and 10% NPV gates. These joint stresses have no assigned probability.",
+      "zh": "这些是由厂家参数出发的工作假设，不是校准预测。需求系数0.7/1/1.2、资本系数1.35/1.2/1.1、电价系数1.25/1/1及每月非电费成本2,000/1,000/500美元均在查看结果前固定。建设期1.5/1/0.75年，首年爬坡50/75/100%，更新预留为总资本2/1.5/1%。均为四枪、实际需求不增长、不计补贴、运营10年，沿用6/8年回本及10%净现值门槛。组合压力情景没有赋予概率。"
+    },
+    "boundary": {
+      "en": "The 15% loss input is a working grid-to-billed-energy assumption borrowed from Tesla’s different grid-to-battery disclosure. Displayed prices are not verified net receipts. The $470k medium-install illustration excludes hardware tax and does not establish complete utility, civil, land or financing scope. Contingencies, fixed costs and gross-asset reserves are unquoted; reconcile uncovered costs with the $0.10/kWh service package. No inferred savings or credits are admitted. The 35 kWh/session value only converts energy units; it is not a local session forecast.",
+      "zh": "15%损耗是借用Tesla电网至电池披露的电网至计费电量假设，两者计量边界不同。显示售价不是已核净收入。47万美元中档安装示例不含硬件税，也未证明完整接电、土建、土地或融资范围。预备费、固定成本及资产更新预留未获报价，须与每kWh 0.10美元服务包核对未覆盖项目。未计入推定节省或积分。 每次35 kWh仅作电量单位换算，不是本地会话预测。"
+    },
+    "comparison": {
+      "text": {
+        "en": "EVgo reported 276 kWh per public-network stall per day in Q2 2026, versus 281 in Q2 2025. This observed network aggregate supports testing a higher-energy range, but has different geography, equipment, maturity and pricing. It is not a matched local analogue, a demand ceiling or evidence that utilization always rises.",
+        "zh": "EVgo披露2026年第二季度公共网络平均每枪每日276 kWh，上年同期281。该运营汇总支持研究更高电量区间，但地区、设备、成熟度及价格不同，不是匹配本地的可比站、需求上限，也不证明利用率必然上升。"
+      },
+      "sourceIds": [
+        "V3-EVGO"
+      ],
+      "observedKwhPerPostDay": 276,
+      "period": "Q2 2026",
+      "priorComparableKwhPerPostDay": 281
+    },
+    "claims": [
+      {
+        "title": {
+          "en": "The shared downside is not a site forecast",
+          "zh": "共用保守压力测试不是场地预测"
+        },
+        "text": {
+          "en": "The $51,392 revenue versus $60,000 fixed-cost comparison is correct. The error would be using that uncalibrated bundle to rule out real sites. Keep it as a historical stress test and investigate distinct local hypotheses.",
+          "zh": "51,392美元收入低于60,000美元固定成本的计算正确。若据此排除真实场地，就是误用未经校准的参数组合。保留历史压力测试，同时研究本地假设。"
+        },
+        "sourceIds": []
+      },
+      {
+        "title": {
+          "en": "Four-city paybacks are projections",
+          "zh": "四座城市的回本期属于预测"
+        },
+        "text": {
+          "en": "The reported 4–7 year results were media tests of Tesla’s configurator, not measured realized project returns. They are useful vendor comparisons with different growth, rent, cost and horizon assumptions.",
+          "zh": "所述4–7年是媒体测试Tesla配置器的结果，不是实测的项目回收记录。它们可以参考，但增长、租金、成本及期限假设不同。"
+        },
+        "sourceIds": [
+          "V7-ELECTREK-CITIES"
+        ]
+      },
+      {
+        "title": {
+          "en": "A better energy anchor, with limits",
+          "zh": "更相关的电量参照及其边界"
+        },
+        "text": {
+          "en": "The live Tesla tooltip states approximately 35 kWh per session. We use kWh per post per calendar day as the main demand unit; 35 only converts units. Neither that average nor the US network usage claim establishes local paid demand.",
+          "zh": "Tesla当前原始提示框写明每次约35 kWh。模型以每枪每个日历日的电量为需求单位；35只作单位换算。平均会话及美国网络利用率均不证明本地付费需求。"
+        },
+        "sourceIds": [
+          "S53158f4",
+          "S1a5269e"
+        ]
+      },
+      {
+        "title": {
+          "en": "Demand charges cannot be counted twice",
+          "zh": "需量费不能重复计算"
+        },
+        "text": {
+          "en": "The vendor utility field already includes demand and other energy charges at a fleet-based load profile. Higher use may dilute demand charges, but that is not an extra discount on the all-in input; a local interval/tariff model must replace it.",
+          "zh": "厂家电价字段已按其车队负荷包含需量等费用。增加利用量可能摊薄需量费，但不能在该全包输入上再扣一次；应由当地分时负荷和费率模型替代。"
+        },
+        "sourceIds": [
+          "S580a7b3",
+          "S53158f4"
+        ]
+      }
+    ],
+    "records": [
+      {
+        "candidateId": "winco-puyallup",
+        "tier": "A",
+        "title": {
+          "en": "New-build / four-post staged hypothesis",
+          "zh": "本地新增 / 四枪分期假设"
+        },
+        "rationale": {
+          "en": "First investigate a four-post retail site: 24-hour amenities and a larger nearby supply gap than the other urban WinCo options reviewed. This is an investigation priority, not a forecast of market share.",
+          "zh": "优先调查四枪零售站：全天配套，本轮城市WinCo候选中近邻供给间距相对较大。这是调查优先级，不是市场份额预测。"
+        },
+        "anchors": {
+          "en": "Official store identity/hours were reconfirmed. The retained October 29 supply snapshot has no DCFC record within 3 straight-line miles and a nearest record at 4.1 miles. County traffic records cover the 176th Street corridor, but no exact count/year/location join was verified.",
+          "zh": "重核官方门店身份及营业时间。10月29日供给快照中，直线3英里内没有快充记录，最近记录4.1英里。县交通资料覆盖176街，但未核定精确计数、年份与位置的对应。"
+        },
+        "counter": {
+          "en": "Home charging can dominate suburban demand. Road traffic, city EV registrations and a database gap do not establish paid charging demand. Utility territory, capacity and parking rights remain unverified.",
+          "zh": "郊区可能主要在家充电。道路车流、城市EV注册量及数据库空白均不证明付费需求；供电区域、容量和停车权利待核。"
+        },
+        "test": {
+          "en": "Match road counters to actual entrances; inspect turning access and nearby South Hill charging queues. Obtain comparable paid energy across seasons, then test incremental capture, complete four-post EPC cost and a written utility service offer.",
+          "zh": "把交通计数点匹配实际出入口，检查转向通行及South Hill竞品排队。取得跨季节可比付费电量，再核增量捕获、四枪完整EPC费用及书面接电方案。"
+        },
+        "sourceIds": [
+          "Sfbe3fc0",
+          "S12c398d",
+          "S01b0b80",
+          "S3b4e7ed",
+          "V7-SITE-PIERCE-COUNTS",
+          "V7-SITE-PIERCE-AADT",
+          "V7-SITE-PIERCE-TCMS",
+          "S53158f4"
+        ],
+        "estimate": {
+          "kwhPerPostDay": 298,
+          "retailPerKwh": 0.49,
+          "allInGridPerKwh": 0.1,
+          "fourPostCapital": 470000,
+          "vendorPaybackYears": 5,
+          "observedDate": "2026-10-30",
+          "normalizedAddress": "9518 176th St E, Puyallup, WA 98375, USA",
+          "kind": "vendor projection; not measured paid demand",
+          "sourceId": "S53158f4"
+        },
+        "design": {
+          "en": "Four-post new-build comparison; upgrade savings are not assumed.",
+          "zh": "四枪全新建设比较；未假定改造可节省成本。"
+        },
+        "qualification": "pending",
+        "forecastVerified": false
+      },
+      {
+        "candidateId": "heb-ronaldreagan",
+        "tier": "A",
+        "title": {
+          "en": "New-build / neighborhood and commuter retail hypothesis",
+          "zh": "新增 / 社区与通勤零售假设"
+        },
+        "rationale": {
+          "en": "First investigate the Bar W retail and commuter catchment. Official amenities and the retained supply gap justify local validation; an overlapping Leander catchment must not be counted twice.",
+          "zh": "优先调查Bar W零售与通勤商圈。官方配套及供给间距支持本地验证；与Leander重叠的商圈不可重复计入。"
+        },
+        "anchors": {
+          "en": "H-E-B confirms store 774 at 19348 Ronald W. Reagan Blvd, Georgetown 78628, open 06:00–23:00. The city identifies Bar W amenities. Retained inventory places the nearest DCFC about 3.0 miles away, with 16 records within 10 miles.",
+          "zh": "H-E-B确认774号门店位于19348 Ronald W. Reagan Blvd、Georgetown 78628，营业06:00–23:00。市政府列明Bar W配套；供给快照最近快充约3.0英里，10英里内16条记录。"
+        },
+        "counter": {
+          "en": "Tesla normalizes the address to Leander 78641; parcel matching remains unresolved. Store hours do not grant 24/7 charging access. Georgetown city EV totals are not this property’s catchment.",
+          "zh": "Tesla把地址标准化为Leander 78641，地块匹配尚未解决。门店营业时间不等于全天充电通行权；Georgetown城市EV总量不是该物业商圈。"
+        },
+        "test": {
+          "en": "Resolve the vendor map point against the official parcel; validate home-charging availability and competing Leander capacity. Obtain host access terms, meter/utility identity, a complete quote and a local demand-transfer case.",
+          "zh": "把厂家地图点与官方地块对齐，核实家庭充电条件及Leander竞品容量。取得场地主通行条款、电表与供电方身份、完整报价和本地需求迁移依据。"
+        },
+        "sourceIds": [
+          "S0a6d1be",
+          "Sf63f4e0",
+          "S08c7bce",
+          "V7-SITE-LEANDER-BARW",
+          "V7-SITE-BARW-ADDRESS",
+          "S53158f4"
+        ],
+        "estimate": {
+          "kwhPerPostDay": 302,
+          "retailPerKwh": 0.51,
+          "allInGridPerKwh": 0.11,
+          "fourPostCapital": 470000,
+          "vendorPaybackYears": 5,
+          "observedDate": "2026-10-30",
+          "normalizedAddress": "19348 Ronald Reagan Blvd, Leander, TX 78641, USA",
+          "kind": "vendor projection; not measured paid demand",
+          "sourceId": "S53158f4"
+        },
+        "design": {
+          "en": "Four-post new-build comparison; upgrade savings are not assumed.",
+          "zh": "四枪全新建设比较；未假定改造可节省成本。"
+        },
+        "qualification": "pending",
+        "forecastVerified": false
+      },
+      {
+        "candidateId": "heb-elgin",
+        "tier": "B",
+        "title": {
+          "en": "Corridor hypothesis — access and demand evidence first",
+          "zh": "走廊假设——先核通行与需求"
+        },
+        "rationale": {
+          "en": "Investigate corridor stopping demand after the access screen. Sparse inventory makes the US 290 hypothesis worth testing, but the same Texas vendor default is weaker evidence here than a local traffic/capture study.",
+          "zh": "先核通行，再调查走廊停靠需求。供给稀疏使US 290假设值得验证，但相同的德州厂家默认值弱于当地车流与捕获研究。"
+        },
+        "anchors": {
+          "en": "Official H-E-B identity confirms 1080 West Hwy 290. Retained inventory has one DCFC record within 10 miles, nearest at 9.5 miles. A September 2026 TxDOT notice identifies a corridor study with potential right-of-way and displacement effects.",
+          "zh": "官方H-E-B确认1080 West Hwy 290。供给快照10英里内仅1条快充记录，最近9.5英里。2026年9月TxDOT公告列明走廊研究及潜在征地、搬迁影响。"
+        },
+        "counter": {
+          "en": "Through traffic may be commuters charging at home. Elgin’s city EV count is small. Planned road changes can undermine frontage access; no direct impact on this parcel has yet been established.",
+          "zh": "过境车流可能是在家充电的通勤者，本地EV规模较小。道路规划可能影响临街通行，但尚未证实该地块的具体影响。"
+        },
+        "test": {
+          "en": "Overlay current roadway concepts with the parcel and entrances before paying for design. Validate directional EV traffic, stopping need and attainable capture with matched paid analogues; do not multiply all traffic by city EV share.",
+          "zh": "投入设计前先叠加最新道路方案、地块和出入口。结合付费可比样本核实分方向EV车流、停靠需要和可获得的需求；不可把全部车流直接乘城市EV比例。"
+        },
+        "sourceIds": [
+          "S90289e4",
+          "Sf63f4e0",
+          "S2c4639c",
+          "V7-SITE-ELGIN-ROW",
+          "S53158f4"
+        ],
+        "estimate": {
+          "kwhPerPostDay": 302,
+          "retailPerKwh": 0.51,
+          "allInGridPerKwh": 0.11,
+          "fourPostCapital": 470000,
+          "vendorPaybackYears": 5,
+          "observedDate": "2026-10-30",
+          "normalizedAddress": "1080 US-290, Elgin, TX 78621, USA",
+          "kind": "vendor projection; not measured paid demand",
+          "sourceId": "S53158f4"
+        },
+        "design": {
+          "en": "Four-post new-build comparison; upgrade savings are not assumed.",
+          "zh": "四枪全新建设比较；未假定改造可节省成本。"
+        },
+        "qualification": "pending",
+        "forecastVerified": false
+      },
+      {
+        "candidateId": "winco-edmonds",
+        "tier": "B",
+        "title": {
+          "en": "Existing-site expansion / redesign hypothesis",
+          "zh": "既有场地扩容或重设计假设"
+        },
+        "rationale": {
+          "en": "Investigate expansion or redesign of an existing charging property. Recovered plans make a scope-matched cost check actionable; this is not a blank-market greenfield recommendation.",
+          "zh": "调查既有充电物业的扩容或重设计。已取得历史图纸，便于核对相同设计范围的成本；不是空白市场新增站推荐。"
+        },
+        "anchors": {
+          "en": "The official store address and historical BLD2022-0061 charging plans are documented. Existing supply is recorded at the property, with 55 DCFC records within 10 miles.",
+          "zh": "已有官方门店地址及历史BLD2022-0061充电设计。物业已有充电供给记录，10英里内共有55条快充记录。"
+        },
+        "counter": {
+          "en": "Historical design load is not spare capacity. Existing operator rights and nearby competition may defeat third-party entry. Reuse savings and incremental demand remain unproved.",
+          "zh": "历史设计负荷不是剩余容量。既有运营商权利及竞品可能阻止第三方进入；复用节省和增量需求未证实。"
+        },
+        "test": {
+          "en": "Identify current equipment, operator and host rights; obtain paid throughput and as-built condition. Compare a genuine upgrade quote with a new four-post build, including only assets demonstrably reusable.",
+          "zh": "查明现有设备、运营商及场地权利，取得付费电量和竣工状态。把真实升级报价与新建四枪比较，只计入确认可复用的资产。"
+        },
+        "sourceIds": [
+          "S9b325e2",
+          "S12c398d",
+          "V5-c95d9227d3",
+          "S53158f4"
+        ],
+        "estimate": {
+          "kwhPerPostDay": 298,
+          "retailPerKwh": 0.49,
+          "allInGridPerKwh": 0.1,
+          "fourPostCapital": 470000,
+          "vendorPaybackYears": 5,
+          "observedDate": "2026-10-30",
+          "normalizedAddress": "21900 Hwy 99, Edmonds, WA 98026, USA",
+          "kind": "vendor projection; not measured paid demand",
+          "sourceId": "S53158f4"
+        },
+        "design": {
+          "en": "Four-post new-build comparison; upgrade savings are not assumed.",
+          "zh": "四枪全新建设比较；未假定改造可节省成本。"
+        },
+        "qualification": "pending",
+        "forecastVerified": false
+      },
+      {
+        "candidateId": "winco-medford",
+        "tier": "B",
+        "title": {
+          "en": "Prior-project recovery / redesign hypothesis",
+          "zh": "原项目恢复或重设计假设"
+        },
+        "rationale": {
+          "en": "Keep as a lower-priority redesign or recovery hypothesis. Existing project records create a useful diligence route, but the new vendor inputs make an unsubsidized full new build less attractive than the other four cases.",
+          "zh": "保留为较低优先级的重设计或恢复假设。历史项目资料提供核查路径，但新厂家参数显示，无补贴全新建设弱于其他四处。"
+        },
+        "anchors": {
+          "en": "The property is documented and Pacific Power offers eligible nonresidential charging-planning assistance. The earlier ODOT corridor agreement was cancelled; nearby DCFC is recorded at 0.2 miles.",
+          "zh": "物业有资料，Pacific Power向符合条件的非住宅客户提供充电规划支持。此前ODOT走廊协议已取消，最近快充记录仅0.2英里。"
+        },
+        "counter": {
+          "en": "The reason for cancellation, current rights and reusable work are unknown. Nearby competition weakens incremental demand; the vendor utility proxy is higher than in the WA and TX examples.",
+          "zh": "取消原因、现有权利及可复用工程待核；近邻竞争削弱增量需求，厂家电费代理值也高于华盛顿州和德州示例。"
+        },
+        "test": {
+          "en": "Resolve cancellation and asset rights before a new-build bid. Seek an owner-authorized utility assessment and an explicitly scoped restoration quote; separately verify any rebate and measured incremental demand.",
+          "zh": "新建投标前先查明取消原因和资产权利。取得业主授权的供电评估和明确范围的恢复报价，单独核实返利及实测增量需求。"
+        },
+        "sourceIds": [
+          "S5d60f40",
+          "Sa533d6e",
+          "V4-a784f1f71",
+          "V4-6b5cfb348",
+          "S53158f4"
+        ],
+        "estimate": {
+          "kwhPerPostDay": 230,
+          "retailPerKwh": 0.51,
+          "allInGridPerKwh": 0.16,
+          "fourPostCapital": 470000,
+          "vendorPaybackYears": 7,
+          "observedDate": "2026-10-30",
+          "normalizedAddress": "251 E Barnett Rd, Medford, OR 97501, USA",
+          "kind": "vendor projection; not measured paid demand",
+          "sourceId": "S53158f4"
+        },
+        "design": {
+          "en": "Four-post new-build comparison; upgrade savings are not assumed.",
+          "zh": "四枪全新建设比较；未假定改造可节省成本。"
+        },
+        "qualification": "pending",
+        "forecastVerified": false
+      }
+    ],
+    "conclusion": {
+      "en": "Five hypotheses deserve targeted field checks; none is investment-ready. Puyallup and Ronald Reagan are first investigation priorities; Elgin requires an access screen, while Edmonds and Medford require an existing-project redesign scope. The selected pool is not a national optimum.",
+      "zh": "五个假设值得定向实地验证，尚无可投资资格。Puyallup与Ronald Reagan优先调查；Elgin先核通行；Edmonds与Medford须先明确既有项目重设计范围。本候选池不是全国最优解。"
+    },
+    "selection": {
+      "en": "Qualitative diligence order, not a return ranking or probability. Based on retail/access evidence, frozen nearby supply, address certainty and a concrete verification route. Five selected from the existing 37; the other 32 were not proven unviable. No new nationwide inventory sweep.",
+      "zh": "定性尽调顺序，不是回报排名或成功概率。依据零售与通行证据、冻结供给、地址确定性及可执行验证路径。从既有37处选5处；未证明其余32处不可行，也未重新普查全国。"
+    },
+    "excludedNumbers": {
+      "en": "No exact Pierce County traffic count enters sales estimates: the year/location alignment could not be fully verified. The 47,400-road figure is a capacity threshold, not observed demand. The Tesla Q3 original scorecard was inaccessible; rounded secondary global totals are not used.",
+      "zh": "未把Pierce县精确车流数计入销量：年份与位置对应未完全核实。道路47,400数值属于容量阈值，不是观测需求。Tesla第三季度原始记分卡不可访问，未使用次级报道的四舍五入全球总量。"
+    },
+    "coverage": [
+      {
+        "candidateId": "net-hanksville",
+        "selected": false,
+        "reason": {
+          "en": "Retained in the wider pending pool; not selected for this focused analogue iteration and not rejected.",
+          "zh": "保留在较大待核池，本轮未选中进行重点类比，未被淘汰。"
+        }
+      },
+      {
+        "candidateId": "net-john-day",
+        "selected": false,
+        "reason": {
+          "en": "Retained in the wider pending pool; not selected for this focused analogue iteration and not rejected.",
+          "zh": "保留在较大待核池，本轮未选中进行重点类比，未被淘汰。"
+        }
+      },
+      {
+        "candidateId": "net-challis",
+        "selected": false,
+        "reason": {
+          "en": "Retained in the wider pending pool; not selected for this focused analogue iteration and not rejected.",
+          "zh": "保留在较大待核池，本轮未选中进行重点类比，未被淘汰。"
+        }
+      },
+      {
+        "candidateId": "net-eureka",
+        "selected": false,
+        "reason": {
+          "en": "Retained in the wider pending pool; not selected for this focused analogue iteration and not rejected.",
+          "zh": "保留在较大待核池，本轮未选中进行重点类比，未被淘汰。"
+        }
+      },
+      {
+        "candidateId": "net-chama",
+        "selected": false,
+        "reason": {
+          "en": "Retained in the wider pending pool; not selected for this focused analogue iteration and not rejected.",
+          "zh": "保留在较大待核池，本轮未选中进行重点类比，未被淘汰。"
+        }
+      },
+      {
+        "candidateId": "net-machias",
+        "selected": false,
+        "reason": {
+          "en": "Separate grant-led route retained; needs a compliant design and stronger paid-demand evidence.",
+          "zh": "保留独立补贴驱动路径，须有合规设计及更强付费需求证据。"
+        }
+      },
+      {
+        "candidateId": "net-elkins",
+        "selected": false,
+        "reason": {
+          "en": "Retained in the wider pending pool; not selected for this focused analogue iteration and not rejected.",
+          "zh": "保留在较大待核池，本轮未选中进行重点类比，未被淘汰。"
+        }
+      },
+      {
+        "candidateId": "net-mountain-view",
+        "selected": false,
+        "reason": {
+          "en": "Retained in the wider pending pool; not selected for this focused analogue iteration and not rejected.",
+          "zh": "保留在较大待核池，本轮未选中进行重点类比，未被淘汰。"
+        }
+      },
+      {
+        "candidateId": "net-austin",
+        "selected": false,
+        "reason": {
+          "en": "Retained in the wider pending pool; not selected for this focused analogue iteration and not rejected.",
+          "zh": "保留在较大待核池，本轮未选中进行重点类比，未被淘汰。"
+        }
+      },
+      {
+        "candidateId": "net-chinle",
+        "selected": false,
+        "reason": {
+          "en": "Retained in the wider pending pool; not selected for this focused analogue iteration and not rejected.",
+          "zh": "保留在较大待核池，本轮未选中进行重点类比，未被淘汰。"
+        }
+      },
+      {
+        "candidateId": "net-alamo",
+        "selected": false,
+        "reason": {
+          "en": "Retained in the wider pending pool; not selected for this focused analogue iteration and not rejected.",
+          "zh": "保留在较大待核池，本轮未选中进行重点类比，未被淘汰。"
+        }
+      },
+      {
+        "candidateId": "net-colebrook",
+        "selected": false,
+        "reason": {
+          "en": "Retained in the wider pending pool; not selected for this focused analogue iteration and not rejected.",
+          "zh": "保留在较大待核池，本轮未选中进行重点类比，未被淘汰。"
+        }
+      },
+      {
+        "candidateId": "net-greenville",
+        "selected": false,
+        "reason": {
+          "en": "Retained in the wider pending pool; not selected for this focused analogue iteration and not rejected.",
+          "zh": "保留在较大待核池，本轮未选中进行重点类比，未被淘汰。"
+        }
+      },
+      {
+        "candidateId": "net-republic",
+        "selected": false,
+        "reason": {
+          "en": "Retained in the wider pending pool; not selected for this focused analogue iteration and not rejected.",
+          "zh": "保留在较大待核池，本轮未选中进行重点类比，未被淘汰。"
+        }
+      },
+      {
+        "candidateId": "heb-ronaldreagan",
+        "selected": true,
+        "reason": {
+          "en": "Selected for a bounded hypothesis test.",
+          "zh": "纳入有界假设验证。"
+        }
+      },
+      {
+        "candidateId": "winco-brushprairie",
+        "selected": false,
+        "reason": {
+          "en": "Nearby competing capacity; low tariff alone is insufficient.",
+          "zh": "近邻已有竞争容量，低电价本身不足。"
+        }
+      },
+      {
+        "candidateId": "winco-bremerton",
+        "selected": false,
+        "reason": {
+          "en": "Retained in the wider pending pool; not selected for this focused analogue iteration and not rejected.",
+          "zh": "保留在较大待核池，本轮未选中进行重点类比，未被淘汰。"
+        }
+      },
+      {
+        "candidateId": "winco-vancouver",
+        "selected": false,
+        "reason": {
+          "en": "Retained in the wider pending pool; not selected for this focused analogue iteration and not rejected.",
+          "zh": "保留在较大待核池，本轮未选中进行重点类比，未被淘汰。"
+        }
+      },
+      {
+        "candidateId": "heb-mansfield",
+        "selected": false,
+        "reason": {
+          "en": "Nearby historical charging permit; current operating status unresolved.",
+          "zh": "近邻有历史充电许可，当前运营状态待核。"
+        }
+      },
+      {
+        "candidateId": "heb-leander",
+        "selected": false,
+        "reason": {
+          "en": "Retained in the wider pending pool; not selected for this focused analogue iteration and not rejected.",
+          "zh": "保留在较大待核池，本轮未选中进行重点类比，未被淘汰。"
+        }
+      },
+      {
+        "candidateId": "winco-edmonds",
+        "selected": true,
+        "reason": {
+          "en": "Selected for a bounded hypothesis test.",
+          "zh": "纳入有界假设验证。"
+        }
+      },
+      {
+        "candidateId": "winco-everett",
+        "selected": false,
+        "reason": {
+          "en": "Same-address pipeline lead; verify existing plans first.",
+          "zh": "同址存在规划线索，先核已有计划。"
+        }
+      },
+      {
+        "candidateId": "winco-tigard",
+        "selected": false,
+        "reason": {
+          "en": "Retained in the wider pending pool; not selected for this focused analogue iteration and not rejected.",
+          "zh": "保留在较大待核池，本轮未选中进行重点类比，未被淘汰。"
+        }
+      },
+      {
+        "candidateId": "sprouts-suwanee",
+        "selected": false,
+        "reason": {
+          "en": "Retained in the wider pending pool; not selected for this focused analogue iteration and not rejected.",
+          "zh": "保留在较大待核池，本轮未选中进行重点类比，未被淘汰。"
+        }
+      },
+      {
+        "candidateId": "winco-medford",
+        "selected": true,
+        "reason": {
+          "en": "Selected for a bounded hypothesis test.",
+          "zh": "纳入有界假设验证。"
+        }
+      },
+      {
+        "candidateId": "winco-powell",
+        "selected": false,
+        "reason": {
+          "en": "Retained in the wider pending pool; not selected for this focused analogue iteration and not rejected.",
+          "zh": "保留在较大待核池，本轮未选中进行重点类比，未被淘汰。"
+        }
+      },
+      {
+        "candidateId": "wegmans-wakeforest",
+        "selected": false,
+        "reason": {
+          "en": "Retained in the wider pending pool; not selected for this focused analogue iteration and not rejected.",
+          "zh": "保留在较大待核池，本轮未选中进行重点类比，未被淘汰。"
+        }
+      },
+      {
+        "candidateId": "winco-spokanevalley",
+        "selected": false,
+        "reason": {
+          "en": "Retained in the wider pending pool; not selected for this focused analogue iteration and not rejected.",
+          "zh": "保留在较大待核池，本轮未选中进行重点类比，未被淘汰。"
+        }
+      },
+      {
+        "candidateId": "heb-crosscreek",
+        "selected": false,
+        "reason": {
+          "en": "Retained in the wider pending pool; not selected for this focused analogue iteration and not rejected.",
+          "zh": "保留在较大待核池，本轮未选中进行重点类比，未被淘汰。"
+        }
+      },
+      {
+        "candidateId": "heb-elgin",
+        "selected": true,
+        "reason": {
+          "en": "Selected for a bounded hypothesis test.",
+          "zh": "纳入有界假设验证。"
+        }
+      },
+      {
+        "candidateId": "winco-gresham",
+        "selected": false,
+        "reason": {
+          "en": "Retained in the wider pending pool; not selected for this focused analogue iteration and not rejected.",
+          "zh": "保留在较大待核池，本轮未选中进行重点类比，未被淘汰。"
+        }
+      },
+      {
+        "candidateId": "winco-puyallup",
+        "selected": true,
+        "reason": {
+          "en": "Selected for a bounded hypothesis test.",
+          "zh": "纳入有界假设验证。"
+        }
+      },
+      {
+        "candidateId": "winco-keizer",
+        "selected": false,
+        "reason": {
+          "en": "Retained in the wider pending pool; not selected for this focused analogue iteration and not rejected.",
+          "zh": "保留在较大待核池，本轮未选中进行重点类比，未被淘汰。"
+        }
+      },
+      {
+        "candidateId": "winco-hillsboro",
+        "selected": false,
+        "reason": {
+          "en": "Retained in the wider pending pool; not selected for this focused analogue iteration and not rejected.",
+          "zh": "保留在较大待核池，本轮未选中进行重点类比，未被淘汰。"
+        }
+      },
+      {
+        "candidateId": "winco-oregoncity",
+        "selected": false,
+        "reason": {
+          "en": "Retained in the wider pending pool; not selected for this focused analogue iteration and not rejected.",
+          "zh": "保留在较大待核池，本轮未选中进行重点类比，未被淘汰。"
+        }
+      },
+      {
+        "candidateId": "winco-longview",
+        "selected": false,
+        "reason": {
+          "en": "Retained in the wider pending pool; not selected for this focused analogue iteration and not rejected.",
+          "zh": "保留在较大待核池，本轮未选中进行重点类比，未被淘汰。"
+        }
+      },
+      {
+        "candidateId": "winco-marysville",
+        "selected": false,
+        "reason": {
+          "en": "Same-address pipeline lead; verify existing plans first.",
+          "zh": "同址存在规划线索，先核已有计划。"
+        }
+      }
+    ],
+    "factors": {
+      "conservative": {
+        "energy": 0.7,
+        "capital": 1.35,
+        "utility": 1.25,
+        "fixedMonthly": 2000,
+        "constructionYears": 1.5,
+        "ramp": 0.5,
+        "reserve": 0.02
+      },
+      "base": {
+        "energy": 1,
+        "capital": 1.2,
+        "utility": 1,
+        "fixedMonthly": 1000,
+        "constructionYears": 1,
+        "ramp": 0.75,
+        "reserve": 0.015
+      },
+      "optimistic": {
+        "energy": 1.2,
+        "capital": 1.1,
+        "utility": 1,
+        "fixedMonthly": 500,
+        "constructionYears": 0.75,
+        "ramp": 1,
+        "reserve": 0.01
+      }
+    }
   }
 }

@@ -36,42 +36,40 @@ def p(text, st=style): return Paragraph(text, st)
 def text(en, cn): return cn if zh else en
 def cash(n): return ('−' if n < 0 else '')+'$'+f'{abs(n)/1000:.1f}k'
 def scenario(c, key):
-    o = c['economics']['scenarios'][key]['outputs']
+    o = c['hypothesis']['analysis']['scenarios'][key]['outputs']
     pay = f"{o['projectPaybackYears']:.2f}"+text(' yr', ' 年') if o['projectPaybackYears'] is not None else text('No recovery*', '期内未回本*')
-    return p(pay+'<br/>'+cash(o['stabilizedFreeCash']))
-notes = {'sprouts-suwanee': ('Make Ready and demand-adjustment routes remain conditional; no award.', '接电建设与需量调整仍为条件路径，未获授奖。'), 'net-colebrook': ('Historical funding is not new cash; ownership and current support terms need proof.', '历史资助不是新增资金，须核产权及当前支持条款。'), 'net-greenville': ('New Maine Phase 12 excludes Greenville; earlier support is not a new award.', '缅因州新第12期不含Greenville，旧支持不是新授奖。'), 'winco-edmonds': ('Four-post supplier option and WA credits merit review; no complete quote or credit rights.', '四枪厂家选项及华盛顿积分值得核实，仍无完整报价或积分权益。'), 'net-machias': ('Phase 12 town match: up to $600k capital and $300k temporary electricity support; eligibility unverified.', '匹配第12期城镇：资本最高60万美元，临时电费最高30万美元，完整资格未核。'), 'net-republic': ('WA fuel/tax credit routes identified; project eligibility and environmental scope remain open.', '发现华盛顿燃料/税额抵免路径，项目资格及环境范围待核。'), 'winco-longview': ('WA fuel/tax routes do not establish an award or firm utility service.', '华盛顿燃料/税惠路径不代表获批资金或确定接电。'), 'winco-medford': ('Pacific Power rebate needs approved hardware; OR fuel-credit rights unresolved.', 'Pacific Power返利须认可设备，俄勒冈燃料积分权益待核。'), 'winco-brushprairie': ('Clark bill credit and WA credits require account and contractual confirmation.', 'Clark电费及华盛顿积分须核实电表与合同。'), 'net-austin': ('Federal 30C cutoff applies to new build; volume/support sensitivities are not awards.', '联邦30C新建资格已截止，销量/资助敏感性不是授奖。')}
-
-round3=json.loads((ROOT/'data/feasibility-round-3.json').read_text())
-selected=[next(c for c in data['candidates'] if c['id']==cid) for cid in round3['selection']['selectedIds']]
+    return p(pay+'<br/>NPV '+cash(o['npv']))
+selected=[next(c for c in data['candidates'] if c['id']==h['candidateId']) for h in data['hypothesisReview']['records']]
 out.parent.mkdir(parents=True, exist_ok=True)
 c=canvas.Canvas(str(out),pagesize=(W,H),pageCompression=1)
-c.setTitle(text('Charge Atlas | Focused feasibility review','Charge Atlas | 重点可行性核查'))
+c.setTitle(text('Charge Atlas | Field hypotheses','Charge Atlas | 实地验证假设'))
 c.setAuthor('Charge Atlas Research')
 c.setSubject('Public evidence; language='+args.lang+'; data-sha256='+hashlib.sha256(data_bytes).hexdigest())
 for page in [1,2]:
     c.setFillColor(ink);c.setFont(FONT,18)
-    c.drawString(margin,H-35,'CHARGE ATLAS / '+text('EVIDENCE' if page==1 else 'CONDITIONS','证据核查' if page==1 else '回本条件'))
+    c.drawString(margin,H-35,'CHARGE ATLAS / '+text('FIELD HYPOTHESES' if page==1 else 'WORKING CASES','实地验证假设' if page==1 else '工作情景'))
     c.setFont(FONT,8);c.drawRightString(W-margin,H-33,f"{data['meta']['asOf']} | v{data['meta']['version']} | {page}/2")
-    lead=text('37-site support review; 0 awards verified. Conditional benefits and ownership can change returns; gates remain unchanged.','37处支持路径核查，0处获奖已核实。条件收益与经营模式能改变回报；门槛不变。')
+    lead=text('5 field hypotheses; 0 investment-ready sites. Vendor estimates and author-selected stresses are not local forecasts.','5个实地验证假设，0处已具投资资格。厂家估算与作者选定的压力测试不是本地预测。')
     b=p('<b>'+lead+'</b>');_,bh=b.wrap(width,40);b.drawOn(c,margin,H-56-bh)
     policy=text('Base payback ≤6 years; conservative ≤8 years from first spend; base NPV ≥0 at 10% real over 10 operating years; positive conservative steady cash and all six evidence gates. Chosen policy, not Tesla or industry criteria.','基准回本≤6年，保守≤8年（从首次支出起）；10个运营年、10%实际折现率下基准NPV≥0；保守稳定现金为正，且六类证据齐全。这是选定政策，并非Tesla或行业标准。')
     b=p(policy,small);_,bh=b.wrap(width,40);b.drawOn(c,margin,H-77-bh)
     if page==1:
-        headers=text(['Research property / address','Demand','Full cost','Connection','Finding / feasibility effect'],['研究场地 / 地址','订单','完整成本','接电','发现 / 可行性影响'])
+        headers=text(['Property / exact address','Investigation rationale','Counter-evidence / required field test'],['场地 / 具体地址','调查理由','反证 / 必须实地核验'])
         rows=[[p(escape(h),head) for h in headers]]
         for x in selected:
-            f=x['feasibility'];status=lambda k:text('Partial' if f['availability'][k]['status']=='partial' else 'Not obtained','部分' if f['availability'][k]['status']=='partial' else '未取得')
-            rows.append([p('<b>'+escape(x['name'])+'</b><br/>'+escape(x['address'])),p(status('demand')),p(status('cost')),p(status('grid')),p(escape(text(*notes[x['id']]))+'<br/>'+text('Status: pending.','资格：待核。'))])
-        widths=[260,58,58,64,width-440]
-        foot=text('These 10 are information-acquisition priorities, not qualified investment recommendations. Partial can mean a historical record, tariff or application route; it does not close a gate. No full local paid-demand series, complete new-project cost or firm expansion-capacity commitment was obtained. No outreach, applications or paid studies were performed.','这10处是资料获取优先级，不是合格投资推荐。部分证据可能仅指历史记录、费率或申请路径，不代表通过门槛。未取得完整本地付费订单序列、完整新增项目成本或确定扩容承诺。本轮未对外联系、申请或付费研究。')
+            h=x['hypothesis'];loc=lambda key:h[key]['zh' if zh else 'en']
+            rows.append([p('<b>'+escape(x['name'])+'</b><br/>'+escape(x['address'])+'<br/>'+text('Investigation tier ','调查优先级 ')+h['tier']),p(escape(loc('rationale'))),p(escape(loc('counter'))+'<br/><br/>'+escape(loc('test')))])
+        widths=[210,220,width-430]
+        foot=text('Qualitative diligence priorities, not predicted-return ranks. Puyallup and Ronald Reagan first; Elgin requires an access screen; Edmonds and Medford require a redesign/recovery scope. The wider 37-site pool remains pending, not rejected. No site rights, complete quotes, firm utility capacity/date or calibrated paid-demand forecast has been obtained.','这是定性尽调优先级，不是预测收益排名。优先Puyallup与Ronald Reagan；Elgin先核通行；Edmonds与Medford须明确重设计或恢复范围。全部37处仍待核，并非淘汰。未取得场地权利、完整报价、确定接电容量/日期及校准的付费需求预测。')
     else:
-        headers=text(['Property','Conservative payback / cash','Base payback / cash','Optimistic payback / cash','Base required sessions / site / day','Base max capex at original volume'],['场地','保守回本 / 年现金','基准回本 / 年现金','乐观回本 / 年现金','基准所需订单 / 站 / 日','原销量下基准最高投资'])
+        headers=text(['Property / vendor kWh/post/day','Conservative payback / NPV','Base payback / NPV','Optimistic payback / NPV','Base required kWh/post/day','Base maximum full capex'],['场地 / 厂家kWh/枪/日','保守回本 / NPV','基准回本 / NPV','乐观回本 / NPV','基准所需kWh/枪/日','基准完整投资上限'])
         rows=[[p(escape(h),head) for h in headers]]
         for x in selected:
-            a=x['economics']['inverse']['base'];n=a['requiredSessionsPerSiteDay'];m=a['maxCapex']
-            rows.append([p(escape(x['name'])),scenario(x,'conservative'),scenario(x,'base'),scenario(x,'optimistic'),p(f'{n:,.1f}' if n is not None else text('No finite result','无有限解')),p(cash(m) if m is not None else text('No solution alone','仅调此项无解'))])
+            h=x['hypothesis'];a=h['analysis']['inverse']['base']
+            rows.append([p(escape(x['name'])+'<br/>'+str(h['estimate']['kwhPerPostDay'])+' kWh'),scenario(x,'conservative'),scenario(x,'base'),scenario(x,'optimistic'),p(f"{a['requiredKwhPerStallDay']:,.1f}"),p(cash(a['maxCapex']))])
         widths=[180,99,99,99,104,width-581]
-        foot=text('Shared stress cases, not local forecasts. Cash is stabilized annual free cash after replacement allowance; USD thousands. * No recovery within construction plus 10 operating years. Main inputs/results remain unchanged from v0.3.2. Inverse columns change ONE variable while holding others fixed: do not combine their limits. Required volume is algebraically unconstrained and may be physically impossible; no grid capacity is implied.','共用压力情景，不是本地预测。年现金为扣更新预留后的稳定现金（千美元）。*建设加10个运营年内未回本。主模型输入与结果相较v0.3.2不变。反推列每次仅改变一个变量，其余固定，不可拼接边界。所需订单是未经物理约束的代数值，可能实际无法承载，不代表已取得容量。')
+        foot=text('Four posts; demand 0.7/1/1.2 times vendor reference; gross capex $634.5k/$564k/$517k; monthly uncovered cost $2k/$1k/$0.5k. Flat demand, no grant, no residual. Construction 1.5/1/0.75 years; first-year ramp 50/75/100%; replacement 2/1.5/1%. Input details and boundary caveats are in the product. NPV in USD thousands. * No recovery within construction plus 10 operating years. Each inverse column changes only ONE input; never combine thresholds. Neither is a quote or a full-gate pass.','四枪；需求为厂家参照的0.7/1/1.2倍；总投资63.45/56.4/51.7万美元；每月未覆盖费用2,000/1,000/500美元。需求不增长，不计补助及残值。建设期1.5/1/0.75年，首年爬坡50/75/100%，更新预留2/1.5/1%。完整输入及口径限制见产品。NPV单位为千美元。*建设加10个运营年内未回本。每个反算列仅改变一个输入，不可拼接；不代表报价或完整门槛通过。')
+        foot+=' '+text('Vendor utility prices include demand; assumed 15% loss borrows a different grid-to-battery boundary. Hardware taxes and full utility/civil/land scope remain unquoted.','厂家电价包含需量费；15%损耗借自不同的电网至电池口径。硬件税和完整接电、土建、土地范围仍未获报价。')
     table=Table(rows,colWidths=widths)
     table.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),ink),('VALIGN',(0,0),(-1,-1),'TOP'),('ROWBACKGROUNDS',(0,1),(-1,-1),[colors.white,colors.HexColor('#F3F5F7')]),('LINEBELOW',(0,0),(-1,-1),.3,colors.HexColor('#D5DCE1')),('LEFTPADDING',(0,0),(-1,-1),5),('RIGHTPADDING',(0,0),(-1,-1),5),('TOPPADDING',(0,0),(-1,-1),5),('BOTTOMPADDING',(0,0),(-1,-1),5)]))
     _,th=table.wrap(width,H)

@@ -67,3 +67,7 @@ Run `node scripts/build-acquisition.mjs` to synchronize acquisition records, new
 ## Support and ownership review
 
 Maintain `data/support-review.json` as the round-five source, mechanism and applicability ledger. Program presence is not parcel eligibility or an award; preserve unavailable windows, equipment requirements, credit ownership, tax capacity and stacking limits. After an explicitly reviewed change run `node scripts/build-support.mjs`, regenerate both briefs, then `node scripts/version-assets.mjs` and `npm run check`. The support builder preserves original scenarios and qualification. Changing an actual investment input requires separate evidence and review, not a sensitivity control. Do not subtract an assumed reimbursement from gross asset cost or count temporary operating support forever.
+
+## Field hypotheses
+
+Maintain bilingual source-linked records in `data/hypotheses.json`; preserve original financial/evidence decisions. Run `node scripts/build-hypotheses.mjs` after earlier builders, then rebuild both briefs and run `node scripts/version-assets.mjs` and `npm run check`. Earlier builders stamp their historical version, so the hypothesis builder must run last for this release. Do not upgrade vendor projections, same-region duplicates or author-selected haircuts to measured local forecasts.

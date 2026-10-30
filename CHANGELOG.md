@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.7.0 — Field hypotheses and model-fit audit
+
+- Separate five field-verification hypotheses from unchanged qualified lists; prioritize Puyallup and Ronald Reagan without inventing local paid demand.
+- Verify four new Tesla address entries, retain same-day Edmonds, and correct reported city paybacks from realized returns to vendor projections.
+- Add four-post working cases, complete input/transfer disclosures and required-energy / maximum-cost conditions; preserve all original scenarios and gates.
+- Surface Elgin access risk, Ronald Reagan geocode mismatch and existing-project restrictions at Edmonds/Medford.
+- Independently recompute new scenarios and inverse conditions; update EN/ZH product and briefs.
+
+
 ## 0.6.0 — 2026-10-30
 
 - Added 22 researched support mechanisms/restrictions mapped to all 37 candidates, including Machias Phase 12, WA/OR clean-fuel credits, utility rebates and current tax/deadline limits.

@@ -1,3 +1,33 @@
+# Validation — v0.7.0
+
+## Assessment and repairs
+
+Ready within the reviewed research scope, with material underwriting caveats. No original arithmetic defect was demonstrated. The discovery limitation was using an uncalibrated shared stress bundle where local hypotheses were needed. Five separately labeled investigations now expose vendor references, working alternatives, required energy, complete-cost limits and field tests. None is admitted to an investment-ready list; original financial inputs, outputs, evidence decisions and rankings remain unchanged for all 37 records.
+
+The four-city 4–7-year claim was traced to a secondary report of vendor-calculator results, not realized project payback. Four new live address entries and the retained same-day Edmonds entry yield only three distinct vendor parameter sets. The current Tesla tooltip directly supports approximately 35 kWh per session, but not local paid demand. Retained supplier text and the newly read EVgo filing distinguish projections from observed network aggregates. The latter fell from 281 to 276 kWh/stall/day year over year, so growth is not assumed inevitable.
+
+New contextual originals cover retailer identity, the Bar W amenities, county traffic methodology and the US 290 project notice. The Ronald Reagan postal/geocoder discrepancy and Elgin access risk remain beside the affected hypothesis. No exact road count was admitted where year/counter alignment was unverified. Prior supply and engineering records were reused with their dates; this was not a new nationwide supply sweep or verification of every historical URL.
+
+## Independent review and calculations
+
+Separate reviewers checked vendor claims, local hypothesis selection and model definitions. The independent calculation reviewer used 50-digit Decimal arithmetic from the selected inputs, without importing production helpers, and separate closed-form deadline/NPV equations. All 15 working scenarios and 10 base/conservative inverse envelopes reconciled; maximum absolute numerical difference was below $0.000000001. The reviewer also compared every original candidate field against the v0.6 commit and found no changes. No remaining material source-scope, arithmetic or admission defect was identified within that scope.
+
+The public `scripts/verify-hypotheses.py` reproduces the numerical checks. Existing original, tariff, inverse and support checks also pass, along with 26 targeted tests. Structural checks cover the canonical five records, all 37 dispositions, source resolution, bilingual limits, PDF hashes and unchanged policy. These checks validate calculations and provenance, not commercial viability.
+
+## Product and release checks
+
+- All five new detail tables and overview-to-site navigation were exercised locally. Values match the independently reviewed data.
+- The five-hypothesis and prior ten-review filters are mutually exclusive; both list sizes were observed. Both research lenses, English/Chinese switching and the detailed input table were checked.
+- At 390px the page has no horizontal overflow; wide tables scroll internally. English reset and absence of console errors were checked in the exercised flows.
+- Both two-page briefs were rebuilt from the current data and rendered in English and Chinese. No clipped tables or missing glyphs were found. CSV includes hypothesis records and limitations; this release does not claim a new downloaded-CSV byte inspection.
+- Publication review found no CV, private requests, raw source captures, credentials or local user paths. Public homepage/docs are English and the application defaults to English. No outreach, inquiry submission, records request, fee or contract was performed.
+
+The remaining limits are substantive: vendor estimates are not local paid records; joint stress factors have no calibrated probability; the 15% loss assumption crosses differing energy boundaries; complete cost, site rights, permits, demand transfer and grid/tariff offers remain unresolved. A favorable optimistic result cannot rescue a failed downside gate. Deployment identity and live-file hashes are verified separately after publishing.
+
+Earlier validation history follows.
+
+---
+
 # Validation — v0.6.0
 
 ## Scope and decision
