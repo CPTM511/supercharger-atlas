@@ -143,6 +143,38 @@ for(const c of data.candidates){
 fail(focused===10 && currentClaims===data.meta.availabilityReview.newFindings,'Current coverage/count mismatch');
 console.log(`Round three: 37 availability records, ${focused} focused reviews, ${currentClaims} classified findings; unchanged inputs and decisions reconciled against v0.3.2.`);
 
+const recovery=JSON.parse(fs.readFileSync(new URL('../data/acquisition-round-4.json',import.meta.url)));
+assert.deepEqual(data.acquisitionReview,recovery,'Round-four root copy mismatch');
+assert.deepEqual([...recovery.reviewedIds].sort(),[...current.selection.selectedIds].sort(),'Focused follow-up scope changed');
+fail(recovery.carriedForwardIds.length===27,'Carried-forward count must not imply fresh review');
+fail(new Set([...recovery.reviewedIds,...recovery.carriedForwardIds]).size===37,'Incomplete follow-up coverage accounting');
+for(const a of recovery.sites){
+ const c=data.candidates.find(x=>x.id===a.id);
+ assert.deepEqual(c.acquisition,a,'Candidate acquisition copy mismatch');
+ fail(c.review.decision===a.decisionAfter && a.decisionBefore===a.decisionAfter,'Unsupported qualification change');
+ for(const key of ['headline','impact','nextAction'])fail(a[key]?.en&&a[key]?.zh,'Missing acquisition translation');
+ for(const key of ['demand','cost','grid'])fail(a.remaining[key]?.en&&a.remaining[key]?.zh,'Missing specific remaining evidence');
+ fail(a.attempts.length>0 && Object.values(a.acquired).every(x=>x===false),'Unreviewed evidence admission');
+ for(const f of a.findings){
+  fail(['direct','secondary','inference','estimate','unresolved'].includes(f.evidenceClass),'Unknown acquisition evidence class');
+  fail(f.claim?.en&&f.claim?.zh&&f.limitation?.en&&f.limitation?.zh,'Missing claim or caveat');
+  fail(f.usableAsModelInput===false,'Historical/context finding substituted into model');
+  for(const id of f.sourceIds)fail(sourceIds.has(id),'Unresolved acquisition source');
+ }
+}
+const inputSets=new Set(data.candidates.map(c=>JSON.stringify(Object.fromEntries(Object.entries(c.economics.scenarios).map(([key,s])=>[key,s.inputs])))));
+fail(inputSets.size===recovery.diagnostics.distinctScenarioSets,'Scenario independence misrepresented');
+const downside=data.candidates[0].economics.scenarios.conservative.inputs;
+const gross=downside.stalls*downside.sessionsPerStallDay*downside.kwhPerSession*365*downside.retailPerKwh;
+fail(gross===recovery.diagnostics.conservativeRevenue && downside.fixedMonthly*12===recovery.diagnostics.conservativeFixedCost,'Diagnostic arithmetic mismatch');
+fail(gross<downside.fixedMonthly*12,'Mechanical stress diagnosis no longer valid');
+fail(data.candidates.filter(c=>Object.values(c.review.evidence).some(v=>v!=='verified')).length===recovery.diagnostics.incompleteEvidence,'Readiness count mismatch');
+const comp=recovery.comparison;
+fail(comp.totalProjectCost===comp.grant+comp.match && comp.sessionsPaidOnly===false && comp.isCandidate===false,'Comparator scope/financial identity invalid');
+for(const id of comp.sourceIds)fail(sourceIds.has(id),'Comparator source missing');
+fail((Date.parse(comp.periodEnd)-Date.parse(comp.periodStart))/86400000+1===comp.days,'Comparator reporting period mismatch');
+console.log(`Round four: 10 follow-ups, 27 carried forward; evidence/forecast distinctions and project comparison checked.`);
+
 const assetHash=name=>createHash('sha256').update(fs.readFileSync(new URL('../'+name,import.meta.url))).digest('hex').slice(0,12);
 const html=fs.readFileSync(new URL('../index.html',import.meta.url),'utf8'),app=fs.readFileSync(new URL('../app.js',import.meta.url),'utf8');
 for(const name of ['styles.css','app.js'])fail(html.includes('./'+name+'?v='+assetHash(name)),'Stale asset URL: '+name);

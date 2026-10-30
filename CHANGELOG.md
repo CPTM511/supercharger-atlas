@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.5.0 — Evidence recovery and decision interpretation
+
+- Followed up ten evidence priorities; retained 27 without implying fresh investigation.
+- Recovered Edmonds BLD2022-0061 historical design, with 598 kVA design load and location-only approval explicitly distinguished from utility capacity.
+- Added classified funding, reporting, tariff and single-observation evidence; no financial inputs or formal decisions changed.
+- Exposed the shared stress assumptions behind zero qualification; retained all hard gates.
+- Added a contractor-reported completed-project comparison, outside candidate rankings.
+- Updated English documentation and bilingual product/briefs, with independent evidence and calculation review.
+
+
 ## v0.4.0 — data availability and focused feasibility
 
 - Scanned all 37 properties before selecting ten focused demand/cost/connection investigations. Added 72 classified findings with bilingual evidence limits and acquisition routes. Qualification remains 0/37 under unchanged rules.

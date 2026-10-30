@@ -2079,3 +2079,11 @@ html[lang=en] .intro-description { max-width:590px; }
 .inverse-table th, .inverse-table td { padding: 9px; text-align: left; border-bottom: 1px solid #d7e0e4; overflow-wrap: anywhere; }
 .focus-filter { display: flex; gap: 8px; align-items: center; padding: 0 16px 12px; font-size: 13px; }
 .v4-coverage { padding: 0 16px; }
+
+/* Decision readiness is distinct from site economics. */
+.decision-audit {margin:0 auto 32px;padding:28px;border:1px solid var(--line,#d7dfe5);border-radius:12px;background:#f5f8fa;max-width:1440px}
+.decision-audit h2 {font-size:clamp(22px,2.6vw,32px);margin:8px 0 14px}.audit-lead {max-width:1000px;line-height:1.7}
+.audit-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin:24px 0}.audit-grid h3 {font-size:16px}.audit-grid p {font-size:14px;line-height:1.7}
+.audit-comparison summary {cursor:pointer;font-weight:650}.audit-comparison table {width:100%;border-collapse:collapse}.audit-comparison th,.audit-comparison td {padding:12px;text-align:left;border-bottom:1px solid #d7dfe5}
+.acquisition-v5 {margin:22px 0;padding:18px;background:#f0f6f8;border:1px solid #c8dbe2;border-radius:8px}.acquisition-v5 h4 {font-size:19px;line-height:1.5}.acquisition-v5 details {margin-top:16px}.acquisition-v5 small {display:block;margin-top:5px}.acquisition-v5 h5 {margin-bottom:4px}
+@media(max-width:700px){.decision-audit{padding:18px;margin:0 0 22px}.audit-grid{grid-template-columns:1fr;gap:8px}.audit-comparison table{min-width:480px}}

@@ -1,3 +1,29 @@
+# Validation — v0.5.0
+
+## Scope and result
+
+Round four followed up the ten previously selected evidence priorities; 27 records carry forward the earlier availability scan. It adds 16 classified findings, with 345 source identifiers covering 343 distinct URLs. No complete current paid-session series, complete design-matched new-project quote, or firm incremental capacity and delivery commitment was obtained. All 37 remain pending, zero qualify, and zero are formally rejected.
+
+No economic input, output, ranking, threshold or evidence admission changed from v0.4.0. The new decision audit separates incomplete investment evidence from a real-site failure. Thirty-seven addresses share only 14 distinct state-based scenario sets; shared conservative revenue of $51,392 is already below $60,000 fixed costs. That stress result is not 37 independently observed losses. A new-build forecast may be validated through matched measured paid analogues and local capture/competition evidence; it cannot require nonexistent pre-opening sales.
+
+## Independent source and analytical review
+
+A separate reviewer checked the integrated records, selected consequential originals and retained source materials. This included the original Georgia and Oregon program PDFs, NHDOT plan, Maine Q&A, Republic register, Austin account and the Eneridge contractor report hosted by CEC. Original Edmonds plans were read through the city archive and visually checked by the primary researcher; the reviewer independently read retained rendered text because their live fetch failed. Colebrook's original contract endpoint remained inaccessible: the OCR mirror stays secondary. These are targeted checks, not a claim that every historical source was reopened twice.
+
+The reviewer independently checked representative inverse calculations, the comparison period and cost identity, and all 37 records for unchanged economics/decisions. Corrections incorporated: the Republic source's March 8, 2012 date; explicit 2024-12-27–2025-12-26 comparator observation window; a historical notice before round-three access failures; and Greenville subsidy netting and bid limits. Final readback found no outstanding material analytical defect within that scope. This is not field engineering, a utility reservation or an operator audit.
+
+## Reproducible and product checks
+
+- All 19 targeted model tests pass. Independent Python calculations reconcile 111 main scenarios, 20 tariff subtotal sensitivities, 74 minimum-volume results and 296 one-input upper bounds/nulls.
+- Structural checks reconcile canonical round-four data with candidate copies, the 10/27 split, source references, bilingual claim/limitation fields, comparison boundaries and unchanged evidence admission. Existing checks of the prior rounds, supply snapshot, model outputs, PDF input hashes and content-versioned assets remain in place.
+- All ten follow-up panels were exercised in the local browser, including Edmonds' original-plan finding and the superseded-history notice. The external comparison displays its actual observation period. English default/reset and Chinese disclosure were verified. The 390px layout uses one-column audit cards with no horizontal page overflow. No console errors appeared in the exercised flows.
+- Both two-page PDFs were rendered and visually inspected: no clipped tables or missing Chinese glyphs. This round does not claim a fresh downloaded-CSV byte inspection.
+- Publication review found no CV, private requests, raw source downloads, credentials or local user paths in the public additions. The GitHub homepage remains English. No outreach, records-request submission, utility application, fee or contract was initiated.
+
+Deployment identity and live static-file hashes are verified separately after publication. The following sections preserve prior-release validation history; they are not new v0.5 observations.
+
+---
+
 # Validation — v0.4.0
 
 ## Current scope

@@ -57,3 +57,9 @@ Preserve `data/previous-results-v0.3.2.json` as the immutable comparison baselin
 With reviewed bilingual availability/deep-investigation records in a private directory, run `node scripts/build-feasibility.mjs /path/to/reviewed-records`, then `node scripts/build-feasibility-report.mjs`. This explicit import requires all 37 scans and exactly the selected 10 deep records. Rebuild the main and tariff calculations before importing the new round; importing adds inverse conditions without overwriting evidence with assumptions. Never run an old economic rebuild alone after import: it resets the derived inverse fields.
 
 Run `python3 scripts/verify-inverse.py` for independent deadline-balance and discounted-cash equations. It checks null boundaries as well as numeric results. Source fitness and actual acquisition remain manual research tasks; numeric agreement does not prove data truth. Review unqualified-to-qualified changes explicitly, and preserve both policy and private-data boundaries.
+
+## Evidence recovery follow-up
+
+Maintain `data/acquisition-round-4.json` as the reviewed claim-level source. Distinguish new, historical/different-scope, inaccessible and unsubmitted records. Keep the previous availability round intact; carried-forward properties must not imply fresh investigation.
+
+Run `node scripts/build-acquisition.mjs` to synchronize acquisition records, new sources, version and the English recovery report. Existing source metadata is preserved; explicitly reconcile corrections in both ledgers. This importer refuses a decision change or financial-input use; future fully evidenced input changes require a separately reviewed model update. Rebuild both briefs, version assets, run checks and inspect bilingual/mobile behavior. Raw documents and unsent requests stay outside the public repository.

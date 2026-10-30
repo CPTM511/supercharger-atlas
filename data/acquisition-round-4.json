@@ -1,0 +1,1931 @@
+{
+  "asOf": "2026-10-30",
+  "version": "0.5.0",
+  "baselineVersion": "0.4.0",
+  "reviewedIds": [
+    "net-colebrook",
+    "net-greenville",
+    "net-machias",
+    "net-republic",
+    "net-austin",
+    "sprouts-suwanee",
+    "winco-medford",
+    "winco-edmonds",
+    "winco-longview",
+    "winco-brushprairie"
+  ],
+  "carriedForwardIds": [
+    "net-hanksville",
+    "net-john-day",
+    "net-challis",
+    "net-eureka",
+    "net-chama",
+    "net-elkins",
+    "net-mountain-view",
+    "net-chinle",
+    "net-alamo",
+    "heb-ronaldreagan",
+    "winco-bremerton",
+    "winco-vancouver",
+    "heb-mansfield",
+    "heb-leander",
+    "winco-everett",
+    "winco-tigard",
+    "winco-powell",
+    "wegmans-wakeforest",
+    "winco-spokanevalley",
+    "heb-crosscreek",
+    "heb-elgin",
+    "winco-gresham",
+    "winco-puyallup",
+    "winco-keizer",
+    "winco-hillsboro",
+    "winco-oregoncity",
+    "winco-marysville"
+  ],
+  "conclusion": {
+    "en": "Zero investment-ready projects in this selected pool does not establish that U.S. charging sites are unbuildable or unprofitable. Missing project evidence and failure of a shared stress case are different findings.",
+    "zh": "本候选池零个项目达到投资条件，不代表美国充电场地不能建设或不能盈利。项目证据不足与共用压力情景失败，是两种不同结论。"
+  },
+  "greenfieldRule": {
+    "en": "A new station cannot provide its own pre-opening sales. Validate a forecast with comparable paid-session records, local demand/access/competition and explicit capture, diversion and downside assumptions. Existing-asset expansions also need incremental-demand evidence.",
+    "zh": "新站不可能提供开业前自身订单。须用可比站付费记录、本地需求、进出条件与竞争，验证获客、分流及下行情景预测；既有站扩建还须验证新增需求。"
+  },
+  "coverage": {
+    "en": "Round four follows up the ten previously selected evidence priorities; the other 27 retain round-three records. Operational comparisons stay outside the candidate count. No outreach, paid studies or utility applications were performed.",
+    "zh": "第四轮继续追查此前选定10处，其余27处沿用第三轮记录。运营对照不计入候选数量。未对外联系、付费研究或提交接电申请。"
+  },
+  "comparison": {
+    "publishedDate": "2026-05-07",
+    "periodStart": "2024-12-27",
+    "periodEnd": "2025-12-26",
+    "days": 365,
+    "chargers": 6,
+    "sessions": 7605,
+    "totalProjectCost": 1363492,
+    "grant": 1000000,
+    "match": 363492,
+    "energyKwhLowerBound": 235000,
+    "sessionsPaidOnly": false,
+    "isCandidate": false,
+    "summary": {
+      "en": "Eneridge reports three completed California sites, each with two battery-buffered 150 kW chargers: 7,605 sessions across all six chargers over 365 days, and $1,363,492 total project cost including a $1,000,000 grant. These are project totals, not per-site paid sales or quotes.",
+      "zh": "Eneridge报告加州3处已建站，各有2台带储能150kW充电器：6台设备365天合计7,605次充电，项目总成本1,363,492美元，其中资助1,000,000美元。这是项目汇总，不是每址付费流水或报价。"
+    },
+    "limitation": {
+      "en": "Contractor report hosted by CEC, not an independent CEC audit. Reported uptime is 78.40–88.86%; the charger manufacturer went bankrupt in 2024. Grid figures average monthly peaks, not guaranteed supply. No paid-only settlement series, itemized site costs, operating budget, Tesla design or available expansion rights is established.",
+      "zh": "报告由承包方编写、CEC托管，并非CEC独立审计。报告可用率78.40–88.86%，制造商于2024年破产。购电数值是月峰值平均，并非供电承诺。未取得纯付费结算序列、分址明细成本、运营预算、Tesla方案或可用扩建权。"
+    },
+    "sites": [
+      {
+        "name": "Eastlake Village Center, Chula Vista, CA",
+        "meanMonthlyPeakKw": 25.1,
+        "uptimePercent": 78.4
+      },
+      {
+        "name": "Trabuco Community Center, Irvine, CA",
+        "meanMonthlyPeakKw": 37.2,
+        "uptimePercent": 88.86
+      },
+      {
+        "name": "Garden Grove Plaza, Garden Grove, CA",
+        "meanMonthlyPeakKw": 37.5,
+        "uptimePercent": 88.14
+      }
+    ],
+    "sourceIds": [
+      "V5-6410046a3a"
+    ]
+  },
+  "sources": [
+    {
+      "id": "V5-6410046a3a",
+      "url": "https://www.energy.ca.gov/sites/default/files/2026-05/CEC-600-2026-024.pdf",
+      "title": "Eneridge final report, CEC-600-2026-024, printed pp. 6–7",
+      "publisher": "Eneridge; hosted by California Energy Commission",
+      "publishedDate": "2026-05-07",
+      "retrievedDate": "2026-10-30",
+      "kind": "public_record",
+      "notes": "Contractor-reported results; CEC does not warrant accuracy. Aggregate historical operations and project cost, not audited revenue or a candidate quote."
+    },
+    {
+      "id": "V5-32b1b6c971",
+      "url": "https://www.snhpc.org/DocumentCenter/View/468/Updated-Nevi-Plan?bidId=",
+      "title": "NHDOT August 2023 NEVI plan, Table 2",
+      "publisher": "www.snhpc.org",
+      "publishedDate": "2023-08-01",
+      "retrievedDate": "2026-10-30",
+      "kind": "public_record",
+      "notes": "Read with claim-level limitations and access status in the round-four investigation."
+    },
+    {
+      "id": "V5-fcda41b63c",
+      "url": "https://media.sos.nh.gov/govcouncil/2023/0628/170%20GC%20Agenda%20062823.pdf",
+      "title": "NH Governor and Council June 28 2023 item 170 (retrieval failed)",
+      "publisher": "media.sos.nh.gov",
+      "publishedDate": "Not recorded",
+      "retrievedDate": "2026-10-30",
+      "kind": "public_record",
+      "notes": "Read with claim-level limitations and access status in the round-four investigation."
+    },
+    {
+      "id": "V5-0bd24a6f67",
+      "url": "https://livefreeordie.legal/executive/records/gov-exec-council-meeting-attachment-gov-exec-council-meeting-2023-06-28-governor-and-executive-council-meeting-2023-06-28-httpswwwsosnhgovmeetingjune-28-2023-gc-agenda-b617e343f3-httpsmediasosnhgovgovcouncil20230628170-gc-agenda-062823pdf/",
+      "title": "Secondary OCR mirror of NH June 2023 item 170 agreement",
+      "publisher": "livefreeordie.legal",
+      "publishedDate": "Not recorded",
+      "retrievedDate": "2026-10-30",
+      "kind": "secondary",
+      "notes": "Read with claim-level limitations and access status in the round-four investigation."
+    },
+    {
+      "id": "V5-424c62ee93",
+      "url": "https://www.des.nh.gov/sites/g/files/ehbemt341/files/documents/vw-committed-expended-funds.pdf",
+      "title": "NHDES committed and expended VW funds (retrieval failed)",
+      "publisher": "www.des.nh.gov",
+      "publishedDate": "Not recorded",
+      "retrievedDate": "2026-10-30",
+      "kind": "public_record",
+      "notes": "Read with claim-level limitations and access status in the round-four investigation."
+    },
+    {
+      "id": "V5-35e9641459",
+      "url": "https://www.linkedin.com/posts/revision-energy_ev-fast-charging-now-available-in-colebrook-activity-7234971575492513793-4P0v",
+      "title": "ReVision Energy Colebrook public charger announcement",
+      "publisher": "www.linkedin.com",
+      "publishedDate": "Not recorded",
+      "retrievedDate": "2026-10-30",
+      "kind": "public_record",
+      "notes": "Read with claim-level limitations and access status in the round-four investigation."
+    },
+    {
+      "id": "V5-6f04937082",
+      "url": "https://www.efficiencymaine.com/docs/EM_011_2024_Questions_and_Answers_UPDATED_2024-03-04.pdf",
+      "title": "Efficiency Maine EM-011-2024 revised questions and answers",
+      "publisher": "www.efficiencymaine.com",
+      "publishedDate": "2024-03-04",
+      "retrievedDate": "2026-10-30",
+      "kind": "public_record",
+      "notes": "Read with claim-level limitations and access status in the round-four investigation."
+    },
+    {
+      "id": "S04585c7",
+      "url": "https://www.efficiencymaine.com/at-work/electric-vehicle-supply-equipment-initiative/",
+      "title": "Efficiency Maine charging initiative project listings",
+      "publisher": "www.efficiencymaine.com",
+      "publishedDate": "Not recorded",
+      "retrievedDate": "2026-10-30",
+      "kind": "public_record",
+      "notes": "Read with claim-level limitations and access status in the round-four investigation."
+    },
+    {
+      "id": "V5-a7371918d5",
+      "url": "https://www.revisionenergy.com/blog/2025-a-big-year-for-ev-charging/",
+      "title": "ReVision Energy 2025 charging retrospective",
+      "publisher": "www.revisionenergy.com",
+      "publishedDate": "Not recorded",
+      "retrievedDate": "2026-10-30",
+      "kind": "public_record",
+      "notes": "Read with claim-level limitations and access status in the round-four investigation."
+    },
+    {
+      "id": "V5-d78eb37ef7",
+      "url": "https://apps.ecology.wa.gov/publications/documents/1209041e.pdf",
+      "title": "Washington Ecology Site Register, March 8, 2012",
+      "publisher": "apps.ecology.wa.gov",
+      "publishedDate": "2012-03-08",
+      "retrievedDate": "2026-10-30",
+      "kind": "public_record",
+      "notes": "Read with claim-level limitations and access status in the round-four investigation."
+    },
+    {
+      "id": "V4-518d2b6be",
+      "url": "https://apps.ecology.wa.gov/cleanupsearch/site/10518",
+      "title": "Washington Ecology cleanup site 10518",
+      "publisher": "apps.ecology.wa.gov",
+      "publishedDate": "Not recorded",
+      "retrievedDate": "2026-10-30",
+      "kind": "public_record",
+      "notes": "Read with claim-level limitations and access status in the round-four investigation."
+    },
+    {
+      "id": "V5-45b9a4f72f",
+      "url": "https://scottexplains.com/f/driving-nevada%E2%80%99s-loneliest-highway-in-an-ev",
+      "title": "Driving Nevada’s Loneliest Highway in an EV — driver account",
+      "publisher": "scottexplains.com",
+      "publishedDate": "2026-05-10",
+      "retrievedDate": "2026-10-30",
+      "kind": "secondary",
+      "notes": "Read with claim-level limitations and access status in the round-four investigation."
+    },
+    {
+      "id": "V3-a0d97a02",
+      "url": "https://newsroom.rangeway.co/case-studies/nevada_electric_highway/",
+      "title": "Rangeway Nevada Electric Highway case study",
+      "publisher": "newsroom.rangeway.co",
+      "publishedDate": "Not recorded",
+      "retrievedDate": "2026-10-30",
+      "kind": "secondary",
+      "notes": "Read with claim-level limitations and access status in the round-four investigation."
+    },
+    {
+      "id": "V5-1e3e76cc4b",
+      "url": "https://www.georgiapower.com/content/dam/georgia-power/pdfs/business-pdfs/etmr-program-criteria-2026-2028.pdf",
+      "title": "Georgia Power Make Ready Program Criteria 2026–2028",
+      "publisher": "www.georgiapower.com",
+      "publishedDate": "2026–2028 program period; publication date not printed",
+      "retrievedDate": "2026-10-30",
+      "kind": "public_record",
+      "notes": "utility program, not a site award"
+    },
+    {
+      "id": "V5-243c26cdc4",
+      "url": "https://www.georgiapower.com/content/dam/georgia-power/pdfs/business-pdfs/make-ready-et-terms-and-conditions.pdf",
+      "title": "Georgia Power Make Ready terms",
+      "publisher": "www.georgiapower.com",
+      "publishedDate": null,
+      "retrievedDate": "2026-10-30",
+      "kind": "public_record",
+      "notes": "template contract, not signed by site"
+    },
+    {
+      "id": "V5-c23891c9c7",
+      "url": "https://www.georgiapower.com/content/dam/georgia-power/pdfs/tariffs/ciev.pdf",
+      "title": "Georgia Power Charge It rider CIEV-1",
+      "publisher": "www.georgiapower.com",
+      "publishedDate": "2023-01-01 effective",
+      "retrievedDate": "2026-10-30",
+      "kind": "public_record",
+      "notes": "utility tariff, not account enrollment or a bill"
+    },
+    {
+      "id": "V5-dff3afb6d1",
+      "url": "https://www.georgiapower.com/business/products-programs/business-solutions/electric-transportation-business-programs/make-ready.html",
+      "title": "Georgia Power current Make Ready program page",
+      "publisher": "www.georgiapower.com",
+      "publishedDate": null,
+      "retrievedDate": "2026-10-30",
+      "kind": "public_record",
+      "notes": "utility program, not parcel commitment"
+    },
+    {
+      "id": "V5-d2e8eea4d4",
+      "url": "https://www.oregon.gov/odot/climate/Documents/ODOT%20Notice%20of%20Funding%20Opportunity%20NEVI%20Round%203.pdf",
+      "title": "Oregon NEVI Round 3 NOFO",
+      "publisher": "www.oregon.gov",
+      "publishedDate": "2026-10-21 advertised",
+      "retrievedDate": "2026-10-30",
+      "kind": "public_record",
+      "notes": "new solicitation, not cancelled Round 1 contract or WinCo award"
+    },
+    {
+      "id": "V5-7661af3f66",
+      "url": "https://www.oregon.gov/odot/climate/Documents/Attachment%202%20ODOT%20NEVI%20Scope%20of%20Work%20and%20Deliverables.pdf",
+      "title": "Oregon NEVI Round 3 scope and deliverables template",
+      "publisher": "www.oregon.gov",
+      "publishedDate": "Linked with 2026-10-21 Round 3",
+      "retrievedDate": "2026-10-30",
+      "kind": "public_record",
+      "notes": "template requirements, not completed site deliverables"
+    },
+    {
+      "id": "V4-a784f1f71",
+      "url": "https://www.oregon.gov/odot/climate/pages/nevi.aspx",
+      "title": "ODOT NEVI program October 2026 update",
+      "publisher": "www.oregon.gov",
+      "publishedDate": "2026-10",
+      "retrievedDate": "2026-10-30",
+      "kind": "public_record",
+      "notes": "corridor cancellation and new solicitation"
+    },
+    {
+      "id": "V5-084e17b68c",
+      "url": "https://weblink.edmondswa.gov/WebLink/browse.aspx",
+      "title": "Edmonds Laserfiche public archive",
+      "publisher": "weblink.edmondswa.gov",
+      "publishedDate": null,
+      "retrievedDate": "2026-10-30",
+      "kind": "public_record",
+      "notes": "access attempt, no address records obtained"
+    },
+    {
+      "id": "V4-38c3fd424",
+      "url": "https://psc.ga.gov/search/facts-docket/?docketId=43899",
+      "title": "Georgia PSC docket 43899",
+      "publisher": "psc.ga.gov",
+      "publishedDate": "2021-05-24 docket date",
+      "retrievedDate": "2026-10-30",
+      "kind": "public_record",
+      "notes": "access attempt, not evidence of no filings"
+    },
+    {
+      "id": "V4-0ff100444",
+      "url": "https://dcfctracker.com/stations/261824",
+      "title": "DCFC Tracker Edmonds EVgo",
+      "publisher": "dcfctracker.com",
+      "publishedDate": "2026-08-02 in opened body; search excerpt says 2026-10-25",
+      "retrievedDate": "2026-10-30",
+      "kind": "secondary",
+      "notes": "advertised price only; freshness conflict"
+    },
+    {
+      "id": "V4-988fd64b3",
+      "url": "https://www.cowlitzpud.org/wp-content/uploads/Engineering-Policies.pdf",
+      "title": "Cowlitz Engineering Policies PDF",
+      "publisher": "www.cowlitzpud.org",
+      "publishedDate": null,
+      "retrievedDate": "2026-10-30",
+      "kind": "public_record",
+      "notes": "retrieval failure"
+    },
+    {
+      "id": "V4-96549661e",
+      "url": "https://www.snopud.com/save-energy/electric-vehicles/commercial/commercial-charging-process/",
+      "title": "Snohomish PUD commercial charging process",
+      "publisher": "www.snopud.com",
+      "publishedDate": null,
+      "retrievedDate": "2026-10-30",
+      "kind": "public_record",
+      "notes": "utility process, not parcel capacity"
+    },
+    {
+      "id": "V4-1076a0a93",
+      "url": "https://www.clarkpublicutilities.com/business-customers/reduce-waste-in-your-business/all-programs/electric-vehicle-program/",
+      "title": "Clark Public Utilities EV program",
+      "publisher": "www.clarkpublicutilities.com",
+      "publishedDate": null,
+      "retrievedDate": "2026-10-30",
+      "kind": "public_record",
+      "notes": "utility program, not approved credit"
+    },
+    {
+      "id": "V5-c95d9227d3",
+      "url": "https://weblink.edmondswa.gov/WebLink/DocView.aspx?id=1622414&dbid=0&repo=Edmonds",
+      "title": "Edmonds BLD2022-0061 engineering revision memo",
+      "publisher": "weblink.edmondswa.gov",
+      "publishedDate": "2023-03-02",
+      "retrievedDate": "2026-10-30",
+      "kind": "public_record",
+      "notes": "parcel/project design revision; not final approval or full EPC cost"
+    },
+    {
+      "id": "V5-3eb0f1dd3b",
+      "url": "https://weblink.edmondswa.gov/WebLink/DocView.aspx?id=1622404&dbid=0&repo=Edmonds",
+      "title": "Edmonds BLD2022-0061 approved revision plans, CS-1 and E-2.0",
+      "publisher": "City of Edmonds public archive; Blymyer Engineers plans",
+      "publishedDate": "2023-04-03 location-revision approval",
+      "retrievedDate": "2026-10-30",
+      "kind": "public_record",
+      "notes": "Original 22-page plan viewed in public archive. Cover and one-line OCR read; download endpoint blocked by browser. Design is not as-built, firm utility allocation or a construction quote."
+    }
+  ],
+  "sites": [
+    {
+      "id": "net-colebrook",
+      "headline": {
+        "en": "A historic site-specific funding record and contract reporting duties recovered; no current paid-session export or complete quote.",
+        "zh": "补到同址历史资助记录及合同报告义务；仍未取得当前付费订单导出或完整报价。"
+      },
+      "impact": {
+        "en": "The battery-assisted existing-asset route is more concrete. A conventional eight-stall stress result is not a verdict on this smaller design. Qualification stays pending.",
+        "zh": "既有电池辅助站点的核实路径更具体。常规八枪压力情景不能代表这套较小设计不可行；仍为待核。"
+      },
+      "decisionBefore": "pending",
+      "decisionAfter": "pending",
+      "findings": [
+        {
+          "id": "V5-N-C01",
+          "evidenceClass": "direct",
+          "claim": {
+            "en": "NHDOT’s August 2023 plan identifies La Perle IGA at 64 Trooper Leslie G Lord Memorial Highway, ReVision Energy, and $275,900 funding requested.",
+            "zh": "NHDOT 2023年8月计划明确 La Perle IGA 位于64 Trooper Leslie G Lord Memorial Highway，主体为ReVision Energy，申请资助额275,900美元。"
+          },
+          "limitation": {
+            "en": "Table 2 is a historical funding-request entry, not a complete cost quote, paid reimbursement or transferable subsidy. Its port count is not a current as-built specification.",
+            "zh": "表2是历史资助申请记录，不是完整成本报价、已支付补贴或可转让补助；其中枪数不代表当前竣工规格。"
+          },
+          "sourceIds": [
+            "V5-32b1b6c971"
+          ],
+          "sourceDate": "2023-08-01",
+          "scope": "parcel",
+          "usableAsModelInput": false
+        },
+        {
+          "id": "V5-N-C02",
+          "evidenceClass": "secondary",
+          "claim": {
+            "en": "A full OCR mirror of the June 2023 agreement was recovered. Exhibit B §22 calls for quarterly session/time, kWh, transaction-fee, peak-draw and uptime reports; §32 calls for host agreements.",
+            "zh": "已取得2023年6月协议的完整OCR镜像。附件B第22条要求季度订单/时间、电量、交易费用、最大取电及可用率报告；第32条要求场地主协议。"
+          },
+          "limitation": {
+            "en": "Original government PDF remains HTTP 403. OCR is secondary and may contain errors; these duties do not prove that reports were filed or released.",
+            "zh": "政府原PDF仍返回HTTP403。OCR为次级来源，可能有识别错误；合同义务不能证明报告已提交或已公开。"
+          },
+          "sourceIds": [
+            "V5-0bd24a6f67",
+            "V5-fcda41b63c"
+          ],
+          "sourceDate": "2023-06-28",
+          "scope": "parcel",
+          "usableAsModelInput": false
+        },
+        {
+          "id": "V5-N-C03",
+          "evidenceClass": "secondary",
+          "claim": {
+            "en": "The mirrored Exhibit C caps reimbursement at the lesser of $275,900 or 80% of eligible actual costs and requires invoices and proof of payment. It excludes utility-owned infrastructure, land, electricity, taxes and batteries/solar.",
+            "zh": "镜像附件C将报销限定为275,900美元或符合条件实际成本的80%两者较低，并要求发票与付款凭证；电力公司资产、土地、电费、税及电池/光伏等不在补助范围。"
+          },
+          "limitation": {
+            "en": "This is not an actual installed-cost statement. Do not divide the grant by 80% to invent total project cost, apply it to eight stalls, or assume battery eligibility without original amendments.",
+            "zh": "这不是实际安装成本表；不能将补贴除以80%虚构总价，也不能套用到八枪方案，或在未见原始修订时认为电池可获补贴。"
+          },
+          "sourceIds": [
+            "V5-0bd24a6f67",
+            "V5-fcda41b63c"
+          ],
+          "sourceDate": "2023-06-28",
+          "scope": "parcel",
+          "usableAsModelInput": false
+        },
+        {
+          "id": "V5-N-C04",
+          "evidenceClass": "secondary",
+          "claim": {
+            "en": "A comment on ReVision’s public installation post reports 27 kW input and up to 200 kW output; the company post itself describes a 200 kW charger.",
+            "zh": "ReVision公开安装帖的一条评论称取电27kW、最高输出200kW；公司帖本身称充电机为200kW。"
+          },
+          "limitation": {
+            "en": "The 27 kW figure is a commenter’s unverified claim, not a utility letter or measured import limit. It is a lead for as-built verification only; no spare capacity, continuous output or battery state is established.",
+            "zh": "27kW是未经证实的评论，不是电力函或实测取电上限；仅作为竣工资料核实线索，不证明剩余容量、持续输出或电池状态。"
+          },
+          "sourceIds": [
+            "V5-35e9641459"
+          ],
+          "sourceDate": null,
+          "scope": "parcel",
+          "usableAsModelInput": false
+        }
+      ],
+      "attempts": [
+        {
+          "action": "Colebrook ReVision budget; exact NH G&C item 170; NHDOT Table 2",
+          "result": "Government PDF and expenditures PDF: web and direct download returned HTTP 403. Regional planning commission copy of NHDOT plan read. Mirror full HTML/OCR obtained via direct public download; source labeled secondary.",
+          "checkedAt": "2026-10-30",
+          "sourceIds": [
+            "V5-32b1b6c971",
+            "V5-fcda41b63c",
+            "V5-0bd24a6f67",
+            "V5-424c62ee93"
+          ]
+        },
+        {
+          "action": "Colebrook ReVision FreeWire 27 kW; sessions kWh reports",
+          "result": "Public post and comments read; no operating-log or settlement export found.",
+          "checkedAt": "2026-10-30",
+          "sourceIds": [
+            "V5-35e9641459"
+          ]
+        }
+      ],
+      "remaining": {
+        "demand": {
+          "en": "The public contract states reporting duties, but the actual quarterly files were not publicly retrievable in this bounded search. Holder: NHDES VW program; ReVision Energy / EV Connect. Route: Request retained quarterly files under grant item 170 / NH-VW-2021-01, with the exact address; ask for anonymized records and separate any withheld fields. No request sent.",
+          "zh": "公开合同说明报告义务，但本轮未能公开检索取得实际季度文件。 持有方：NHDES大众和解资金项目；ReVision Energy / EV Connect。 路径：按资助条目170 / NH-VW-2021-01及准确地址索取已留存季度文件，要求匿名化并单列不予披露字段；尚未发送。"
+        },
+        "cost": {
+          "en": "Grant scope and exclusions are available; invoices, noneligible costs and updated service/battery costs are absent. Holder: NHDES retained reimbursement file; ReVision / host / equipment service provider. Route: Ask for Exhibit C payment packet plus exclusions ledger and current repair versus expansion quotes.",
+          "zh": "资助范围与排除项已补齐，实际发票、未资助成本、更新的服务/电池成本仍缺。 持有方：NHDES报销档案；ReVision/场地主/设备服务商。 路径：索取附件C付款资料、未资助项目清单，以及维修与扩建分别报价。"
+        },
+        "grid": {
+          "en": "Public battery-input claim is not an engineering record or expansion commitment. Holder: ReVision and NHEC with host/account authority. Route: Retrieve as-built single-line and interval import first; request incremental-load design separately.",
+          "zh": "公开电池取电说法不是工程资料或扩容承诺。 持有方：ReVision与NHEC，需地主/账户授权。 路径：先取得竣工单线图与分时取电记录，再单独申请新增负荷设计。"
+        }
+      },
+      "requestPackets": [
+        {
+          "category": "demand",
+          "reason": {
+            "en": "The public contract states reporting duties, but the actual quarterly files were not publicly retrievable in this bounded search.",
+            "zh": "公开合同说明报告义务，但本轮未能公开检索取得实际季度文件。"
+          },
+          "provider": {
+            "en": "NHDES VW program; ReVision Energy / EV Connect.",
+            "zh": "NHDES大众和解资金项目；ReVision Energy / EV Connect。"
+          },
+          "route": {
+            "en": "Request retained quarterly files under grant item 170 / NH-VW-2021-01, with the exact address; ask for anonymized records and separate any withheld fields. No request sent.",
+            "zh": "按资助条目170 / NH-VW-2021-01及准确地址索取已留存季度文件，要求匿名化并单列不予披露字段；尚未发送。"
+          },
+          "requestContent": {
+            "en": "Latest 12 months of session ID/timestamps, kWh, transaction fee/refunds, uptime, outages; monthly settlement totals and utility reconciliation.",
+            "zh": "最近12个月订单编号/时间戳、电量、交易费/退款、可用率、停机；月度结算与电费核对。"
+          },
+          "acceptanceCriteria": {
+            "en": "Time period and device identifiers match; paid/free sessions separated; energy and cash reconcile.",
+            "zh": "期间与设备编号一致，付费/免费分开，电量及实收可核对。"
+          }
+        },
+        {
+          "category": "cost",
+          "reason": {
+            "en": "Grant scope and exclusions are available; invoices, noneligible costs and updated service/battery costs are absent.",
+            "zh": "资助范围与排除项已补齐，实际发票、未资助成本、更新的服务/电池成本仍缺。"
+          },
+          "provider": {
+            "en": "NHDES retained reimbursement file; ReVision / host / equipment service provider.",
+            "zh": "NHDES报销档案；ReVision/场地主/设备服务商。"
+          },
+          "route": {
+            "en": "Ask for Exhibit C payment packet plus exclusions ledger and current repair versus expansion quotes.",
+            "zh": "索取附件C付款资料、未资助项目清单，以及维修与扩建分别报价。"
+          },
+          "requestContent": {
+            "en": "Final vendor invoices, change orders, paid reimbursements, utility/land/taxes, battery warranty and replacement, network and O&M.",
+            "zh": "最终供应商发票、变更单、实付补贴、电力/土地/税、电池保修及更换、联网和运维。"
+          },
+          "acceptanceCriteria": {
+            "en": "Complete same-design lifecycle scope; no grant-as-total-cost substitution.",
+            "zh": "同一设计完整生命周期范围，不以资助额替代总成本。"
+          }
+        },
+        {
+          "category": "grid",
+          "reason": {
+            "en": "Public battery-input claim is not an engineering record or expansion commitment.",
+            "zh": "公开电池取电说法不是工程资料或扩容承诺。"
+          },
+          "provider": {
+            "en": "ReVision and NHEC with host/account authority.",
+            "zh": "ReVision与NHEC，需地主/账户授权。"
+          },
+          "route": {
+            "en": "Retrieve as-built single-line and interval import first; request incremental-load design separately.",
+            "zh": "先取得竣工单线图与分时取电记录，再单独申请新增负荷设计。"
+          },
+          "requestContent": {
+            "en": "Actual grid input rating, usable battery kWh, cycling/availability, utility service agreement and any expansion cost/schedule.",
+            "zh": "真实取电额定值、可用电池电量、循环/可用率、供电协议及扩容成本/排期。"
+          },
+          "acceptanceCriteria": {
+            "en": "Utility confirms specific design capacity, ownership boundary, price and dated schedule.",
+            "zh": "电力公司确认具体设计容量、产权边界、价格及带日期排期。"
+          }
+        }
+      ],
+      "nextAction": {
+        "en": "Obtain the exact records listed above; match asset, period and design before changing financial inputs. No request has been sent.",
+        "zh": "按上述范围取得具体记录，匹配设备、期间与设计后才能修改财务输入；尚未发送请求。"
+      },
+      "acquired": {
+        "currentPaidOrderSeries": false,
+        "completeDesignMatchedCostQuote": false,
+        "firmCapacityAndDelivery": false
+      },
+      "sourceIds": [
+        "V5-32b1b6c971",
+        "V5-0bd24a6f67",
+        "V5-fcda41b63c",
+        "V5-35e9641459"
+      ]
+    },
+    {
+      "id": "net-greenville",
+      "headline": {
+        "en": "Completed 150 kW installation corroborated; program economics and incentive scope are clearer.",
+        "zh": "150kW已安装项目获得交叉支持，项目经济性与激励范围更清楚。"
+      },
+      "impact": {
+        "en": "Existing operation supports physical feasibility of the installed scope, not the return of a new eight-stall build. Data-acquisition priority rises; no qualification upgrade.",
+        "zh": "既有运营支持已安装范围的技术可实现性，不证明新建八枪项目回报；数据获取优先级提高，不提升为合格。"
+      },
+      "decisionBefore": "pending",
+      "decisionAfter": "pending",
+      "findings": [
+        {
+          "id": "V5-N-G01",
+          "evidenceClass": "direct",
+          "claim": {
+            "en": "Efficiency Maine lists ReVision’s Indian Hill Trading Post project at 148 Moosehead Lake Road as completed; ReVision’s December 2025 installation summary identifies Greenville 150 kW DC fast charging.",
+            "zh": "Efficiency Maine将148 Moosehead Lake Road的ReVision Indian Hill项目列为已完成；ReVision2025年12月安装总结确认Greenville 150kW直流快充。"
+          },
+          "limitation": {
+            "en": "Operator statement plus program status are not commissioning test data or proof of spare capacity, connection cost, uptime or current paid volume.",
+            "zh": "运营商陈述及项目状态不是投运测试资料，也不证明剩余容量、接电成本、可用率或当前付费订单量。"
+          },
+          "sourceIds": [
+            "S04585c7",
+            "V5-a7371918d5"
+          ],
+          "sourceDate": "2025-12-16 operator post; agency page undated",
+          "scope": "parcel",
+          "usableAsModelInput": false
+        },
+        {
+          "id": "V5-N-G02",
+          "evidenceClass": "direct",
+          "claim": {
+            "en": "EM-011-2024 Q&A describes up to 80% eligible capital support, net of expected tax credits and other grants, plus five-year demand-charge reimbursement capped at $100,000/site and limited to the awarded bid. Its indicative return-on-investment answer is 10–20 years.",
+            "zh": "EM-011-2024问答说明扣除预期税收抵免及其他补助后，合格资本支出最高可获80%支持；另有五年需量费报销，每址上限100,000美元，实际以中标金额为限。其示例投资回收回答为10–20年。"
+          },
+          "limitation": {
+            "en": "Program-wide guidance, not Greenville’s awarded amount or audited return. The document does not define that ROI calculation. Existing 6/8-year hard gates remain unchanged; no incentive entered into this model.",
+            "zh": "这是项目通用说明，不是Greenville中标金额或经审计回收期，原文也未定义ROI计算口径；现有6/8年硬门槛不变，不把激励计入模型。"
+          },
+          "sourceIds": [
+            "V5-6f04937082"
+          ],
+          "sourceDate": "2024-03-04",
+          "scope": "regional",
+          "usableAsModelInput": false
+        }
+      ],
+      "attempts": [
+        {
+          "action": "Greenville charging kWh sessions cost ReVision and award reports",
+          "result": "Program/installer and original Q&A read; no address-matched CPMS transactions, complete paid cost packet or utility commitment found.",
+          "checkedAt": "2026-10-30",
+          "sourceIds": [
+            "S04585c7",
+            "V5-a7371918d5",
+            "V5-6f04937082"
+          ]
+        }
+      ],
+      "remaining": {
+        "demand": {
+          "en": "Completed-site status is public, actual session/settlement files are not in opened pages. Holder: Efficiency Maine EM-011-2024 grant administrator; ReVision / network operator. Route: Request retained operating data and reporting attachments for the named completed award.",
+          "zh": "项目完成状态公开，已读页面没有真实订单/结算文件。 持有方：Efficiency Maine EM-011-2024项目负责人；ReVision/网络运营商。 路径：针对该已完成奖项索取留存运营数据及报告附件。"
+        },
+        "cost": {
+          "en": "Public caps do not reveal the executed local grant, final capex or operating cost. Holder: Efficiency Maine and ReVision. Route: Request awarded per-site Project Cost Proposal Form, contract, paid invoices and demand-charge claims.",
+          "zh": "公开资助上限不披露本址执行补贴、最终资本及运营成本。 持有方：Efficiency Maine及ReVision。 路径：索取中标逐址成本表、合同、已付发票及需量费报销。"
+        },
+        "grid": {
+          "en": "Installed 150 kW output does not establish utility import or expansion capacity. Holder: ReVision, host and serving utility. Route: Request completed-project utility designs and meter configuration, then separate expansion study.",
+          "zh": "安装150kW输出不证明电网取电或扩容容量。 持有方：ReVision、地主及供电公司。 路径：索取竣工项目电力设计与计量配置，再单独研究扩容。"
+        }
+      },
+      "requestPackets": [
+        {
+          "category": "demand",
+          "reason": {
+            "en": "Completed-site status is public, actual session/settlement files are not in opened pages.",
+            "zh": "项目完成状态公开，已读页面没有真实订单/结算文件。"
+          },
+          "provider": {
+            "en": "Efficiency Maine EM-011-2024 grant administrator; ReVision / network operator.",
+            "zh": "Efficiency Maine EM-011-2024项目负责人；ReVision/网络运营商。"
+          },
+          "route": {
+            "en": "Request retained operating data and reporting attachments for the named completed award.",
+            "zh": "针对该已完成奖项索取留存运营数据及报告附件。"
+          },
+          "requestContent": {
+            "en": "Post-commissioning monthly paid sessions,kWh,net realized payments,uptime and meter bills; separate earlier four-port L2 from newer DCFC.",
+            "zh": "投运后每月付费次数、电量、净实收、可用率及电费；早期四枪交流站与新增直流站分开。"
+          },
+          "acceptanceCriteria": {
+            "en": "Asset and period match; no L2 demand transferred to DCFC without evidence.",
+            "zh": "资产与期间一致，不无依据将交流订单转为直流需求。"
+          }
+        },
+        {
+          "category": "cost",
+          "reason": {
+            "en": "Public caps do not reveal the executed local grant, final capex or operating cost.",
+            "zh": "公开资助上限不披露本址执行补贴、最终资本及运营成本。"
+          },
+          "provider": {
+            "en": "Efficiency Maine and ReVision.",
+            "zh": "Efficiency Maine及ReVision。"
+          },
+          "route": {
+            "en": "Request awarded per-site Project Cost Proposal Form, contract, paid invoices and demand-charge claims.",
+            "zh": "索取中标逐址成本表、合同、已付发票及需量费报销。"
+          },
+          "requestContent": {
+            "en": "Installed equipment/design, land/utility/civil/O&M, capital reimbursement, five-year demand incentive actually awarded/paid and expiry.",
+            "zh": "安装设备/设计、土地/电力/土建/运维、资本实付补助及五年需量补助实获/实付与到期。"
+          },
+          "acceptanceCriteria": {
+            "en": "Gross costs and subsidies separate; beyond year 5 cashflow includes unsubsidized tariff.",
+            "zh": "总成本与补助分开，第五年后现金流包含无补助费率。"
+          }
+        },
+        {
+          "category": "grid",
+          "reason": {
+            "en": "Installed 150 kW output does not establish utility import or expansion capacity.",
+            "zh": "安装150kW输出不证明电网取电或扩容容量。"
+          },
+          "provider": {
+            "en": "ReVision, host and serving utility.",
+            "zh": "ReVision、地主及供电公司。"
+          },
+          "route": {
+            "en": "Request completed-project utility designs and meter configuration, then separate expansion study.",
+            "zh": "索取竣工项目电力设计与计量配置，再单独研究扩容。"
+          },
+          "requestContent": {
+            "en": "As-built single-line, supply rating, utility invoice, energization date and any added-load queue/quote.",
+            "zh": "竣工单线图、供电额定值、电力发票、送电日及新增负荷排队/报价。"
+          },
+          "acceptanceCriteria": {
+            "en": "Same intended scope; existing energized asset does not mean reserved new capacity.",
+            "zh": "须对应拟建范围，既有送电不等于新增容量已预留。"
+          }
+        }
+      ],
+      "nextAction": {
+        "en": "Obtain the exact records listed above; match asset, period and design before changing financial inputs. No request has been sent.",
+        "zh": "按上述范围取得具体记录，匹配设备、期间与设计后才能修改财务输入；尚未发送请求。"
+      },
+      "acquired": {
+        "currentPaidOrderSeries": false,
+        "completeDesignMatchedCostQuote": false,
+        "firmCapacityAndDelivery": false
+      },
+      "sourceIds": [
+        "S04585c7",
+        "V5-a7371918d5",
+        "V5-6f04937082"
+      ]
+    },
+    {
+      "id": "net-machias",
+      "headline": {
+        "en": "No cancellation explanation or revised-address engineering/cost file recovered.",
+        "zh": "仍未取得取消原因或修订地址的工程/成本档案。"
+      },
+      "impact": {
+        "en": "No new feasibility conclusion. Current canceled project is not evidence that the entire property is unbuildable, and cannot supply historical orders for an unbuilt asset.",
+        "zh": "可行性结论不变。已取消项目不证明整块场地不能建设，未建成资产也不可能提供自己的历史订单。"
+      },
+      "decisionBefore": "pending",
+      "decisionAfter": "pending",
+      "findings": [],
+      "attempts": [
+        {
+          "action": "Machias UniversalEV cancellation termination contract; official initiative and award record paths",
+          "result": "Current 149 Dublin Street cancellation listing reconfirmed. Targeted searches returned notices/RFPs rather than signed cost forms, termination letter, utility study or trading logs.",
+          "checkedAt": "2026-10-30",
+          "sourceIds": [
+            "S04585c7"
+          ]
+        }
+      ],
+      "remaining": {
+        "demand": {
+          "en": "Canceled proposed asset lacks its own operating history; requiring its own past paid orders would be logically inappropriate. Holder: Prospective operator; existing comparable stations with operator permission. Route: Obtain matched existing-station logs, traffic/EV catchment and a documented capture/competition model.",
+          "zh": "取消的拟建资产没有自己的运营历史，要求其自身既往付费订单在逻辑上不适用。 持有方：拟运营商及获授权的可比已运营站。 路径：取得匹配类比站日志、交通/电动车客群及有依据的获客/竞争模型。"
+        },
+        "cost": {
+          "en": "Public notice omits cancellation cause, awarded budget, paid costs and termination correspondence. Holder: Efficiency Maine EM-013-2023 records; UniversalEV; Hannaford. Route: Request original 103 Main Street and amended 149 Dublin Street complete proposal/amendment/termination files.",
+          "zh": "公开公告缺取消原因、中标预算、已付成本及终止往来。 持有方：Efficiency Maine EM-013-2023档案、UniversalEV、Hannaford。 路径：同时索取原103MainStreet及修订149DublinStreet完整方案/修订/终止档案。"
+        },
+        "grid": {
+          "en": "No public revised-parcel load approval, utility cost allocation or connection schedule found. Holder: Versant Power with property/account authority. Route: Ask first for any retained utility letter in amended award; then authorized load study.",
+          "zh": "未找到修订地块负荷批准、接电分摊或排期公开文件。 持有方：VersantPower，需物业/账户授权。 路径：先索取修订资助档案中的电力函，再做授权负荷研究。"
+        }
+      },
+      "requestPackets": [
+        {
+          "category": "demand",
+          "reason": {
+            "en": "Canceled proposed asset lacks its own operating history; requiring its own past paid orders would be logically inappropriate.",
+            "zh": "取消的拟建资产没有自己的运营历史，要求其自身既往付费订单在逻辑上不适用。"
+          },
+          "provider": {
+            "en": "Prospective operator; existing comparable stations with operator permission.",
+            "zh": "拟运营商及获授权的可比已运营站。"
+          },
+          "route": {
+            "en": "Obtain matched existing-station logs, traffic/EV catchment and a documented capture/competition model.",
+            "zh": "取得匹配类比站日志、交通/电动车客群及有依据的获客/竞争模型。"
+          },
+          "requestContent": {
+            "en": "Seasonal paid-volume analogues, competing supply, user-route and price evidence; forecast remains estimate.",
+            "zh": "季节性付费订单类比、竞争供给、用户路线与价格证据；预测仍标估计。"
+          },
+          "acceptanceCriteria": {
+            "en": "Out-of-sample analogue validation and uncertainty range; no synthetic orders labeled actual.",
+            "zh": "可比站留出验证及不确定区间，不把模拟订单标真实。"
+          }
+        },
+        {
+          "category": "cost",
+          "reason": {
+            "en": "Public notice omits cancellation cause, awarded budget, paid costs and termination correspondence.",
+            "zh": "公开公告缺取消原因、中标预算、已付成本及终止往来。"
+          },
+          "provider": {
+            "en": "Efficiency Maine EM-013-2023 records; UniversalEV; Hannaford.",
+            "zh": "Efficiency Maine EM-013-2023档案、UniversalEV、Hannaford。"
+          },
+          "route": {
+            "en": "Request original 103 Main Street and amended 149 Dublin Street complete proposal/amendment/termination files.",
+            "zh": "同时索取原103MainStreet及修订149DublinStreet完整方案/修订/终止档案。"
+          },
+          "requestContent": {
+            "en": "Site cost forms, scope changes, termination reasons and final funding/asset disposition.",
+            "zh": "逐址成本表、范围变更、终止原因与资金/资产最终处理。"
+          },
+          "acceptanceCriteria": {
+            "en": "Address continuity and design match proven before reusing any dollar.",
+            "zh": "任何金额复用前证明地址连续性及设计匹配。"
+          }
+        },
+        {
+          "category": "grid",
+          "reason": {
+            "en": "No public revised-parcel load approval, utility cost allocation or connection schedule found.",
+            "zh": "未找到修订地块负荷批准、接电分摊或排期公开文件。"
+          },
+          "provider": {
+            "en": "Versant Power with property/account authority.",
+            "zh": "VersantPower，需物业/账户授权。"
+          },
+          "route": {
+            "en": "Ask first for any retained utility letter in amended award; then authorized load study.",
+            "zh": "先索取修订资助档案中的电力函，再做授权负荷研究。"
+          },
+          "requestContent": {
+            "en": "149DublinStreet load application,single-line,feeder/transformer scope,quote and delivery schedule.",
+            "zh": "149DublinStreet负荷申请、单线图、馈线/变压器范围、报价与交期。"
+          },
+          "acceptanceCriteria": {
+            "en": "Signed scope and expiration/assumptions, no generation-hosting map as load commitment.",
+            "zh": "签署范围及有效期/假设，不用发电容量图替代负荷承诺。"
+          }
+        }
+      ],
+      "nextAction": {
+        "en": "Obtain the exact records listed above; match asset, period and design before changing financial inputs. No request has been sent.",
+        "zh": "按上述范围取得具体记录，匹配设备、期间与设计后才能修改财务输入；尚未发送请求。"
+      },
+      "acquired": {
+        "currentPaidOrderSeries": false,
+        "completeDesignMatchedCostQuote": false,
+        "firmCapacityAndDelivery": false
+      },
+      "sourceIds": []
+    },
+    {
+      "id": "net-republic",
+      "headline": {
+        "en": "Original agency register now links Anderson Grocery to 711 South Clark Avenue; present excavation scope remains unknown.",
+        "zh": "原始机构公报现已将Anderson Grocery关联至711SouthClark；当前开挖影响范围仍未知。"
+      },
+      "impact": {
+        "en": "Address linkage is stronger, while historical identifier errors require reconciliation. This supports environmental diligence, not a no-build verdict.",
+        "zh": "地址关联更强，但历史编号错误需核对；支持进一步环境尽调，不构成禁建判定。"
+      },
+      "decisionBefore": "pending",
+      "decisionAfter": "pending",
+      "findings": [
+        {
+          "id": "V5-N-R01",
+          "evidenceClass": "direct",
+          "claim": {
+            "en": "Ecology’s March 8, 2012 Site Register lists Anderson Grocery at 711 South Clark Avenue, Republic, rank 5 and cleanup ID 10518. This fills the previously missing primary address linkage.",
+            "zh": "Ecology2012年3月8日场地公报列Anderson Grocery地址为Republic711SouthClarkAvenue、等级5、清理编号10518，补足先前缺失的原始地址关联。"
+          },
+          "limitation": {
+            "en": "The bulletin prints facility 78351623 versus current 78351263 and also reuses cleanup ID 10518 for a different mine. Preserve these conflicts. No current soil quantity, trench overlap, clearance or remediation quote is established. Rank 5 is historical, not construction approval.",
+            "zh": "公报设施号78351623与当前78351263不同，且同报又将10518用于另一矿场，需保留冲突。未确认当前土方量、沟槽重叠、结案或修复报价；历史等级5不是施工批准。"
+          },
+          "sourceIds": [
+            "V5-d78eb37ef7",
+            "V4-518d2b6be"
+          ],
+          "sourceDate": "2012-03-08",
+          "scope": "parcel",
+          "usableAsModelInput": false
+        }
+      ],
+      "attempts": [
+        {
+          "action": "Anderson Grocery10518 assessment originalsite register",
+          "result": "Alternative originalagencyPDF readable; namedstreetaddressverified. Historical identifier discrepancies retained rather than silently normalized. No current cleanup/quote/charging logs retrieved.",
+          "checkedAt": "2026-10-30",
+          "sourceIds": [
+            "V5-d78eb37ef7",
+            "V4-518d2b6be"
+          ]
+        }
+      ],
+      "remaining": {
+        "demand": {
+          "en": "No current charger paid-order series at this specific grocery obtained. Nearby Old Republic assets are different. Holder: Host/prospective operator; matched nearby operators. Route: Establish whether greenfield or operating first, then obtain matched analogue logs and capture model.",
+          "zh": "未取得该杂货店具体场地的当前付费充电订单；附近OldRepublic资产不同。 持有方：地主/拟运营商及匹配的邻近运营商。 路径：先明确新建或既有运营，再取得匹配类比日志与获客模型。"
+        },
+        "cost": {
+          "en": "Agency address link recovered; modern sampling, trench overlap and complete civil/cleanup price are not public in read sources. Holder: Ecology Eastern Regional Office; owner; environmental consultant/EPC. Route: Request current file by name, address, cleanup 10518 and both facility ID variants; obtain boundary map before excavation price.",
+          "zh": "补到机构地址关联，已读来源仍无现代采样、沟槽重叠及完整土建/清理报价。 持有方：Ecology东部地区办公室、地主、环境顾问/EPC。 路径：按名称、地址、清理10518及两个设施号版本索取当前档案，先拿边界图再报价开挖。"
+        },
+        "grid": {
+          "en": "Ferry PUD generic service policy is not an address-specific capacity or schedule commitment. Holder: Ferry County PUD with host authorization. Route: Submit only after reviewed site plan/load scope and authority; no application sent.",
+          "zh": "FerryPUD通用供电规则不是具体地址容量及排期承诺。 持有方：FerryCountyPUD，需地主授权。 路径：在场地图/负荷范围及授权审定后申请；尚未提交。"
+        }
+      },
+      "requestPackets": [
+        {
+          "category": "demand",
+          "reason": {
+            "en": "No current charger paid-order series at this specific grocery obtained. Nearby Old Republic assets are different.",
+            "zh": "未取得该杂货店具体场地的当前付费充电订单；附近OldRepublic资产不同。"
+          },
+          "provider": {
+            "en": "Host/prospective operator; matched nearby operators.",
+            "zh": "地主/拟运营商及匹配的邻近运营商。"
+          },
+          "route": {
+            "en": "Establish whether greenfield or operating first, then obtain matched analogue logs and capture model.",
+            "zh": "先明确新建或既有运营，再取得匹配类比日志与获客模型。"
+          },
+          "requestContent": {
+            "en": "Timestamped paid sessions,kWh,realizedprice,uptime by asset; greenfield forecast separately.",
+            "zh": "按资产取得带时间戳付费订单、电量、实收价、可用率；新建预测另列。"
+          },
+          "acceptanceCriteria": {
+            "en": "No traffic-to-orders substitution or nearbyasset identity conflation.",
+            "zh": "不以车流替代订单，也不混淆邻近资产身份。"
+          }
+        },
+        {
+          "category": "cost",
+          "reason": {
+            "en": "Agency address link recovered; modern sampling, trench overlap and complete civil/cleanup price are not public in read sources.",
+            "zh": "补到机构地址关联，已读来源仍无现代采样、沟槽重叠及完整土建/清理报价。"
+          },
+          "provider": {
+            "en": "Ecology Eastern Regional Office; owner; environmental consultant/EPC.",
+            "zh": "Ecology东部地区办公室、地主、环境顾问/EPC。"
+          },
+          "route": {
+            "en": "Request current file by name, address, cleanup 10518 and both facility ID variants; obtain boundary map before excavation price.",
+            "zh": "按名称、地址、清理10518及两个设施号版本索取当前档案，先拿边界图再报价开挖。"
+          },
+          "requestContent": {
+            "en": "2012assessment plus later sampling/closure,covenants,proposedfootprint overlay and scoped soilhandling/EPCcost.",
+            "zh": "2012评估及后续采样/结案、限制条款、拟建范围叠图与具体土壤处理/EPC成本。"
+          },
+          "acceptanceCriteria": {
+            "en": "Resolveidentifierconflicts; only cost confirmed affectedscope.",
+            "zh": "解决编号冲突，仅对证实受影响范围计价。"
+          }
+        },
+        {
+          "category": "grid",
+          "reason": {
+            "en": "Ferry PUD generic service policy is not an address-specific capacity or schedule commitment.",
+            "zh": "FerryPUD通用供电规则不是具体地址容量及排期承诺。"
+          },
+          "provider": {
+            "en": "Ferry County PUD with host authorization.",
+            "zh": "FerryCountyPUD，需地主授权。"
+          },
+          "route": {
+            "en": "Submit only after reviewed site plan/load scope and authority; no application sent.",
+            "zh": "在场地图/负荷范围及授权审定后申请；尚未提交。"
+          },
+          "requestContent": {
+            "en": "RequestedkW/voltage/phase,utility feasibility/extensionestimate,environmentaltrenchingconstraints,equipmentandenergizationdates.",
+            "zh": "所需kW/电压/相数、电力可行性/延伸估价、环境开挖限制及设备/送电日期。"
+          },
+          "acceptanceCriteria": {
+            "en": "Writtenfinalscope,capacityreservation,priceandconditions.",
+            "zh": "书面最终范围、预留容量、价格及条件。"
+          }
+        }
+      ],
+      "nextAction": {
+        "en": "Obtain the exact records listed above; match asset, period and design before changing financial inputs. No request has been sent.",
+        "zh": "按上述范围取得具体记录，匹配设备、期间与设计后才能修改财务输入；尚未发送请求。"
+      },
+      "acquired": {
+        "currentPaidOrderSeries": false,
+        "completeDesignMatchedCostQuote": false,
+        "firmCapacityAndDelivery": false
+      },
+      "sourceIds": [
+        "V5-d78eb37ef7",
+        "V4-518d2b6be"
+      ]
+    },
+    {
+      "id": "net-austin",
+      "headline": {
+        "en": "A recent first-person paid-charge observation recovered; still no operator order series or scope-matched new-project budget.",
+        "zh": "补到近期亲历付费充电观察；仍没有运营商订单序列或匹配新项目范围的预算。"
+      },
+      "impact": {
+        "en": "Evidence that the legacy Austin asset served a paying driver improves. It cannot justify the required volume of a new eight-stall project; address/asset crosswalk still needed.",
+        "zh": "旧Austin资产服务过付费司机的证据改善；仍不能证明新八枪项目所需订单量，地址/资产对应关系待确认。"
+      },
+      "decisionBefore": "pending",
+      "decisionAfter": "pending",
+      "findings": [
+        {
+          "id": "V5-N-A01",
+          "evidenceClass": "secondary",
+          "claim": {
+            "en": "Scott Allison’s May 10, 2026 first-person trip report lists an Austin charge of 25 kWh over 30 minutes for about $23, and describes 95 cents/kWh at the legacy pair of 50 kW chargers. The original article body was recovered from public page data.",
+            "zh": "Scott Allison2026年5月10日亲历行程报告记载Austin充电25kWh、30分钟、约23美元，并称旧有两台50kW站收费95美分/kWh；已从公开网页数据提取原文正文。"
+          },
+          "limitation": {
+            "en": "One driver’s self-report, not an invoice or current operator series. Rounded 25 kWh / $23 does not exactly reconcile to $0.95/kWh; the text also says “$0.95 cents” in its table while prose says95cents. No net realized price or demand forecast derived;30 Main St / 16 Main St identity remains unresolved.",
+            "zh": "仅一名司机自报，不是发票或当前运营商序列。舍入后的25kWh/23美元与0.95美元/kWh不能精确对账；表中还有“$0.95 cents”表述但正文为95美分。不据此推算净实收价或需求；30 Main St / 16 Main St对应仍待核。"
+          },
+          "sourceIds": [
+            "V5-45b9a4f72f"
+          ],
+          "sourceDate": "2026-05-10",
+          "scope": "parcel",
+          "usableAsModelInput": false
+        }
+      ],
+      "attempts": [
+        {
+          "action": "AustinNevadaChampspaid sessions and costs; followRangeway tooriginaldriverreport",
+          "result": "Webreader returnedgenericblog shell. DirectpublicHTMLdownload recoveredoriginaldatedarticleandDraft.jsblocks withsinglecharge observation; noaccount/loginused. No operator time series,complete current cost or firm new capacity found.",
+          "checkedAt": "2026-10-30",
+          "sourceIds": [
+            "V3-a0d97a02",
+            "V5-45b9a4f72f"
+          ]
+        }
+      ],
+      "remaining": {
+        "demand": {
+          "en": "An observedtransactionand2020–21historicaltotals are not a present representative paidseries. Holder: Champshost / EVConnectmerchantofrecord; NevadaGOEretainedarchive. Route: Crosswalksite/chargerIDand30versus16MainStreet,thenrequestoperatorCPMSandsettlementexport.",
+          "zh": "单次观察及2020–21历史汇总不是当前具代表性的付费序列。 持有方：Champs地主/EVConnect收款主体；NevadaGOE历史档案。 路径：先核对站点/设备编号及30与16MainStreet，再索取CPMS及结算导出。"
+        },
+        "cost": {
+          "en": "OldtwoDCFCplusL2programcost differs fromnewdesign andtoday’s replacement/O&M. Holder: Host; NVenergyandEPC; NevadaGOEretainedinvoices. Route: Retrieveoldscopeonlyforassetbaseline; obtaincurrentrepair/upgrade/newbuildquotesseparately.",
+          "zh": "旧两台直流加交流的项目成本不同于新设计及当前更换/运维。 持有方：地主、NVenergy及EPC；NevadaGOE留存发票。 路径：旧范围仅作资产基线，维修/升级/新建分别取得当前报价。"
+        },
+        "grid": {
+          "en": "Historicaloperation supports oldassetenergization,notsparecapacity ornewdeliverydate. Holder: NVenergywithhost/accountauthorization. Route: Requestas-builtserviceandactualpeakfirst;newloadstudymustmatchreviseddesign.",
+          "zh": "历史运营支持旧资产送电，不证明剩余容量或新交期。 持有方：NVenergy，需地主/账户授权。 路径：先取得竣工供电及实际峰值，新负荷研究须匹配修订设计。"
+        }
+      },
+      "requestPackets": [
+        {
+          "category": "demand",
+          "reason": {
+            "en": "An observedtransactionand2020–21historicaltotals are not a present representative paidseries.",
+            "zh": "单次观察及2020–21历史汇总不是当前具代表性的付费序列。"
+          },
+          "provider": {
+            "en": "Champshost / EVConnectmerchantofrecord; NevadaGOEretainedarchive.",
+            "zh": "Champs地主/EVConnect收款主体；NevadaGOE历史档案。"
+          },
+          "route": {
+            "en": "Crosswalksite/chargerIDand30versus16MainStreet,thenrequestoperatorCPMSandsettlementexport.",
+            "zh": "先核对站点/设备编号及30与16MainStreet，再索取CPMS及结算导出。"
+          },
+          "requestContent": {
+            "en": "Last12months paidsessions,kWh,refunds/netproceeds,tariffchanges,uptime andmeterbills.",
+            "zh": "最近12个月付费次数、电量、退款/净实收、价格变更、可用率及电费。"
+          },
+          "acceptanceCriteria": {
+            "en": "Exactasset,timewindowandpaymentreconciliation; nosingletripannualization.",
+            "zh": "准确资产、期间与付款核对；不将单次行程年化。"
+          }
+        },
+        {
+          "category": "cost",
+          "reason": {
+            "en": "OldtwoDCFCplusL2programcost differs fromnewdesign andtoday’s replacement/O&M.",
+            "zh": "旧两台直流加交流的项目成本不同于新设计及当前更换/运维。"
+          },
+          "provider": {
+            "en": "Host; NVenergyandEPC; NevadaGOEretainedinvoices.",
+            "zh": "地主、NVenergy及EPC；NevadaGOE留存发票。"
+          },
+          "route": {
+            "en": "Retrieveoldscopeonlyforassetbaseline; obtaincurrentrepair/upgrade/newbuildquotesseparately.",
+            "zh": "旧范围仅作资产基线，维修/升级/新建分别取得当前报价。"
+          },
+          "requestContent": {
+            "en": "Equipment,utility,civil,land,taxes,contingency,network,maintenance,replacement andsubsidyeligibility.",
+            "zh": "设备、电力、土建、土地、税、预备费、联网、维护、更换及补贴资格。"
+          },
+          "acceptanceCriteria": {
+            "en": "Nohistoriccostorprogrambudget transplanted toneweightstalls.",
+            "zh": "不把历史成本或项目总预算移植为新八枪成本。"
+          }
+        },
+        {
+          "category": "grid",
+          "reason": {
+            "en": "Historicaloperation supports oldassetenergization,notsparecapacity ornewdeliverydate.",
+            "zh": "历史运营支持旧资产送电，不证明剩余容量或新交期。"
+          },
+          "provider": {
+            "en": "NVenergywithhost/accountauthorization.",
+            "zh": "NVenergy，需地主/账户授权。"
+          },
+          "route": {
+            "en": "Requestas-builtserviceandactualpeakfirst;newloadstudymustmatchreviseddesign.",
+            "zh": "先取得竣工供电及实际峰值，新负荷研究须匹配修订设计。"
+          },
+          "requestContent": {
+            "en": "Actualutilitymeter/serviceID,voltage/kVA,feeder/transformeravailability,extensionquote,equipmentleadtimeandcommittedenergizationconditions.",
+            "zh": "真实电表/供电编号、电压/kVA、馈线/变压器余量、延伸报价、设备交期及承诺送电条件。"
+          },
+          "acceptanceCriteria": {
+            "en": "Writtenaddress-matchedcapacityandconditions,notIRPplaceholderbudget.",
+            "zh": "书面同址容量及条件，不是IRP占位预算。"
+          }
+        }
+      ],
+      "nextAction": {
+        "en": "Obtain the exact records listed above; match asset, period and design before changing financial inputs. No request has been sent.",
+        "zh": "按上述范围取得具体记录，匹配设备、期间与设计后才能修改财务输入；尚未发送请求。"
+      },
+      "acquired": {
+        "currentPaidOrderSeries": false,
+        "completeDesignMatchedCostQuote": false,
+        "firmCapacityAndDelivery": false
+      },
+      "sourceIds": [
+        "V5-45b9a4f72f"
+      ]
+    },
+    {
+      "id": "sprouts-suwanee",
+      "headline": {
+        "en": "A current utility funding route improves the development option; actual records remain missing.",
+        "zh": "当前公用事业资金支持路径改善了开发选项；实测记录仍缺。"
+      },
+      "impact": {
+        "en": "Investigate a utility-funded public charging design before assuming all make-ready cost is investor-funded. No award, quote, meter history, CIEV enrollment or incremental capacity was obtained.",
+        "zh": "应先核实公用事业承担部分接电配套的公共快充方案，再假设全部由投资者出资。尚无获批资助、报价、电表历史、CIEV注册或增量容量。"
+      },
+      "decisionBefore": "pending",
+      "decisionAfter": "pending",
+      "findings": [
+        {
+          "id": "suwanee-makeready",
+          "evidenceClass": "direct",
+          "claim": {
+            "en": "The 2026–2028 Make Ready criteria cap normal program investment at $300,000 per project. Public-facing retail is eligible in principle; at least one DC fast charger is required. Georgia Power owns behind-meter infrastructure; the customer may owe costs above the cap. Future-proofing is excluded.",
+            "zh": "2026–2028年Make Ready通常每项目上限30万美元，公共零售场地原则上可申请，至少一台DC快充；表后基础设施由Georgia Power持有，超额可由客户承担，未来预埋扩容不予资助。"
+          },
+          "limitation": {
+            "en": "The cap is not a WinCo/Sprouts award or quote. Utility criteria and signed project scope control; do not subtract $300,000 from existing capex.",
+            "zh": "该上限不是本场地获批金额或报价，不得从现有建设成本直接减去30万美元。"
+          },
+          "sourceIds": [
+            "V5-1e3e76cc4b"
+          ],
+          "sourceDate": "See source record",
+          "scope": "conditional-cost-support",
+          "usableAsModelInput": false
+        },
+        {
+          "id": "suwanee-approval-boundary",
+          "evidenceClass": "direct",
+          "claim": {
+            "en": "Program terms require property authority and acceptance, with separate funding confirmation. The current page schedules funding through December 31, 2028 or budget exhaustion; site assessment and approved design precede equipment orders.",
+            "zh": "项目条款要求物业授权及审批，并另行确认资金；现行页面有效期至2028年12月31日或资金用尽，现场评估和批准设计先于设备订购。"
+          },
+          "limitation": {
+            "en": "An older general FAQ still says 2022; current 2026–2028 criteria and current program page supersede that stale date. No signed acceptance, site visit or capacity result obtained.",
+            "zh": "旧FAQ仍写2022年，应以现行2026–2028标准及项目页为准。未取得签署接受文件、现场评估或容量结果。"
+          },
+          "sourceIds": [
+            "V5-243c26cdc4",
+            "V5-dff3afb6d1"
+          ],
+          "sourceDate": "See source record",
+          "scope": "contract-and-grid-prerequisites",
+          "usableAsModelInput": false
+        },
+        {
+          "id": "suwanee-ciev",
+          "evidenceClass": "direct",
+          "claim": {
+            "en": "CIEV-1 applies on request to a dedicated EV meter under PL tariffs, excluding RTP. Billing-demand factors are 0.20/0.40/0.60/0.80 for bills 1–12/13–24/25–36/37–48, ending sooner when rolling 12-month load factor reaches 15%.",
+            "zh": "CIEV-1须申请，适用PL费率下独立EV电表，不适用RTP；第1至4年计费需量系数为0.20/0.40/0.60/0.80，滚动12个月负荷率达到15%则提前结束。"
+          },
+          "limitation": {
+            "en": "This is temporary bill relief, not an energy price or firm capacity. Existing-account history, rate class and new-meter eligibility are unknown; no model deduction made.",
+            "zh": "这是临时需量账单优惠，不是电价或确定容量；现有账户历史、费率和新电表资格未知，未在模型抵减。"
+          },
+          "sourceIds": [
+            "V5-c23891c9c7"
+          ],
+          "sourceDate": "See source record",
+          "scope": "conditional-operating-cost",
+          "usableAsModelInput": false
+        }
+      ],
+      "attempts": [
+        {
+          "action": "PSC43899 indexed exhibits, meter readings, EA subpoena response",
+          "result": "Only the known subpoena and docket shell surfaced. A demand to produce records is not the response or measured data.",
+          "checkedAt": "2026-10-30",
+          "sourceIds": [
+            "V4-38c3fd424"
+          ]
+        },
+        {
+          "action": "Public docket direct retrieval",
+          "result": "Web table returned No records found; direct curl and browser failed DNS. This is retrieval failure, not an empty docket.",
+          "checkedAt": "2026-10-30",
+          "sourceIds": [
+            "V4-38c3fd424"
+          ]
+        },
+        {
+          "action": "Current Georgia Power EV cost assistance and rider originals",
+          "result": "Retrieved five-page 2026–2028 criteria, six-page terms and one-page tariff. Retained public PDFs for independent review.",
+          "checkedAt": "2026-10-30",
+          "sourceIds": [
+            "V5-1e3e76cc4b",
+            "V5-c23891c9c7"
+          ]
+        }
+      ],
+      "remaining": {
+        "demand": {
+          "en": "Public sources disclose program rules and historic configuration, not the operator transaction export, current accepted EPC budget or new utility service agreement. The historical PSC exhibit route could not be rendered/retrieved here. Needed: Public responses/exhibits to the 2022 subpoena; 12 months of current timestamped session and meter exports with paid/free/refund separation, net prices and uptime; a defensible incremental-demand study for the proposed project. Holder: Georgia PSC Open Records Officer for existing public case records; Electrify America and the metering utility with operator/owner authorization for current exports.",
+          "zh": "公开资料披露项目规则和历史设备配置，而非运营商交易导出、现行获批EPC预算或新增接电协议；本轮亦无法取得历史PSC证物列表。 所需：2022年传票的公开答复/证据附件；当前连续12个月带时间戳的充电和电表导出，区分付费/免费/退款、净价与可用率；拟建项目可论证的新增需求研究。 持有方：Georgia PSC公开记录官提供既有公开案卷；经运营商/业主授权由Electrify America及计量供电公司提供当前导出。"
+        },
+        "cost": {
+          "en": "Public sources disclose program rules and historic configuration, not the operator transaction export, current accepted EPC budget or new utility service agreement. The historical PSC exhibit route could not be rendered/retrieved here. Needed: An approved new-build/expansion layout; itemized EVSE, civil, electrical, switchgear, transformer/CIAC, design, permits and contingency quotes; executed rent/revenue share, tariff, maintenance, software/payment, insurance and replacement schedules; treatment of existing EA equipment and rights. Holder: Current owner and asset manager, existing EA license holder, qualified EVSE EPC/vendor and Georgia Power after current service confirmation.",
+          "zh": "公开资料披露项目规则和历史设备配置，而非运营商交易导出、现行获批EPC预算或新增接电协议；本轮亦无法取得历史PSC证物列表。 所需：确认的新建/扩建平面方案；设备、土建、电气、开关柜、变压器/CIAC、设计、许可与预备费的分项报价；已签租金/分成、电价、运维、软件/支付、保险及更换计划；既有EA设备与权利的处理方式。 持有方：当前业主与资产管理人、既有EA场地使用权主体、有资质的充电站EPC/设备商，以及当前供电确认后的Georgia Power。"
+        },
+        "grid": {
+          "en": "Public sources disclose program rules and historic configuration, not the operator transaction export, current accepted EPC budget or new utility service agreement. The historical PSC exhibit route could not be rendered/retrieved here. Needed: Current service agreement and tariff, as-built one-line, meter/transformer ratings, measured peak and load-management settings; owner-authorized incremental-load feasibility and a written utility offer specifying capacity, CIAC/upgrades and schedule. Holder: Georgia Power as the documented historical serving utility, subject to current contract confirmation; Electrify America for as-built and load-control records; PSC for historical public exhibits.",
+          "zh": "公开资料披露项目规则和历史设备配置，而非运营商交易导出、现行获批EPC预算或新增接电协议；本轮亦无法取得历史PSC证物列表。 所需：当前供电合同与电价、竣工单线图、电表/变压器参数、实测峰值及负荷管理设置；经业主授权的新增负荷可行性研究，以及列明容量、CIAC/增容和工期的书面供电方案。 持有方：Georgia Power为历史记录中的供电公司，仍需确认当前合同；Electrify America提供竣工与负荷控制资料；PSC提供历史公开附件。"
+        }
+      },
+      "requestPackets": [
+        {
+          "category": "demand",
+          "reason": {
+            "en": "Public sources disclose program rules and historic configuration, not the operator transaction export, current accepted EPC budget or new utility service agreement. The historical PSC exhibit route could not be rendered/retrieved here.",
+            "zh": "公开资料披露项目规则和历史设备配置，而非运营商交易导出、现行获批EPC预算或新增接电协议；本轮亦无法取得历史PSC证物列表。"
+          },
+          "provider": {
+            "en": "Georgia PSC Open Records Officer for existing public case records; Electrify America and the metering utility with operator/owner authorization for current exports.",
+            "zh": "Georgia PSC公开记录官提供既有公开案卷；经运营商/业主授权由Electrify America及计量供电公司提供当前导出。"
+          },
+          "route": {
+            "en": "First retrieve docket 43899 public response/exhibit inventory. If absent, an authorized written records request can name document 188229 and its January 2022 hearing; ask which responsive records exist and which public versions can be released. Obtain current operational data separately under consent; reconcile sessions to delivered kWh and receipts. No request or outreach was made.",
+            "zh": "先取得43899案公开答复/附件目录；如仍缺失，可在获授权后书面申请，指明188229号文及2022年1月听证，要求说明存在哪些响应资料、哪些公开版本可提供。当前运营数据另行经同意获取，并将次数与交付电量及收款核对。本轮未申请或联系外部。"
+          },
+          "requestContent": {
+            "en": "Public responses/exhibits to the 2022 subpoena; 12 months of current timestamped session and meter exports with paid/free/refund separation, net prices and uptime; a defensible incremental-demand study for the proposed project.",
+            "zh": "2022年传票的公开答复/证据附件；当前连续12个月带时间戳的充电和电表导出，区分付费/免费/退款、净价与可用率；拟建项目可论证的新增需求研究。"
+          }
+        },
+        {
+          "category": "cost",
+          "reason": {
+            "en": "Public sources disclose program rules and historic configuration, not the operator transaction export, current accepted EPC budget or new utility service agreement. The historical PSC exhibit route could not be rendered/retrieved here.",
+            "zh": "公开资料披露项目规则和历史设备配置，而非运营商交易导出、现行获批EPC预算或新增接电协议；本轮亦无法取得历史PSC证物列表。"
+          },
+          "provider": {
+            "en": "Current owner and asset manager, existing EA license holder, qualified EVSE EPC/vendor and Georgia Power after current service confirmation.",
+            "zh": "当前业主与资产管理人、既有EA场地使用权主体、有资质的充电站EPC/设备商，以及当前供电确认后的Georgia Power。"
+          },
+          "route": {
+            "en": "Confirm title, parking rights, current leases and incumbent exclusivity before defining scope. Obtain comparable-scope EPC, utility and operating quotations. Ask the county for EV-specific approved plans/permits only as scope evidence; permit valuation alone is not a full-cost budget. No RFQ or records submission was sent.",
+            "zh": "先确认产权、停车权、当前租约及既有运营商排他条款，再定义工程范围。取得同口径EPC、供电与运营报价。向县主管部门获取充电工程专属批准图纸/许可用于核定范围；许可申报造价本身不是完整预算。本轮未发询价或资料申请。"
+          },
+          "requestContent": {
+            "en": "An approved new-build/expansion layout; itemized EVSE, civil, electrical, switchgear, transformer/CIAC, design, permits and contingency quotes; executed rent/revenue share, tariff, maintenance, software/payment, insurance and replacement schedules; treatment of existing EA equipment and rights.",
+            "zh": "确认的新建/扩建平面方案；设备、土建、电气、开关柜、变压器/CIAC、设计、许可与预备费的分项报价；已签租金/分成、电价、运维、软件/支付、保险及更换计划；既有EA设备与权利的处理方式。"
+          }
+        },
+        {
+          "category": "grid",
+          "reason": {
+            "en": "Public sources disclose program rules and historic configuration, not the operator transaction export, current accepted EPC budget or new utility service agreement. The historical PSC exhibit route could not be rendered/retrieved here.",
+            "zh": "公开资料披露项目规则和历史设备配置，而非运营商交易导出、现行获批EPC预算或新增接电协议；本轮亦无法取得历史PSC证物列表。"
+          },
+          "provider": {
+            "en": "Georgia Power as the documented historical serving utility, subject to current contract confirmation; Electrify America for as-built and load-control records; PSC for historical public exhibits.",
+            "zh": "Georgia Power为历史记录中的供电公司，仍需确认当前合同；Electrify America提供竣工与负荷控制资料；PSC提供历史公开附件。"
+          },
+          "route": {
+            "en": "Use the historical case to identify the right service/account route, then obtain owner consent and reconcile the current one-line, meter and EA load controls. Submit a defined incremental load only after project scope and rights are confirmed; require a utility capacity/cost/schedule offer. The 1,140 kW nameplate is not added capacity. No application was submitted.",
+            "zh": "利用历史案卷定位正确的供电/账户路径，再取得业主同意并核对当前单线图、电表及EA负荷控制。仅在工程范围与场地权利确认后提交明确的新增负荷，要求电力公司给出容量/成本/工期方案。1,140 kW铭牌不代表新增容量。本轮未提交申请。"
+          },
+          "requestContent": {
+            "en": "Current service agreement and tariff, as-built one-line, meter/transformer ratings, measured peak and load-management settings; owner-authorized incremental-load feasibility and a written utility offer specifying capacity, CIAC/upgrades and schedule.",
+            "zh": "当前供电合同与电价、竣工单线图、电表/变压器参数、实测峰值及负荷管理设置；经业主授权的新增负荷可行性研究，以及列明容量、CIAC/增容和工期的书面供电方案。"
+          }
+        }
+      ],
+      "nextAction": {
+        "en": "Obtain docket43899 exhibit index and public subpoena responses first; separately ask EA for anonymized recent transactions and Georgia Power for account-rate history, CIEV eligibility, Make Ready allocation, customer CIAC and date-bound capacity letter under host authority.",
+        "zh": "优先取得43899证物目录及公开传票回复；另向EA索取近期匿名交易，在业主授权下向Georgia Power索取账户费率历史、CIEV资格、Make Ready分摊、客户CIAC及带日期容量函。"
+      },
+      "acquired": {
+        "currentPaidOrderSeries": false,
+        "completeDesignMatchedCostQuote": false,
+        "firmCapacityAndDelivery": false
+      },
+      "sourceIds": [
+        "V5-1e3e76cc4b",
+        "V5-243c26cdc4",
+        "V5-dff3afb6d1",
+        "V5-c23891c9c7"
+      ]
+    },
+    {
+      "id": "winco-medford",
+      "headline": {
+        "en": "Round 3 creates a new funding option, not a recovered WinCo quote.",
+        "zh": "第三轮提供新资助选项，并未取得WinCo报价。"
+      },
+      "impact": {
+        "en": "Cancelled Round 1 remains a delivery risk. A new round may support a redesigned project, but the site is not awarded and the corridor budget cannot substitute for cost.",
+        "zh": "第一轮取消仍构成交付风险；新一轮可能支持重新设计的项目，但本场地未获批，走廊预算不能替代场地成本。"
+      },
+      "decisionBefore": "pending",
+      "decisionAfter": "pending",
+      "findings": [
+        {
+          "id": "medford-round3-cost",
+          "evidenceClass": "direct",
+          "claim": {
+            "en": "Round 3 offers $2,333,835 on I-5 for at least four stations. It reimburses up to 80% of eligible cost with at least 20% match. Real-estate purchase, major off-site grid upgrades and most variable operating costs are excluded.",
+            "zh": "第三轮为I-5至少4站提供2,333,835美元资金，最多报销合格成本80%，需至少20%配套；不含购地、重大场外电网扩容及大部分可变运营费用。"
+          },
+          "limitation": {
+            "en": "This is a competitive corridor envelope, not per-site construction cost, award, approval or available cash for WinCo. No subsidy is included in the model.",
+            "zh": "这是竞争性走廊预算，并非每址建设成本、获批或WinCo可用现金，模型未计补贴。"
+          },
+          "sourceIds": [
+            "V5-d2e8eea4d4"
+          ],
+          "sourceDate": "See source record",
+          "scope": "conditional-funding-scope",
+          "usableAsModelInput": false
+        },
+        {
+          "id": "medford-deliverables",
+          "evidenceClass": "direct",
+          "claim": {
+            "en": "The current scope template calls for final design, third-party contracts, signed utility-work agreement, final utility plans and a commissioning report with proof of energization; reimbursement requires actual invoices and payment proof.",
+            "zh": "现行范围模板要求最终设计、第三方合同、签署的供电工程协议、最终公用事业图纸，以及含送电证明的调试报告；报销须有实际发票与付款证明。"
+          },
+          "limitation": {
+            "en": "These are Round 3 requirements, not proof such documents were produced under the cancelled Round 1 project. Request the actual Round 1 file rather than treating the new template as project evidence.",
+            "zh": "这些是第三轮要求，不证明已取消第一轮项目产生了这些材料，应索取实际第一轮档案。"
+          },
+          "sourceIds": [
+            "V5-7661af3f66"
+          ],
+          "sourceDate": "See source record",
+          "scope": "document-production-path",
+          "usableAsModelInput": false
+        }
+      ],
+      "attempts": [
+        {
+          "action": "ODOT original FY2025 plan, current NEVI page, Round3 NOFO and linked attachments",
+          "result": "Retrieved program/corridor funding and scope; no itemized Medford cost proposal, signed utility agreement, paid invoices or order series. Cost-proposal XLSX is a blank form, not an applicant budget.",
+          "checkedAt": "2026-10-30",
+          "sourceIds": [
+            "V4-a784f1f71",
+            "V5-d2e8eea4d4"
+          ]
+        },
+        {
+          "action": "Exact WinCo/Medford/EVGateway budget/permit searches",
+          "result": "No address-matched accepted budget or utility commitment found. Other EVGateway Medford addresses were excluded.",
+          "checkedAt": "2026-10-30",
+          "sourceIds": []
+        }
+      ],
+      "remaining": {
+        "demand": {
+          "en": "The cancelled scheme has no retrieved operating series. The public grant page contains eligibility and templates, not submitted applicant files; a fresh utility/design quote would still be necessary. Needed: 12 months of anonymized paid sessions, delivered kWh, realized net price, downtime and hourly profiles; incremental demand/capture study for the proposed site. Holder: ODOT Climate Office / EV Gateway / WinCo, plus operating local charging networks",
+          "zh": "未取得已取消方案的运营序列；公开资助页是资格与模板而非申请人已提交档案，仍需新的供电/设计报价。 所需：12个月匿名付费订单、输出电量、实际净售价、停机及逐小时分布；拟建场地的增量需求与客户分流研究。 持有方：ODOT气候办公室 / EV Gateway / WinCo及当地在营充电网络"
+        },
+        "cost": {
+          "en": "The cancelled scheme has no retrieved operating series. The public grant page contains eligibility and templates, not submitted applicant files; a fresh utility/design quote would still be necessary. Needed: Prior EV Gateway application, final WinCo site schedule, detailed capital/operating budget, match and cancellation/cure correspondence; current scope-matched EPC/O&M/lease and utility quotes. Holder: Pacific Power EV technical assistance / service engineering; property host and licensed EV EPC",
+          "zh": "未取得已取消方案的运营序列；公开资助页是资格与模板而非申请人已提交档案，仍需新的供电/设计报价。 所需：原EV Gateway申请、最终WinCo场地附件、详细投资/运营预算、配套资金及取消/整改函；当前同范围EPC/运维/租约及供电报价。 持有方：Pacific Power EV技术支持/接电工程部门；物业方及有资质EV工程总包"
+        },
+        "grid": {
+          "en": "The cancelled scheme has no retrieved operating series. The public grant page contains eligibility and templates, not submitted applicant files; a fresh utility/design quote would still be necessary. Needed: Written utility point-of-delivery and firm capacity assessment, load/interval assumptions, all applicable tariffs/riders/taxes, connection scope and cost, energization schedule and reservations. Holder: Pacific Power EV technical assistance / service engineering",
+          "zh": "未取得已取消方案的运营序列；公开资助页是资格与模板而非申请人已提交档案，仍需新的供电/设计报价。 所需：公用事业书面接入点及确定可供容量评估、负荷/分时假设、全部费率/附加项/税费、接入工程范围及成本、送电排期与容量保留。 持有方：Pacific Power EV技术支持/接电工程部门"
+        }
+      },
+      "requestPackets": [
+        {
+          "category": "demand",
+          "reason": {
+            "en": "The cancelled scheme has no retrieved operating series. The public grant page contains eligibility and templates, not submitted applicant files; a fresh utility/design quote would still be necessary.",
+            "zh": "未取得已取消方案的运营序列；公开资助页是资格与模板而非申请人已提交档案，仍需新的供电/设计报价。"
+          },
+          "provider": {
+            "en": "ODOT Climate Office / EV Gateway / WinCo, plus operating local charging networks",
+            "zh": "ODOT气候办公室 / EV Gateway / WinCo及当地在营充电网络"
+          },
+          "route": {
+            "en": "Seek the prior application’s utilization assumptions and supporting local evidence, then obtain consented local operator transaction exports and validate incremental capture. A grant forecast is not paid orders; no outreach performed.",
+            "zh": "先取得原申请利用率假设及当地支持证据，再经许可获取本地运营商交易导出并验证新增站获客量；补助预测不是付费订单，本轮未联系。"
+          },
+          "requestContent": {
+            "en": "12 months of anonymized paid sessions, delivered kWh, realized net price, downtime and hourly profiles; incremental demand/capture study for the proposed site.",
+            "zh": "12个月匿名付费订单、输出电量、实际净售价、停机及逐小时分布；拟建场地的增量需求与客户分流研究。"
+          }
+        },
+        {
+          "category": "cost",
+          "reason": {
+            "en": "The cancelled scheme has no retrieved operating series. The public grant page contains eligibility and templates, not submitted applicant files; a fresh utility/design quote would still be necessary.",
+            "zh": "未取得已取消方案的运营序列；公开资助页是资格与模板而非申请人已提交档案，仍需新的供电/设计报价。"
+          },
+          "provider": {
+            "en": "Pacific Power EV technical assistance / service engineering; property host and licensed EV EPC",
+            "zh": "Pacific Power EV技术支持/接电工程部门；物业方及有资质EV工程总包"
+          },
+          "route": {
+            "en": "Use ODOT’s public-records route for the I-5 south-of-Eugene EV Gateway grant and WinCo 251 E Barnett Rd records; request releasable budgets, utility correspondence and cancellation grounds. Reprice via Pacific Power assessment and commercial vendors. Portal was tool-inaccessible; nothing submitted.",
+            "zh": "通过ODOT公开记录渠道索取EV Gateway南尤金I-5补助及251 E Barnett Rd WinCo资料，包括可披露预算、供电往来及取消依据；再经Pacific Power评估及商业供应商重新报价。门户本工具无法读取，本轮未提交。"
+          },
+          "requestContent": {
+            "en": "Prior EV Gateway application, final WinCo site schedule, detailed capital/operating budget, match and cancellation/cure correspondence; current scope-matched EPC/O&M/lease and utility quotes.",
+            "zh": "原EV Gateway申请、最终WinCo场地附件、详细投资/运营预算、配套资金及取消/整改函；当前同范围EPC/运维/租约及供电报价。"
+          }
+        },
+        {
+          "category": "grid",
+          "reason": {
+            "en": "The cancelled scheme has no retrieved operating series. The public grant page contains eligibility and templates, not submitted applicant files; a fresh utility/design quote would still be necessary.",
+            "zh": "未取得已取消方案的运营序列；公开资助页是资格与模板而非申请人已提交档案，仍需新的供电/设计报价。"
+          },
+          "provider": {
+            "en": "Pacific Power EV technical assistance / service engineering",
+            "zh": "Pacific Power EV技术支持/接电工程部门"
+          },
+          "route": {
+            "en": "WinCo-authorized Oregon nonresidential application for Pacific Power’s public-fast-charging assessment; attach site plan and controlled-load profile, then obtain service-engineering capacity, extension costs and tariff classification. Cross-check against prior grant utility correspondence.",
+            "zh": "由WinCo授权以俄勒冈非住宅客户申请Pacific Power公共快充评估，附场地图及受控负荷曲线，再取得接电工程容量、延伸费用和费率分类；与原补助供电往来交叉核对。"
+          },
+          "requestContent": {
+            "en": "Written utility point-of-delivery and firm capacity assessment, load/interval assumptions, all applicable tariffs/riders/taxes, connection scope and cost, energization schedule and reservations.",
+            "zh": "公用事业书面接入点及确定可供容量评估、负荷/分时假设、全部费率/附加项/税费、接入工程范围及成本、送电排期与容量保留。"
+          }
+        }
+      ],
+      "nextAction": {
+        "en": "Request the EVGateway I-5 Round1 agreement and Medford annex at251E Barnett: submitted cost proposal, utility correspondence, signed host terms, approved schedule, invoices and cancellation notice. Compare a fresh4-port minimum design and8-stall expansion scope; do not assume grant approval.",
+        "zh": "索取EVGateway I-5第一轮协议及251E Barnett附件：已提交成本方案、供电往来、业主协议、获批排期、发票和取消通知；比较新4口最低配置及8车位扩建范围，不能预设获批补贴。"
+      },
+      "acquired": {
+        "currentPaidOrderSeries": false,
+        "completeDesignMatchedCostQuote": false,
+        "firmCapacityAndDelivery": false
+      },
+      "sourceIds": [
+        "V5-d2e8eea4d4",
+        "V5-7661af3f66"
+      ]
+    },
+    {
+      "id": "winco-edmonds",
+      "headline": {
+        "en": "Original approved charging plans recovered; historical design is now identifiable.",
+        "zh": "已取得原始获批充电图纸，历史设计范围可核查。"
+      },
+      "impact": {
+        "en": "Engineering uncertainty is reduced: price a matching upgrade option instead of assuming an unrelated eight-stall build. Historical plans do not establish available expansion rights, firm utility capacity or full costs.",
+        "zh": "工程不确定性降低：可围绕匹配的升级范围询价，不能套用无关八枪新建。历史图纸仍不证明可用扩建权、确定供电容量或完整成本。"
+      },
+      "decisionBefore": "pending",
+      "decisionAfter": "pending",
+      "findings": [
+        {
+          "id": "edmonds-exact-permit",
+          "evidenceClass": "direct",
+          "claim": {
+            "en": "The official archive contains BLD2022-0061, WINCO-3 ELEC VEHICLE CHARGING STATIONS, at 21900 Highway 99, parcel 00580700004009. A March 2, 2023 engineering revision memo moves proposed EV stalls and dispensers from the north walkway to the south walkway.",
+            "zh": "官方档案含BLD2022-0061：21900Highway99、地块00580700004009的WINCO-3台电动车充电设备；2023年3月2日工程修改备忘录将拟建EV车位和终端从北侧人行道移至南侧。"
+          },
+          "limitation": {
+            "en": "Read by the parent agent in the current round. A revision memo is not a final permit, completed inspection, approved project cost or utility capacity letter. Three chargers can serve four stalls; do not equate charger count and stall count.",
+            "zh": "本轮由主代理读取；修改备忘录不是最终许可、竣工验收、获批项目成本或供电容量函。3台设备可对应4车位，不应等同设备数和车位数。"
+          },
+          "sourceIds": [
+            "V5-c95d9227d3"
+          ],
+          "sourceDate": "See source record",
+          "scope": "parcel-project-design",
+          "usableAsModelInput": false
+        },
+        {
+          "id": "edmonds-price-freshness",
+          "evidenceClass": "secondary",
+          "claim": {
+            "en": "Search output dated the same $0.49/$0.54/$0.60 advertised TOU prices October 25, 2026, while the opened page body still says August 2, 2026.",
+            "zh": "同一0.49/0.54/0.60美元分时标价，搜索输出标2026年10月25日，打开正文仍标8月2日。"
+          },
+          "limitation": {
+            "en": "No fresh realized-price claim or volume inference is justified. Earlier price values remain secondary, not a transaction series.",
+            "zh": "不能据此主张最新实收价格或推断订单量，旧数值仍仅为次级标价。"
+          },
+          "sourceIds": [
+            "V4-0ff100444"
+          ],
+          "sourceDate": "See source record",
+          "scope": "source-freshness-conflict",
+          "usableAsModelInput": false
+        },
+        {
+          "id": "V5-EDMONDS-PLAN",
+          "evidenceClass": "direct",
+          "claim": {
+            "en": "City archive BLD2022-0061 links 21900 Highway 99 to parcel 00580700004009. CS-1 specifies one Delta 350 kW unit, two 100 kW units, utility transformer, switchgear, underground conductors and civil/accessibility work. E-2.0 lists 598 kVA service design load and a 1200 A, 480Y/277 V three-phase bus.",
+            "zh": "市档案BLD2022-0061将21900 Highway99对应至地块00580700004009。CS-1列出1台Delta350kW、2台100kW、变压器、开关设备、地下导线及土建/无障碍工程；E-2.0列设计负荷598kVA和1200A、480Y/277V三相母线。"
+          },
+          "limitation": {
+            "en": "April 3, 2023 revision approval is explicitly location-only. The one-line says available fault current is pending from the utility. Design load and bus rating are not spare or reserved capacity; this is not an as-built certificate, expansion offer, paid invoice or current EPC quote.",
+            "zh": "2023年4月3日修订批准明确仅限位置，单线图写明可用故障电流待电力公司提供。设计负荷及母线额定值不是富余或预留容量，也不是竣工证、扩容承诺、付款发票或现行EPC报价。"
+          },
+          "sourceIds": [
+            "V5-3eb0f1dd3b"
+          ],
+          "sourceDate": "2023-03-28 plan; 2023-04-03 revision approval",
+          "scope": "parcel / historical design",
+          "usableAsModelInput": false
+        }
+      ],
+      "attempts": [
+        {
+          "action": "City record-search link to Laserfiche Development Services address folders",
+          "result": "Child public HTTP with cookies reached JavaScript shell. Parent then successfully rendered official archive via browser, searched 21900, and opened BLD2022-0061 engineering memo; exact URL in source ledger. No complete scoped quote or signed incremental capacity retrieved from that memo.",
+          "checkedAt": "2026-10-30",
+          "sourceIds": [
+            "V5-084e17b68c"
+          ]
+        },
+        {
+          "action": "Exact 21900 EVgo permit/cost and current price searches",
+          "result": "Found already-known operator hardware and secondary prices; no paid series or accepted scope quote.",
+          "checkedAt": "2026-10-30",
+          "sourceIds": [
+            "V4-0ff100444"
+          ]
+        },
+        {
+          "action": "SnoPUD current commercial charging process",
+          "result": "Confirmed design review before cost/time estimate; payment initiates material ordering and preliminary scheduling. No parcel capacity/date.",
+          "checkedAt": "2026-10-30",
+          "sourceIds": [
+            "V4-96549661e"
+          ]
+        },
+        {
+          "action": {
+            "en": "Render official archive; search 21900 and BLD2022-0061; inspect original memo and plan sheets.",
+            "zh": "浏览市政府档案，搜索21900及BLD2022-0061，阅读修改函与原图。"
+          },
+          "result": {
+            "en": "Read archive metadata and OCR of CS-1 and E-2.0. The separate export endpoint was blocked by the browser; no download or access bypass was attempted afterward. No quote or utility commitment was found in the inspected sheets.",
+            "zh": "取得档案元数据及CS-1、E-2.0文本；单独导出端点被浏览器拦截，随后未绕过。已阅图纸未提供报价或电力承诺。"
+          },
+          "checkedAt": "2026-10-30",
+          "sourceIds": [
+            "V5-3eb0f1dd3b"
+          ]
+        }
+      ],
+      "remaining": {
+        "demand": {
+          "en": "Public operator page has inventory, not settlements. Historical design plans and a revision memo are now recovered, but the associated final-inspection package, complete cost scope and utility commitment remain unverified. Needed: 12 months of anonymized paid sessions, delivered kWh, realized net price, downtime and hourly profiles; incremental demand/capture study for the proposed site. Holder: EVgo and WinCo site/real-estate teams",
+          "zh": "运营商公开页是设备清单而非结算；已取得历史设计图与修改备忘录，但配套最终验收、完整成本范围及供电承诺仍待核。 所需：12个月匿名付费订单、输出电量、实际净售价、停机及逐小时分布；拟建场地的增量需求与客户分流研究。 持有方：EVgo and WinCo 场地/房地产团队"
+        },
+        "cost": {
+          "en": "Historical CS-1 and E-2.0 design sheets are now available. Itemized paid invoices, change orders, non-construction costs and an updated expansion EPC quote are not. Obtain the exact BLD2022-0061 completion-cost file from the owner/operator/contractor.",
+          "zh": "已取得历史CS-1及E-2.0设计图，仍缺明细已付发票、变更单、非施工成本及更新的扩建EPC报价。须由业主/运营商/承包商提供BLD2022-0061对应竣工成本资料。"
+        },
+        "grid": {
+          "en": "598 kVA is the historical design load, not reserved expansion capacity. The plan leaves available fault current pending. SnoPUD/account holder must supply the existing service agreement, as-built interface, measured peak and a separate date-bound expansion offer.",
+          "zh": "598kVA是历史设计负荷，不是预留扩容容量；图纸故障电流仍待确认。须由SnoPUD/账户持有人提供既有供电协议、竣工接点、实测峰值及单独带日期扩容承诺。"
+        }
+      },
+      "requestPackets": [
+        {
+          "category": "demand",
+          "reason": {
+            "en": "Public operator page has inventory, not settlements. Historical design plans and a revision memo are now recovered, but the associated final-inspection package, complete cost scope and utility commitment remain unverified.",
+            "zh": "运营商公开页是设备清单而非结算；已取得历史设计图与修改备忘录，但配套最终验收、完整成本范围及供电承诺仍待核。"
+          },
+          "provider": {
+            "en": "EVgo and WinCo site/real-estate teams",
+            "zh": "EVgo and WinCo 场地/房地产团队"
+          },
+          "route": {
+            "en": "Ask EVgo/WinCo for a consented 12-month station-53833 export of paid sessions, delivered kWh, discounts, refunds, net revenue and downtime. Validate incremental capture separately; published stall availability or price is insufficient.",
+            "zh": "经EVgo/WinCo同意索取53833站12个月付费订单、输出电量、折扣、退款、净收入及停机数据；另核实新增站可获取需求，车位可用状态或标价不足以替代。"
+          },
+          "requestContent": {
+            "en": "12 months of anonymized paid sessions, delivered kWh, realized net price, downtime and hourly profiles; incremental demand/capture study for the proposed site.",
+            "zh": "12个月匿名付费订单、输出电量、实际净售价、停机及逐小时分布；拟建场地的增量需求与客户分流研究。"
+          }
+        },
+        {
+          "category": "cost",
+          "reason": {
+            "en": "Public operator page has inventory, not settlements. Historical design plans and a revision memo are now recovered, but the associated final-inspection package, complete cost scope and utility commitment remain unverified.",
+            "zh": "运营商公开页是设备清单而非结算；已取得历史设计图与修改备忘录，但配套最终验收、完整成本范围及供电承诺仍待核。"
+          },
+          "provider": {
+            "en": "Snohomish County PUD Business Services; property host and licensed EV EPC",
+            "zh": "Snohomish County PUD 商业服务部门；物业方及有资质EV工程总包"
+          },
+          "route": {
+            "en": "Retrieve EVgo permit plans/valuation and electrical work records for 21900 Highway 99 through the city address archive or records officer, and SnoPUD extension/work-order records where releasable; obtain current scope-matched EPC, lease and 10-year O&M quotes from owner/operator. No requests sent.",
+            "zh": "通过市政地址档案/记录官取得21900 Highway 99的EVgo许可图、申报价值及电气工单，并索取可披露的SnoPUD接入工单；再由业主/运营商提供当前同范围EPC、租约及十年运维报价。本轮未提交申请。"
+          },
+          "requestContent": {
+            "en": "Current itemized EPC quotation plus utility connection quote, rent/lease and commercial terms, software/payment/O&M/insurance/tax/replacement costs; inclusions, exclusions, contingency and validity.",
+            "zh": "当前分项EPC报价、供电接入报价、租金/租约及商业条款、软件/支付/运维/保险/税费/更换成本；含范围、排除项、预备金和有效期。"
+          }
+        },
+        {
+          "category": "grid",
+          "reason": {
+            "en": "Public operator page has inventory, not settlements. Historical design plans and a revision memo are now recovered, but the associated final-inspection package, complete cost scope and utility commitment remain unverified.",
+            "zh": "运营商公开页是设备清单而非结算；已取得历史设计图与修改备忘录，但配套最终验收、完整成本范围及供电承诺仍待核。"
+          },
+          "provider": {
+            "en": "Snohomish County PUD Business Services",
+            "zh": "Snohomish County PUD 商业服务部门"
+          },
+          "route": {
+            "en": "Commercial application with charger count and size; PUD reviews transformer and surrounding capacity, then design, cost/time estimate, fees and scheduling.",
+            "zh": "商业申请注明充电桩数量与功率；PUD核查变压器及周边容量，再设计、估算费用与时间，缴费后排期。"
+          },
+          "requestContent": {
+            "en": "Written utility point-of-delivery and firm capacity assessment, load/interval assumptions, all applicable tariffs/riders/taxes, connection scope and cost, energization schedule and reservations.",
+            "zh": "公用事业书面接入点及确定可供容量评估、负荷/分时假设、全部费率/附加项/税费、接入工程范围及成本、送电排期与容量保留。"
+          }
+        }
+      ],
+      "nextAction": {
+        "en": "Use BLD2022-0061 and the exact parcel to obtain the final inspection/as-built file, the utility service agreement, change orders and paid construction invoices. Ask EVgo for the latest anonymized 12-month paid-session and settlement series; obtain a separate expansion quote with host authority.",
+        "zh": "以BLD2022-0061及准确地块索取最终验收、竣工图、供电协议、变更单和已付施工发票；向EVgo索取最近12个月匿名付费记录与结算，并在业主授权下对扩建单独询价。"
+      },
+      "acquired": {
+        "currentPaidOrderSeries": false,
+        "completeDesignMatchedCostQuote": false,
+        "firmCapacityAndDelivery": false
+      },
+      "sourceIds": [
+        "V5-c95d9227d3",
+        "V4-0ff100444",
+        "V5-3eb0f1dd3b"
+      ]
+    },
+    {
+      "id": "winco-longview",
+      "headline": {
+        "en": "Commercial cost and capacity remain inaccessible; residential proxies stay excluded.",
+        "zh": "商业成本和容量仍未取得，继续排除住宅替代数值。"
+      },
+      "impact": {
+        "en": "No new fact changes feasibility. The public estimator remains inapplicable; do not convert the missing commercial quote into a failed site.",
+        "zh": "无新增事实改变可行性判断；公开估算器仍不适用，缺商业报价不等于场地失败。"
+      },
+      "decisionBefore": "pending",
+      "decisionAfter": "pending",
+      "findings": [],
+      "attempts": [
+        {
+          "action": "ExactWinCo120Triangle commercial charging permits and Cowlitz records",
+          "result": "No local paidvolume or specific charging-project cost found; no third-party utility engineering commitment.",
+          "checkedAt": "2026-10-30",
+          "sourceIds": []
+        },
+        {
+          "action": "Cowlitz Engineering Policies PDF one fresh attempt",
+          "result": "Still not accessible via web; no applicationfee amount or siteextension amount inferred.",
+          "checkedAt": "2026-10-30",
+          "sourceIds": [
+            "V4-988fd64b3"
+          ]
+        }
+      ],
+      "remaining": {
+        "demand": {
+          "en": "No owner/utility design application or site-matched engineering quote was retrieved. Utility requires a commercial application and nonrefundable fee; no submission or payment was made. Needed: 12 months of anonymized paid sessions, delivered kWh, realized net price, downtime and hourly profiles; incremental demand/capture study for the proposed site. Holder: WinCo/property host and nearby charging operators",
+          "zh": "未取得业主/供电设计申请或同址工程报价；公用事业要求商业申请及不可退费用，本轮未提交或付费。 所需：12个月匿名付费订单、输出电量、实际净售价、停机及逐小时分布；拟建场地的增量需求与客户分流研究。 持有方：WinCo/物业方及附近充电运营商"
+        },
+        "cost": {
+          "en": "No owner/utility design application or site-matched engineering quote was retrieved. Utility requires a commercial application and nonrefundable fee; no submission or payment was made. Needed: Current itemized EPC quotation plus utility connection quote, rent/lease and commercial terms, software/payment/O&M/insurance/tax/replacement costs; inclusions, exclusions, contingency and validity. Holder: Cowlitz PUD Engineering; property host and licensed EV EPC",
+          "zh": "未取得业主/供电设计申请或同址工程报价；公用事业要求商业申请及不可退费用，本轮未提交或付费。 所需：当前分项EPC报价、供电接入报价、租金/租约及商业条款、软件/支付/运维/保险/税费/更换成本；含范围、排除项、预备金和有效期。 持有方：Cowlitz PUD 工程部门；物业方及有资质EV工程总包"
+        },
+        "grid": {
+          "en": "No owner/utility design application or site-matched engineering quote was retrieved. Utility requires a commercial application and nonrefundable fee; no submission or payment was made. Needed: Written utility point-of-delivery and firm capacity assessment, load/interval assumptions, all applicable tariffs/riders/taxes, connection scope and cost, energization schedule and reservations. Holder: Cowlitz PUD Engineering",
+          "zh": "未取得业主/供电设计申请或同址工程报价；公用事业要求商业申请及不可退费用，本轮未提交或付费。 所需：公用事业书面接入点及确定可供容量评估、负荷/分时假设、全部费率/附加项/税费、接入工程范围及成本、送电排期与容量保留。 持有方：Cowlitz PUD 工程部门"
+        }
+      },
+      "requestPackets": [
+        {
+          "category": "demand",
+          "reason": {
+            "en": "No owner/utility design application or site-matched engineering quote was retrieved. Utility requires a commercial application and nonrefundable fee; no submission or payment was made.",
+            "zh": "未取得业主/供电设计申请或同址工程报价；公用事业要求商业申请及不可退费用，本轮未提交或付费。"
+          },
+          "provider": {
+            "en": "WinCo/property host and nearby charging operators",
+            "zh": "WinCo/物业方及附近充电运营商"
+          },
+          "route": {
+            "en": "With owner/operator permission, request anonymized 12-month paid transaction and downtime export; if no installed station, commission a bounded local observation and competing-station demand study. No outreach performed.",
+            "zh": "经业主/运营商许可索取12个月匿名交易及停机数据；尚未安装充电站时，开展有明确范围的现场观察及竞争站需求研究。本轮未对外联系。"
+          },
+          "requestContent": {
+            "en": "12 months of anonymized paid sessions, delivered kWh, realized net price, downtime and hourly profiles; incremental demand/capture study for the proposed site.",
+            "zh": "12个月匿名付费订单、输出电量、实际净售价、停机及逐小时分布；拟建场地的增量需求与客户分流研究。"
+          }
+        },
+        {
+          "category": "cost",
+          "reason": {
+            "en": "No owner/utility design application or site-matched engineering quote was retrieved. Utility requires a commercial application and nonrefundable fee; no submission or payment was made.",
+            "zh": "未取得业主/供电设计申请或同址工程报价；公用事业要求商业申请及不可退费用，本轮未提交或付费。"
+          },
+          "provider": {
+            "en": "Cowlitz PUD Engineering; property host and licensed EV EPC",
+            "zh": "Cowlitz PUD 工程部门；物业方及有资质EV工程总包"
+          },
+          "route": {
+            "en": "Use the Commercial/Industrial application and an Engineering Planner site visit to obtain the RFP, tariff class and customer transformer scope. Obtain a written fee first, then approved utility design plus EPC/O&M/lease quotes; residential estimator values are excluded. No application/payment performed.",
+            "zh": "通过商业/工业申请及工程规划师现场会议取得RFP、费率类别和客户变压器范围；先书面确认申请费，再取得供电设计及EPC/运维/租约报价，排除住宅估算器数值。本轮未申请或付款。"
+          },
+          "requestContent": {
+            "en": "Current itemized EPC quotation plus utility connection quote, rent/lease and commercial terms, software/payment/O&M/insurance/tax/replacement costs; inclusions, exclusions, contingency and validity.",
+            "zh": "当前分项EPC报价、供电接入报价、租金/租约及商业条款、软件/支付/运维/保险/税费/更换成本；含范围、排除项、预备金和有效期。"
+          }
+        },
+        {
+          "category": "grid",
+          "reason": {
+            "en": "No owner/utility design application or site-matched engineering quote was retrieved. Utility requires a commercial application and nonrefundable fee; no submission or payment was made.",
+            "zh": "未取得业主/供电设计申请或同址工程报价；公用事业要求商业申请及不可退费用，本轮未提交或付费。"
+          },
+          "provider": {
+            "en": "Cowlitz PUD Engineering",
+            "zh": "Cowlitz PUD 工程部门"
+          },
+          "route": {
+            "en": "Engineering at 360-501-9546/newservice@cowlitzpud.org must review the actual load, delivery voltage, source and easements. Request a signed capacity/extension quote and total energization schedule; the published post-release installation window is not that schedule.",
+            "zh": "工程部门360-501-9546/newservice@cowlitzpud.org须核实实际负荷、供电电压、接入源及地役权；索取签署的容量/延伸工程报价与总送电排期，公开移交后安装周期不可替代总排期。"
+          },
+          "requestContent": {
+            "en": "Written utility point-of-delivery and firm capacity assessment, load/interval assumptions, all applicable tariffs/riders/taxes, connection scope and cost, energization schedule and reservations.",
+            "zh": "公用事业书面接入点及确定可供容量评估、负荷/分时假设、全部费率/附加项/税费、接入工程范围及成本、送电排期与容量保留。"
+          }
+        }
+      ],
+      "nextAction": {
+        "en": "With owner authority obtain the Commercial/Industrial application, writtenfee andengineering sitevisit scope, then designmatchedEPC+utility contribution+lease/O&M quotes. For a newbuild use matched existing-station demand evidence; no own paid history should be assumed to exist.",
+        "zh": "取得业主授权后准备商业/工业申请，先明确费用和工程现场范围，再取得同设计EPC、接入分摊、租约与运维报价；新建项目用匹配现有站需求证据，不应预设其本身已有付费历史。"
+      },
+      "acquired": {
+        "currentPaidOrderSeries": false,
+        "completeDesignMatchedCostQuote": false,
+        "firmCapacityAndDelivery": false
+      },
+      "sourceIds": []
+    },
+    {
+      "id": "winco-brushprairie",
+      "headline": {
+        "en": "The conditional Clark credit is unchanged; no site approval or project records surfaced.",
+        "zh": "Clark条件抵扣未变化，未找到本场地批准或项目记录。"
+      },
+      "impact": {
+        "en": "The utility-level credit cannot close cost/grid gates or prove demand. No adverse site fact was identified in the bounded follow-up.",
+        "zh": "公用事业层面的抵扣不能关闭成本/电网门槛或证明需求；本轮有限续查未识别新场地不利事实。"
+      },
+      "decisionBefore": "pending",
+      "decisionAfter": "pending",
+      "findings": [],
+      "attempts": [
+        {
+          "action": "Exact11310NE119thStreet/WinCo chargingpermit and Clarkutility queries",
+          "result": "No paidsessionseries, scoped constructionbudget, permit package or capacityreservation surfaced.",
+          "checkedAt": "2026-10-30",
+          "sourceIds": [
+            "V4-1076a0a93"
+          ]
+        },
+        {
+          "action": "Re-read Clark current DCFC program",
+          "result": "Confirmed unchanged$1500annualcredit pereligiblecharger,separatemeterSchedule134; no duration/siteaward orportcount. Government/nonprofitEV-GOeligibility doesnotinclude privatehost bydefault.",
+          "checkedAt": "2026-10-30",
+          "sourceIds": [
+            "V4-1076a0a93"
+          ]
+        }
+      ],
+      "remaining": {
+        "demand": {
+          "en": "Published terms are generic. No installed-site transaction feed, host-authorized loadstudy or utilitycredit acceptance was supplied or found. Needed: 12 months of anonymized paid sessions, delivered kWh, realized net price, downtime and hourly profiles; incremental demand/capture study for the proposed site. Holder: WinCo/property host and nearby charging operators",
+          "zh": "公开条款为通用规则，未找到或取得运营交易数据、业主授权负荷研究或供电抵扣接受文件。 所需：12个月匿名付费订单、输出电量、实际净售价、停机及逐小时分布；拟建场地的增量需求与客户分流研究。 持有方：WinCo/物业方及附近充电运营商"
+        },
+        "cost": {
+          "en": "Published terms are generic. No installed-site transaction feed, host-authorized loadstudy or utilitycredit acceptance was supplied or found. Needed: Current itemized EPC quotation plus utility connection quote, rent/lease and commercial terms, software/payment/O&M/insurance/tax/replacement costs; inclusions, exclusions, contingency and validity. Holder: Clark Public Utilities Engineering / Key Accounts; property host and licensed EV EPC",
+          "zh": "公开条款为通用规则，未找到或取得运营交易数据、业主授权负荷研究或供电抵扣接受文件。 所需：当前分项EPC报价、供电接入报价、租金/租约及商业条款、软件/支付/运维/保险/税费/更换成本；含范围、排除项、预备金和有效期。 持有方：Clark Public Utilities 工程/大客户部门；物业方及有资质EV工程总包"
+        },
+        "grid": {
+          "en": "Published terms are generic. No installed-site transaction feed, host-authorized loadstudy or utilitycredit acceptance was supplied or found. Needed: Written utility point-of-delivery and firm capacity assessment, load/interval assumptions, all applicable tariffs/riders/taxes, connection scope and cost, energization schedule and reservations. Holder: Clark Public Utilities Engineering / Key Accounts",
+          "zh": "公开条款为通用规则，未找到或取得运营交易数据、业主授权负荷研究或供电抵扣接受文件。 所需：公用事业书面接入点及确定可供容量评估、负荷/分时假设、全部费率/附加项/税费、接入工程范围及成本、送电排期与容量保留。 持有方：Clark Public Utilities 工程/大客户部门"
+        }
+      },
+      "requestPackets": [
+        {
+          "category": "demand",
+          "reason": {
+            "en": "Published terms are generic. No installed-site transaction feed, host-authorized loadstudy or utilitycredit acceptance was supplied or found.",
+            "zh": "公开条款为通用规则，未找到或取得运营交易数据、业主授权负荷研究或供电抵扣接受文件。"
+          },
+          "provider": {
+            "en": "WinCo/property host and nearby charging operators",
+            "zh": "WinCo/物业方及附近充电运营商"
+          },
+          "route": {
+            "en": "With owner/operator permission, request anonymized 12-month paid transaction and downtime export; if no installed station, commission a bounded local observation and competing-station demand study. No outreach performed.",
+            "zh": "经业主/运营商许可索取12个月匿名交易及停机数据；尚未安装充电站时，开展有明确范围的现场观察及竞争站需求研究。本轮未对外联系。"
+          },
+          "requestContent": {
+            "en": "12 months of anonymized paid sessions, delivered kWh, realized net price, downtime and hourly profiles; incremental demand/capture study for the proposed site.",
+            "zh": "12个月匿名付费订单、输出电量、实际净售价、停机及逐小时分布；拟建场地的增量需求与客户分流研究。"
+          }
+        },
+        {
+          "category": "cost",
+          "reason": {
+            "en": "Published terms are generic. No installed-site transaction feed, host-authorized loadstudy or utilitycredit acceptance was supplied or found.",
+            "zh": "公开条款为通用规则，未找到或取得运营交易数据、业主授权负荷研究或供电抵扣接受文件。"
+          },
+          "provider": {
+            "en": "Clark Public Utilities Engineering / Key Accounts; property host and licensed EV EPC",
+            "zh": "Clark Public Utilities 工程/大客户部门；物业方及有资质EV工程总包"
+          },
+          "route": {
+            "en": "Obtain a Schedule 134 meter/charger-count and credit-term letter from Key Accounts; submit owner-approved civil/load drawings for system-development, facilities and ROW charges; secure matching EPC and 10-year operating quotes. Do not deduct unapproved incentives.",
+            "zh": "向大客户部门取得134号电表、合格设备数量及抵扣期限书面确认；凭业主批准的土建/负荷图取得系统扩容、设施与路权报价；再取得相同范围EPC及十年运营报价，未获批补贴不抵减。"
+          },
+          "requestContent": {
+            "en": "Current itemized EPC quotation plus utility connection quote, rent/lease and commercial terms, software/payment/O&M/insurance/tax/replacement costs; inclusions, exclusions, contingency and validity.",
+            "zh": "当前分项EPC报价、供电接入报价、租金/租约及商业条款、软件/支付/运维/保险/税费/更换成本；含范围、排除项、预备金和有效期。"
+          }
+        },
+        {
+          "category": "grid",
+          "reason": {
+            "en": "Published terms are generic. No installed-site transaction feed, host-authorized loadstudy or utilitycredit acceptance was supplied or found.",
+            "zh": "公开条款为通用规则，未找到或取得运营交易数据、业主授权负荷研究或供电抵扣接受文件。"
+          },
+          "provider": {
+            "en": "Clark Public Utilities Engineering / Key Accounts",
+            "zh": "Clark Public Utilities 工程/大客户部门"
+          },
+          "route": {
+            "en": "A financially responsible owner must provide address/APN, site civil plan, voltage, itemized loads and proposed easements to Construction Services; the assigned commercial engineer must issue capacity, service design, charges and schedule. No application submitted.",
+            "zh": "由有财务责任的业主向Construction Services提供地址/APN、土建图、电压、分项负荷及拟设地役权，由商业工程师出具容量、设计、费用和排期；本轮未提交申请。"
+          },
+          "requestContent": {
+            "en": "Written utility point-of-delivery and firm capacity assessment, load/interval assumptions, all applicable tariffs/riders/taxes, connection scope and cost, energization schedule and reservations.",
+            "zh": "公用事业书面接入点及确定可供容量评估、负荷/分时假设、全部费率/附加项/税费、接入工程范围及成本、送电排期与容量保留。"
+          }
+        }
+      ],
+      "nextAction": {
+        "en": "With hostauthority requestClarkEngineering incrementalcapacity and scope-specificextension estimate; KeyAccounts must confirm eligiblecharger count, creditduration andmeter134. Obtain EPC and operatingquotes on the same design and matchedlocaldemand evidence.",
+        "zh": "在业主授权下向Clark工程部索取增量容量与同范围延伸工程估算；大客户经理确认合格设备数、抵扣期限与134电表；取得同设计EPC/运营报价及匹配当地需求证据。"
+      },
+      "acquired": {
+        "currentPaidOrderSeries": false,
+        "completeDesignMatchedCostQuote": false,
+        "firmCapacityAndDelivery": false
+      },
+      "sourceIds": []
+    }
+  ],
+  "diagnostics": {
+    "incompleteEvidence": 37,
+    "distinctScenarioSets": 14,
+    "conservativeRevenue": 51392.0,
+    "conservativeFixedCost": 60000,
+    "basePositiveCash": 34,
+    "optimisticPositiveNpv": 34
+  }
+}

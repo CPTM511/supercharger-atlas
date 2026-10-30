@@ -4,13 +4,15 @@
 
 [Open the product](https://cptm511.github.io/supercharger-atlas/) · [English research brief](downloads/charge-atlas-brief.pdf) · [Chinese research brief](downloads/charge-atlas-brief-zh.pdf)
 
-## Current conclusion — v0.4.0
+## Current conclusion — v0.5.0
 
-**Zero properties qualify under either investment-gated lens.** The former two Top 10 lists are now historical research priorities in the pending pool, not approved investment recommendations. The threshold was not relaxed to fill a list.
+**Zero investment-ready projects in this selected pool does not mean the United States has no suitable charging sites.** All 37 remain pending; none is formally rejected. Financial and evidence gates are unchanged.
 
-Round three first checked data availability at all 37 properties, then investigated 10 selected sites in depth. The ten were chosen for concrete operating/project records, decision-changing risks or distinct engineering paths; they are not a qualified Top 10. New records document what was obtained, what is missing, who holds it and how to request it. No owner outreach, site visit, utility application or paid study was performed.
+Round four pursued the ten previous evidence priorities. It recovered Edmonds' original charging-design record, Colebrook funding/reporting requirements, a recent single-driver Austin observation, and current Georgia/Oregon conditional funding routes. None establishes a complete current paid-demand series, design-matched quote or firm incremental utility capacity/date. The other 27 retain earlier records. [Read the evidence recovery and decision audit](docs/EVIDENCE-RECOVERY.md).
 
-The new investigation identified important limits: Medford's earlier proposed charging corridor lost its grant agreement; Republic has an official cleanup record; Longview's public estimator excludes non-residential work. Historical charging equipment and supply records improve the engineering context at some sites, but do not establish spare expansion capacity. Full local paid-demand histories, complete scoped project costs and firm new-service commitments remain absent. See the [37-site availability and 10-site focused review](docs/FEASIBILITY-ROUND-3.md) for sources and exact limits.
+The review explains the universal stress failure: 37 addresses share only 14 distinct state-based main scenario sets. Common conservative revenue is $51,392/year, already below $60,000/year fixed costs before other expenses. This is a stress-case result, not evidence that all real sites lose money. New-build demand needs matched paid analogues and local capture/diversion validation; a station cannot supply its own pre-opening sales.
+
+Three completed California sites form a contractor-reported operational comparison, outside the candidate rankings. Their reliability and cost limitations remain explicit. No owner outreach, record request, utility application or paid study was performed.
 
 Both the network-value and investor lenses now require:
 
@@ -45,6 +47,6 @@ npm run check
 
 The app uses frozen public-source data and vendored Leaflet. Map tiles come from OpenStreetMap with attribution. It has no login, analytics, uploads or AI API calls, and uses no persistent application storage. The optional PDF generator uses ReportLab and a licensed local Unicode font.
 
-[Methodology](docs/METHODOLOGY.md) · [Economics](docs/ECONOMICS.md) · [Current feasibility review](docs/FEASIBILITY-ROUND-3.md) · [Earlier 37 reassessments](docs/SITE-REASSESSMENT.md) · [Earlier review](docs/REVIEW-ROUND-1.md) · [Data sources](docs/DATA-SOURCES.md) · [AI workflow](docs/AI-WORKFLOW.md) · [Update procedure](docs/UPDATING.md) · [Validation scope](docs/VALIDATION.md)
+[Methodology](docs/METHODOLOGY.md) · [Economics](docs/ECONOMICS.md) · [Current evidence recovery](docs/EVIDENCE-RECOVERY.md) · [Prior feasibility review](docs/FEASIBILITY-ROUND-3.md) · [Earlier 37 reassessments](docs/SITE-REASSESSMENT.md) · [Earlier review](docs/REVIEW-ROUND-1.md) · [Data sources](docs/DATA-SOURCES.md) · [AI workflow](docs/AI-WORKFLOW.md) · [Update procedure](docs/UPDATING.md) · [Validation scope](docs/VALIDATION.md)
 
 Original code and analysis are MIT licensed; third-party materials retain their own rights. This is independent research with no Tesla affiliation or endorsement.

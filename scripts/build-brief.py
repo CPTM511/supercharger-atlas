@@ -39,18 +39,8 @@ def scenario(c, key):
     o = c['economics']['scenarios'][key]['outputs']
     pay = f"{o['projectPaybackYears']:.2f}"+text(' yr', ' 年') if o['projectPaybackYears'] is not None else text('No recovery*', '期内未回本*')
     return p(pay+'<br/>'+cash(o['stabilizedFreeCash']))
-notes = {
- 'sprouts-suwanee':('Historic EA equipment/supply documented; transaction data absent.','取得历史EA设备及供电记录；缺交易数据。'),
- 'net-colebrook':('Battery-buffered charging; output rating is not grid import.','采用储能缓冲充电；输出功率不等于电网输入。'),
- 'net-greenville':('Grant files require telemetry and cost records; actual exports missing.','资助文件要求运营与成本记录；尚未取得实际数据。'),
- 'winco-edmonds':('Secondary advertised prices; paid volume and net prices missing.','取得次级挂牌价；缺付费订单与实际净价。'),
- 'net-machias':('Award address changed; cancellation cause still unresolved.','资助地址发生变更；取消原因仍未查实。'),
- 'net-republic':('Official cleanup record adds environmental cost uncertainty.','官方清理记录增加环境施工成本不确定性。'),
- 'winco-longview':('Public connection estimator excludes commercial projects.','公开接电估算器排除商业项目。'),
- 'winco-medford':('Earlier corridor grant cancelled; new agreement unverified.','原走廊资助协议已取消；未确认新协议。'),
- 'winco-brushprairie':('Conditional credit and utility process; no capacity/quote.','条件抵扣及电力流程明确；无容量承诺或报价。'),
- 'net-austin':('Legacy charging/project records; address and new scope need matching.','存在旧站项目记录；须匹配地址及新增范围。'),
-}
+notes = {x['id']: (x['headline']['en'], x['headline']['zh']) for x in data['acquisitionReview']['sites']}
+
 round3=json.loads((ROOT/'data/feasibility-round-3.json').read_text())
 selected=[next(c for c in data['candidates'] if c['id']==cid) for cid in round3['selection']['selectedIds']]
 out.parent.mkdir(parents=True, exist_ok=True)
@@ -62,7 +52,7 @@ for page in [1,2]:
     c.setFillColor(ink);c.setFont(FONT,18)
     c.drawString(margin,H-35,'CHARGE ATLAS / '+text('EVIDENCE' if page==1 else 'CONDITIONS','证据核查' if page==1 else '回本条件'))
     c.setFont(FONT,8);c.drawRightString(W-margin,H-33,f"{data['meta']['asOf']} | v{data['meta']['version']} | {page}/2")
-    lead=text('37 availability scans. 10 focused reviews. 0 qualified under either lens; all 37 pending. No threshold relaxed.','37处可获取性调查，10处重点核查。两个视角均0合格，37处仍待核；门槛不变。')
+    lead=text('37-site pool; 10 evidence follow-ups, 27 carried forward. 0 investment-ready does not mean no viable U.S. sites.','37处候选；本轮追查10处、沿用27处。0处达到投资条件，不代表美国无可行场地；门槛不变。')
     b=p('<b>'+lead+'</b>');_,bh=b.wrap(width,40);b.drawOn(c,margin,H-56-bh)
     policy=text('Base payback ≤6 years; conservative ≤8 years from first spend; base NPV ≥0 at 10% real over 10 operating years; positive conservative steady cash and all six evidence gates. Chosen policy, not Tesla or industry criteria.','基准回本≤6年，保守≤8年（从首次支出起）；10个运营年、10%实际折现率下基准NPV≥0；保守稳定现金为正，且六类证据齐全。这是选定政策，并非Tesla或行业标准。')
     b=p(policy,small);_,bh=b.wrap(width,40);b.drawOn(c,margin,H-77-bh)
