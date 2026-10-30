@@ -255,3 +255,17 @@ for(const x of [...Object.values(ra.scenarios),...ra.cpCases,...ra.energyCases,.
 console.log('One ronaldFocused property, five nearby comparators and eighteen conditional cases validated.');
 
 for(const c of ronald.comparables){const s=supply.stations.find(x=>x.id===c.afdcId);fail(s&&s.lat===c.lat&&s.lon===c.lon,'Comparator coordinate provenance');fail(Math.abs(haversineMiles(ronaldFocused[0],c)-c.miles)<.002,'Comparator distance mismatch');}
+
+const followup=JSON.parse(fs.readFileSync(new URL('../data/followup-priorities.json',import.meta.url)));
+assert.deepEqual(data.followupReview,followup,'Canonical follow-up data differs');
+fail(followup.records.length===10&&new Set(followup.records.map(r=>r.candidateId)).size===10,'Ten distinct follow-up properties required');
+for(const mode of ['combined','network','investor'])assert.deepEqual(followup.records.map(r=>r.ranks[mode]).sort((a,b)=>a-b),[1,2,3,4,5,6,7,8,9,10],'Within-ten rank coverage');
+for(const r of followup.records){
+ const c=data.candidates.find(c=>c.id===r.candidateId);assert.deepEqual(c?.followup,r,'Follow-up candidate mismatch');
+ for(const field of ['projectScope','reason','nextChecks','stopCondition'])fail(r[field].en&&r[field].zh,'Follow-up translation '+field);
+ for(const id of r.sourceIds)fail(sourceIds.has(id),'Unresolved follow-up source '+id);
+}
+fail(data.candidates.filter(c=>c.followup).length===10,'Extra follow-up membership');
+fail(data.candidates.every(c=>c.review.decision==='pending'&&c.ranks.network===null&&c.ranks.investor===null),'This priority release must not confer qualification');
+fail(staticHtml.includes('docs/FOLLOWUP-PRIORITIES.md')&&(staticHtml.match(/data-followup-id=/g)||[]).length===10,'Ten-site static snapshot required');
+console.log('Ten bilingual follow-up priorities reconciled; admission remains separate.');

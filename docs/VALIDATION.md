@@ -1,3 +1,23 @@
+# Validation — v0.10.0
+
+## Reviewed scope and conclusions
+
+This release publishes the approved ten-location follow-up queue, not new commercial evidence. The same ten have overall, network and third-party priorities, bilingual project scopes, reasons, next checks, stop conditions and retained source IDs. Network and investor orders are confined to that selected set within the existing 37-property pool. Existing expansion/recovery sites are explicitly distinguished from greenfield hypotheses. No new nationwide survey, paid transaction acquisition, binding quote or utility commitment is claimed.
+
+A separate baseline-comparison script, independent of the public builder, compared all prior fields for all 37 candidates, all source records, policy objects, evidence reviews, financial inputs and outputs against the saved v0.9 data. They are unchanged, apart from the explicit addition of follow-up records and release metadata. All ten rank triples match the user-approved review register. Qualified ranks remain null: 0 qualified / 37 pending / 0 rejected. The existing independent arithmetic checkers were rerun; the priority order cannot promote an investment.
+
+## Product and publication checks
+
+- All 37 targeted tests and data validation passed, including the distinction between investigation order and admission. All existing independent financial checks passed.
+- Browser readback verified ten complete overview rows, the three orderings, both explorer lenses, recovery-site detail navigation, English default, Chinese narrative, historical-filter exclusivity and comparison ranks. The browser CSV contains exactly ten records, aligned columns, all three priority fields and complete follow-up records.
+- At 390px the document remains 390px wide; the wide priority table scrolls inside its own container. The priority anchor is restored after interactive data renders. No console errors appeared in the exercised flows.
+- Both language PDFs have exactly two pages, match the current candidate-data hash and were visually checked on all four pages for glyphs, row boundaries and footer separation. The generated English fallback includes all ten without JavaScript.
+- The public diff contains product code, public research, checks and the two briefs. Private inquiry letters, acquisition/contact plans, CV/background and local review files remain outside the repository. No outreach, form submission or paid acquisition occurred.
+
+This is a single-agent review using separate baseline and arithmetic verification scripts, not a claim that another researcher independently obtained commercial evidence. Source records retain their original dates and limits; compilation correctness does not prove paid demand, site rights, grid capacity or returns. Deployment commit identity, CI and live files are checked after release.
+
+---
+
 # Validation — v0.9.0
 
 ## Focused assessment

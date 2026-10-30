@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.10.0 — Ten follow-up priorities (2026-10-30)
+
+- Publish the approved ten-location investigation queue, with separate overall, network and third-party priorities within the same ten.
+- Add bilingual scope, rationale, next checks, stop conditions and retained source references; keep expansion/recovery projects distinct from greenfield hypotheses.
+- Default the explorer to the current ten; separate historical five-site/ten-review filters; include current priorities in comparison, CSV, print and two-page EN/ZH briefs.
+- Preserve all 37 qualification decisions, financial calculations and evidence gates. No acquisition, outreach, paid service or qualification upgrade is claimed.
+- Generate the English report and non-JavaScript overview from canonical public data, with rank/scope consistency checks.
+
+
 ## v0.9.0 — 2026-10-30
 
 - Focused Ronald Reagan review of 59 daily sessions, 35 billed kWh/session, 150 kW 4CP and complete costs; five nearby operator configurations crosschecked without inventing paid histories.

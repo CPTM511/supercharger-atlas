@@ -1,6 +1,6 @@
 {
   "name": "supercharger-atlas",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "private": true,
   "type": "module",
   "description": "Evidence-led US Supercharger location screening, with separate network and investor perspectives",

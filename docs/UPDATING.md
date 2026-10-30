@@ -99,3 +99,10 @@ Independently recompute the changed cash flows, tariff transition, demand-transf
 Maintain bilingual source and scope records in `data/ronald-validation.json`. After earlier builders, run `node scripts/build-ronald-validation.mjs`, then `node scripts/build-static-snapshot.mjs`, rebuild both briefs, version assets and run `npm run check`. The focused builder stamps the current v0.9 version; do not run a historical builder afterward without rebuilding the focused layer.
 
 Preserve operator configuration versus paid-transaction distinctions, five-port versus four-post normalization, price-volume compatibility, annual 4CP averaging, separate monthly maxima and incomplete-cost boundaries. The continuous-cap energy check is not a queue simulation. Do not replace a missing operating series with check-in counts, spot availability or metropolitan modeled utilization. Cost registrations are not all-in invoices. Update qualified status only through the unchanged evidence and numeric gates after a separately reviewed evidence package.
+
+
+## Current ten-location follow-up priorities
+
+Maintain the approved public-only `data/followup-priorities.json` (EN/ZH). Network and third-party ranks are permutations within the same selected ten, not qualified investment ranks. Every record needs a project scope, rationale, next checks, downgrade/stop condition and resolvable retained sources. Never copy private acquisition plans or inquiry letters into the repository.
+
+Run `node scripts/build-followup.mjs` after any earlier data builders, then rebuild both PDF languages, `node scripts/build-static-snapshot.mjs`, `node scripts/version-assets.mjs`, and `npm run check`. The builder generates `docs/FOLLOWUP-PRIORITIES.md` and embeds the records without changing financial inputs, evidence admission or qualified ranks. Compare these fields against the pre-edit data separately. Check all three table orders, the two explorer lenses, historical-filter exclusivity, a recovery-site detail, translation, export and the public-file boundary before release. Publication requires the user's applicable authorization.

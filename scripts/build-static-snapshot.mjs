@@ -1,10 +1,12 @@
 import fs from 'node:fs';
 import {pathToFileURL} from 'node:url';
 import {renderRonaldOverview} from '../ronald-view.js';
+import {renderFollowupOverview} from '../followup-view.js';
 import {t,setLanguage} from '../i18n.js';
 const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export function renderStaticSnapshot(data,html) {
  const replace=(id,body)=>{const re=new RegExp(`(<([a-z]+)[^>]*\\bid="${id}"[^>]*>)[\\s\\S]*?</\\2>`);if(!re.test(html))throw new Error(`Missing snapshot target ${id}`);html=html.replace(re,(_,start,tag)=>start+body+`</${tag}>`);};
+ if(data.followupReview)replace('followup-audit',renderFollowupOverview(data,{e:escape,interactive:false}));
  const reviewed=data.localValidationReview;
  if(data.ronaldValidationReview){setLanguage('en');replace('ronald-audit',renderRonaldOverview(data.ronaldValidationReview,{t,e:value=>escape(value?.en??value)}).replace(/<button[^>]*data-hypothesis-select[^>]*>[\s\S]*?<\/button>/,''));}
  const count=mode=>data.candidates.filter(c=>c.review.decision==='qualified'&&Number.isInteger(c.ranks[mode])).length;

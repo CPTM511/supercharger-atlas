@@ -4,7 +4,17 @@
 
 [Open the product](https://cptm511.github.io/supercharger-atlas/) · [English research brief](downloads/charge-atlas-brief.pdf) · [Chinese research brief](downloads/charge-atlas-brief-zh.pdf)
 
-## Current conclusion — v0.9.0
+## Current conclusion — v0.10.0
+
+**Ten follow-up priorities, two perspectives, zero qualified investments.** This release turns the reviewed shortlist into a bilingual, source-linked investigation queue. The overall order is **Ronald Reagan, Puyallup, Elgin, Oregon City, Machias, Mansfield, Edmonds, Colebrook, Challis and Medford**. Network and third-party orders rank the **same selected ten**, drawn from the existing 37-property pool. They are investigation priorities, not investment return ranks or a claim of the best sites nationwide.
+
+[Open the ten-location table](https://cptm511.github.io/supercharger-atlas/#followup-audit) · [Read the rationale, exact addresses, both rankings and stop conditions](docs/FOLLOWUP-PRIORITIES.md) · [Canonical priority data](data/followup-priorities.json)
+
+Each location now has a project scope, reason to follow up, specific outstanding checks and a downgrade/stop condition. Edmonds is expansion/redesign only; Colebrook is recovery/upgrade only; Medford is canceled-project recovery/redesign only. The explorer defaults to these ten and orders them by the selected lens. Earlier five-site hypotheses and ten focused reviews remain separately labeled historical subsets.
+
+**Qualification and financial results are unchanged:** 0 qualified, 37 pending, 0 rejected. No paid-order history, complete matching quote or binding utility commitment was newly obtained in this release. All payback/NPV inputs and the joint downside/base gates are retained. No messages were sent, no paid service was used, and private correspondence/background remain outside the public repository.
+
+## Retained Ronald Reagan findings — v0.9 evidence
 
 **Ronald Reagan remains a conditional investigation, not an investment-ready project.** Five nearby operator locations now have verified public configurations, but none supplied a public historical paid-session or billed-energy series. The proposed 59 sessions/day, 35 billed kWh/session and 150 kW 4CP remain assumptions with different levels of support. All 37 candidate properties remain pending; zero are qualified and none is formally rejected. [Read the focused evidence, calculations and acquisition limits](docs/RONALD-VALIDATION.md).
 
@@ -37,6 +47,7 @@ These are explicit underwriting choices, **not an industry standard, Tesla inves
 
 ## What the product does
 
+- Sort the ten follow-up priorities by overall, network or third-party order, and inspect the scope, checks, source references and stop conditions for every location.
 - Inspect the focused Ronald Reagan demand, 4CP and complete-cost review, with nearby comparator limitations and conditional target tests.
 - Read a generated English research snapshot and report links even before interactive data loads.
 - Explore five field hypotheses with measured-aggregate versus vendor-projection distinctions, local counter-evidence and explicit verification conditions.

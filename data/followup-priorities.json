@@ -1,0 +1,433 @@
+{
+  "version": "0.10.0",
+  "asOf": "2026-10-30",
+  "baselineCommit": "7a996a6bdd4cd424d8bc5f443eb99fc96051a6ca",
+  "universe": 37,
+  "selectedCount": 10,
+  "method": {
+    "en": "Qualitative investigation priorities within the existing 37-property pool. The network and third-party orders rank the same selected ten. They are not return rankings, investment qualifications, measured probabilities or a nationwide optimum.",
+    "zh": "现有37址研究池内的定性调查优先级；网络和第三方顺序均在同一所选十址内排序。不是收益排名、投资合格名单、测量概率或全美最优结论。"
+  },
+  "boundary": {
+    "en": "All ten remain pending. No evidence gate, payback threshold, financial input or qualification decision changes in this release. Ronald retains the v0.9 conditional tests; no unsupported new payback estimates were created for the other nine.",
+    "zh": "十址均仍待核实。本版不改变证据门槛、回本阈值、财务输入或资格判断。Ronald保留v0.9条件测算，其他九址不新增缺乏依据的回本估计。"
+  },
+  "evidenceScope": {
+    "en": "Priorities approved October 30, 2026, using retained public evidence. Supply distances and record counts are from the October 29 snapshot, are straight-line rather than driving distances, and do not prove demand. This is not a new nationwide supply scan or ten completed commercial reviews.",
+    "zh": "优先级于2026年10月30日确认，依据保留公开证据。供给距离和记录数来自10月29日快照，距离为直线而非驾车距离，不能证明需求。本轮不是全国新普查或完成十址商业尽调。"
+  },
+  "records": [
+    {
+      "candidateId": "heb-ronaldreagan",
+      "ranks": {
+        "combined": 1,
+        "network": 4,
+        "investor": 1
+      },
+      "projectScope": {
+        "en": "New-build hypothesis",
+        "zh": "新建假设"
+      },
+      "reason": {
+        "en": "The most testable conditional model in this pool. Nearby comparisons and explicit demand, price, peak-control and cost sensitivities make the next evidence consequential. 59 paid sessions/day is still unverified.",
+        "zh": "本池中可检验性最强的条件模型。附近参照及明确的订单、价格、控峰和成本敏感度，使下一步证据能直接改变判断。59次付费充电/天仍未经证实。"
+      },
+      "nextChecks": {
+        "en": "Confirm owner/H-E-B parking authority; obtain price-matched paid transactions from nearby operators, PEC meter/tariff/capacity terms, Tesla control performance, and a complete matching EPC/connection/site quote.",
+        "zh": "确认业主/H-E-B停车授权；获取附近运营商与价格匹配的付费交易、PEC电表/费率/容量条款、Tesla控制性能及范围一致的完整EPC/接电/场地报价。"
+      },
+      "stopCondition": {
+        "en": "Do not upgrade if verified demand and complete costs fail the joint downside/base gates. A favorable base target alone is insufficient.",
+        "zh": "若已核实需求和完整成本仍不能通过保守/基准联合门槛，不升级。单独基准目标盈利不够。"
+      },
+      "sourceIds": [
+        "S0a6d1be",
+        "Sf63f4e0",
+        "S9d54d3c",
+        "S34231dc",
+        "S159f9da",
+        "S08c7bce",
+        "S03bb4d9",
+        "Sa4d2bc7",
+        "S07a8a61",
+        "TX8-WCAD",
+        "TX8-WCAD-POINT",
+        "TX8-HEB-RON",
+        "TX8-ALIAS",
+        "V8-TRAFFIC-246HP1483",
+        "TX8-heb-ronaldreagan-COOP_DIST",
+        "TX8-PEC",
+        "TX8-PEC-TARIFF",
+        "V8-RETAIL-REPORT",
+        "V8-CAMBRIDGE-OWNER",
+        "S53158f4",
+        "V9-DEMAND-HEB-TESLA",
+        "V9-DEMAND-PARKE-EVGO",
+        "V9-DEMAND-EVCHART",
+        "V9-PEC-TARIFF",
+        "V9-PEC-TRANSMISSION",
+        "V9-TESLA-S4B-CONTROL",
+        "COST9-TDLR-CEDAR",
+        "COST9-TDLR-GEORGETOWN",
+        "COST9-TDLR-DEFINITION",
+        "COST9-PEC-CIAC",
+        "V9-DEMAND-TOWN-TESLA",
+        "V9-DEMAND-700-EVGO",
+        "V9-DEMAND-WOLF-TESLA",
+        "V9-DEMAND-PAREN-Q3",
+        "V9-DEMAND-AUSTIN-UTILITY",
+        "V9-DEMAND-TESLA-US",
+        "V9-DEMAND-EVGO-Q2",
+        "COST9-TESLA-SCOPE",
+        "COST9-TCEQ-HEB",
+        "COST9-PEC-LOADFEE",
+        "COST9-TDLR-ABFEE",
+        "COST9-TDLR-EV",
+        "COST9-LEANDER-OLD",
+        "V9-DEMAND-PAREN-ACCESS"
+      ]
+    },
+    {
+      "candidateId": "winco-puyallup",
+      "ranks": {
+        "combined": 2,
+        "network": 5,
+        "investor": 2
+      },
+      "projectScope": {
+        "en": "New-build / phased-build hypothesis",
+        "zh": "新建/分期建设假设"
+      },
+      "reason": {
+        "en": "24-hour retail and a retained nearest-DCFC distance of 4.1 straight-line miles justify a bounded tariff/control and demand inquiry. Parcel and PSE evidence offer concrete next steps.",
+        "zh": "全天零售场景，保留快照最近DCFC直线距离4.1英里，值得定向核实费率、控峰及需求；地块与PSE资料提供了明确路径。"
+      },
+      "nextChecks": {
+        "en": "Confirm the PSE meter, eligible tariff, actual program availability and peak-control design; then test paid demand and full costs for a smaller phased project.",
+        "zh": "确认PSE电表、适用费率、真实项目名额和控峰设计；再检验较小分期项目的付费需求及完整成本。"
+      },
+      "stopCondition": {
+        "en": "Ordinary tariff economics may fail. Do not assume preferential electricity or maximum rebates; pause paid design if the complete bill and paid demand fail the unchanged gates.",
+        "zh": "普通费率可能使经济性失败。不得默认优惠电价或最高补贴；若完整账单与付费需求不能支持原门槛，暂停付费设计。"
+      },
+      "sourceIds": [
+        "S5d60f40",
+        "S4961943",
+        "S12c398d",
+        "Sfbe3fc0",
+        "S9d54d3c",
+        "S34231dc",
+        "S159f9da",
+        "S01b0b80",
+        "S3b4e7ed",
+        "Sa4d2bc7",
+        "S07a8a61",
+        "v8-soundtransit-parcel",
+        "v8-pierce-winco-2021",
+        "v8-wa-ecology-facility",
+        "v8-pierce-utility",
+        "v8-pse-summary-oct2026",
+        "v8-pse-sch26",
+        "v8-wsdot-counts",
+        "v8-wsdot-sections",
+        "v8-pse-sch558",
+        "v8-pse-public"
+      ]
+    },
+    {
+      "candidateId": "heb-elgin",
+      "ranks": {
+        "combined": 3,
+        "network": 2,
+        "investor": 5
+      },
+      "projectScope": {
+        "en": "New-build corridor hypothesis",
+        "zh": "走廊新建假设"
+      },
+      "reason": {
+        "en": "US 290 corridor: one DCFC record within ten miles in the retained supply snapshot. Potential incremental network value merits an access and utility check.",
+        "zh": "US290走廊：保留供给快照十英里内一条DCFC记录，潜在网络增量值得先查通行和供电。"
+      },
+      "nextChecks": {
+        "en": "Identify the actual Oncor/Bluebonnet meter; resolve highway right-of-way and driveway plans before estimating passing-EV capture, paid volume and connection cost.",
+        "zh": "确认实际Oncor/Bluebonnet电表；先解决道路征地和出入口规划，再估计过境EV捕获、付费量和接电成本。"
+      },
+      "stopCondition": {
+        "en": "Downgrade if access is impaired or supply removes the incremental need. Do not transfer PEC tariffs to this property.",
+        "zh": "若出入口受损或供给消除增量需求则降级；不能把PEC费率套用到本址。"
+      },
+      "sourceIds": [
+        "S90289e4",
+        "Sf63f4e0",
+        "S9d54d3c",
+        "S34231dc",
+        "S159f9da",
+        "S2c4639c",
+        "Sb57f463",
+        "Sa4d2bc7",
+        "S07a8a61",
+        "V8-TRAFFIC-11H88",
+        "TX8-heb-elgin-COOP_DIST",
+        "TX8-heb-elgin-IOU",
+        "TX8-HEB-ELGIN",
+        "TX8-CAPMETRO",
+        "TX8-ELGIN-ROAD",
+        "TX8-ELGIN-NOTICE",
+        "TX8-ELGIN-SCHEDULE"
+      ]
+    },
+    {
+      "candidateId": "winco-oregoncity",
+      "ranks": {
+        "combined": 4,
+        "network": 7,
+        "investor": 3
+      },
+      "projectScope": {
+        "en": "New-build hypothesis",
+        "zh": "新建假设"
+      },
+      "reason": {
+        "en": "The retained nearest DCFC is 4.2 straight-line miles away. AMCAP’s May 2026 site plan provides a specific parking/management discussion basis, not granted site rights.",
+        "zh": "保留快照最近DCFC直线距离4.2英里。AMCAP的2026年5月场地图提供停车和管理方讨论基础，但不代表已获场地权利。"
+      },
+      "nextChecks": {
+        "en": "Confirm AMCAP/WinCo parking authority and the actual meter; obtain utility capacity, time-of-use/demand billing and full construction scope, then validate paid demand.",
+        "zh": "确认AMCAP/WinCo停车授权和实际电表；获取容量、分时/需量电费及完整建设范围，再验证付费需求。"
+      },
+      "stopCondition": {
+        "en": "Marketing traffic is not charging orders. Exclude unawarded PGE support; stop if rights or the complete verified case cannot support the joint gates.",
+        "zh": "营销车流不是充电订单。排除未获批PGE支持；若权利或完整已核实方案不能支持联合门槛则暂停。"
+      },
+      "sourceIds": [
+        "S5d60f40",
+        "Se7012d3",
+        "Sa533d6e",
+        "S17f1b40",
+        "S9d54d3c",
+        "S34231dc",
+        "S159f9da",
+        "S0d476d6",
+        "Scdc9035",
+        "Sa4d2bc7",
+        "S07a8a61",
+        "V3-0fa39ec4"
+      ]
+    },
+    {
+      "candidateId": "net-machias",
+      "ranks": {
+        "combined": 5,
+        "network": 3,
+        "investor": 7
+      },
+      "projectScope": {
+        "en": "Canceled-project restart hypothesis",
+        "zh": "已取消项目重启假设"
+      },
+      "reason": {
+        "en": "A canceled same-address project and a current Phase 12 town-eligible RFP make restart and equipment eligibility decisive questions. No site award or Tesla compatibility has been established.",
+        "zh": "同址项目曾取消，当前Phase12 RFP包含Machias，重启与设备资格是关键问题；尚未证实本址获奖或Tesla兼容性。"
+      },
+      "nextChecks": {
+        "en": "Ask Hannaford/the prior operator and Efficiency Maine to resolve cancellation, existing rights, Tesla hardware/protocol compliance and reimbursement conditions. Published deadline: April 30, 2027, 23:59 Eastern.",
+        "zh": "向Hannaford/原运营方及Efficiency Maine核实取消原因、现有权利、Tesla硬件/协议合规和报销条件。公布截止：2027年4月30日23:59美东时间。"
+      },
+      "stopCondition": {
+        "en": "No compliant Tesla route means no Tesla Supercharger recommendation; a generic DCFC award is not interchangeable. Unawarded support is sensitivity only.",
+        "zh": "没有合规Tesla路径就不能推荐为Tesla超充；通用DCFC资助不可混用。未获批支持仅作敏感度分析。"
+      },
+      "sourceIds": [
+        "Se5435e8",
+        "S04585c7",
+        "Se1659ee",
+        "S9d54d3c",
+        "S34231dc",
+        "Se943297",
+        "S3586274",
+        "Sa4d2bc7",
+        "S07a8a61",
+        "V6-62c9da8fe9",
+        "V6-c2d613145e"
+      ]
+    },
+    {
+      "candidateId": "heb-mansfield",
+      "ranks": {
+        "combined": 6,
+        "network": 8,
+        "investor": 4
+      },
+      "projectScope": {
+        "en": "New-build hypothesis; competition first",
+        "zh": "新建假设；先查竞争"
+      },
+      "reason": {
+        "en": "A named property filing and utility route make follow-up actionable. The nearby 1715 E Broad charging project is a potentially decisive counterexample to the early network thesis.",
+        "zh": "具名业主申报和供电路径使跟进可执行；附近1715 E Broad充电项目可能直接推翻早期网络假设。"
+      },
+      "nextChecks": {
+        "en": "Verify current operation, power, pricing and queues at 1715 E Broad before H-E-B/Oncor design work. It is across from 1670 E Broad, not the same parcel. Obtain actual meter and connection terms.",
+        "zh": "先核实1715 E Broad的当前运营、功率、价格和排队，再做H-E-B/Oncor设计。它与1670 E Broad在不同地块；获取实际电表及接电条款。"
+      },
+      "stopCondition": {
+        "en": "Downgrade if nearby supply meets demand without demonstrated overflow. Gas-generator nameplate power does not prove spare charging capacity.",
+        "zh": "若邻近供给已满足需求且无溢出证据则降级。燃气发电铭牌功率不能证明充电可用容量。"
+      },
+      "sourceIds": [
+        "Sbcf70c2",
+        "Sf4d7056",
+        "Sf63f4e0",
+        "Sb1990ea",
+        "Sb0c435c",
+        "S9d54d3c",
+        "S34231dc",
+        "S159f9da",
+        "Sb6a1696",
+        "Sca0ee97",
+        "Sa4d2bc7",
+        "S07a8a61",
+        "S8a89182",
+        "V3-615ecd89"
+      ]
+    },
+    {
+      "candidateId": "winco-edmonds",
+      "ranks": {
+        "combined": 7,
+        "network": 9,
+        "investor": 6
+      },
+      "projectScope": {
+        "en": "Expansion / redesign only",
+        "zh": "仅扩容/改造"
+      },
+      "reason": {
+        "en": "An existing EVgo operator and historical charging plans create identifiable routes to throughput, asset and rights evidence. This is an incremental project, not an empty parking lot.",
+        "zh": "已有EVgo运营商与历史充电图纸，能明确追查吞吐、资产和权利。本址是增量项目，不能当成空白停车场。"
+      },
+      "nextChecks": {
+        "en": "Confirm WinCo/EVgo exclusivity and expansion rights, incremental paid demand, reusable asset condition and a complete incremental investment quote.",
+        "zh": "确认WinCo/EVgo排他和扩容权利、增量付费需求、可复用资产状态及完整增量投资报价。"
+      },
+      "stopCondition": {
+        "en": "Pause without expansion rights or new demand. Use incremental cash flows; existing station revenue cannot all be credited to new investment.",
+        "zh": "没有扩容权或新增需求则暂停。使用增量现金流，不能把既有站点全部收入归到新增投资。"
+      },
+      "sourceIds": [
+        "S9b325e2",
+        "Sbd99512",
+        "S12c398d",
+        "S9d54d3c",
+        "S34231dc",
+        "S159f9da",
+        "V8-SNOPUD-COMMERCIAL"
+      ]
+    },
+    {
+      "candidateId": "net-colebrook",
+      "ranks": {
+        "combined": 8,
+        "network": 6,
+        "investor": 8
+      },
+      "projectScope": {
+        "en": "Recovery / upgrade only",
+        "zh": "仅恢复/升级"
+      },
+      "reason": {
+        "en": "NHEC’s historical announcement names ReVision Energy and a battery-integrated charger, providing a route to operating and meter records. Current availability remains unresolved.",
+        "zh": "NHEC历史公告具名ReVision Energy及储能快充，提供运营和电表记录追查路径；当前可用状态仍待确认。"
+      },
+      "nextChecks": {
+        "en": "Request current status, downtime cause, paid logs, battery/meter intervals, asset/data rights and replacement costs from ReVision, the host and NHEC.",
+        "zh": "向ReVision、物业和NHEC索取当前状态、停机原因、付费记录、储能/电表时序、资产/数据权及替换成本。"
+      },
+      "stopCondition": {
+        "en": "An installation announcement is not uptime evidence. Without a lawful takeover/cooperation route, retain as a comparator rather than a development site.",
+        "zh": "安装公告不证明当前正常运营。没有合法接管/合作路径，则仅作参照，不继续开发。"
+      },
+      "sourceIds": [
+        "S90a8922",
+        "S9ebd477",
+        "S49ab815",
+        "S3fdc09c",
+        "S9d54d3c",
+        "S34231dc",
+        "V4-29078c937"
+      ]
+    },
+    {
+      "candidateId": "net-challis",
+      "ranks": {
+        "combined": 9,
+        "network": 1,
+        "investor": 10
+      },
+      "projectScope": {
+        "en": "New-build corridor hypothesis",
+        "zh": "走廊新建假设"
+      },
+      "reason": {
+        "en": "US 93 retail node with a retained nearest-DCFC gap of 67.7 straight-line miles. Network coverage is a stronger hypothesis than investment returns; merchant address evidence exists.",
+        "zh": "US93零售节点，保留快照最近DCFC直线距离67.7英里。网络覆盖假设强于收益证据，已有经营者地址资料。"
+      },
+      "nextChecks": {
+        "en": "Reconcile the street address, map entrance and parcel; verify 24-hour parking, actual utility, year-round passing EVs, winter paid demand and connection costs.",
+        "zh": "核对街道地址、地图入口和地块；确认全天停车、实际供电商、全年过境EV、冬季付费需求及接电成本。"
+      },
+      "stopCondition": {
+        "en": "A large gap is not paid demand. Pause if seasonal demand and grid costs cannot satisfy the same investment gates; network priority grants no exemption.",
+        "zh": "大供给缺口不是付费需求。低季需求与接电成本不能满足同一投资门槛则暂停；网络优先级不构成豁免。"
+      },
+      "sourceIds": [
+        "S7ddc6c8",
+        "S236de0a",
+        "S7cfdba7",
+        "S308082a",
+        "S096622b",
+        "S9d54d3c",
+        "S34231dc",
+        "Sc5c7981",
+        "S2e0f5fd",
+        "Sa4d2bc7",
+        "S07a8a61"
+      ]
+    },
+    {
+      "candidateId": "winco-medford",
+      "ranks": {
+        "combined": 10,
+        "network": 10,
+        "investor": 9
+      },
+      "projectScope": {
+        "en": "Canceled-project recovery / redesign only",
+        "zh": "仅已取消项目恢复/重设计"
+      },
+      "reason": {
+        "en": "Cancellation records and a Pacific Power planning/upgrade route justify checking asset reuse. Nearby DCFC supply about 0.2 straight-line miles away limits the incremental thesis.",
+        "zh": "取消档案及Pacific Power规划/升级路径值得查资产复用；约0.2英里直线距离的DCFC供给限制增量假设。"
+      },
+      "nextChecks": {
+        "en": "Resolve cancellation causes, existing rights, reusable civil/electrical works, Tesla eligibility and complete incremental costs before evaluating a restart.",
+        "zh": "先明确取消原因、现有权利、可复用土建/电气工程、Tesla资格及完整增量成本，再评估重启。"
+      },
+      "stopCondition": {
+        "en": "Do not present this as an ordinary greenfield recommendation while cancellation, rights and incremental demand remain unresolved.",
+        "zh": "取消原因、权利和增量需求未解决前，不得作为普通新建推荐。"
+      },
+      "sourceIds": [
+        "S5d60f40",
+        "S159097e",
+        "Sa533d6e",
+        "S9d54d3c",
+        "S34231dc",
+        "S159f9da",
+        "V8-PACIFIC-REBATE",
+        "V8-PACIFIC-ELIGIBLE"
+      ]
+    }
+  ]
+}
