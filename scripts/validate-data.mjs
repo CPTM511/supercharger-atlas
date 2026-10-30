@@ -241,3 +241,17 @@ assert.equal(staticHtml,renderStaticSnapshot(data,staticHtml),'Static published 
 fail(!/<span id="(?:network|investor|pool)-count"[^>]*>—/.test(staticHtml),'Static count placeholder must not hide published decision');
 fail(staticHtml.includes('docs/LOCAL-VALIDATION.md')&&staticHtml.includes('docs/INCENTIVES-AND-OWNERSHIP.md'),'Static report links missing');
 console.log('Five local evidence records, four tariff profiles, bilingual bounds and non-JavaScript snapshot reconciled.');
+
+const ronald=JSON.parse(fs.readFileSync(new URL('../data/ronald-validation.json',import.meta.url)));
+assert.deepEqual(data.ronaldValidationReview,ronald,'Focused canonical input mismatch');
+const ronaldFocused=data.candidates.filter(c=>c.ronaldValidation);fail(ronaldFocused.length===1&&ronaldFocused[0].id==='heb-ronaldreagan','Focused scope mismatch');
+const {analysis:ra,...rr}=ronaldFocused[0].ronaldValidation;assert.deepEqual(rr,ronald,'Focused candidate record mismatch');
+fail(ra.evidenceAdmitted===false&&ra.hurdle.passed===false,'Unverified target cannot confer admission');
+fail(ronald.comparables.length===5,'Expected five explicitly bounded local comparators');
+for(const field of ['verdict','scope','boundary','comparisonMethod','energyMethod','financialMethod','sensitivityMethod','costMethod','next'])fail(ronald[field].en&&ronald[field].zh,'Focused bilingual narrative '+field);
+for(const items of [ronald.assessments,ronald.comparables,ronald.crosschecks,ronald.costLedger])for(const x of items)for(const id of x.sourceIds)fail(sourceIds.has(id),'Unresolved ronaldFocused source '+id);
+fail(ra.cpCases.length===4&&ra.energyCases.length===2&&ra.costCases.length===3&&ra.priceCases.length===3&&ra.portCases.length===2,'Focused scenario coverage');
+for(const x of [...Object.values(ra.scenarios),...ra.cpCases,...ra.energyCases,...ra.costCases,...ra.priceCases,...ra.portCases,ra.operatingHoursCase])fail(x.inputs.stalls===4&&x.inputs.operatingYears===10&&x.inputs.discountRate===.1,'Focused scope/policy mismatch');
+console.log('One ronaldFocused property, five nearby comparators and eighteen conditional cases validated.');
+
+for(const c of ronald.comparables){const s=supply.stations.find(x=>x.id===c.afdcId);fail(s&&s.lat===c.lat&&s.lon===c.lon,'Comparator coordinate provenance');fail(Math.abs(haversineMiles(ronaldFocused[0],c)-c.miles)<.002,'Comparator distance mismatch');}

@@ -4,27 +4,28 @@
 
 [Open the product](https://cptm511.github.io/supercharger-atlas/) · [English research brief](downloads/charge-atlas-brief.pdf) · [Chinese research brief](downloads/charge-atlas-brief-zh.pdf)
 
-## Current conclusion — v0.8.0
+## Current conclusion — v0.9.0
 
-**Five field-verification hypotheses, zero investment-ready projects.** New parcel, traffic, utility and retail-comparator evidence makes the hypotheses more specific. Current demand charges also weaken the earlier generic electricity-cost assumptions. All 37 original properties remain pending, not formally rejected. This does not establish that profitable US charging locations do not exist. [Read the latest evidence, calculations and remaining verification requirements](docs/LOCAL-VALIDATION.md).
+**Ronald Reagan remains a conditional investigation, not an investment-ready project.** Five nearby operator locations now have verified public configurations, but none supplied a public historical paid-session or billed-energy series. The proposed 59 sessions/day, 35 billed kWh/session and 150 kW 4CP remain assumptions with different levels of support. All 37 candidate properties remain pending; zero are qualified and none is formally rejected. [Read the focused evidence, calculations and acquisition limits](docs/RONALD-VALIDATION.md).
 
-| Property | Current investigation decision |
+| Assumption | Current assessment |
 |---|---|
-| H-E-B Ronald Reagan, TX | First conditional priority: parcel identity and the postal alias are better resolved. Confirm PEC service, actual peak/4CP demand and complete costs. |
-| WinCo Puyallup, WA | Downgraded from joint first priority: establish an affordable tariff and peak-control design before advancing the proposed build. |
-| H-E-B Elgin, TX | Conditional second priority: road context is clearer, but utility-provider overlap and parcel-level access remain unresolved. |
-| WinCo Edmonds, WA | Retain an expansion/redesign investigation; existing rights, assets and paid demand must be established. |
-| WinCo Medford, OR | Retain a recovery/redesign investigation; resolve operator rights, cancellation history and equipment-specific support eligibility. |
+| 59 paid sessions/site/day | Unverified high-demand target. The original five-port comparator implies 47.2 sessions/day on four posts at unchanged per-port throughput; maintaining 59 requires 25% more per port. |
+| 35 billed kWh/session | Plausible against a federal aggregate of about 37.8 kWh/session, but not established for nearby paid retail charging. |
+| 150 kW 4CP with a 600 kW monthly peak | Technically conceivable; no site-specific control agreement, fail-safe, dispatch record or cost was obtained. Continuous 150 kW limiting is a different operating design. |
+| $564,000 complete base capital cost | Still unquoted. Historical nearby construction filings omit or leave unresolved material scope; they cannot justify lowering the budget. |
 
-This is an evidence-acquisition order, not a predicted-return ranking or a national optimum. The new financial tests cover **two addresses and four tariff/load profiles**: two PEC profiles for Ronald Reagan, and ordinary PSE service versus a conditional trial profile for Puyallup. Published charges are combined with explicit assumed peaks. These are utility **subtotals**, with taxes, some fees and control costs unresolved; no service capacity or complete bill has been obtained. Positive optimistic or analogue-transfer cases do not pass the combined conservative/base and evidence gates.
+At the assumed $0.51/kWh realized price, 59 × 35 still produces a **4.67-year base-case payback** and approximately **+$348,000 NPV** under the 150 kW 4CP case. But the paired conservative case—41.3 sessions/day, higher costs and slower opening/ramp—does not recover capital within ten operating years. **The combined numeric hurdle still fails.** Holding the comparator's per-port throughput gives 47.2 × 35 and **6.07 years**: a positive NPV does not waive the six-year base payback rule.
 
-A Q4 2025 retail study reports median **42 sessions per station per day near grocery stores**, versus 9 overall. That is reported analytics across an external cohort, not 42 paid orders at any candidate, and the local paid fraction and session energy remain unknown. The selected 59-session comparator has five ports; transferring it to four posts is an additional assumption. These references support explicit demand tests, not a calibrated forecast or success probability.
+The main unresolved commercial question is paid energy **at the assumed price**, not 4CP alone. Under the same 59 × 35 target, a 600 kW 4CP still gives a conditional 5.29-year base payback. Conversely, 22 kWh/session gives 8.70 years, and an assumed $0.40/kWh realization gives 7.74 years. These one-variable tests are not a calibrated forecast, should not be combined as if all favorable assumptions were independently attainable, and exclude unpriced costs.
 
-The [v0.7 field hypotheses](docs/FIELD-HYPOTHESES.md) remain available as historical vendor-based reference: five address entries, three distinct vendor input sets, and four-post conservative/base/optimistic cases. Their 70%/100%/120% volume factors are assumptions, not statistical confidence bounds. The latest local review supersedes their investigation narrative where evidence conflicts. The original regional stress scenarios and all admission rules remain unchanged.
+A continuous 150 kW grid cap would require 16.20 equivalent full-power hours to serve the target's daily energy at the assumed 15% loss. If all sales occurred within the store's 17-hour opening window, this consumes 95.27% of theoretical energy capacity before arrival variability or queue effects. Written 24/7 charger access, an accepted control design and interval demand data remain missing.
 
-The [incentives and ownership review](docs/INCENTIVES-AND-OWNERSHIP.md) also remains available. New local checks distinguish conditional PSE support, an Edmonds Level 2 rebate that cannot be booked for DC fast charging, and Medford upgrade support with unresolved Tesla eligibility. An unawarded Puyallup reimbursement sensitivity preserves gross cost and payment timing; the booked award remains **$0**. The original stress model's shared conservative revenue of $51,392 remains below its $60,000 fixed-cost assumption; that does not establish real operating losses at 37 properties.
+The product now provides the five nearby comparisons, three target-centered scenarios, 4CP miss cases, session-energy and price sensitivities, port normalization, a complete-cost reconciliation and specific acquisition paths. Source facts, company claims, derived bounds and assumptions stay separate. No public estimate becomes a signed EPC quote or a utility capacity commitment.
 
-Public-source verification is not field verification, an engineering approval or a binding commercial offer. No owner outreach, record request, utility application or paid study was performed. Private background and raw research material remain outside this repository.
+The [v0.8 five-property local review](docs/LOCAL-VALIDATION.md), [v0.7 vendor-based field hypotheses](docs/FIELD-HYPOTHESES.md), and [incentives and ownership review](docs/INCENTIVES-AND-OWNERSHIP.md) remain available as earlier evidence. Puyallup still needs an affordable tariff/control design; Elgin needs utility and access resolution; Edmonds and Medford remain expansion/recovery investigations. They were not freshly reinvestigated in this focused round. No grant, credit or reuse saving has been admitted.
+
+Public-source verification is not field verification, engineering approval or a binding commercial offer. No owner/operator outreach, data purchase, utility application or paid study was performed. Private background and raw research remain outside this repository.
 
 Both the network-value and investor lenses now require:
 
@@ -36,6 +37,7 @@ These are explicit underwriting choices, **not an industry standard, Tesla inves
 
 ## What the product does
 
+- Inspect the focused Ronald Reagan demand, 4CP and complete-cost review, with nearby comparator limitations and conditional target tests.
 - Read a generated English research snapshot and report links even before interactive data loads.
 - Explore five field hypotheses with measured-aggregate versus vendor-projection distinctions, local counter-evidence and explicit verification conditions.
 - Review the latest five-property evidence update and four dated utility-subtotal profiles for two addresses, including external retail-transfer, construction-delay and conditional reimbursement tests.
@@ -63,6 +65,6 @@ npm run check
 
 The app uses frozen public-source data and vendored Leaflet. Map tiles come from OpenStreetMap with attribution. It has no login, analytics, uploads or AI API calls, and uses no persistent application storage. The optional PDF generator uses ReportLab and a licensed local Unicode font.
 
-[Latest local evidence and tests](docs/LOCAL-VALIDATION.md) · [Methodology](docs/METHODOLOGY.md) · [Economics](docs/ECONOMICS.md) · [Prior field hypotheses](docs/FIELD-HYPOTHESES.md) · [Support review](docs/INCENTIVES-AND-OWNERSHIP.md) · [Prior evidence recovery](docs/EVIDENCE-RECOVERY.md) · [Prior feasibility review](docs/FEASIBILITY-ROUND-3.md) · [Earlier 37 reassessments](docs/SITE-REASSESSMENT.md) · [Earlier review](docs/REVIEW-ROUND-1.md) · [Data sources](docs/DATA-SOURCES.md) · [AI workflow](docs/AI-WORKFLOW.md) · [Update procedure](docs/UPDATING.md) · [Validation scope](docs/VALIDATION.md)
+[Latest Ronald Reagan review](docs/RONALD-VALIDATION.md) · [Five-site local evidence](docs/LOCAL-VALIDATION.md) · [Methodology](docs/METHODOLOGY.md) · [Economics](docs/ECONOMICS.md) · [Prior field hypotheses](docs/FIELD-HYPOTHESES.md) · [Support review](docs/INCENTIVES-AND-OWNERSHIP.md) · [Prior evidence recovery](docs/EVIDENCE-RECOVERY.md) · [Prior feasibility review](docs/FEASIBILITY-ROUND-3.md) · [Earlier 37 reassessments](docs/SITE-REASSESSMENT.md) · [Earlier review](docs/REVIEW-ROUND-1.md) · [Data sources](docs/DATA-SOURCES.md) · [AI workflow](docs/AI-WORKFLOW.md) · [Update procedure](docs/UPDATING.md) · [Validation scope](docs/VALIDATION.md)
 
 Original code and analysis are MIT licensed; third-party materials retain their own rights. This is independent research with no Tesla affiliation or endorsement.

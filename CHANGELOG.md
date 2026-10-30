@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.9.0 — 2026-10-30
+
+- Focused Ronald Reagan review of 59 daily sessions, 35 billed kWh/session, 150 kW 4CP and complete costs; five nearby operator configurations crosschecked without inventing paid histories.
+- Added four-post normalization of the five-port 59-session reference (47.2/day), federal session-energy and regional utilization crosschecks with incompatible scope clearly identified.
+- Added paired target scenarios and explicit 4CP miss, time-shape, session-energy, price and omitted-capital sensitivities. Preserved original admission rules and all 37 original decisions and economics.
+- Reconciled historical nearby construction filings, excluded professional/land scope, current registration fees, utility CIAC and unpriced control obligations; no complete quote obtained.
+- Added English/Chinese focused product views, export data, generated English snapshot, report and updated briefs. Earlier five-property reviews remain dated historical reference.
+
+
 ## 0.8.0 — Local evidence and conditional investment tests
 
 - Revisit five field hypotheses with parcel/address, utility-territory, dated road-traffic, access and incentive evidence; preserve all 37 formal pending decisions and the investment policy.

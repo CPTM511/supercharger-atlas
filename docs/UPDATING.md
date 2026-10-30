@@ -92,3 +92,10 @@ npm run check
 The local-validation builder regenerates candidate review records, local tariff calculations and `docs/LOCAL-VALIDATION.md`, and stamps v0.8. The static-snapshot builder must keep the product page's non-JavaScript summary synchronized with the current version, counts and investigation decisions. Verify that static text is readable before JavaScript loads and that the interactive English/Chinese views agree after loading. Do not let a loading placeholder imply that the qualified count or current conclusion is unknown.
 
 Independently recompute the changed cash flows, tariff transition, demand-transfer units and joint base/downside boundaries. Review positive cases against omitted charges, control feasibility, complete design costs and remaining evidence gates. Run only applicable additional checks; do not claim source verification, field work or successful deployment from software tests. Review the final staged diff for private documents, raw research, local paths and unsupported statements before the authorized publication.
+
+
+## Focused Ronald Reagan review
+
+Maintain bilingual source and scope records in `data/ronald-validation.json`. After earlier builders, run `node scripts/build-ronald-validation.mjs`, then `node scripts/build-static-snapshot.mjs`, rebuild both briefs, version assets and run `npm run check`. The focused builder stamps the current v0.9 version; do not run a historical builder afterward without rebuilding the focused layer.
+
+Preserve operator configuration versus paid-transaction distinctions, five-port versus four-post normalization, price-volume compatibility, annual 4CP averaging, separate monthly maxima and incomplete-cost boundaries. The continuous-cap energy check is not a queue simulation. Do not replace a missing operating series with check-in counts, spot availability or metropolitan modeled utilization. Cost registrations are not all-in invoices. Update qualified status only through the unchanged evidence and numeric gates after a separately reviewed evidence package.

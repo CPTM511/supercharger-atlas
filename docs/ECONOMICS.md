@@ -140,3 +140,16 @@ The new joint energy boundary varies base energy and fixes downside energy at 70
 A separate two-year construction test changes only base delay. Puyallup's unawarded $160,000 capital sensitivity assumes reimbursement at the end of the first operating year, preserves gross costs and replacement, and requires sufficient qualifying costs plus an actual program offer. It is not stacked with a separate grid allowance or used to infer conservative-case success. Booked support remains zero.
 
 Public-source checks and arithmetic agreement do not establish field feasibility. No paid-demand series, complete design-matched quote, enforceable site rights or firm connection capacity/date was obtained. The two lenses retain their shared gates, and no formal admission changes follow from these tests.
+
+
+## v0.9 Ronald Reagan target validation
+
+`data/ronald-validation.json` records the source-linked evidence and explicit settings; `ronald-model.js` tests the proposed 59-session target without overwriting the original 37-property economics. The three cases use 70%/100%/120% of 59 sessions, 35 billed kWh/session, retained scenario costs/ramp/build assumptions and the PEC subtotal tariff. These are authored stresses, not local forecast percentiles. The target still fails the combined conservative/base hurdle.
+
+Five-port normalization preserves the external reference's sessions per port: 59 / 5 × 4 = 47.2. Keeping 59 on four posts instead requires 25% higher per-port throughput. Both are hypotheses. A price test matters because volume at $0.51/kWh has not been validated; changing only price assumes no volume response and is not an elasticity forecast.
+
+4CP uses the average of four summer coincident 15-minute demands; it is separate from the monthly 15-minute maximum. A miss example has one 600 kW interval and three 150 kW intervals, yielding 262.5 kW, billed at the current $6.11/kW/month during the following calendar year. Scenario rows repeat the assumed 4CP in subsequent modeled years; they do not imply a one-time miss persists forever. Current TCOS can change monthly. No control success probability is estimated. The startup calendar remains the explicitly assumed full first operating year on energy-based TCOS.
+
+The continuous 150 kW energy-capacity check is an engineering bound, not the modeled 600 kW monthly-peak/targeted-4CP dispatch profile. The 17-hour TOU case redistributes the same daily energy uniformly from 06:00 to 23:00; it does not establish charger access or customer arrival shape. Lower 4CP may require curtailment, lost sales, extra controls or storage; these costs remain unpriced.
+
+Additional capital sensitivities add $100,000 or $200,000 to gross base cost, retain replacement allowance on gross assets and assume unchanged construction duration. They are illustrative overruns, not quotations or exhaustive full-cost bounds. No support payment is included. Taxes, special utility obligations, rent/insurance sufficiency, control costs and restoration remain unresolved. See [the focused report](RONALD-VALIDATION.md) for current outcomes and acquisition limits.

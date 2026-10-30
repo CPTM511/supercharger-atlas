@@ -1,3 +1,31 @@
+# Validation — v0.9.0
+
+## Focused assessment
+
+Ronald Reagan remains a conditional investigation. Five nearby operator pages establish public locations and charger configurations, but not historical paid orders, billed energy or realized prices. The original five-port 59-session reference normalizes to 47.2 sessions on four posts; keeping 59 requires 25% greater per-port throughput. The current federal aggregate supports the external plausibility of 35 kWh, not a local paid mean. A 150 kW summer 4CP target remains an uncontracted control assumption, distinct from a permanent power cap. No complete design-matched EPC, utility contribution or lease quote was obtained.
+
+The focused 59 × 35 case gives a conditional 4.67-year base payback at $0.51/kWh, but its paired conservative case fails the unchanged eight-year rule. The formal 37-property inputs, economics, dispositions, rankings and investment policy match v0.8.0. Zero properties are qualified; all 37 remain pending and none is formally rejected. This review did not repeat the other four local investigations or the nationwide supply scan.
+
+## Independent calculations and source review
+
+A separate reviewer used 55-digit Python Decimal arithmetic without importing production model code. Eighteen cases and 180 annual cash-flow rows reconciled through 3,749 numerical comparisons; the maximum absolute difference was below $0.000000001. Independent checks include startup energy-based TCOS, later four-peak TCOS, grid losses, ramp, build-period cash, replacement reserve, NPV and lasting payback. The reproducible public checker is `scripts/verify-ronald.py`. A separate baseline audit checked preservation of all 37 original decisions and economics.
+
+Consequential source checks covered PEC's tariff and price page, operator location records, current EV-ChART totals, Paren's utilization definition, Tesla's published controls/program claims, TDLR construction registrations and the regulator-hosted nearby H-E-B plan. The TCEQ plan's relevant drawings were visually inspected. Review corrected the five-to-four-port denominator, distinguished a current public aggregate from an older search excerpt, separated construction filings from complete cost, and retained the difference between monthly demand peaks and summer 4CP. The independent final readback found no outstanding material arithmetic or source-scope defect within this focused review. It did not claim that every historical source was reopened twice.
+
+## Product checks
+
+- All 34 targeted tests and the original, tariff, inverse, incentive, hypothesis, local and Ronald independent checks passed. Structural validation reconciles canonical bilingual records, five comparisons, 18 conditional cases, source identifiers, PDF data hashes, versioned assets and the generated English snapshot.
+- The Ronald overview opens the correct property. New comparison, external crosscheck, cost, acquisition and sensitivity content was exercised; rendered numbers matched the reviewed data. Both research lenses retain zero qualified / 37 pending / zero rejected. English default and Chinese detail rendering were checked, with no console errors in the exercised flows.
+- At 390px, the document has no horizontal overflow; wide tables scroll internally. A two-column energy table was adjusted and visually rechecked so both labels and values remain visible. The desktop viewport was restored.
+- Both two-page English/Chinese briefs were rebuilt from the final data and all four pages visually reviewed. No clipped tables or missing Chinese glyphs were found. CSV includes the focused record and limits; no new downloaded-CSV byte inspection is claimed.
+- Public-file review excludes private background/CVs, raw captures, credentials and private local paths. README remains English. No operator/owner outreach, data purchase, utility application, contract or paid study was performed.
+
+These are conditional pre-tax, unlevered calculations, not observed returns or a probability forecast. The 17-hour energy calculation is a theoretical capacity bound, not queue simulation. A repeated four-peak miss case is a scenario for each established year, not one missed event persisting forever. Startup TCOS assumes a full initial operating year; actual calendar timing can differ. Quoted current TCOS is held fixed in the sensitivity despite potential monthly changes. Unpriced control, lost sales, tax, reactive-power, site and engineering items can reduce returns; the $94,000 allowance is unallocated and not proof that the costs are covered. Neither a positive base case nor an external average replaces the downside and evidence gates.
+
+Deployment identity and live-file hashes are verified separately after publishing. Earlier release history follows.
+
+---
+
 # Validation — v0.8.0
 
 ## Assessment

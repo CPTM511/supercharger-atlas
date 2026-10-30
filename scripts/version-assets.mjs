@@ -3,7 +3,7 @@ import {createHash} from 'node:crypto';
 const root=new URL('../',import.meta.url), read=p=>fs.readFileSync(new URL(p,root),'utf8'), write=(p,s)=>fs.writeFileSync(new URL(p,root),s);
 const hash=p=>createHash('sha256').update(read(p)).digest('hex').slice(0,12);
 let app=read('app.js');
-for(const file of ['i18n.js','model.js'])app=app.replaceAll(new RegExp(`\\./${file.replace('.','\\.')}(?:\\?v=[a-f0-9]+)?`, 'g'),`./${file}?v=${hash(file)}`);
+for(const file of ['i18n.js','model.js','ronald-view.js'])app=app.replaceAll(new RegExp(`\\./${file.replace('.','\\.')}(?:\\?v=[a-f0-9]+)?`, 'g'),`./${file}?v=${hash(file)}`);
 write('app.js',app);
 let html=read('index.html');
 for(const file of ['app.js','styles.css'])html=html.replaceAll(new RegExp(`\\./${file.replace('.','\\.')}(?:\\?v=[a-f0-9]+)?`, 'g'),`./${file}?v=${hash(file)}`);
