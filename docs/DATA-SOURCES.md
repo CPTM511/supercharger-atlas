@@ -15,6 +15,8 @@ The source ledger in `data/candidates.json` identifies what each source supports
 | [NCTCOG registration data](https://dfwcleancities.nctcog.org/registration-data-and-maps) | Dated Texas city adoption context | EV category is not assumed identical to BEV; city boundaries are not property catchment areas |
 | Filed utility tariffs / IRS | Cost structure and time-sensitive assumptions | Parcel eligibility, full bills and project-specific tax treatment require confirmation |
 
+Version 0.2 adds official EIA regional price benchmarks, investment-policy primary sources and a round-one review ledger. `data/economics-policy.json` records the benchmark period and explicitly chosen scenario parameters. `data/review-round.json` separates newly reviewed properties from carried-forward reserves. None of the new source counts implies a signed quote or independent confirmation.
+
 ## Frozen data
 
 `data/provenance.json` records query filters, retrieval time, row counts and hashes of the downloaded raw responses. `data/supply-snapshot.json` contains selected factual government fields, without station contact phone numbers. All 15,882 E records were parsed and the API total checked before calculations.

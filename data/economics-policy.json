@@ -1,0 +1,261 @@
+{
+  "schemaVersion": "0.2",
+  "asOf": "2026-10-30",
+  "currency": "constant 2026 USD",
+  "sourceIds": {
+    "ECO-EIA-YTD-202608": "S17ea0f4",
+    "ECO-EIA-MONTH-202608": "S4b3e5cc",
+    "ECO-EIA-METHOD": "S376a6e4",
+    "ECO-NREL-LIFE": "Sdf935be",
+    "ECO-JOINT-RETURN": "S5f82bd5",
+    "ECO-CBO-DISCOUNT": "S650298b",
+    "ECO-TESLA-BUSINESS": "S1a5269e",
+    "ECO-TESLA-ESTIMATOR": "S53158f4",
+    "ECO-TESLA-BILL": "S580a7b3",
+    "ECO-CLARK-TARIFF": "Sf8d02f7",
+    "ECO-SNOPUD-TARIFF": "S59e7979",
+    "ECO-IRS-30C": "Sa771996"
+  },
+  "stateElectricity": {
+    "NV": {
+      "state": "Nevada",
+      "commercialYtdUsdPerGridKwh": 0.0936,
+      "period": "2026-01 through 2026-08",
+      "publishedDate": "2026-10-23",
+      "kind": "official regional statistic; not a site tariff",
+      "sourceIds": [
+        "S17ea0f4",
+        "S4b3e5cc",
+        "S376a6e4"
+      ]
+    },
+    "ID": {
+      "state": "Idaho",
+      "commercialYtdUsdPerGridKwh": 0.0975,
+      "period": "2026-01 through 2026-08",
+      "publishedDate": "2026-10-23",
+      "kind": "official regional statistic; not a site tariff",
+      "sourceIds": [
+        "S17ea0f4",
+        "S4b3e5cc",
+        "S376a6e4"
+      ]
+    },
+    "OR": {
+      "state": "Oregon",
+      "commercialYtdUsdPerGridKwh": 0.1059,
+      "period": "2026-01 through 2026-08",
+      "publishedDate": "2026-10-23",
+      "kind": "official regional statistic; not a site tariff",
+      "sourceIds": [
+        "S17ea0f4",
+        "S4b3e5cc",
+        "S376a6e4"
+      ]
+    },
+    "UT": {
+      "state": "Utah",
+      "commercialYtdUsdPerGridKwh": 0.1038,
+      "period": "2026-01 through 2026-08",
+      "publishedDate": "2026-10-23",
+      "kind": "official regional statistic; not a site tariff",
+      "sourceIds": [
+        "S17ea0f4",
+        "S4b3e5cc",
+        "S376a6e4"
+      ]
+    },
+    "NM": {
+      "state": "New Mexico",
+      "commercialYtdUsdPerGridKwh": 0.1096,
+      "period": "2026-01 through 2026-08",
+      "publishedDate": "2026-10-23",
+      "kind": "official regional statistic; not a site tariff",
+      "sourceIds": [
+        "S17ea0f4",
+        "S4b3e5cc",
+        "S376a6e4"
+      ]
+    },
+    "ME": {
+      "state": "Maine",
+      "commercialYtdUsdPerGridKwh": 0.2283,
+      "period": "2026-01 through 2026-08",
+      "publishedDate": "2026-10-23",
+      "kind": "official regional statistic; not a site tariff",
+      "sourceIds": [
+        "S17ea0f4",
+        "S4b3e5cc",
+        "S376a6e4"
+      ]
+    },
+    "WV": {
+      "state": "West Virginia",
+      "commercialYtdUsdPerGridKwh": 0.1164,
+      "period": "2026-01 through 2026-08",
+      "publishedDate": "2026-10-23",
+      "kind": "official regional statistic; not a site tariff",
+      "sourceIds": [
+        "S17ea0f4",
+        "S4b3e5cc",
+        "S376a6e4"
+      ]
+    },
+    "AR": {
+      "state": "Arkansas",
+      "commercialYtdUsdPerGridKwh": 0.1155,
+      "period": "2026-01 through 2026-08",
+      "publishedDate": "2026-10-23",
+      "kind": "official regional statistic; not a site tariff",
+      "sourceIds": [
+        "S17ea0f4",
+        "S4b3e5cc",
+        "S376a6e4"
+      ]
+    },
+    "AZ": {
+      "state": "Arizona",
+      "commercialYtdUsdPerGridKwh": 0.1228,
+      "period": "2026-01 through 2026-08",
+      "publishedDate": "2026-10-23",
+      "kind": "official regional statistic; not a site tariff",
+      "sourceIds": [
+        "S17ea0f4",
+        "S4b3e5cc",
+        "S376a6e4"
+      ]
+    },
+    "TX": {
+      "state": "Texas",
+      "commercialYtdUsdPerGridKwh": 0.086,
+      "period": "2026-01 through 2026-08",
+      "publishedDate": "2026-10-23",
+      "kind": "official regional statistic; not a site tariff",
+      "sourceIds": [
+        "S17ea0f4",
+        "S4b3e5cc",
+        "S376a6e4"
+      ]
+    },
+    "WA": {
+      "state": "Washington",
+      "commercialYtdUsdPerGridKwh": 0.1186,
+      "period": "2026-01 through 2026-08",
+      "publishedDate": "2026-10-23",
+      "kind": "official regional statistic; not a site tariff",
+      "sourceIds": [
+        "S17ea0f4",
+        "S4b3e5cc",
+        "S376a6e4"
+      ]
+    },
+    "GA": {
+      "state": "Georgia",
+      "commercialYtdUsdPerGridKwh": 0.1201,
+      "period": "2026-01 through 2026-08",
+      "publishedDate": "2026-10-23",
+      "kind": "official regional statistic; not a site tariff",
+      "sourceIds": [
+        "S17ea0f4",
+        "S4b3e5cc",
+        "S376a6e4"
+      ]
+    },
+    "NC": {
+      "state": "North Carolina",
+      "commercialYtdUsdPerGridKwh": 0.1061,
+      "period": "2026-01 through 2026-08",
+      "publishedDate": "2026-10-23",
+      "kind": "official regional statistic; not a site tariff",
+      "sourceIds": [
+        "S17ea0f4",
+        "S4b3e5cc",
+        "S376a6e4"
+      ]
+    },
+    "NH": {
+      "state": "New Hampshire",
+      "commercialYtdUsdPerGridKwh": 0.214,
+      "period": "2026-01 through 2026-08",
+      "publishedDate": "2026-10-23",
+      "kind": "official regional statistic; not a site tariff",
+      "sourceIds": [
+        "S17ea0f4",
+        "S4b3e5cc",
+        "S376a6e4"
+      ]
+    }
+  },
+  "hardwareIllustration": {
+    "stalls": 8,
+    "hardwareUsd": 500000,
+    "installationUsdPerStall": 55000,
+    "scope": "one supplier estimator illustration, not any candidate quote",
+    "sourceId": "S53158f4"
+  },
+  "scenarioAnchors": {
+    "conservative": {
+      "sessionsPerStallDay": 2,
+      "kwhPerSession": 40,
+      "retailPerKwh": 0.4,
+      "electricityMultiplier": 2,
+      "unpricedCostAllowanceFraction": 0.35,
+      "fixedMonthly": 5000,
+      "lossFraction": 0.12,
+      "constructionYears": 1.5,
+      "firstYearRamp": 0.5,
+      "sustainingCapexFraction": 0.02,
+      "preOpeningMonthly": 5000,
+      "servicePerKwh": 0.1,
+      "discountRate": 0.1,
+      "operatingYears": 10
+    },
+    "base": {
+      "sessionsPerStallDay": 4,
+      "kwhPerSession": 40,
+      "retailPerKwh": 0.45,
+      "electricityMultiplier": 1.5,
+      "unpricedCostAllowanceFraction": 0.2,
+      "fixedMonthly": 2500,
+      "lossFraction": 0.08,
+      "constructionYears": 1,
+      "firstYearRamp": 0.75,
+      "sustainingCapexFraction": 0.015,
+      "preOpeningMonthly": 2500,
+      "servicePerKwh": 0.1,
+      "discountRate": 0.1,
+      "operatingYears": 10
+    },
+    "optimistic": {
+      "sessionsPerStallDay": 8,
+      "kwhPerSession": 40,
+      "retailPerKwh": 0.5,
+      "electricityMultiplier": 1,
+      "unpricedCostAllowanceFraction": 0.1,
+      "fixedMonthly": 1500,
+      "lossFraction": 0.05,
+      "constructionYears": 0.75,
+      "firstYearRamp": 1,
+      "sustainingCapexFraction": 0.01,
+      "preOpeningMonthly": 1500,
+      "servicePerKwh": 0.1,
+      "discountRate": 0.1,
+      "operatingYears": 10
+    }
+  },
+  "qualification": {
+    "basePaybackMaxYears": 6,
+    "conservativePaybackMaxYears": 8,
+    "discountRate": 0.1,
+    "operatingYears": 10,
+    "description": {
+      "en": "Both lenses require verified site rights, utility/cost/tariff, demand, permits/access and commercial terms. Base payback must be at most 6 years and conservative at most 8 years from first spend; base NPV at 10% real must be nonnegative across 10 operating years after construction, and conservative cash after replacement allowance positive. These are chosen underwriting rules, not industry standards or Tesla criteria. No target count can override them.",
+      "zh": "两个视角均须核实场地权利、电力/报价/费率、需求、许可/开放和商业条款。首笔支出起，基准回本≤6年、保守≤8年；建设后10个运营年按10%实际折现率计算的基准NPV≥0，保守情景扣更新预留后现金为正。这是明确选定的投资规则，不是行业标准或Tesla标准；不得为凑数放宽。"
+    },
+    "sourceIds": [
+      "Sdf935be",
+      "S5f82bd5",
+      "S650298b"
+    ]
+  }
+}

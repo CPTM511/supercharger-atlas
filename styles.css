@@ -679,6 +679,7 @@ input[type=checkbox] {
   padding:7px 9px!important;
 }
 .site-detail {
+  min-width:0;
   background:white;
   border:1px solid var(--line);
   border-top:3px solid var(--ink);
@@ -1669,7 +1670,7 @@ details[open] summary>span:last-child {
     margin-left:auto;
   }
   .workspace-grid {
-    grid-template-columns:1fr;
+    grid-template-columns:minmax(0,1fr);
   }
   .candidate-column {
     order:2;
@@ -1987,3 +1988,70 @@ details[open] summary>span:last-child {
 .sensitivity-table .positive { color:#2e796b; background:#f3f9f6; }
 @media(max-width:800px) { .map-topline { flex-wrap:wrap; gap:9px; } .map-topline > span { flex-wrap:wrap; } .map-actions { margin-left:auto; } .map-supply-legend { margin-left:0; } }
 @media(max-width:560px) { .scenario-presets { gap:6px; } .scenario-presets > span:first-child { width:100%; margin-bottom:3px; } .scenario-presets button { padding:7px 9px; font-size:10px; } .scenario-presets button small { font-size:8px; margin-left:4px; } .scenario-label { width:100%; margin-top:4px; } .sensitivity-panel .form-heading { display:block; } .sensitivity-panel h3 { margin-bottom:9px; font-size:13px; } .sensitivity-table th, .sensitivity-table td { padding:11px 13px; } .map-supply-legend { font-size:7px; } }
+
+/* v0.2: qualification, bilingual controls, and source-backed site scenarios. */
+.language-switch { display:flex; flex-shrink:0; padding:3px; border:1px solid var(--line); border-radius:5px; background:#fff; gap:2px; }
+.language-switch button { border:0; background:transparent; border-radius:3px; min-height:29px; padding:4px 9px; font-size:11px; color:var(--muted); }
+.language-switch button[aria-pressed=true] { color:#fff; background:var(--ink); }
+.site-header { gap:20px; }
+.site-header nav { gap:20px; margin-left:auto; }
+html[lang=en] h1 { font-size:clamp(36px, 4.1vw, 56px); line-height:1.16; }
+html[lang=en] .intro-main { max-width:760px; }
+html[lang=en] .intro-description { max-width:590px; }
+.qualification-notice { margin:-4px 0 20px; padding:16px 19px; border:1px solid #e3c994; border-left:4px solid var(--amber); background:#fff9ed; display:flex; align-items:center; gap:23px; }
+.qualification-notice > strong { font-size:13px; font-weight:700; min-width:210px; line-height:1.7; }
+.qualification-notice > p { color:#6f634b; font-size:11px; margin:0; line-height:1.7; }
+.status-field select { border:1px solid var(--line); padding:9px 30px 9px 12px; border-radius:4px; background:#fff; font-size:12px; max-width:240px; }
+.historical-priority { font-size:10px; color:var(--muted); margin:6px 0 9px; line-height:1.5; }
+.candidate-meta { gap:10px; flex-wrap:wrap; }
+.status-pending,.status-unknown,.status-unavailable { color:#8c6420; background:#fff2d7; }
+.status-rejected,.status-conflict { color:#9d493a; background:#fbeae4; }
+.status-qualified,.status-verified { color:#28695d; background:#e4f2ed; }
+.history-note { padding:11px 14px; border-left:3px solid #ccd4d5; background:#f3f5f2; display:grid; gap:4px; margin:18px 0; font-size:10px; color:var(--muted); line-height:1.65; }
+.history-note strong { color:var(--ink); font-size:11px; }
+.site-review,.site-economics { margin-top:26px; padding-top:22px; border-top:1px solid var(--line); }
+.detail-section-heading { display:flex; gap:12px; align-items:center; justify-content:space-between; margin-bottom:10px; }
+.detail-section-heading h4 { margin:0; font-size:14px; letter-spacing:-.015em; }
+.detail-section-heading .badge { flex-shrink:0; }
+.review-reason { padding:12px 14px; background:#fff9ed; border:1px solid #ecdbb7; font-size:11px; line-height:1.8; margin-bottom:10px; }
+.muted { color:var(--muted); }
+.review-table,.site-economics-table,.assumptions-table { width:100%; border-collapse:collapse; font-size:10px; line-height:1.65; font-variant-numeric:tabular-nums; }
+.review-table { min-width:535px; }
+.review-table th,.review-table td,.site-economics-table th,.site-economics-table td,.assumptions-table th,.assumptions-table td { text-align:left; vertical-align:top; padding:11px 10px; border-bottom:1px solid var(--line); }
+.review-table thead th,.site-economics-table thead th,.assumptions-table thead th { background:#edf1ee; color:var(--muted); font-weight:500; }
+.review-table tbody th { width:20%; font-weight:600; }
+.review-table td:nth-child(2) { width:14%; }
+.review-table td:last-child { width:17%; font-size:9px; overflow-wrap:anywhere; }
+.review-table .badge { white-space:normal; font-size:8px; }
+.site-economics-table { min-width:540px; table-layout:fixed; }
+.site-economics-table th:first-child { width:34%; }
+.site-economics-table tbody th { font-weight:500; }
+.site-economics-table td { text-align:right; }
+.site-economics-table thead th:not(:first-child) { text-align:right; font-weight:600; color:var(--ink); }
+.site-economics-table .table-group th { padding:11px 10px 7px; font-weight:700; color:#5e6d74; background:#f7f8f4; font-size:8px; letter-spacing:.1em; }
+.site-economics-table .key-output { background:#eef3f8; }
+.site-economics-table .key-output th,.site-economics-table .key-output td { font-weight:600; }
+.site-economics-table .negative { color:var(--danger); }
+.scenario-basis { padding:13px 15px; background:#edf2ff; color:#3b5487; border-left:3px solid #7495d4; font-size:11px; line-height:1.8; }
+.site-economics .table-scroll + p { margin-top:12px; font-size:10px; }
+.hurdle-result { margin:15px 0 0; padding:13px 15px; border:1px solid var(--line); background:#f4f6f3; }
+.hurdle-result > strong { display:block; font-size:11px; margin-bottom:6px; }
+.hurdle-result p { font-size:11px; margin:0 0 6px; }
+.hurdle-result small { display:block; font-size:10px; color:var(--muted); }
+.hurdle-result.scenario-fail { border-color:#ead1c8; background:#fff7f2; }
+.hurdle-result.scenario-pass { border-color:#c0dacf; background:#f0f7f3; }
+.assumptions-details { margin-top:14px; border:1px solid var(--line); }
+.assumptions-details summary { display:flex; align-items:center; justify-content:space-between; padding:13px 14px; font-size:11px; cursor:pointer; }
+.assumptions-table { min-width:520px; }
+.assumptions-table th { width:25%; font-weight:500; }
+.assumptions-table td:nth-child(2) { width:25%; }
+.assumptions-table .badge { margin-top:5px; }
+.comparison-caveat { margin:14px 0 0; font-size:11px; }
+#qualification-policy h4 { margin:0 0 8px; }
+#qualification-policy { margin-bottom:18px; }
+.source-record a,.source-record p,.detail-address,.source-link a { overflow-wrap:anywhere; }
+.source-note-label { display:block; font-size:9px; color:var(--muted); margin-bottom:3px; }
+@media(min-width:1101px) { .candidate-column { position:sticky; top:18px; } .candidate-list { max-height:min(960px, calc(100vh - 100px)); } }
+@media(max-width:1180px) { .site-header { flex-wrap:wrap; padding-top:15px; padding-bottom:15px; height:auto; } .site-header nav { gap:15px; } .site-header .edition { display:none; } }
+@media(max-width:800px) { .site-header { column-gap:14px; } .site-header nav { order:3; width:100%; justify-content:space-between; margin:0; } .language-switch { margin-left:auto; } .qualification-notice { align-items:flex-start; flex-direction:column; gap:6px; } .qualification-notice > strong { min-width:0; } .result-count { width:100%; margin-left:0; } html[lang=en] .intro-main { max-width:100%; } }
+@media(max-width:560px) { .site-header nav a { display:block; } .site-header nav a:first-child { display:none; } .site-header nav { gap:8px; } .site-header nav a { font-size:9px; } .site-header .button { font-size:9px; padding:6px 8px; } html[lang=en] h1 { font-size:37px; } .qualification-notice { padding:13px 14px; } .qualification-notice > strong { font-size:12px; } .search-field { max-width:none; flex-basis:100%; } .status-field { flex:1; } .status-field select { width:100%; max-width:none; font-size:11px; padding-right:23px; } .state-field select { font-size:11px; } .detail-section-heading { align-items:flex-start; } .detail-section-heading h4 { font-size:13px; } .history-note,.scenario-basis { padding:11px 12px; } .review-table,.site-economics-table,.assumptions-table { font-size:10px; } .review-table th,.review-table td,.site-economics-table th,.site-economics-table td,.assumptions-table th,.assumptions-table td { padding:9px 8px; } .candidate-list { max-height:500px; } .candidate-row { grid-template-columns:25px 1fr; } }

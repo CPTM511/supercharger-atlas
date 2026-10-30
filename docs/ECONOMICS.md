@@ -1,45 +1,72 @@
-# 投资情景的计量与边界
+# Economics and the shared investment gate
 
-应用中的默认值和三个预设均为可编辑示例，不代表候选物业的实绩、需求预测或供应商报价。所有金额为 USD。示例不假设利用率增长、补贴、广告或商户增购收入。
+## Policy and its basis
 
-设 n 为枪数，s 为每枪每个日历日的充电次数，e 为每次交付 kWh：
+Both lenses apply the same gate. Base project payback must be at most 6 years from first spend; conservative payback at most 8 years. Base NPV must be nonnegative at a chosen 10% real, unlevered, pre-income-tax hurdle, and conservative stabilized cash after the replacement allowance must be positive. The model includes 10 operating years after construction, with no residual value, grant or real growth. A shorter enforceable site or service term must shorten the horizon before admission.
+
+A historical [NREL EV technology-cost study](https://docs.nlr.gov/docs/fy18osti/70485.pdf), printed page 27/PDF page 39, used a 10-year EVSE lifetime and acknowledged uncertainty in actual life. This is a planning precedent, not a current V4 warranty or an observed replacement interval. The [Joint Office return white paper](https://driveelectric.gov/files/evse-rate-of-return.pdf) explains why costs, utilization, capital and pricing context affect returns; it does not prescribe a universal minimum investor return. NEVI return ceilings are not minimum merchant-investor hurdles.
+
+Ten equal annual cash receipts discounted at 10% have a present-value factor of 6.1446. Without construction or ramp, a 6-year cash recovery leaves modest headroom against that factor. Construction, ramp and replacement costs can erase it, so the separate NPV test is mandatory. The 8-year downside cap retains recovery before the end of the assumed asset horizon; downside NPV is displayed but is not required to clear 10%. Neither 6/8 years nor 10% is an empirical industry standard. They are transparent risk-policy choices and are not changed to obtain a desired number of winners.
+
+Constant 2026-dollar cash flows use a real discount rate, following the consistency principle discussed in [CBO's discount-rate guidance](https://www.cbo.gov/publication/60815). Ten percent is not a CBO-prescribed rate. Financing, income taxes, tax shields and terminal value are excluded; this is not equity IRR or a lender underwriting model.
+
+## Per-property scenarios and input fitness
+
+Every property has three calculations. The only consistently available regional price input is the [EIA January–August 2026 state commercial mean](https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_b), released October 23, 2026. It is a revenue/sales average, **not a charging tariff**. EIA's [technical notes](https://www.eia.gov/electricity/monthly/pdf/technotes.pdf) explain that revenues include demand, fixed and other charges. Adding a separate demand fee to this proxy would double count part of the bill.
+
+Conservative/base/optimistic electricity factors are 2×/1.5×/1× that mean. These are chosen sensitivities, not observed EV load-shape adjustments or statistical bounds. Actual low-utilization bills can exceed them. [Tesla's October 2026 utility-cost explanation](https://www.tesla.com/learn/higher-supercharger-site-utilization-increases-profits) explains why effective cost changes with usage and peak demand. This proxy cannot substitute for a complete tariff and measured load profile.
+
+Other inputs are explicit assumptions:
+
+| Input | Conservative | Base | Optimistic |
+|---|---:|---:|---:|
+| Stalls | 8 | 8 | 8 |
+| Stabilized sessions/stall/calendar day | 2 | 4 | 8 |
+| Delivered kWh/session | 40 | 40 | 40 |
+| Realized price/delivered kWh | $0.40 | $0.45 | $0.50 |
+| Service fee/delivered kWh | $0.10 | $0.10 | $0.10 |
+| Grid-to-delivered loss | 12% | 8% | 5% |
+| Initial capex | $1,269,000 | $1,128,000 | $1,034,000 |
+| Fixed cost per month, including construction | $5,000 | $2,500 | $1,500 |
+| Construction years | 1.5 | 1 | 0.75 |
+| First operating-year volume vs. stabilized | 50% | 75% | 100% |
+| Annual uncovered replacement allowance / capex | 2% | 1.5% | 1% |
+
+The capital anchor comes from one [Tesla public-estimator illustration](https://www.tesla.com/supercharger-for-business/get) inspected on October 30: $500,000 hardware plus eight times $55,000 installation, or $940,000 before this model's 35%/20%/10% unpriced-cost allowances. This was not a quote for any candidate. Allowances do not prove that land, grid, tax or construction scope is fully priced. The actual project can cost more than the conservative case.
+
+The service fee is also an illustration. [Tesla's business-model explanation](https://www.tesla.com/learn/supercharger-for-business) separates owner and Tesla responsibilities; included equipment maintenance and payment processing must not be charged again. The additional replacement allowance is a hypothetical deduction for uncovered site assets, not a second Tesla service charge or a verified replacement schedule. Its scope must be reconciled to the contract.
+
+No local session volume, capture rate or realized price has been measured. City registration totals are not converted into sales. Same-state properties share results intentionally. A uniquely precise output for each parcel would manufacture information that the evidence does not contain.
+
+## Calculation
 
 ```text
-Q = n × s × e × 365                    年交付电量
-Grid = Q / (1 - loss)                  年购电量
-Revenue = Q × realized_price
-Energy = Grid × energy_rate
-Service = Q × service_fee
-Demand = billing_peak_kW × monthly_demand_rate × 12
-Fixed = monthly_fixed_cost × 12
-Operating cash = Revenue - Energy - Service - Demand - Fixed
-Contribution/kWh = realized_price - energy_rate/(1-loss) - service_fee
-Break-even sessions/stall/day = (Demand+Fixed) / (365×n×e×Contribution/kWh)
-Simple payback = capex / Operating cash, only if Operating cash > 0
+Q = stalls × stabilized sessions/day × 365 × kWh/session
+Grid = Q / (1-loss)
+Revenue = Q × realized price
+Energy = Grid × all-in proxy rate
+Service = Q × service fee
+Fixed = monthly fixed cost × 12
+Steady operating cash = Revenue - Energy - Service - Fixed
+Replacement allowance = capex × annual allowance fraction
+Steady free cash = Steady operating cash - Replacement allowance
+Construction holding cost = monthly pre-opening cost × 12 × construction years
 ```
 
-边际贡献不为正时不存在有限经营盈亏平衡点；现金贡献不为正时不显示虚构的回收期。经营盈亏平衡不包含资本回收。简单回收期忽略资金时间价值和建设期，不是 IRR。
+Capex is paid at time zero. Construction holding cost is assumed paid through construction and discounted at its midpoint. There is no charging revenue before commissioning. First-year volume and variable costs use the ramp factor; fixed costs and replacement allowance are not ramped down. Each operating year's free cash is discounted at its year-end time after construction.
 
-## 两种电价口径
+Project payback is the first nonnegative cumulative cash balance, with uniform within-year cash accrual for interpolation. It includes initial capital, construction holding costs, ramp and the annual replacement allowance. If no recovery occurs within the modeled construction plus 10 operating years, the product shows no recovery within horizon. `capex / steady operating cash` remains only a simple calculator diagnostic; it does not determine qualification.
 
-**能量单价 + 单列需量费**适合初步拆分分析。最终账单还可能包含最低账单、分时/季节费率、需量回溯、固定费、功率因数、税费及附加项。示例中的计费峰值并非设备铭牌功率，也不是通过每年电量自动推算出的峰值。
+The inverse base-volume diagnostic changes only sessions while keeping the other base inputs fixed. It ignores physical throughput constraints and does not predict feasible demand. A nonpositive unit contribution has no finite demand solution. Very high required volume is a reason to investigate the assumptions, not evidence that such volume is achievable.
 
-**综合电价**必须关闭单列需量费，防止重复计算。供应商综合电价通常依赖其负荷结构；不能保持单位电价不变就推演极低利用率。模型把输入电价定义为每购入 kWh 的费用、平台费定义为每交付 kWh 的费用，实际合同必须确认计量点和分母。
+## Evidence overrides attractive scenarios
 
-## 官方估算器检查
+Even a numeric pass cannot qualify a property without verified site control, connection/capacity/tariff, scoped total costs, measured demand and attainable price, permits/access, and enforceable commercial terms. A signed lease must cover construction, recovery and an acceptable buffer; renewal is not assumed. Unknown evidence remains pending. An evidenced fatal conflict or a fully evidenced economic failure is excluded. Hypothetical failure alone is not proof of actual parcel insolvency.
 
-2026-10-30 读取 [Tesla 公开估算器](https://www.tesla.com/supercharger-for-business/get) 的一个商业地址示例：8 枪界面显示硬件估算 $500,000、安装 Medium 档 $55,000/枪及 $940,000 合计；平台费显示 $0.10/kWh，最终价格需询价。其电价说明包含需量费。界面还披露增长、损耗、零租金和税费排除假设。因此本产品没有把其展示的回收期或销量当作推荐物业收益。
+The network lens uses the same third-party charging-revenue model as requested. It does not claim to know Tesla's internal installation costs, strategic network value or cost of capital. An ordinary host-rent arrangement is a different business model.
 
-第三方自己定价、负责安装及现场维护的模式来自 [Tesla 官方项目说明](https://www.tesla.com/learn/supercharger-for-business)。最终成本分工以合同为准，包含在服务费中的设备维护和支付处理不能再完整重复计入。
+## Incentives and tariff examples
 
-## 费率原文的用途
+The [IRS current 30C page](https://www.irs.gov/credits-deductions/alternative-fuel-vehicle-refueling-property-credit) ends the stated in-service eligibility period on June 30, 2026. A new October 2026 project cannot simply assume the old credit. No incentive is counted here.
 
-[Snohomish PUD 2026 正式费率表](https://www.snopud.com/wp-content/uploads/2025/10/ElectricRates_2026.pdf) 的 Schedule 20EV（PDF 第 7–9 页）规定单独计量公共 EV 充电的适用条件。2026-04 起包含日固定费、首 100 kW 需量豁免、分段电量费和连接负载最低账单；到期安排也影响多年分析。不能只抽一个便宜的电量单价。
-
-[Clark Public Utilities 当前费率](https://www.clarkpublicutilities.com/about-cpu/public-documents/current-electric-water-rates/) 列出商用基本费、能量费与需量费。服务区域、次级/初级供电类别、转售许可、税费和接网条件仍须逐物业确认。本版本通用计算器没有声称完整实现这些正式账单。
-
-固定支出需要涵盖租金、保险、清洁、管理及适用维护。总投资需涵盖硬件、土建、接网、设计许可、土地相关成本、税费和预备金。模型未计所得税、融资、折旧、替换资本开支、施工延期和期末残值，亦未验证真实成交价格与利用率。
-
-## 补贴时点
-
-本版本补贴收入为零。[IRS 对 30C 的现行说明](https://www.irs.gov/credits-deductions/alternative-fuel-vehicle-refueling-property-credit)把适用投运时间列为 2023-01-01 至 2026-06-30。2026 年 10 月才进入选址的新项目不能直接套用旧版 30C 优惠。其他补贴也必须逐项目确认资格、资金可得性和合规成本，不能用来补足未经验证的经营需求。
+[Clark Public Utilities](https://www.clarkpublicutilities.com/about-cpu/public-documents/current-electric-water-rates/) and [Snohomish PUD's 2026 tariff](https://www.snopud.com/wp-content/uploads/2025/10/ElectricRates_2026.pdf) show why parcel eligibility, fixed charges, demand, minimum bills, resale permission and expiration matter. They were inspected as tariff examples, not assigned as verified service contracts to the candidates.

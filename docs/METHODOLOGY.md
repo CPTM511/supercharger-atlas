@@ -1,39 +1,36 @@
-# 选址方法与决策边界
+# Methodology and admission rules
 
-## 两个不同的目标
+Two lenses remain: network-service value and third-party investment conditions. Both now require the same evidence and investment gate. Network spacing alone cannot qualify a project that lacks supported economics.
 
-**网络视角**优先寻找 Tesla 覆盖的可解释增量：走廊衔接、区域服务与冗余。偏远地区的大距离缺口只支持进一步查路线和需求，不能自动证明值得投资。
+## What changed
 
-**投资视角**优先寻找可以尽快核清的商业条件：区域 BEV 基础、相邻供给、营业配套、电价结构和落地约束。第三方投资适用 Supercharger for Business 的商业模式；普通场地主申请 Host a Supercharger 并不自动获得充电收入。
+Version 0.1 ranked 20 conditional research priorities. Version 0.2 preserves those numbers as historical order and removes them from the qualified lists. Zero properties currently meet the evidence gate. The pending pool is not an approved Top 10.
 
-## 真实完成的工作
+Round one re-opened identified public sources for all 20 prior shortlist properties and three potential replacements. Fourteen other reserve records retain prior research and are labeled accordingly. Each reviewed property records what was checked, the finding, its scope, sources, access failures and the evidence still required. The same-date complete supply snapshots were reused and their hashes checked; a new review date is not a new inventory date.
 
-1. 阅读 Tesla 官方合作模式和估算器，并记录供应商估算的假设及计费口径。
-2. 分别从走廊服务节点与零售物业建立有目的的候选池；通过物业主站、地方政府和公开注册数据寻找证据。
-3. 下载 AFDC 全国公共直流快充 E（可用）记录；发现停运遗漏风险后另补 P（规划）、T（临时不可用）记录。
-4. 以 supercharge.info 的施工、许可、计划和投票记录发现管线风险；其社区身份与状态差异保留在产品中。
-5. 用物业公开定位或 Census 地址匹配定位。检查城市、道路方向与门牌；地址插值坐标不当作停车场边界。
-6. 计算大圆直线距离和 10 英里内公共 DCFC 记录数，逐址检查既有与潜在供给。
-7. 对每个候选写支持理由、最强反证、关键未知及淘汰条件，再分别确定尽调顺序。
-8. 用独立数据校验脚本重算距离与数量，测试经济模型的计量单位、损耗、负毛利、零销量和重复计费边界，并验证产品交互。
+## Evidence required before admission
 
-## 排序含义
+1. Enforceable rights to the parcel, stalls, equipment pad and access for an adequate term; exclusivity and termination understood.
+2. Serving utility, capacity, connection cost/timing, full tariff and load-shape applicability confirmed.
+3. Scoped equipment, civil/electrical, interconnection, commissioning, tax, lease and ongoing-cost evidence.
+4. Representative measured paying demand, realistic capture after competing/home charging, and attainable selling prices.
+5. Permit, parking/accessibility, entry/exit, environmental and physical constraints resolved.
+6. Enforceable supplier, operator, service and commercial terms with no duplicated costs.
 
-排名是研究判断，不是模型输出的成功概率。没有将缺失数据当作零，也没有给未拿到的接网容量或实测利用率编造分数。
+Unknown is not a pass. Public business operation does not establish lease rights; a nearby transformer is not spare capacity; a tariff table is not parcel eligibility; an absent permit result is not clearance. Without these inputs, three-scenario calculations remain a sensitivity exercise.
 
-先处理同址既有资产、明确施工/许可和地址不匹配等强反证，再比较供给增量及可核实的需求或运营条件。网络缺口、商业可行性和证据成熟度之间可能冲突，因此每个排名附有具体理由，不声称一套权重代表所有开发者。
+## Numerical rules and ranking
 
-候选池有抽样偏差：公开资料完善、地址容易核验的零售和走廊物业更容易入池。全国供给数据不等于全国地块穷尽搜索。未入选不意味着物业不适合；排名靠后的条件候选也不代表应该立即建设。
+The shared rules are defined in [economics](ECONOMICS.md): base project payback at most 6 years, conservative at most 8, nonnegative base NPV at 10% real and positive conservative free cash after the replacement allowance. Optimistic returns cannot rescue base or downside failure.
 
-## 容易导致错误结论的口径
+Only candidates passing evidence and numerical checks may receive current ranks. Each lens may contain zero to ten. An excluded candidate needs a supported reason; a failed scenario built on unverified inputs is not a finding that the actual property is unviable. Replacements face exactly the same gates. The three replacements checked this round also remain pending; no threshold was loosened.
 
-- **直线距离 ≠ 行车距离或路线缺口。** 山区、河流、轮渡、出入口和绕行都可能改变服务范围。
-- **站点记录 ≠ 充电枪数量 ≠ 可用高功率容量。** 多网络可共址；部分 DCFC 功率较低或连接器不适用。数据库 E 状态不等于本次现场充电成功。
-- **PLAN / VOTING ≠ 许可或开工。** 社区数据不是 Tesla 确认。许可和施工线索仍需在当地正式记录与 Tesla 最新信息中确认。
-- **州或城市 BEV 数量 ≠ 物业付费需求。** 住宅充电条件、过境比例、价格和真实停车行为仍未知。PHEV 不加入 BEV 直流需求代理。
-- **附近电力设施 ≠ 可接入容量。** 不以地图上的变电站、商业建筑或电线替代电力公司的书面容量与报价。
-- **店铺存在 ≠ 地主愿意出租。** 营业时间也不保证停车场可全天充电；停车权、租约限制、排他合作与可用车位必须核实。
+Within a future qualified set, the network lens compares incremental route coverage/redundancy and access; the investor lens compares evidenced returns, downside resilience and execution conditions. No weighted pseudo-score is assigned to unknown capacity or utilization.
 
-## 推进到真实项目的必要门槛
+## Data fitness
 
-先取得合法场地控制与明确运营窗口；按道路真实行程调查需求、竞争和停车行为；取得适用电价、接网容量和周期；取得包括土建、税费、预备金的安装报价；核对 Tesla 合同、计量与服务边界；再用保守需求和完整成本重新评估。当前研究没有完成这些商业及现场验证。
+AFDC E means an available database record, not a successful live charge. P/T records are inspected separately. Station records are not unique parcels, ports, compatible capacity or power actually delivered. Community PLAN/VOTING records are leads, not Tesla commitments or municipal permits. Distances are great-circle miles, not driving distance. Seasonal routes, water, road restrictions and access-side turns can change usefulness.
+
+City/state vehicle counts are regional context, not property catchments. Mixed EV totals are not pure BEV or DCFC-compatible counts. Nearby alternatives require diversion analysis before their demand can be added. Coordinates may be owner markers, street interpolation or secondary entries; none is an approved parking layout.
+
+The pool is purposively sampled toward visible retail and corridor properties. National station coverage does not establish exhaustive parcel optimization. This product does not claim that its pending properties are the best buildable sites in the United States.

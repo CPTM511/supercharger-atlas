@@ -1,14 +1,16 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
-import {haversineMiles} from '../model.js';
+import {haversineMiles, classifyCandidate, INVESTMENT_POLICY} from '../model.js';
 
 const data = JSON.parse(fs.readFileSync(new URL('../data/candidates.json', import.meta.url)));
 const supply = JSON.parse(fs.readFileSync(new URL('../data/supply-snapshot.json', import.meta.url)));
 const fail = (condition, message) => assert.ok(condition, message);
-const brief = fs.readFileSync(new URL('../downloads/charge-atlas-brief.pdf', import.meta.url));
 const dataHash = createHash('sha256').update(fs.readFileSync(new URL('../data/candidates.json', import.meta.url))).digest('hex');
-fail(brief.subarray(0,5).toString() === '%PDF-' && brief.includes(Buffer.from(`data-sha256=${dataHash}`)), 'PDF brief is stale: rebuild it from the current candidate data');
+for (const suffix of ['', '-zh']) {
+  const brief = fs.readFileSync(new URL(`../downloads/charge-atlas-brief${suffix}.pdf`, import.meta.url));
+  fail(brief.subarray(0,5).toString() === '%PDF-' && brief.includes(Buffer.from(`data-sha256=${dataHash}`)), `PDF brief ${suffix || 'en'} is stale: rebuild from current data`);
+}
 const sourceIds = new Set(data.sources.map(s => s.id));
 fail(sourceIds.size === data.sources.length, 'Source IDs must be unique');
 for (const s of data.sources) {
@@ -20,7 +22,9 @@ fail(new Set(data.candidates.map(s => s.id)).size === data.candidates.length, 'C
 fail(new Set(data.candidates.map(s => `${s.address}|${s.city}|${s.state}`.toLowerCase())).size === data.candidates.length, 'Duplicate property address');
 for (const mode of ['network', 'investor']) {
   const ranks = data.candidates.map(c => c.ranks?.[mode]).filter(Number.isInteger).sort((a,b) => a-b);
-  assert.deepEqual(ranks, [1,2,3,4,5,6,7,8,9,10], `Exactly one complete Top 10 required: ${mode}`);
+  fail(ranks.length <= 10, `At most ten qualified ranks: ${mode}`);
+  assert.deepEqual(ranks, Array.from({length:ranks.length},(_,i)=>i+1), `Qualified ranks must be consecutive: ${mode}`);
+  for (const c of data.candidates) if (c.ranks?.[mode] !== null) fail(c.review.decision === 'qualified' && c.economics.hurdle.passed, `Unqualified property ranked: ${c.id}`);
 }
 fail(supply.stations.length === supply.meta.totalResults, 'Supply download is truncated');
 fail(new Set(supply.stations.map(s => s.id)).size === supply.stations.length, 'Duplicate AFDC IDs');
@@ -53,5 +57,29 @@ for (const c of data.candidates) {
     if (nearest < .5) fail(/Tesla|特斯拉|超充/.test(c.counterargument), `Nearby Tesla conflict omitted: ${c.id}`);
   }
 }
-console.log(`Validated ${data.candidates.length} properties, two independent Top 10 lists, ${data.sources.length} source references and ${supply.stations.length} supply records.`);
+console.log(`Validated ${data.candidates.length} properties, hard-gated lists, ${data.sources.length} source references and ${supply.stations.length} supply records.`);
 console.log('Validation checks structure and reproducible calculations; it does not establish demand, land control, utility capacity or investment returns.');
+
+const round = JSON.parse(fs.readFileSync(new URL('../data/review-round.json', import.meta.url)));
+fail(round.reviewedIds.length === 23 && new Set(round.reviewedIds).size === 23, 'Review coverage mismatch');
+for (const c of data.candidates) {
+  const r = classifyCandidate({evidence:c.review.evidence,scenarios:c.economics.scenarios,fatalConflict:c.review.fatalConflict===true});
+  fail(r.decision===c.review.decision, `Evidence/numeric decision mismatch: ${c.id}`);
+  assert.deepEqual(r.hurdle.tests,c.economics.hurdle.tests, `Hurdle mismatch: ${c.id}`);
+  fail(c.review.round===1 ? round.reviewedIds.includes(c.id) : !round.reviewedIds.includes(c.id), `Review scope mismatch: ${c.id}`);
+  if (Object.values(c.previousRanks).some(Number.isInteger)) fail(c.review.round===1 && c.review.checks.length>=8, `Previous shortlist was not reviewed: ${c.id}`);
+  for (const q of c.review.checks) {
+    fail(q.finding.en && q.finding.zh && q.label.en && q.label.zh, `Missing bilingual review: ${c.id}`);
+    if (q.status==='verified') fail(q.sourceIds.length>0, `Verified check lacks evidence: ${c.id}`);
+    for (const id of q.sourceIds) fail(sourceIds.has(id), `Unresolved review source ${id}`);
+  }
+  for (const assumption of c.economics.assumptions) for (const id of assumption.sourceIds) fail(sourceIds.has(id), `Unresolved assumption source ${id}`);
+  fail(c.zh.facts.length===c.facts.length, `Fact translation alignment mismatch: ${c.id}`);
+}
+const hasChinese = /[\u4e00-\u9fff]/;
+for (const c of data.candidates) {
+  for (const field of ['counterargument','type','status','coordinateQuality']) fail(!hasChinese.test(c[field]), `Non-English canonical field ${c.id}/${field}`);
+  for (const text of [...Object.values(c.thesis),...Object.values(c.rankRationale),...c.unknowns,...c.killCriteria,...c.facts.map(f=>f.claim)]) fail(!hasChinese.test(text), `Non-English canonical analysis: ${c.id}`);
+}
+fail(!hasChinese.test(fs.readFileSync(new URL('../README.md',import.meta.url),'utf8')), 'GitHub homepage must be English');
+console.log(`Review coverage: ${round.reviewedIds.length} newly reviewed, ${data.candidates.length-round.reviewedIds.length} carried forward; qualified ${data.candidates.filter(c=>c.review.decision==='qualified').length}.`);

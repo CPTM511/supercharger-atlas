@@ -1,29 +1,21 @@
-# AI 工作方法
+# AI research and validation workflow
 
-这是实际工作方法的整理，不是私人对话记录。研究、计算和发布分工使不同证据可以互相检查。
+AI organizes public evidence, compares records, performs calculations, implements the product and checks consistency. Researchers select the decision objective and explicit risk policy. Property owners, utilities, contractors and authorities still control the facts needed for a real project. AI output does not replace their consent, capacity studies, quotes or permits.
 
-## 人与 AI 的责任
+This release used separate bounded work on investment evidence, property verification and bilingual presentation, followed by integration and independent calculation checks. The same upstream source repeated by several agents is one source, not corroboration.
 
-AI 负责公开来源检索、候选整理、状态比对、计算、产品实现和可重复校验；研究者负责目标、取舍和证据边界。真实项目仍需要物业方、电力公司、承包商及当地主管部门提供授权、报价、容量和许可等事实。AI 不能替代这些确认。
+## Reusable research prompts
 
-工作使用当前 Codex 会话的模型设置，未降档。没有以提示词宣称切换为某个未经独立确认的“最强模型”，也没有声称模型准确率得到量化证明。
+> Re-open the property and strongest counterevidence. Distinguish an existing asset, temporary outage, permit, construction, plan and voting lead. State exactly what was read and what remains unknown. A failed search does not establish absence.
 
-## 可复用的关键提示词
+> Set an explicit investment policy from primary-source context and transparent cash-flow logic. Do not call a chosen threshold an industry standard. Verify tariff units, demand-charge double counting, service coverage, construction timing and constant-dollar discounting.
 
-以下是实际研究指令的公开整理版，去除了会话和本地工作区信息。
+> For each scenario, trace inputs to observed regional data or explicit assumptions. Never convert a city EV count into site sales without capture evidence. Do not fabricate parcel-specific differences merely to make a comparison look precise.
 
-> 为美国 Tesla 网络寻找具体物业地址。逐项打开物业原始来源；核查现有、施工、许可和规划状态。给出推荐理由、最强反证及淘汰条件。不要把城市当地址，也不要把未查到当成不存在。
+> Apply the evidence gate independently of numeric attractiveness. Preserve pending records, explain exclusions, and hold replacements to the same rules. Zero qualified sites is a valid result.
 
-> 核实第三方购买经营与普通场地主托管的区别。把收益所需的真实需求、报价和合同输入列出来。检查电价是否已含需量费、运维和支付处理是否重复计费；供应商预测不能替代项目实绩。
+## Actual validation responsibilities
 
-> 对候选进行反证审查：地址方向是否匹配？物业是否已有充电设备或许可？临时停运是否漏查？坐标是否只是道路插值？哪项新证据会改变入选结论？
+JavaScript tests cover cash-flow timing, formula edges and fail-closed admission. A separate Python implementation recomputes the stored scenarios without importing the JavaScript model. Spatial checks reconcile the retained supply snapshot. Browser checks cover language, qualification filters, selection, comparison, scenarios and export scope. PDFs are generated from the same candidate data and visually reviewed; embedded input hashes reject stale summaries.
 
-## 校验方式
-
-- 两条研究线分别处理网络目标和投资条件，统一使用供给快照，再独立检查反证。
-- 原始文件完整性与 JSON 条目总数核对；全国 E 状态与补充 P/T 状态分开保存。
-- 在处理过程中纠正过道路方向误匹配、同址许可遗漏、现有其他网络设备遗漏以及综合电价重复计费风险。
-- 经济模型测试使用独立手算案例和边界情况；数据校验器重新计算候选与供给的空间关系。
-- 浏览器验证实际可见的名单、地图、比较、导出、情景切换；固定两页 PDF 另行渲染检查；验证结果只覆盖已执行的行为。
-
-后续更新应保留修改理由和反证，不能把 AI 多次给出相同回答当成多个独立来源。
+No personal CV, employment material or private conversation transcript belongs in this repository. Public artifacts contain research methods and public-source findings only.

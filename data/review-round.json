@@ -1,0 +1,76 @@
+{
+  "version": "0.2.0",
+  "reviewedAt": "2026-10-30T00:36:18.909301+00:00",
+  "scope": {
+    "previousShortlist": 20,
+    "replacementProspects": 3,
+    "totalReviewed": 23,
+    "carriedForward": 14
+  },
+  "method": "Opened identified public primary sources; re-read complete same-date frozen E/P/T and community snapshots. No owner/utility contact, private title search or site visit. An inaccessible source and an unsubmitted permit search are not negative findings.",
+  "snapshots": [
+    {
+      "url": "https://developer.nlr.gov/api/alt-fuel-stations/v1.json",
+      "sha256": "dce754f9f6a61e4b09b8aa8a48d7024b2c9047255ae5e8b21327fc0133d22782",
+      "declaredSnapshotBatchRetrievedAt": "2026-10-29T16:08:49Z",
+      "retrievalTimeCaveat": "The existing provenance records one batch timestamp, not independently logged per-source timestamps. Do not present reviewedAt as source freshness.",
+      "count": 15882,
+      "refreshedThisRound": false
+    },
+    {
+      "url": "https://developer.nlr.gov/api/alt-fuel-stations/v1.json",
+      "sha256": "0e6dedf605cfb95b9efe7ef1dfd190248daf3b31a6f88f9d778a60a5edf90b40",
+      "declaredSnapshotBatchRetrievedAt": "2026-10-29T16:08:49Z",
+      "retrievalTimeCaveat": "The existing provenance records one batch timestamp, not independently logged per-source timestamps. Do not present reviewedAt as source freshness.",
+      "count": 643,
+      "refreshedThisRound": false
+    },
+    {
+      "url": "https://supercharge.info/service/supercharge/allSites",
+      "sha256": "ef91b4f2f7daf0201e401804e211cf4b9ef8e2ed4469e1bfba02382a2ddfb6bd",
+      "declaredSnapshotBatchRetrievedAt": "2026-10-29T16:08:49Z",
+      "retrievalTimeCaveat": "The existing provenance records one batch timestamp, not independently logged per-source timestamps. Do not present reviewedAt as source freshness.",
+      "count": 11393,
+      "refreshedThisRound": false
+    }
+  ],
+  "corrections": [
+    "Mansfield 1715 charging permit is distinct from 1670 H-E-B; current state unresolved.",
+    "Machias cancellation verified; cause and surviving agreements unknown.",
+    "Hanksville has restricted RV-outlet charging, not dedicated DCFC.",
+    "Austin has existing charging and historic upgrade discussions; greenfield framing conflicts with evidence.",
+    "PGE unapproved new rebates cannot be booked as funding.",
+    "No selected site has sufficient land/utility/quote/demand evidence to demonstrate investment payback."
+  ],
+  "reviewedIds": [
+    "net-hanksville",
+    "net-john-day",
+    "net-challis",
+    "net-eureka",
+    "net-chama",
+    "net-machias",
+    "net-elkins",
+    "net-mountain-view",
+    "net-austin",
+    "net-chinle",
+    "heb-ronaldreagan",
+    "winco-brushprairie",
+    "winco-bremerton",
+    "winco-vancouver",
+    "heb-mansfield",
+    "heb-leander",
+    "winco-powell",
+    "winco-spokanevalley",
+    "heb-crosscreek",
+    "heb-elgin",
+    "winco-puyallup",
+    "winco-hillsboro",
+    "winco-oregoncity"
+  ],
+  "replacementIds": [
+    "winco-powell",
+    "winco-spokanevalley",
+    "heb-crosscreek"
+  ],
+  "notes": "Per-property findings and attempted sources are stored in candidates.json. Evidence absence keeps properties pending; a failed hypothetical scenario is not proof that the real parcel is economically infeasible."
+}

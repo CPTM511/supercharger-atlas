@@ -18,3 +18,5 @@ test-results/
 *.xls
 *.pem
 *.key
+
+!downloads/charge-atlas-brief-zh.pdf

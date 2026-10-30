@@ -65,3 +65,68 @@ export function csvCell(value) {
   if (!(typeof value === 'number' && Number.isFinite(value)) && /^[\s]*[=+@-]/.test(s)) s = `'${s}`;
   return `"${s.replaceAll('"', '""')}"`;
 }
+
+/** Screening policy, not an industry standard or a Tesla investment criterion. */
+export const INVESTMENT_POLICY = Object.freeze({
+  basePaybackMaxYears: 6, conservativePaybackMaxYears: 8,
+  discountRate: 0.10, operatingYears: 10,
+  requiredEvidence: ['site_control', 'grid_and_tariff', 'installed_cost', 'demand_and_price', 'permits_and_access', 'commercial_terms']
+});
+
+/** Constant-dollar, unlevered pre-income-tax project cash flows.
+ * Capex paid at t=0; annual cash received at year end after construction.
+ * No subsidy, growth, financing or terminal value. Replacement allowance is
+ * an explicit assumed cash deduction, not a supplier maintenance charge.
+ */
+export function calculateProject(input) {
+  const x = { ...input };
+  const p = { constructionYears: 1, firstYearRamp: 0.8, sustainingCapexFraction: 0.015,
+    discountRate: INVESTMENT_POLICY.discountRate, operatingYears: INVESTMENT_POLICY.operatingYears, preOpeningMonthly: 0, ...x };
+  for (const k of ['constructionYears','firstYearRamp','sustainingCapexFraction','discountRate','operatingYears','preOpeningMonthly']) {
+    if (!Number.isFinite(p[k]) || p[k] < 0) throw new RangeError(`Invalid ${k}`);
+  }
+  if (p.firstYearRamp > 1 || p.sustainingCapexFraction > 1 || p.discountRate > 1 || !Number.isInteger(p.operatingYears) || p.operatingYears < 1 || p.operatingYears > 50) throw new RangeError('Invalid project horizon or ratio');
+  const steady = calculateEconomics(x);
+  const annualSustainingCapex = p.capex * p.sustainingCapexFraction;
+  if (!Number.isFinite(annualSustainingCapex)) throw new RangeError('Explicit capex is required');
+  const stabilizedFreeCash = steady.operatingCash - annualSustainingCapex;
+  const preOpeningHoldingCost = p.preOpeningMonthly * 12 * p.constructionYears;
+  let balance = -p.capex - preOpeningHoldingCost;
+  let npv = -p.capex - preOpeningHoldingCost / (1 + p.discountRate) ** (p.constructionYears / 2);
+  let projectPaybackYears = balance === 0 ? 0 : null;
+  const cashflows = [];
+  for (let year = 1; year <= p.operatingYears; year++) {
+    const ramp = year === 1 ? p.firstYearRamp : 1;
+    const result = calculateEconomics({...x, sessionsPerStallDay: x.sessionsPerStallDay * ramp});
+    const cash = result.operatingCash - annualSustainingCapex;
+    const priorBalance = balance;
+    balance += cash;
+    const time = p.constructionYears + year;
+    npv += cash / (1 + p.discountRate) ** time;
+    // Linear interpolation assumes cash accrues evenly within each operating year.
+    if (projectPaybackYears === null && priorBalance < 0 && balance >= 0 && cash > 0) projectPaybackYears = p.constructionYears + year - 1 + (-priorBalance / cash);
+    cashflows.push({year, time, ramp, operatingCash: result.operatingCash, replacementAllowance: annualSustainingCapex, cash, cumulative: balance});
+  }
+  return {...steady, preOpeningHoldingCost, annualSustainingCapex, stabilizedFreeCash, projectPaybackYears, npv, cashflows,
+    horizonYears: p.constructionYears + p.operatingYears, discountRate: p.discountRate};
+}
+
+export function assessScenarioHurdle(scenarios, policy = INVESTMENT_POLICY) {
+  const base = scenarios.base.outputs, downside = scenarios.conservative.outputs;
+  const tests = {
+    basePayback: base.projectPaybackYears !== null && base.projectPaybackYears <= policy.basePaybackMaxYears,
+    conservativePayback: downside.projectPaybackYears !== null && downside.projectPaybackYears <= policy.conservativePaybackMaxYears,
+    baseNpv: base.npv >= 0,
+    conservativeCash: downside.stabilizedFreeCash > 0
+  };
+  return {passed: Object.values(tests).every(Boolean), tests};
+}
+
+/** Unknown evidence is never a pass. Optimistic economics cannot rescue failure. */
+export function classifyCandidate({evidence, scenarios, fatalConflict = false}, policy = INVESTMENT_POLICY) {
+  const hurdle = assessScenarioHurdle(scenarios, policy);
+  const missing = policy.requiredEvidence.filter(key => evidence?.[key] !== 'verified');
+  if (fatalConflict) return {decision:'rejected', missing, hurdle};
+  if (missing.length) return {decision:'pending', missing, hurdle};
+  return {decision:hurdle.passed ? 'qualified' : 'rejected', missing, hurdle};
+}
