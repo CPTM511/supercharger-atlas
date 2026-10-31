@@ -1,3 +1,23 @@
+# Validation — v0.11.0
+
+## Homepage-only scope
+
+The interface now has two concise summary sections before Site explorer: the ten-site shortlist and the conditions that would change an investment decision. It retains exact addresses, both follow-up perspectives, concise project reasons, Ronald Reagan's explicitly conditional figures, evidence gaps and the unchanged gates. Historical research is linked from GitHub documentation and the changelog rather than repeated as overview panels.
+
+A separate file/function comparison verified that 27 protected research data, model, translation, detail-view and download files are byte-identical to v0.10.0. The HTML from Site explorer through the end of the page is byte-identical; existing CSS is unchanged and new styles are scoped to the homepage. Existing explorer/detail/economic functions are unchanged. Only homepage rendering, its initialization and navigation/event wiring changed in the application. All three follow-up orders, qualification decisions and financial inputs remain intact. The research date/footer remain October 30, 2026 / v0.10.0; the interface release is v0.11.0.
+
+## Checks
+
+- All 39 targeted tests, structural validation and the existing independent arithmetic checkers passed. The new summary reads headline results and thresholds from the unchanged canonical data.
+- The generated English fallback contains both summary sections and all ten locations without JavaScript; no former round-by-round overview container remains above Site explorer. Direct history/documentation links are present.
+- Browser verification covered both table orders, English default/Chinese rendering, the Ronald detail link, retained explorer lens/search/comparison behavior, nearby-supply map control and a calculator input/reset. No console errors were observed in these exercised flows.
+- At 390px the document remains 390px wide; the shortlist scrolls internally and decision cards stack. Desktop and mobile summary layouts were visually checked. Existing PDFs were not regenerated because their data and content are unchanged.
+- The public diff and README were checked for private-material markers and English-only README content. No new research, commercial data acquisition, outreach, fee or qualification upgrade is claimed.
+
+Publication checks compare the deployment commit and live affected files after release. This is a presentation review, not a fresh source or commercial feasibility verification. Prior validation records follow unchanged.
+
+---
+
 # Validation — v0.10.0
 
 ## Reviewed scope and conclusions

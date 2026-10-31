@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.11.0 — Concise homepage summary (2026-10-31)
+
+- Replace the stacked research-round overview panels with two compact EN/ZH summary sections: the ten-site follow-up table and decision conditions.
+- Keep exact addresses, both lens orders, concise follow-up reasons and links to the unchanged site details; surface Ronald Reagan's conditional result, missing evidence and unchanged underwriting rules.
+- Keep historical research in GitHub documentation and the changelog, with direct links from the summary.
+- Preserve every research data/model file, both PDF briefs, qualified ranks and investment thresholds. Site explorer and all subsequent content and functionality are unchanged.
+- The interface release is v0.11.0; the underlying research snapshot and footer remain v0.10.0 / October 30, 2026. No new evidence acquisition or economic reassessment is claimed.
+
+
 ## v0.10.0 — Ten follow-up priorities (2026-10-30)
 
 - Publish the approved ten-location investigation queue, with separate overall, network and third-party priorities within the same ten.

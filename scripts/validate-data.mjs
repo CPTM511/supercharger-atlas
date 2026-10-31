@@ -239,8 +239,8 @@ const {renderStaticSnapshot}=await import('./build-static-snapshot.mjs');
 const staticHtml=fs.readFileSync(new URL('../index.html',import.meta.url),'utf8');
 assert.equal(staticHtml,renderStaticSnapshot(data,staticHtml),'Static published snapshot is stale');
 fail(!/<span id="(?:network|investor|pool)-count"[^>]*>—/.test(staticHtml),'Static count placeholder must not hide published decision');
-fail(staticHtml.includes('docs/LOCAL-VALIDATION.md')&&staticHtml.includes('docs/INCENTIVES-AND-OWNERSHIP.md'),'Static report links missing');
-console.log('Five local evidence records, four tariff profiles, bilingual bounds and non-JavaScript snapshot reconciled.');
+fail(staticHtml.includes('docs/RONALD-VALIDATION.md')&&staticHtml.includes('docs/INCENTIVES-AND-OWNERSHIP.md'),'Static report links missing');
+console.log('Five retained local records, four tariff profiles, bilingual bounds and current non-JavaScript summary reconciled.');
 
 const ronald=JSON.parse(fs.readFileSync(new URL('../data/ronald-validation.json',import.meta.url)));
 assert.deepEqual(data.ronaldValidationReview,ronald,'Focused canonical input mismatch');
@@ -269,3 +269,10 @@ fail(data.candidates.filter(c=>c.followup).length===10,'Extra follow-up membersh
 fail(data.candidates.every(c=>c.review.decision==='pending'&&c.ranks.network===null&&c.ranks.investor===null),'This priority release must not confer qualification');
 fail(staticHtml.includes('docs/FOLLOWUP-PRIORITIES.md')&&(staticHtml.match(/data-followup-id=/g)||[]).length===10,'Ten-site static snapshot required');
 console.log('Ten bilingual follow-up priorities reconciled; admission remains separate.');
+
+const home=staticHtml.slice(0,staticHtml.indexOf('<section id="workspace"'));
+fail(home.includes('id="home-decision"'),'Decision summary missing');
+fail(!/id="(?:ronald-audit|local-validation-audit|hypothesis-audit|decision-audit|support-audit)"/.test(home),'Historical update panels must stay off the home summary');
+fail((home.match(/class="home-summary-block"/g)||[]).length===2,'Two summary blocks required');
+fail(home.includes('github.com/CPTM511/supercharger-atlas/blob/main/CHANGELOG.md'),'GitHub research history link missing');
+console.log('Concise home summary retains ten locations, two perspectives and documented research history.');

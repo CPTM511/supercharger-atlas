@@ -1,3 +1,4 @@
+import {renderHomeShortlist,renderHomeDecision} from './home-summary.js?v=9a3f200c2c2d';
 import {followupRank,orderedFollowups,followupText,renderFollowupOverview,renderFollowupDetail} from './followup-view.js?v=1341d4030c3e';
 import {renderRonaldOverview,renderRonaldDetail} from './ronald-view.js?v=d17e87367f1b';
 import { t, localized, localField, getLanguage, setLanguage, applyTranslations } from './i18n.js?v=5a278e54a4b8';
@@ -130,7 +131,7 @@ function selectCandidate(id, fromMap = false) {
 
 function localPayback(value) { return value === null ? t('v8NoRecovery') : `${formatNumber(value,2)} ${t('years')}`; }
 function ronaldUI() { return {t,e:value=>escapeHTML(localized(value)),n:formatNumber,m:formatMoney,pay:localPayback,refs:sourceRefs}; }
-function renderFollowupAudit() { $('followup-nav').textContent=getLanguage()==='zh'?'十址跟进':'Top 10 follow-ups'; $('followup-audit').innerHTML=renderFollowupOverview(state.data,{e:escapeHTML,lang:getLanguage(),mode:state.followupMode});$('followup-filter-label').textContent=followupText('filter',getLanguage());document.querySelector('#hypothesis-filter + span').textContent=followupText('history5',getLanguage());document.querySelector('#focus-filter + span').textContent=followupText('history10',getLanguage()); }
+function renderFollowupAudit() { $('followup-nav').textContent=getLanguage()==='zh'?'十址跟进':'Top 10 follow-ups'; $('followup-audit').innerHTML=renderHomeShortlist(state.data,{e:escapeHTML,lang:getLanguage(),mode:state.followupMode});$('home-decision').innerHTML=renderHomeDecision(state.data,{e:escapeHTML,lang:getLanguage()});$('followup-filter-label').textContent=followupText('filter',getLanguage());document.querySelector('#hypothesis-filter + span').textContent=followupText('history5',getLanguage());document.querySelector('#focus-filter + span').textContent=followupText('history10',getLanguage()); }
 function renderRonaldAudit() { const r=state.data.ronaldValidationReview;if(r)$('ronald-audit').innerHTML=renderRonaldOverview(r,ronaldUI()); }
 function renderLocalAudit() {
  const r=state.data.localValidationReview;if(!r)return;const e=v=>escapeHTML(localized(v));
@@ -329,12 +330,7 @@ function populateStudyMetadata() {
   $('snapshot-date').textContent = meta.asOf || t('notRecorded'); $('pool-count').textContent = formatNumber(meta.poolCount ?? candidates.length, 0);
   $('network-count').textContent = candidates.filter((candidate) => getRank(candidate, 'network') !== null).length; $('investor-count').textContent = candidates.filter((candidate) => getRank(candidate, 'investor') !== null).length; $('source-count').textContent = new Set(sources.map(s=>s.url)).size;
   $('qualification-count').textContent = t('qualificationSummary', counts); $('qualification-explanation').textContent = `${t(counts.qualified ? 'qualificationSome' : 'qualificationZero')} ${meta.availabilityReview ? t('v4Coverage') : ''}`;
-  renderDecisionAudit();
-  renderSupportAudit();
-  renderHypothesisAudit();
   renderFollowupAudit();
-  renderRonaldAudit();
-  renderLocalAudit();
   $('footer-version').textContent = `${meta.version || ''} · ${meta.asOf || t('notRecorded')}`; $('ledger-count').textContent = t('ledgerCount', { count: new Set(sources.map(s=>s.url)).size });
   const region = $('state-filter'); const selectedRegion = region.value;
   region.innerHTML = `<option value="">${t('allStates')}</option>${[...new Set(candidates.map((candidate) => candidate.state).filter(Boolean))].sort().map((value) => `<option value="${escapeHTML(value)}">${escapeHTML(value)}</option>`).join('')}`; region.value = selectedRegion;
@@ -418,10 +414,10 @@ function attachEvents() {
   for (const button of document.querySelectorAll('[data-language]')) button.addEventListener('click', () => changeLanguage(button.dataset.language));
   for (const button of document.querySelectorAll('[data-mode]')) { button.addEventListener('click', () => changeMode(button.dataset.mode)); button.addEventListener('keydown', (event) => { if (['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) { event.preventDefault(); const mode = event.key === 'Home' ? 'network' : event.key === 'End' ? 'investor' : state.mode === 'network' ? 'investor' : 'network'; changeMode(mode); $(`lens-${mode}`).focus(); } }); }
   $('followup-audit').addEventListener('change',event=>{if(event.target.id==='followup-order'){state.followupMode=event.target.value;renderFollowupAudit();$('followup-order').focus();}});
-  $('followup-audit').addEventListener('click',event=>{const b=event.target.closest('[data-followup-select]');if(!b)return;$('search').value='';$('state-filter').value='';$('status-filter').value='pending';$('focus-filter').checked=false;$('hypothesis-filter').checked=false;$('followup-filter').checked=true;refresh();selectCandidate(b.dataset.followupSelect);$('site-detail').scrollIntoView({block:'start'});});
+  for(const container of [$('followup-audit'),$('home-decision')])container.addEventListener('click',event=>{const b=event.target.closest('[data-followup-select]');if(!b)return;$('search').value='';$('state-filter').value='';$('status-filter').value='pending';$('focus-filter').checked=false;$('hypothesis-filter').checked=false;$('followup-filter').checked=true;refresh();selectCandidate(b.dataset.followupSelect);$('site-detail').scrollIntoView({block:'start'});});
   $('followup-filter').addEventListener('change',()=>{if($('followup-filter').checked){$('focus-filter').checked=false;$('hypothesis-filter').checked=false;}refresh();});
   $('hypothesis-filter').addEventListener('change',()=>{if($('hypothesis-filter').checked){$('focus-filter').checked=false;$('followup-filter').checked=false;}refresh();});
-  for(const container of [$('hypothesis-audit'),$('local-validation-audit'),$('ronald-audit')])container.addEventListener('click',event=>{const b=event.target.closest('[data-hypothesis-select]');if(!b)return;$('search').value='';$('state-filter').value='';$('status-filter').value='pending';$('focus-filter').checked=false;$('hypothesis-filter').checked=true;$('followup-filter').checked=false;refresh();selectCandidate(b.dataset.hypothesisSelect);$('site-detail').scrollIntoView({block:'start'});});
+  for(const container of [$('hypothesis-audit'),$('local-validation-audit'),$('ronald-audit')].filter(Boolean))container.addEventListener('click',event=>{const b=event.target.closest('[data-hypothesis-select]');if(!b)return;$('search').value='';$('state-filter').value='';$('status-filter').value='pending';$('focus-filter').checked=false;$('hypothesis-filter').checked=true;$('followup-filter').checked=false;refresh();selectCandidate(b.dataset.hypothesisSelect);$('site-detail').scrollIntoView({block:'start'});});
   $('focus-filter').addEventListener('change', () => {if($('focus-filter').checked){$('hypothesis-filter').checked=false;$('followup-filter').checked=false;}refresh();}); $('search').addEventListener('input', () => refresh()); $('state-filter').addEventListener('change', () => refresh()); $('status-filter').addEventListener('change', () => refresh());
   $('candidate-list').addEventListener('click', (event) => { const button = event.target.closest('[data-select]'); if (button) selectCandidate(button.dataset.select); });
   $('candidate-list').addEventListener('change', (event) => { if (event.target.matches('[data-compare]')) toggleComparison(event.target.dataset.compare, event.target.checked); });
@@ -437,7 +433,7 @@ async function load() {
   try {
     const response = await fetch('./data/candidates.json', { cache: 'no-store' }); if (!response.ok) throw new Error();
     const data = await response.json(); if (!Array.isArray(data.candidates) || !Array.isArray(data.sources)) throw new Error();
-    state.data = data; state.sources = new Map(data.sources.map((source) => [source.id, source])); $('status-filter').value = statusCounts().qualified ? 'qualified' : 'pending'; populateStudyMetadata(); refresh(); renderPrintSummary(); if(location.hash==='#followup-audit')$('followup-audit').scrollIntoView({block:'start'});
+    state.data = data; state.sources = new Map(data.sources.map((source) => [source.id, source])); $('status-filter').value = statusCounts().qualified ? 'qualified' : 'pending'; populateStudyMetadata(); refresh(); renderPrintSummary(); if(['#followup-audit','#home-decision'].includes(location.hash))$(location.hash.slice(1)).scrollIntoView({block:'start'});
   } catch { state.loadError = true; renderLoadError(); }
 }
 load();

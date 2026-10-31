@@ -4,9 +4,15 @@
 
 [Open the product](https://cptm511.github.io/supercharger-atlas/) · [English research brief](downloads/charge-atlas-brief.pdf) · [Chinese research brief](downloads/charge-atlas-brief-zh.pdf)
 
-## Current conclusion — v0.10.0
+## Current conclusion — v0.11.0
 
-**Ten follow-up priorities, two perspectives, zero qualified investments.** This release turns the reviewed shortlist into a bilingual, source-linked investigation queue. The overall order is **Ronald Reagan, Puyallup, Elgin, Oregon City, Machias, Mansfield, Edmonds, Colebrook, Challis and Medford**. Network and third-party orders rank the **same selected ten**, drawn from the existing 37-property pool. They are investigation priorities, not investment return ranks or a claim of the best sites nationwide.
+The homepage now opens with a concise two-part summary: the ten-location shortlist and the evidence needed for an investment decision. Detailed round-by-round research remains in [the documentation](docs/) and [change history](CHANGELOG.md). Site explorer, maps, filters, details, comparison, exports and the economics sandbox retain their previous behavior. English remains the default, with Chinese available.
+
+This is a presentation-only release. Research data, orders, thresholds, financial results and both downloadable briefs are unchanged from v0.10.0; the research snapshot remains **October 30, 2026**. The footer reports that retained research version, not the interface release.
+
+### Retained research conclusion
+
+**Ten follow-up priorities, two perspectives, zero qualified investments.** The reviewed shortlist is a bilingual, source-linked investigation queue. The overall order is **Ronald Reagan, Puyallup, Elgin, Oregon City, Machias, Mansfield, Edmonds, Colebrook, Challis and Medford**. Network and third-party orders rank the **same selected ten**, drawn from the existing 37-property pool. They are investigation priorities, not investment return ranks or a claim of the best sites nationwide.
 
 [Open the ten-location table](https://cptm511.github.io/supercharger-atlas/#followup-audit) · [Read the rationale, exact addresses, both rankings and stop conditions](docs/FOLLOWUP-PRIORITIES.md) · [Canonical priority data](data/followup-priorities.json)
 
@@ -49,7 +55,7 @@ These are explicit underwriting choices, **not an industry standard, Tesla inves
 
 - Sort the ten follow-up priorities by overall, network or third-party order, and inspect the scope, checks, source references and stop conditions for every location.
 - Inspect the focused Ronald Reagan demand, 4CP and complete-cost review, with nearby comparator limitations and conditional target tests.
-- Read a generated English research snapshot and report links even before interactive data loads.
+- Read a concise two-part English homepage summary even before interactive data loads; historical research stays in linked GitHub documents.
 - Explore five field hypotheses with measured-aggregate versus vendor-projection distinctions, local counter-evidence and explicit verification conditions.
 - Review the latest five-property evidence update and four dated utility-subtotal profiles for two addresses, including external retail-transfer, construction-delay and conditional reimbursement tests.
 - Switch between network and investor lenses, and between qualified, pending and excluded pools.
